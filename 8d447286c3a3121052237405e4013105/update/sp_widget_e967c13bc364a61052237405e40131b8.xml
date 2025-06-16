@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_widget">
+    <sp_widget action="INSERT_OR_UPDATE">
+        <category>custom</category>
+        <client_script><![CDATA[api.controller=function() {
+  /* widget controller */
+  var c = this;
+};]]></client_script>
+        <controller_as>c</controller_as>
+        <css>.zp{
+  color:#4263eb;
+  font-size: 35px
+  font-weight:600;
+  margin-bottom:35px;
+}
+
+.zyn-box{
+ font-family: times new roman;
+ text-align: center;
+  margin-left: 70px;
+}
+
+.z-box p{
+  font-weight:600;
+}
+
+.z-box{
+
+  width:215px;
+  height:130px;
+  background-color:white;
+  
+}
+.zn1{
+  width:16px;
+  height:16px;
+  
+}
+.zynder-box{
+  display:flex;
+  align-items:center;
+  
+  background-color:white;
+  padding: 3px 35px;
+  width:900px;
+  height: 400px;
+  top: 103px;
+  position:absolute;
+  left:-170px;
+  border-radius:15px;
+
+}
+.main-zyn{
+  padding-top:70px;
+}
+
+.main-zyn{
+
+  position:relative;
+  
+}</css>
+        <data_table>sp_instance</data_table>
+        <demo_data/>
+        <description/>
+        <docs/>
+        <field_list/>
+        <has_preview>true</has_preview>
+        <id>zynder-new</id>
+        <internal>false</internal>
+        <link><![CDATA[function link(scope, element, attrs, controller) {
+  
+}]]></link>
+        <name>Zynder-New</name>
+        <option_schema/>
+        <public>true</public>
+        <roles/>
+        <script><![CDATA[(function() {
+  /* populate the 'data' object */
+  /* e.g., data.table = $sp.getValue('table'); */
+	
+	
+
+})();]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>AP</sys_created_by>
+        <sys_created_on>2025-04-03 14:13:13</sys_created_on>
+        <sys_id>e967c13bc364a61052237405e40131b8</sys_id>
+        <sys_mod_count>134</sys_mod_count>
+        <sys_name>Zynder-New</sys_name>
+        <sys_package display_value="Zynder Tech" source="8d447286c3a3121052237405e4013105">8d447286c3a3121052237405e4013105</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Zynder Tech">8d447286c3a3121052237405e4013105</sys_scope>
+        <sys_update_name>sp_widget_e967c13bc364a61052237405e40131b8</sys_update_name>
+        <sys_updated_by>Treesa.Thomas</sys_updated_by>
+        <sys_updated_on>2025-04-29 07:09:42</sys_updated_on>
+        <template><![CDATA[<div class="main-zyn">
+<!-- your widget template -->
+  <div class="zynder-box">
+    <img src="zynderanimation.gif" style="width: 360px; height: 200px;" class="img"/>
+    
+    
+    <div class="zyn-box">
+      <h2 class="zp">
+        Contact us 
+      </h2>
+      
+      <div class="z-box">
+       <p class="zb1">
+         Call Service Desk For Immediate help 
+        </p>
+        
+        <p class="pp1">
+           <img src="https://www.citypng.com/public/uploads/preview/hd-green-square-phone-icon-png-7017516950597582y4ltbrryl.png" class="zn1"/>
+          +91 70253 77758
+        </p>
+        
+        
+          <p class=pp1"">
+           <img src="https://cdn-icons-png.freepik.com/512/9809/9809981.png" class="zn1"/>
+         zynder@gmail.com
+        </p>
+        
+        
+       
+
+    
+      </div>
+      
+    </div>
+    
+
+
+    
+  </div>
+</div>]]></template>
+    </sp_widget>
+    <sys_es_latest_script action="INSERT_OR_UPDATE">
+        <id>e967c13bc364a61052237405e40131b8</id>
+        <sys_created_by>AP</sys_created_by>
+        <sys_created_on>2025-04-03 14:13:12</sys_created_on>
+        <sys_id>a008053bc364a61052237405e401318f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>AP</sys_updated_by>
+        <sys_updated_on>2025-04-03 14:13:12</sys_updated_on>
+        <table>sp_widget</table>
+        <use_es_latest>true</use_es_latest>
+    </sys_es_latest_script>
+</record_update>

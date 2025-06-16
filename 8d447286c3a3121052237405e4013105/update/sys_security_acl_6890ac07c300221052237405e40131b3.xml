@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl">
+    <sys_security_acl action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <admin_overrides>false</admin_overrides>
+        <advanced>true</advanced>
+        <applies_to/>
+        <condition/>
+        <controlled_by_refs/>
+        <decision_type>allow</decision_type>
+        <description>Default access control on u_project_effort</description>
+        <local_or_existing>Local</local_or_existing>
+        <name>u_project_effort.u_project_work</name>
+        <operation display_value="write">write</operation>
+        <script><![CDATA[var answer = false;
+if(current.u_resourse == gs.getUserID()){
+	answer = true;
+}
+
+else if(hasRoleExactly("super admin")){
+	answer = true;
+}
+
+function hasRoleExactly(role) {
+    var au = new ArrayUtil();
+    var roles = gs.getSession().getRoles() + ''; 
+    var roleArray = roles.split(","); 
+    var isAuthorized = au.contains(roleArray, role); 
+    return isAuthorized; 
+}]]></script>
+        <security_attribute/>
+        <sys_class_name>sys_security_acl</sys_class_name>
+        <sys_created_by>AM</sys_created_by>
+        <sys_created_on>2025-03-07 06:54:04</sys_created_on>
+        <sys_id>6890ac07c300221052237405e40131b3</sys_id>
+        <sys_mod_count>12</sys_mod_count>
+        <sys_name>u_project_effort.u_project_work</sys_name>
+        <sys_package display_value="Zynder Tech" source="8d447286c3a3121052237405e4013105">8d447286c3a3121052237405e4013105</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Zynder Tech">8d447286c3a3121052237405e4013105</sys_scope>
+        <sys_update_name>sys_security_acl_6890ac07c300221052237405e40131b3</sys_update_name>
+        <sys_updated_by>KR</sys_updated_by>
+        <sys_updated_on>2025-04-04 14:28:32</sys_updated_on>
+        <type display_value="record">record</type>
+    </sys_security_acl>
+    <sys_es_latest_script action="INSERT_OR_UPDATE">
+        <id>6890ac07c300221052237405e40131b3</id>
+        <sys_created_by>KR</sys_created_by>
+        <sys_created_on>2025-04-04 07:19:24</sys_created_on>
+        <sys_id>34e2f40cc3702a1052237405e401316a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>KR</sys_updated_by>
+        <sys_updated_on>2025-04-04 07:19:24</sys_updated_on>
+        <table>sys_security_acl</table>
+        <use_es_latest>false</use_es_latest>
+    </sys_es_latest_script>
+</record_update>

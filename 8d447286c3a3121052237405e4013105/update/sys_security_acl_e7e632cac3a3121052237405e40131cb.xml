@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl">
+    <sys_security_acl action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <admin_overrides>false</admin_overrides>
+        <advanced>false</advanced>
+        <applies_to table="sys_user">user_name=AV^ORuser_name=PV^EQ<item endquery="false" field="user_name" goto="false" newquery="false" operator="=" or="false" value="AV"/>
+            <item endquery="false" field="user_name" goto="false" newquery="false" operator="=" or="true" value="PV"/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </applies_to>
+        <condition/>
+        <controlled_by_refs/>
+        <decision_type>allow</decision_type>
+        <description>Allow delete for records in sys_user if the record matches the criteria (user_name=AV^ORuser_name=PV^EQ), if users satisfy the conditions of the Security Attribute "ACL_e7e632cac3a3121052237405e40131cb".</description>
+        <local_or_existing>Local</local_or_existing>
+        <name>sys_user</name>
+        <operation display_value="delete">delete</operation>
+        <script/>
+        <security_attribute display_value="">107c7a42c3e3121052237405e4013126</security_attribute>
+        <sys_class_name>sys_security_acl</sys_class_name>
+        <sys_created_by>AV</sys_created_by>
+        <sys_created_on>2025-02-07 18:47:43</sys_created_on>
+        <sys_id>e7e632cac3a3121052237405e40131cb</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>sys_user</sys_name>
+        <sys_package display_value="Zynder Tech" source="8d447286c3a3121052237405e4013105">8d447286c3a3121052237405e4013105</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Zynder Tech">8d447286c3a3121052237405e4013105</sys_scope>
+        <sys_update_name>sys_security_acl_e7e632cac3a3121052237405e40131cb</sys_update_name>
+        <sys_updated_by>AV</sys_updated_by>
+        <sys_updated_on>2025-02-07 19:16:25</sys_updated_on>
+        <type display_value="record">record</type>
+    </sys_security_acl>
+    <sys_es_latest_script action="INSERT_OR_UPDATE">
+        <id>e7e632cac3a3121052237405e40131cb</id>
+        <sys_created_by>AV</sys_created_by>
+        <sys_created_on>2025-02-07 19:09:45</sys_created_on>
+        <sys_id>547cf682c3e3121052237405e4013121</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>AV</sys_updated_by>
+        <sys_updated_on>2025-02-07 19:09:45</sys_updated_on>
+        <table>sys_security_acl</table>
+        <use_es_latest>false</use_es_latest>
+    </sys_es_latest_script>
+</record_update>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_instance">
+    <sp_instance action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <class_name/>
+        <color>default</color>
+        <css/>
+        <glyph/>
+        <id/>
+        <order>1</order>
+        <roles/>
+        <short_description/>
+        <size>md</size>
+        <sp_column display_value="3">c7ab9fc783adea10a946f896feaad338</sp_column>
+        <sp_widget display_value="Catalog Cards">f2e2b08cc3702a1052237405e401310c</sp_widget>
+        <sys_class_name>sp_instance</sys_class_name>
+        <sys_created_by>AP</sys_created_by>
+        <sys_created_on>2025-04-04 10:22:32</sys_created_on>
+        <sys_id>97cc1148c3b42a1052237405e4013131</sys_id>
+        <sys_mod_count>11</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Zynder Tech" source="8d447286c3a3121052237405e4013105">8d447286c3a3121052237405e4013105</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Zynder Tech">8d447286c3a3121052237405e4013105</sys_scope>
+        <sys_update_name>sp_instance_97cc1148c3b42a1052237405e4013131</sys_update_name>
+        <sys_updated_by>Treesa.Thomas</sys_updated_by>
+        <sys_updated_on>2025-05-21 10:06:28</sys_updated_on>
+        <title/>
+        <url/>
+        <widget_parameters><![CDATA[{
+	"image": {
+		"value": "https://thumbs.dreamstime.com/b/complaint-icon-grievance-319872408.jpg",
+		"displayValue": "https://thumbs.dreamstime.com/b/complaint-icon-grievance-319872408.jpg"
+	},
+	"shortdesc": {
+		"value": "The CSR form in the Service Portal enables employees to confidentially report grievances.",
+		"displayValue": "The CSR form in the Service Portal enables employees to confidentially report grievances."
+	},
+	"desc": {
+		"value": "The CSR (Complaint Submission and Resolution) form in the Service Portal provides a structured mechanism for employees to report concerns or grievances involving colleagues. Employees can detail the nature of the complaint, including specific incidents, dates, and any supporting evidence.",
+		"displayValue": "The CSR (Complaint Submission and Resolution) form in the Service Portal provides a structured mechanism for employees to report concerns or grievances involving colleagues. Employees can detail the nature of the complaint, including specific incidents, dates, and any supporting evidence."
+	},
+	"link": {
+		"value": "/zt?id=sc_cat_item&sys_id=8758cde4c333121052237405e4013138",
+		"displayValue": "/zt?id=sc_cat_item&sys_id=8758cde4c333121052237405e4013138"
+	},
+	"name": {
+		"value": "CSR",
+		"displayValue": "CSR"
+	},
+	"animation": {
+		"value": "slide-in-right",
+		"displayValue": "slide-in-right"
+	}
+}]]></widget_parameters>
+    </sp_instance>
+    <sys_translated_text action="delete_multiple" query="documentkey=97cc1148c3b42a1052237405e4013131"/>
+</record_update>

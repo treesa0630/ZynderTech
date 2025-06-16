@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_widget">
+    <sp_widget action="INSERT_OR_UPDATE">
+        <category>custom</category>
+        <client_script><![CDATA[api.controller = function($scope, $rootScope, spUtil) {
+    /* widget controller */
+    var c = this;
+    $rootScope.$on('broadcast1', function(event, data, query) {
+        //alert("table name is: "+ data + "filter is :"+ query);
+        $scope.table = data;
+        $scope.filter = query;
+
+
+        var parm = {
+            'table': data,
+            'filter': 'sys_created_by=' + c.data.userName + '^NQu_resourcesLIKE' + c.data.userName + '^' + query
+        };
+        spUtil.get("widget-data-table", parm).then(function(response) {
+            c.data.listwidget = response;
+        });
+    });
+};]]></client_script>
+        <controller_as>c</controller_as>
+        <css>.main-div{
+  border-radius: 10px;
+  margin-top: 8%;
+  margin-left:-20%;
+  margin-right:-10%;
+  font-family: times new roman;
+}
+</css>
+        <data_table>sp_instance</data_table>
+        <demo_data/>
+        <description/>
+        <docs/>
+        <field_list/>
+        <has_preview>true</has_preview>
+        <id>module_details</id>
+        <internal>false</internal>
+        <link><![CDATA[function link(scope, element, attrs, controller) {
+  
+}]]></link>
+        <name>Module Details</name>
+        <option_schema/>
+        <public>false</public>
+        <roles/>
+        <script><![CDATA[(function() {
+    /* populate the 'data' object */
+    /* e.g., data.table = $sp.getValue('table'); */
+    data.userName = gs.getUserName();
+    data.listwidget = $sp.getWidget('widget-data-table', {
+        table: 'u_project_effort',
+        filter: 'sys_created_by=' + data.userName
+    });
+})();]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>TT</sys_created_by>
+        <sys_created_on>2025-04-03 11:06:25</sys_created_on>
+        <sys_id>6c2dd07fc320a61052237405e4013194</sys_id>
+        <sys_mod_count>140</sys_mod_count>
+        <sys_name>Module Details</sys_name>
+        <sys_package display_value="Zynder Tech" source="8d447286c3a3121052237405e4013105">8d447286c3a3121052237405e4013105</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Zynder Tech">8d447286c3a3121052237405e4013105</sys_scope>
+        <sys_update_name>sp_widget_6c2dd07fc320a61052237405e4013194</sys_update_name>
+        <sys_updated_by>Treesa.Thomas</sys_updated_by>
+        <sys_updated_on>2025-06-06 12:21:13</sys_updated_on>
+        <template><![CDATA[<div>
+<!-- your widget template -->
+  <div class="main-div">
+  <sp-widget widget="data.listwidget" ></sp-widget>
+  </div>
+</div>]]></template>
+    </sp_widget>
+    <sys_es_latest_script action="INSERT_OR_UPDATE">
+        <id>6c2dd07fc320a61052237405e4013194</id>
+        <sys_created_by>TT</sys_created_by>
+        <sys_created_on>2025-04-03 11:06:24</sys_created_on>
+        <sys_id>d04d947fc320a61052237405e4013190</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>TT</sys_updated_by>
+        <sys_updated_on>2025-04-03 11:06:24</sys_updated_on>
+        <table>sp_widget</table>
+        <use_es_latest>true</use_es_latest>
+    </sys_es_latest_script>
+</record_update>

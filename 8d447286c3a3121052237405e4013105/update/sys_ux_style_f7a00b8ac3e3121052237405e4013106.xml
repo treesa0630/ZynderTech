@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ux_style">
+    <sys_ux_style action="INSERT_OR_UPDATE">
+        <name>Imagery</name>
+        <style>{"properties":{}}</style>
+        <sys_class_name>sys_ux_style</sys_class_name>
+        <sys_created_by>AV</sys_created_by>
+        <sys_created_on>2025-02-07 19:28:18</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>f7a00b8ac3e3121052237405e4013106</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Imagery</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Zynder Tech" source="8d447286c3a3121052237405e4013105">8d447286c3a3121052237405e4013105</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Zynder Tech">8d447286c3a3121052237405e4013105</sys_scope>
+        <sys_update_name>sys_ux_style_f7a00b8ac3e3121052237405e4013106</sys_update_name>
+        <sys_updated_by>AV</sys_updated_by>
+        <sys_updated_on>2025-02-07 19:28:18</sys_updated_on>
+        <type>core</type>
+    </sys_ux_style>
+</record_update>

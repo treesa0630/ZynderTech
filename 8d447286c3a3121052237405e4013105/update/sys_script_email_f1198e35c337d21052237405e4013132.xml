@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_email">
+    <sys_script_email action="INSERT_OR_UPDATE">
+        <name>projectEfforts.manager.notification</name>
+        <new_lines_to_html>false</new_lines_to_html>
+        <script><![CDATA[(function runMailScript( /* GlideRecord */ current, /* TemplatePrinter */ template,
+    /* Optional EmailOutbound */
+    email, /* Optional GlideRecord */ email_action,
+    /* Optional GlideRecord */
+    event) {
+
+    // Add your code here
+
+    var gr = new GlideRecord('u_project_effort');
+    if (gr.get(current.document_id)) {
+
+		var days = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+        var gd = new GlideDateTime(gr.u_date);
+        var dayNum = gd.getDayOfWeek();
+		var day = days[dayNum];
+
+
+
+
+        var resourse_name = gr.u_resourse.name;
+		var date = gr.u_date;
+        var project_work = gr.u_project_work;
+        var project_name = gr.u_project_name.u_project;
+        var other_work = gr.u_other;
+
+        email.setSubject(resourse_name + " has submitted a project effort on " + day + ", "+ date);
+
+		var other = gs.getProperty('other.project.sys.id');
+
+        if (project_name == other) {
+            var bodyText = "";
+            bodyText += resourse_name + " has submitted the project effort" + '<br>' + '<br>' + '<b>' + "Project name : " + '</b>' + project_name + '<br>' + '<br>' + '<b>' + "Project Work : " + '</b>' + project_work + '<br>' + '<br>' + '<b>' + "Non Project work : " + '</b>' + other_work;
+        } else {
+            var bodyText = "";
+            bodyText += resourse_name + " has submitted the project effort" + '<br>' + '<br>' + '<b>' + "Project name : " + '</b>' + project_name + '<br>' + '<br>' + '<b>' + "Project Work : " + '</b>' + project_work + '<br>';
+        }
+
+    }
+
+    template.print(bodyText);
+
+})(current, template, email, email_action, event);]]></script>
+        <sys_class_name>sys_script_email</sys_class_name>
+        <sys_created_by>SA</sys_created_by>
+        <sys_created_on>2025-02-19 07:04:54</sys_created_on>
+        <sys_id>f1198e35c337d21052237405e4013132</sys_id>
+        <sys_mod_count>34</sys_mod_count>
+        <sys_name>projectEfforts.manager.notification</sys_name>
+        <sys_package display_value="Zynder Tech" source="8d447286c3a3121052237405e4013105">8d447286c3a3121052237405e4013105</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Zynder Tech">8d447286c3a3121052237405e4013105</sys_scope>
+        <sys_update_name>sys_script_email_f1198e35c337d21052237405e4013132</sys_update_name>
+        <sys_updated_by>Krishna.Raj</sys_updated_by>
+        <sys_updated_on>2025-04-23 07:54:41</sys_updated_on>
+    </sys_script_email>
+    <sys_es_latest_script action="INSERT_OR_UPDATE">
+        <id>f1198e35c337d21052237405e4013132</id>
+        <sys_created_by>SA</sys_created_by>
+        <sys_created_on>2025-02-19 07:04:54</sys_created_on>
+        <sys_id>97998e75c337d21052237405e40131ec</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>SA</sys_updated_by>
+        <sys_updated_on>2025-02-19 07:04:54</sys_updated_on>
+        <table>sys_script_email</table>
+        <use_es_latest>true</use_es_latest>
+    </sys_es_latest_script>
+</record_update>

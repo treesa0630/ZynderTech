@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_widget">
+    <sp_widget action="INSERT_OR_UPDATE">
+        <category>custom</category>
+        <client_script><![CDATA[api.controller=function() {
+  /* widget controller */
+  var c = this;
+	c.classValue = true;
+	c.arrayValue = c.data.array;
+	
+	
+};]]></client_script>
+        <controller_as>c</controller_as>
+        <css>.main-div{
+  height: 610px;
+  width: 400px;
+  padding: 15px;
+  //background-color: rgb(111,103,111);
+  backdrop-filter: blur(15px);
+  border-radius:10px;
+  margin: 10px 0px;
+  color: white;
+}
+.link{
+ // color: rgb(129,132,149);
+  color: rgb(187,216,253);
+ // color: rgb(226,248,254);
+  text-decoration: none;
+}
+.caution{
+  color: rgb(255,254,122);
+  font-size: 28px;
+  font-weight: 800;
+  font-family: times new roman;
+  text-align: center;
+}
+.records{
+  margin: 5% 0% 5% -3%;
+  font-size: 15px;
+}
+ul.arrow-list li::marker {
+  content: "▶  ";    
+  font-size: 14px; 
+}
+.marquee{
+  height: 490px;
+}
+.requested{
+  color: rgb(254,166,72);
+}
+.rejected{
+  color: red;
+}</css>
+        <data_table>sp_instance</data_table>
+        <demo_data/>
+        <description/>
+        <docs/>
+        <field_list/>
+        <has_preview>false</has_preview>
+        <id/>
+        <internal>false</internal>
+        <link><![CDATA[function link(scope, element, attrs, controller) {
+  
+}]]></link>
+        <name>home_side_bar</name>
+        <option_schema/>
+        <public>false</public>
+        <roles/>
+        <script><![CDATA[(function() {
+  /* populate the 'data' object */
+  /* e.g., data.table = $sp.getValue('table'); */
+	
+var user = gs.getUserName();
+//gs.addInfoMessage(user);
+var arr = [];
+
+var gr = new GlideRecord("u_project_effort");
+gr.addQuery("sys_created_by",user);
+gr.addQuery("u_approval","IN","requested,rejected");
+gr.query();
+while(gr.next()){
+	var obj ={};
+	obj.name = gr.u_project_name.getDisplayValue();
+	obj.state = gr.u_approval.getDisplayValue();
+	obj.createdOn = gr.sys_created_on.getDisplayValue().split(' ')[0];
+	obj.sysId = gr.sys_id.toString();
+	obj.table = "u_project_effort";
+	obj.content = "project effort";
+	arr.push(obj);
+}
+
+var gl = new GlideRecord("u_employee_leave_tracker");
+gl.addQuery("sys_created_by",user);
+gl.addQuery("u_approval","IN","requested,rejected");
+gl.query();
+while(gl.next()){
+	var obj1 ={};
+	obj1.name = gl.u_type_of_leave.getDisplayValue();
+	obj1.state = gl.u_approval.getDisplayValue();
+	obj1.createdOn = gl.sys_created_on.getDisplayValue().split(' ')[0];
+	obj1.sysId = gl.sys_id.toString();
+	obj1.table = "u_employee_leave_tracker";
+	obj1.content = "leave applied for";
+	arr.push(obj1);
+}
+
+//gs.addInfoMessage(JSON.stringify(arr));
+	data.array = arr;
+
+})();]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>Treesa.Thomas</sys_created_by>
+        <sys_created_on>2025-05-21 10:47:55</sys_created_on>
+        <sys_id>2d35eb0783edea10a946f896feaad310</sys_id>
+        <sys_mod_count>131</sys_mod_count>
+        <sys_name>home_side_bar</sys_name>
+        <sys_package display_value="Zynder Tech" source="8d447286c3a3121052237405e4013105">8d447286c3a3121052237405e4013105</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Zynder Tech">8d447286c3a3121052237405e4013105</sys_scope>
+        <sys_update_name>sp_widget_2d35eb0783edea10a946f896feaad310</sys_update_name>
+        <sys_updated_by>Treesa.Thomas</sys_updated_by>
+        <sys_updated_on>2025-06-12 07:42:51</sys_updated_on>
+        <template><![CDATA[<div>
+  <!-- your widget template -->
+  <div class="main-div" ng-if="data.array.length > 0">
+    <h3 class="caution">
+      You have pending requests !!
+    </h3>
+
+
+    <div class="records">
+
+
+      <marquee class="marquee" direction="up" onmouseover="this.stop();" onmouseout="this.start();">
+        <ul class="arrow-list" ng-repeat="item in data.array">
+          <li>
+            Your {{item.content}} "{{item.name}}" submitted on {{item.createdOn}} is on  <span ng-if="item.state == 'Requested'" class="requested"><b>{{item.state}}</b></span> <span ng-if="item.state == 'Rejected'" class="rejected"><b>{{item.state}}</b></span> state. <br/> Click on the <a
+              class="link" target="_blank" href="?id=form&table={{item.table}}&sys_id={{item.sysId}}">link</a> to open the record.
+          </li> <br />
+        </ul>
+      </marquee>
+
+
+
+    </div>
+
+  </div>
+</div>]]></template>
+    </sp_widget>
+    <sys_es_latest_script action="INSERT_OR_UPDATE">
+        <id>2d35eb0783edea10a946f896feaad310</id>
+        <sys_created_by>Treesa.Thomas</sys_created_by>
+        <sys_created_on>2025-05-21 10:47:54</sys_created_on>
+        <sys_id>85552b0783edea10a946f896feaad398</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Treesa.Thomas</sys_updated_by>
+        <sys_updated_on>2025-05-21 10:47:54</sys_updated_on>
+        <table>sp_widget</table>
+        <use_es_latest>true</use_es_latest>
+    </sys_es_latest_script>
+</record_update>

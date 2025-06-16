@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_email">
+    <sys_script_email action="INSERT_OR_UPDATE">
+        <name>error.message.create.metadata</name>
+        <new_lines_to_html>false</new_lines_to_html>
+        <script><![CDATA[(function runMailScript( /* GlideRecord */ current, /* TemplatePrinter */ template,
+    /* Optional EmailOutbound */
+    email, /* Optional GlideRecord */ email_action,
+    /* Optional GlideRecord */
+    event) {
+
+    // Add your code here
+    try{
+		var obj = event.parm2;
+		var errorMsg = JSON.parse(obj);
+    var date = new GlideDateTime().getDate();
+	email.setSubject('Error in Metadata Creation on '+date);
+	email.setBody("Hi team,<br>An error has occurred during the processing of Metadata Creation.<br>Error Message: "+errorMsg.error+'<br>Table: '+errorMsg.table+ '<br>Record Number:'+errorMsg.number+'<br>Date: '+date);
+}catch(err){
+	gs.addErrorMessage(err.message);
+}
+})(current, template, email, email_action, event);]]></script>
+        <sys_class_name>sys_script_email</sys_class_name>
+        <sys_created_by>RD</sys_created_by>
+        <sys_created_on>2025-02-26 11:50:53</sys_created_on>
+        <sys_id>a11ff648c344621052237405e401315e</sys_id>
+        <sys_mod_count>14</sys_mod_count>
+        <sys_name>error.message.create.metadata</sys_name>
+        <sys_package display_value="Zynder Tech" source="8d447286c3a3121052237405e4013105">8d447286c3a3121052237405e4013105</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Zynder Tech">8d447286c3a3121052237405e4013105</sys_scope>
+        <sys_update_name>sys_script_email_a11ff648c344621052237405e401315e</sys_update_name>
+        <sys_updated_by>RD</sys_updated_by>
+        <sys_updated_on>2025-02-26 14:56:46</sys_updated_on>
+    </sys_script_email>
+    <sys_es_latest_script action="INSERT_OR_UPDATE">
+        <id>a11ff648c344621052237405e401315e</id>
+        <sys_created_by>RD</sys_created_by>
+        <sys_created_on>2025-02-26 11:50:52</sys_created_on>
+        <sys_id>e83e478cc384621052237405e401312d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>RD</sys_updated_by>
+        <sys_updated_on>2025-02-26 11:50:52</sys_updated_on>
+        <table>sys_script_email</table>
+        <use_es_latest>true</use_es_latest>
+    </sys_es_latest_script>
+</record_update>

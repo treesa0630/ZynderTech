@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_package_dependency_m2m">
+    <sys_package_dependency_m2m action="INSERT_OR_UPDATE">
+        <dependency display_value="Service Management Basics" source="com.snc.service">d9977bb8e19312105590bd68cbbecb40</dependency>
+        <min_version>1.0.0</min_version>
+        <sys_created_by>KR</sys_created_by>
+        <sys_created_on>2025-02-15 05:11:34</sys_created_on>
+        <sys_id>7f7bdde48301ea10a946f896feaad3ae</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_package display_value="Zynder Tech" source="8d447286c3a3121052237405e4013105">8d447286c3a3121052237405e4013105</sys_package>
+        <sys_updated_by>KR</sys_updated_by>
+        <sys_updated_on>2025-02-15 05:11:34</sys_updated_on>
+    </sys_package_dependency_m2m>
+</record_update>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_catalog">
+    <sc_cat_item_catalog action="INSERT_OR_UPDATE">
+        <sc_cat_item display_value="Choice Configuration">eb55d5cfc304221052237405e401314b</sc_cat_item>
+        <sc_catalog display_value="Service Catalog">e0d08b13c3330100c8b837659bba8fb4</sc_catalog>
+        <sys_class_name>sc_cat_item_catalog</sys_class_name>
+        <sys_created_by>RD</sys_created_by>
+        <sys_created_on>2025-03-07 11:34:04</sys_created_on>
+        <sys_id>9aa0218fc344221052237405e40131c1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Service Catalog.Add new Modules / Skills</sys_name>
+        <sys_package display_value="Zynder Tech" source="8d447286c3a3121052237405e4013105">8d447286c3a3121052237405e4013105</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Zynder Tech">8d447286c3a3121052237405e4013105</sys_scope>
+        <sys_update_name>sc_cat_item_catalog_9aa0218fc344221052237405e40131c1</sys_update_name>
+        <sys_updated_by>RD</sys_updated_by>
+        <sys_updated_on>2025-03-07 11:34:04</sys_updated_on>
+    </sc_cat_item_catalog>
+</record_update>

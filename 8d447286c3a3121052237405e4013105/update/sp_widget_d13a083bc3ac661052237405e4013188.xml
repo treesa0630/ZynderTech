@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_widget">
+    <sp_widget action="INSERT_OR_UPDATE">
+        <category>custom</category>
+        <client_script><![CDATA[api.controller=function($scope,$rootScope) {
+  /* widget controller */
+  var c = this;
+	$scope.setState = function(value,filter){
+		$rootScope.$broadcast('broadcast1',value,filter);
+		//alert("table name is: "+value);
+		
+	};
+};]]></client_script>
+        <controller_as>c</controller_as>
+        <css>.main-div{
+  border: 1px solid lightgrey;
+  padding: 3%;
+  margin-bottom: 85%;
+  border-radius: 5px;
+  
+  margin-top: 25%;
+  font-family: times new roman;
+  margin-left:-70%;
+  margin-right: 60%;
+  
+}
+h2{
+  
+  text-align: center;
+  font-weight: 800;
+  background: linear-gradient(90deg, #F26D00, #F2E600);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  /* Optional: for better browser support */
+  background-clip: text;
+  color: transparent;
+}
+.sub-div{
+  margin-top: 10%;
+}
+button{
+  background-color: #F5F5F5;
+  border: none;
+  margin-bottom: 8%;
+  width: 270px;
+  padding: 2% 0%;
+  font-weight: bold;
+  font-size:17px;
+}
+button:hover{
+  background-color: #FCDEBD;
+}
+button:focus {
+  border: 1px solid white; 
+  background-color: #F7B365 ;
+  outline:1px solid #f2e1d1;
+}</css>
+        <data_table>sp_instance</data_table>
+        <demo_data/>
+        <description/>
+        <docs/>
+        <field_list/>
+        <has_preview>true</has_preview>
+        <id>module_list</id>
+        <internal>false</internal>
+        <link><![CDATA[function link(scope, element, attrs, controller) {
+  
+}]]></link>
+        <name>Module List</name>
+        <option_schema/>
+        <public>false</public>
+        <roles/>
+        <script><![CDATA[(function() {
+  /* populate the 'data' object */
+  /* e.g., data.table = $sp.getValue('table'); */
+var u_name=gs.getUserDisplayName();
+data.name = u_name;
+	
+var gr=new GlideRecord("u_portal_modules");
+gr.addQuery("u_active","true");
+gr.query();
+var arr=[];
+while(gr.next()){
+	var obj={};
+
+	obj.name=gr.u_module_name.toString();
+	obj.tableName=gr.u_table.name.toString();
+	obj.active=gr.u_active.toString();
+	obj.role=gr.u_role.getDisplayValue();
+	obj.filter=gr.u_filter.getDisplayValue();
+	var obj2=JSON.stringify(obj);
+	arr.push(obj);
+}
+
+// gs.print("Before Removing "+arr);
+ var userId= gs.getUserID();
+var roleName="admin";
+
+var roleGR=new GlideRecord("sys_user_has_role");
+roleGR.addQuery("user",userId);
+roleGR.addQuery("role.name","IN",roleName);
+roleGR.query();
+if(roleGR.next()){
+	//gs.print(arr);
+	data.arrProjects = arr;
+}
+else{
+// gs.print("false");
+var arr2=[];
+for(var i=0;i<arr.length;i++){
+	//var parsedObj = JSON.parse(arr[i]);
+	if(arr[i].role!="admin"){
+		arr2.push(arr[i]);
+	}
+}
+data.arrProjects = arr2;
+	
+}
+	
+	
+})();
+]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>TT</sys_created_by>
+        <sys_created_on>2025-04-03 09:43:40</sys_created_on>
+        <sys_id>d13a083bc3ac661052237405e4013188</sys_id>
+        <sys_mod_count>316</sys_mod_count>
+        <sys_name>Module List</sys_name>
+        <sys_package display_value="Zynder Tech" source="8d447286c3a3121052237405e4013105">8d447286c3a3121052237405e4013105</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Zynder Tech">8d447286c3a3121052237405e4013105</sys_scope>
+        <sys_update_name>sp_widget_d13a083bc3ac661052237405e4013188</sys_update_name>
+        <sys_updated_by>Treesa.Thomas</sys_updated_by>
+        <sys_updated_on>2025-05-08 15:21:25</sys_updated_on>
+        <template><![CDATA[<div>
+  <!-- your widget template -->
+  <div class="main-div">
+    <h2>
+      MODULE LIST
+    </h2>
+    <div class="sub-div">
+      <div ng-repeat="module in data.arrProjects">
+        <button ng-click="setState(module.tableName, module.filter)">
+          {{module.name}}
+        </button>
+        <br>
+      </div>
+    </div>
+  </div>
+</div>]]></template>
+    </sp_widget>
+    <sys_es_latest_script action="INSERT_OR_UPDATE">
+        <id>d13a083bc3ac661052237405e4013188</id>
+        <sys_created_by>TT</sys_created_by>
+        <sys_created_on>2025-04-03 09:43:39</sys_created_on>
+        <sys_id>845ac4bbc3ac661052237405e401317a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>TT</sys_updated_by>
+        <sys_updated_on>2025-04-03 09:43:39</sys_updated_on>
+        <table>sp_widget</table>
+        <use_es_latest>true</use_es_latest>
+    </sys_es_latest_script>
+</record_update>

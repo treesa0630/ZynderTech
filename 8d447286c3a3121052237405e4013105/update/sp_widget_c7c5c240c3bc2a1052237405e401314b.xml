@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_widget">
+    <sp_widget action="INSERT_OR_UPDATE">
+        <category>custom</category>
+        <client_script><![CDATA[api.controller=function() {
+  /* widget controller */
+  var c = this;
+};]]></client_script>
+        <controller_as>c</controller_as>
+        <css>.footers{
+  width:100%;
+  height:200px;
+  color:white;
+  display:flex;
+  justify-content:space-around;
+  align-items:center;
+  padding-top:5%;
+}
+
+.footers ul li{
+  list-style:none;
+  font-size:14px;
+  font-weight:600;
+  padding-bottom:10px;
+  
+}
+.head{
+  font-size:22px !important;
+  text-decoration: underline;
+  
+  font-weight:bold !important;
+  color:white;
+  padding-bottom:20px;
+
+}
+.rnd{
+  display: flex;
+  justify-content: center ;
+  margin-bottom: 5%;
+}
+.rounds{
+    height: 50px;
+    width: 55px;
+    background-color: var(--y);
+    box-shadow: 0px 0px 7px 0px grey;
+    border-radius: 50px;
+  margin-right: 2%;
+}
+.rounds i{
+    overflow-y: hidden;
+}
+.rounds:hover{
+    animation: shake .2s ;
+}
+.img{
+  height:48px;
+  width:53px;
+}
+.img-box{
+  justify-content: center;
+}
+@keyframes shake {
+    0%{
+        transform: rotate(20deg);
+    }
+    50%{
+        transform: rotate(-20deg);
+    }
+    100%{
+        transform: rotate(20deg);
+    }
+}</css>
+        <data_table>sp_instance</data_table>
+        <demo_data/>
+        <description/>
+        <docs/>
+        <field_list/>
+        <has_preview>false</has_preview>
+        <id>footer</id>
+        <internal>false</internal>
+        <link><![CDATA[function link(scope, element, attrs, controller) {
+  
+}]]></link>
+        <name>Footer</name>
+        <option_schema/>
+        <public>true</public>
+        <roles/>
+        <script><![CDATA[(function() {
+  /* populate the 'data' object */
+  /* e.g., data.table = $sp.getValue('table'); */
+
+})();]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>AP</sys_created_by>
+        <sys_created_on>2025-04-04 13:21:55</sys_created_on>
+        <sys_id>c7c5c240c3bc2a1052237405e401314b</sys_id>
+        <sys_mod_count>103</sys_mod_count>
+        <sys_name>Footer</sys_name>
+        <sys_package display_value="Zynder Tech" source="8d447286c3a3121052237405e4013105">8d447286c3a3121052237405e4013105</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Zynder Tech">8d447286c3a3121052237405e4013105</sys_scope>
+        <sys_update_name>sp_widget_c7c5c240c3bc2a1052237405e401314b</sys_update_name>
+        <sys_updated_by>Sreerag.Anchery</sys_updated_by>
+        <sys_updated_on>2025-05-06 07:10:33</sys_updated_on>
+        <template><![CDATA[<div class="main-foo">
+    <!-- your widget template -->
+    <div class="footers">
+
+        <ul>
+            <li class="head">Services</li>
+            <li>Access Requests</li>
+            <li>Facilities Request</li>
+            <li>New Hire Questionaire</li>
+        </ul>
+
+
+        <ul>
+            <li >&nbsp;</li>
+            <li>Collaboration Tools</li>
+            <li>IT Staff Requests</li>
+            <li>Hardware</li>
+        </ul>
+
+        <ul>
+            <li >&nbsp;</li>
+            <li>Email,Fax ,Tools</li>
+            <li>Device Requests</li>
+            <li>Software</li>
+        </ul>
+
+        <ul>
+            <li class="head">Quick Lines</li>
+            <li>Help Center</li>
+            <li>My Tickets</li>
+            <li>My Approvals</li>
+        </ul>
+
+    </div>
+
+    <div class="rnd-box">
+        <div class="rnd">
+            <div class="rounds mx-4"><a href="https://mail.google.com/mail/?view=cm&fs=1&to=zyndertechtest@gmail.com">
+                    <div class="img-box">
+                        <img class="img" src="zynderEmail Icon.png" alt="description" />
+                    </div>
+                </a></div>
+            <div class="rounds mx-4"><a href="https://www.linkedin.com/company/zynder-tech/" target="_blank">
+                    <div class="img-box">
+                        <img class="img" src="zynderLinkedIn Icon.png" alt="description" />
+                    </div>
+                </a></div>
+            <div class="rounds mx-4"><a href="tel:+917025377758" target="_blank">
+                    <div class="img-box">
+                        <img class="img" src="zynderphone.png" alt="description" />
+                    </div>
+                </a></div>
+        </div>
+    </div>
+
+</div>]]></template>
+    </sp_widget>
+    <sys_es_latest_script action="INSERT_OR_UPDATE">
+        <id>c7c5c240c3bc2a1052237405e401314b</id>
+        <sys_created_by>AP</sys_created_by>
+        <sys_created_on>2025-04-04 13:21:54</sys_created_on>
+        <sys_id>3ad50640c3bc2a1052237405e4013138</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>AP</sys_updated_by>
+        <sys_updated_on>2025-04-04 13:21:54</sys_updated_on>
+        <table>sp_widget</table>
+        <use_es_latest>true</use_es_latest>
+    </sys_es_latest_script>
+</record_update>

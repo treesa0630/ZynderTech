@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_properties">
+    <sys_properties action="INSERT_OR_UPDATE">
+        <choices/>
+        <description>Application ID of Zynder Tech</description>
+        <ignore_cache>true</ignore_cache>
+        <is_private>false</is_private>
+        <name>REST.git.push.appIDZynderTech</name>
+        <read_roles/>
+        <suffix/>
+        <sys_class_name>sys_properties</sys_class_name>
+        <sys_created_by>AM</sys_created_by>
+        <sys_created_on>2025-02-17 12:26:01</sys_created_on>
+        <sys_id>f8bffc11c37b121052237405e40131af</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>REST.git.push.appIDZynderTech</sys_name>
+        <sys_package display_value="Zynder Tech" source="8d447286c3a3121052237405e4013105">8d447286c3a3121052237405e4013105</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Zynder Tech">8d447286c3a3121052237405e4013105</sys_scope>
+        <sys_update_name>sys_properties_f8bffc11c37b121052237405e40131af</sys_update_name>
+        <sys_updated_by>Sreerag.Anchery</sys_updated_by>
+        <sys_updated_on>2025-06-06 10:49:51</sys_updated_on>
+        <type>string</type>
+        <value>8d447286c3a3121052237405e4013105</value>
+        <write_roles/>
+    </sys_properties>
+    <sys_translated_text action="delete_multiple" query="documentkey=f8bffc11c37b121052237405e40131af"/>
+</record_update>

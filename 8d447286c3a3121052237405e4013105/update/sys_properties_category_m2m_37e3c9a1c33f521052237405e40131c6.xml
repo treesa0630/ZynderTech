@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_properties_category_m2m">
+    <sys_properties_category_m2m action="INSERT_OR_UPDATE">
+        <category display_value="Zynder Properties">605fb42dc3fb521052237405e40131e4</category>
+        <order>300</order>
+        <property display_value="project_efforts_sysid.group" name="project_efforts_sysid.group">5dc822dac3e7521052237405e4013106</property>
+        <sys_class_name>sys_properties_category_m2m</sys_class_name>
+        <sys_created_by>KR</sys_created_by>
+        <sys_created_on>2025-02-18 07:21:59</sys_created_on>
+        <sys_id>37e3c9a1c33f521052237405e40131c6</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>project_efforts_sysid.group.Zynder Properties</sys_name>
+        <sys_package display_value="Zynder Tech" source="8d447286c3a3121052237405e4013105">8d447286c3a3121052237405e4013105</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Zynder Tech">8d447286c3a3121052237405e4013105</sys_scope>
+        <sys_update_name>sys_properties_category_m2m_37e3c9a1c33f521052237405e40131c6</sys_update_name>
+        <sys_updated_by>KR</sys_updated_by>
+        <sys_updated_on>2025-02-26 07:34:00</sys_updated_on>
+    </sys_properties_category_m2m>
+</record_update>

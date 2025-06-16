@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_embedded_help_role">
+    <sys_embedded_help_role action="INSERT_OR_UPDATE">
+        <order>1000</order>
+        <role display_value="Candidate" name="Candidate">c7b47ac6c3a3121052237405e4013199</role>
+        <sys_class_name>sys_embedded_help_role</sys_class_name>
+        <sys_created_by>AV</sys_created_by>
+        <sys_created_on>2025-02-07 18:36:05</sys_created_on>
+        <sys_id>4fb47ac6c3a3121052237405e401319a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>c7b47ac6c3a3121052237405e4013199</sys_name>
+        <sys_package display_value="Zynder Tech" source="8d447286c3a3121052237405e4013105">8d447286c3a3121052237405e4013105</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Zynder Tech">8d447286c3a3121052237405e4013105</sys_scope>
+        <sys_update_name>sys_embedded_help_role_4fb47ac6c3a3121052237405e401319a</sys_update_name>
+        <sys_updated_by>AV</sys_updated_by>
+        <sys_updated_on>2025-02-07 18:36:05</sys_updated_on>
+    </sys_embedded_help_role>
+</record_update>

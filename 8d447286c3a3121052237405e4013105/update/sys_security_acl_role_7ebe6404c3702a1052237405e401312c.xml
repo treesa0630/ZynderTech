@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role">
+    <sys_security_acl_role action="INSERT_OR_UPDATE">
+        <sys_class_name>sys_security_acl_role</sys_class_name>
+        <sys_created_by>KR</sys_created_by>
+        <sys_created_on>2025-04-04 07:01:42</sys_created_on>
+        <sys_id>7ebe6404c3702a1052237405e401312c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>u_employee_leave_information.Developer</sys_name>
+        <sys_package display_value="Zynder Tech" source="8d447286c3a3121052237405e4013105">8d447286c3a3121052237405e4013105</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Zynder Tech">8d447286c3a3121052237405e4013105</sys_scope>
+        <sys_security_acl display_value="u_employee_leave_information">3c84c15ac36f121052237405e401315a</sys_security_acl>
+        <sys_update_name>sys_security_acl_role_7ebe6404c3702a1052237405e401312c</sys_update_name>
+        <sys_updated_by>KR</sys_updated_by>
+        <sys_updated_on>2025-04-04 07:01:42</sys_updated_on>
+        <sys_user_role display_value="Developer" name="Developer">43b4720ac3a3121052237405e401312e</sys_user_role>
+    </sys_security_acl_role>
+</record_update>

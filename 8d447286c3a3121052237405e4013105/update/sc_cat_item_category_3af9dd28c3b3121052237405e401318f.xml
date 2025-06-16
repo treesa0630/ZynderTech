@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_category">
+    <sc_cat_item_category action="INSERT_OR_UPDATE">
+        <sc_cat_item display_value="Submit your appraisal for manager review">b56a852cc333121052237405e401314e</sc_cat_item>
+        <sc_category display_value="Services">109f0438c6112276003ae8ac13e7009d</sc_category>
+        <sys_class_name>sc_cat_item_category</sys_class_name>
+        <sys_created_by>SP</sys_created_by>
+        <sys_created_on>2025-02-15 06:24:23</sys_created_on>
+        <sys_id>3af9dd28c3b3121052237405e401318f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Services.Appraisal Record Producer</sys_name>
+        <sys_package display_value="Zynder Tech" source="8d447286c3a3121052237405e4013105">8d447286c3a3121052237405e4013105</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Zynder Tech">8d447286c3a3121052237405e4013105</sys_scope>
+        <sys_update_name>sc_cat_item_category_3af9dd28c3b3121052237405e401318f</sys_update_name>
+        <sys_updated_by>SP</sys_updated_by>
+        <sys_updated_on>2025-02-15 06:24:23</sys_updated_on>
+    </sc_cat_item_category>
+</record_update>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_policy_action">
+    <sys_ui_policy_action action="INSERT_OR_UPDATE">
+        <cleared>false</cleared>
+        <disabled>ignore</disabled>
+        <field>u_other</field>
+        <field_message/>
+        <field_message_type>none</field_message_type>
+        <mandatory>true</mandatory>
+        <sys_class_name>sys_ui_policy_action</sys_class_name>
+        <sys_created_by>Sreerag.Anchery</sys_created_by>
+        <sys_created_on>2025-04-22 14:00:31</sys_created_on>
+        <sys_id>981bf27583056a50a946f896feaad373</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>u_other</sys_name>
+        <sys_package display_value="Zynder Tech" source="8d447286c3a3121052237405e4013105">8d447286c3a3121052237405e4013105</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Zynder Tech">8d447286c3a3121052237405e4013105</sys_scope>
+        <sys_update_name>sys_ui_policy_action_981bf27583056a50a946f896feaad373</sys_update_name>
+        <sys_updated_by>Sreerag.Anchery</sys_updated_by>
+        <sys_updated_on>2025-04-22 14:00:31</sys_updated_on>
+        <table>u_project_effort</table>
+        <ui_policy display_value="Hide Non project work">0f9a7a3583056a50a946f896feaad326</ui_policy>
+        <value/>
+        <value_action>ignore</value_action>
+        <visible>true</visible>
+    </sys_ui_policy_action>
+    <sys_translated_text action="delete_multiple" query="documentkey=981bf27583056a50a946f896feaad373"/>
+</record_update>

@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_widget">
+    <sp_widget action="INSERT_OR_UPDATE">
+        <category>custom</category>
+        <client_script><![CDATA[api.controller=function() {
+  /* widget controller */
+  var c = this;
+};]]></client_script>
+        <controller_as>c</controller_as>
+        <css>.box{
+ width:100%;
+ height:400px;
+ margin:0 auto;
+ display:flex;
+ justify-content:space-around;
+ padding:20px;
+ border-radius:6px;
+}
+.dot{
+  color: #FAF3E0;
+}
+
+.sp1{
+  margin-left: 40px;
+  padding-top:10px;
+  font-size:20px;
+  padding-bottom:20px;
+  font-family: times new roman;
+  color: white;
+}
+
+
+.h-img{
+ width:100%;
+ height:100%;
+ border-radius:10px;
+  
+}
+
+.s-box1{
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+}
+.s-box2{
+  width:50%;
+}
+.username{
+  font-size:50px;
+  font-weight:800;
+  font-family: times new roman;
+  padding-left: 33px;
+  display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+    margin: 0 auto;
+    color: white;
+    animation: typing 2s steps(40, end), blink-caret 0.75s step-end infinite;
+}
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+@keyframes blink-caret {
+    from, to {
+        border-color: transparent;
+    }
+    50% {
+        border-color: transparent;
+    }
+}</css>
+        <data_table>sp_instance</data_table>
+        <demo_data/>
+        <description/>
+        <docs/>
+        <field_list/>
+        <has_preview>true</has_preview>
+        <id>hero</id>
+        <internal>false</internal>
+        <link><![CDATA[function link(scope, element, attrs, controller) {
+  
+}]]></link>
+        <name>Main Section</name>
+        <option_schema/>
+        <public>false</public>
+        <roles/>
+        <script><![CDATA[(function() {
+  /* populate the 'data' object */
+  /* e.g., data.table = $sp.getValue('table'); */
+	
+var u_name=gs.getUserDisplayName();
+
+data.fname=u_name.split(" ")[0];
+
+})();
+]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>AP</sys_created_by>
+        <sys_created_on>2025-04-01 11:43:56</sys_created_on>
+        <sys_id>4112d24bc364221052237405e401315a</sys_id>
+        <sys_mod_count>101</sys_mod_count>
+        <sys_name>Main Section</sys_name>
+        <sys_package display_value="Zynder Tech" source="8d447286c3a3121052237405e4013105">8d447286c3a3121052237405e4013105</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Zynder Tech">8d447286c3a3121052237405e4013105</sys_scope>
+        <sys_update_name>sp_widget_4112d24bc364221052237405e401315a</sys_update_name>
+        <sys_updated_by>Treesa.Thomas</sys_updated_by>
+        <sys_updated_on>2025-06-06 11:52:12</sys_updated_on>
+        <template><![CDATA[<div>
+<!-- your widget template -->
+  <div class="box">
+    <div class="s-box1">
+      <h2 class="username">
+        Hey, {{data.fname}} <span class="dot"></span>
+      </h2>
+      <p class="sp1">
+        Zynder Tech Private Limited
+      </p>
+    </div>
+    
+    <div class="s-box2">
+      <img src="zynderoffice.jpg" class="h-img"/> 
+    </div> 
+
+    
+  </div>
+</div>]]></template>
+    </sp_widget>
+    <sys_es_latest_script action="INSERT_OR_UPDATE">
+        <id>4112d24bc364221052237405e401315a</id>
+        <sys_created_by>AP</sys_created_by>
+        <sys_created_on>2025-04-01 11:43:55</sys_created_on>
+        <sys_id>92a21e0bc364221052237405e40131ac</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>AP</sys_updated_by>
+        <sys_updated_on>2025-04-01 11:43:55</sys_updated_on>
+        <table>sp_widget</table>
+        <use_es_latest>true</use_es_latest>
+    </sys_es_latest_script>
+</record_update>

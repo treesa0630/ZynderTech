@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="catalog_ui_policy_action">
+    <catalog_ui_policy_action action="INSERT_OR_UPDATE">
+        <catalog_item display_value="Leave Application old catalog">bab34dd6c36f121052237405e40131c7</catalog_item>
+        <catalog_variable>IO:4c2c0996c3af121052237405e40131f7</catalog_variable>
+        <cleared>false</cleared>
+        <disabled>ignore</disabled>
+        <field/>
+        <field_message/>
+        <field_message_type>none</field_message_type>
+        <mandatory>ignore</mandatory>
+        <order>100</order>
+        <sys_class_name>catalog_ui_policy_action</sys_class_name>
+        <sys_created_by>AP</sys_created_by>
+        <sys_created_on>2025-02-10 10:46:15</sys_created_on>
+        <sys_id>5cc5eccbc3a7161052237405e40131d2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>justify_leave</sys_name>
+        <sys_package display_value="Zynder Tech" source="8d447286c3a3121052237405e4013105">8d447286c3a3121052237405e4013105</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Zynder Tech">8d447286c3a3121052237405e4013105</sys_scope>
+        <sys_update_name>catalog_ui_policy_action_5cc5eccbc3a7161052237405e40131d2</sys_update_name>
+        <sys_updated_by>AP</sys_updated_by>
+        <sys_updated_on>2025-02-10 10:46:15</sys_updated_on>
+        <table/>
+        <ui_policy display_value="To  hide Justification field in Catalog  Script">722560cbc3a7161052237405e4013192</ui_policy>
+        <value/>
+        <value_action>ignore</value_action>
+        <variable>justify_leave</variable>
+        <variable_set/>
+        <visible>false</visible>
+    </catalog_ui_policy_action>
+    <sys_translated_text action="delete_multiple" query="documentkey=5cc5eccbc3a7161052237405e40131d2"/>
+</record_update>

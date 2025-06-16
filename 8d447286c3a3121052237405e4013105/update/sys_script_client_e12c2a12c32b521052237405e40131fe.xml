@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <applies_extended>false</applies_extended>
+        <condition/>
+        <description/>
+        <field>u_approval</field>
+        <global>true</global>
+        <isolate_script>true</isolate_script>
+        <messages/>
+        <name>Readonly if Approved</name>
+        <order/>
+        <script><![CDATA[function onChange(control, oldValue, newValue, isLoading, isTemplate) {
+   if (isLoading || newValue === '') {
+	 if( oldValue == 'Approved'){
+	var fields = g_form.getEditableFields();
+    for (var x = 0; x < fields.length; x++) {
+    g_form.setReadOnly(fields[x], true);
+	}
+
+   }
+   else{
+	var fields = g_form.getEditableFields();
+	for (var x = 0; x < fields.length; x++) {
+    g_form.setReadOnly(fields[x], false);
+}
+
+   }
+
+      return;
+   }
+
+   //Type appropriate comment here, and begin script below
+   if( newValue == 'Approved'){
+	var fields = g_form.getEditableFields();
+    for (var x = 0; x < fields.length; x++) {
+    g_form.setReadOnly(fields[x], true);
+	}
+
+   }
+   else{
+	var fields = g_form.getEditableFields();
+	for (var x = 0; x < fields.length; x++) {
+    g_form.setReadOnly(fields[x], false);
+}
+
+   }
+   
+}]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>AM</sys_created_by>
+        <sys_created_on>2025-02-08 12:39:33</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>e12c2a12c32b521052237405e40131fe</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>Readonly if Approved</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Zynder Tech" source="8d447286c3a3121052237405e4013105">8d447286c3a3121052237405e4013105</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Zynder Tech">8d447286c3a3121052237405e4013105</sys_scope>
+        <sys_update_name>sys_script_client_e12c2a12c32b521052237405e40131fe</sys_update_name>
+        <sys_updated_by>RD</sys_updated_by>
+        <sys_updated_on>2025-04-05 10:19:42</sys_updated_on>
+        <table>u_project_effort</table>
+        <type>onChange</type>
+        <ui_type>10</ui_type>
+        <view/>
+    </sys_script_client>
+</record_update>

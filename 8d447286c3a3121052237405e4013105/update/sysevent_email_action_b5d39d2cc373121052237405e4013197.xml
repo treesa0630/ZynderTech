@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sysevent_email_action">
+    <sysevent_email_action action="INSERT_OR_UPDATE">
+        <action_insert>true</action_insert>
+        <action_update>true</action_update>
+        <active>true</active>
+        <advanced_condition/>
+        <affected_field_on_event/>
+        <category display_value="Uncategorized" name="Uncategorized">c97d83137f4432005f58108c3ffa917a</category>
+        <collection>u_csr</collection>
+        <condition table="u_csr">u_action_statusCHANGESTOsubmitted^EQ<item display_value="Submitted" endquery="false" field="u_action_status" goto="false" newquery="false" operator="CHANGESTO" or="false" value="submitted"/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </condition>
+        <content_type>text/html</content_type>
+        <default_interval/>
+        <description/>
+        <digest_from/>
+        <digest_html/>
+        <digest_reply_to/>
+        <digest_separator_html><![CDATA[<p>&nbsp;</p>
+<hr>
+<p>&nbsp;</p>]]></digest_separator_html>
+        <digest_separator_text><![CDATA[\n--------------------------------------------------------------------------------\n]]></digest_separator_text>
+        <digest_subject/>
+        <digest_template/>
+        <digest_text/>
+        <digestable>false</digestable>
+        <enable_dynamic_translation>false</enable_dynamic_translation>
+        <event_name>activate.life.cycle.migration</event_name>
+        <event_parm_1>false</event_parm_1>
+        <event_parm_2>false</event_parm_2>
+        <exclude_delegates>false</exclude_delegates>
+        <force_delivery>false</force_delivery>
+        <from/>
+        <generation_type>engine</generation_type>
+        <importance/>
+        <include_attachments>false</include_attachments>
+        <item>event.parm1</item>
+        <item_table/>
+        <mandatory>false</mandatory>
+        <message/>
+        <message_html><![CDATA[<p><span style="font-size: 12pt;">Hi </span></p>
+<p><span style="font-size: 12pt;"><span style="font-size: 12pt; background-color: rgb(var(--sn-tinymce_content-background,var(--now-form-field--background-color,var(--now-color_background--primary,var(--now-color--neutral-0,255,255,255))))); color: rgb(var(--sn-tinymce_content-text,var(--now-form-field--color,var(--now-color_text--primary,var(--now-color--neutral-18,22,27,28)))));">We would like to inform you that </span>${u_employee.name} has&nbsp;</span><span style="font-size: 12pt; background-color: rgb(var(--sn-tinymce_content-background,var(--now-form-field--background-color,var(--now-color_background--primary,var(--now-color--neutral-0,255,255,255))))); color: rgb(var(--sn-tinymce_content-text,var(--now-form-field--color,var(--now-color_text--primary,var(--now-color--neutral-18,22,27,28)))));">submitted a CSR .</span></p>
+<p><span style="font-size: 12pt;">You can view the CSR <a href="/u_csr.do?sys_id=${current.sys_id}&amp;sysparm_record_target=u_csr&amp;sysparm_record_row=1&amp;sysparm_record_rows=1&amp;sysparm_record_list=">here</a></span></p>
+<p><span style="font-size: 12pt;">Please review the CSR at your earliest convenience. </span></p>
+<p><span style="font-size: 12pt;">Regards,</span></p>
+<p><span style="font-size: 12pt;">Zynder Tech</span></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>]]></message_html>
+        <message_list/>
+        <message_text/>
+        <name>To  Manager Based On CSR</name>
+        <omit_watermark>false</omit_watermark>
+        <order>100</order>
+        <push_message_only>false</push_message_only>
+        <recipient_fields/>
+        <recipient_groups name="Managers">a8749bfbc3b3121052237405e4013137</recipient_groups>
+        <recipient_users/>
+        <reply_to/>
+        <send_self>true</send_self>
+        <sms_alternate/>
+        <style/>
+        <subject> ${u_employee.name} has submitted a CSR</subject>
+        <subscribable>false</subscribable>
+        <sys_class_name>sysevent_email_action</sys_class_name>
+        <sys_created_by>KR</sys_created_by>
+        <sys_created_on>2025-02-15 06:14:18</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>b5d39d2cc373121052237405e4013197</sys_id>
+        <sys_mod_count>28</sys_mod_count>
+        <sys_name>To  Manager Based On CSR</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Zynder Tech" source="8d447286c3a3121052237405e4013105">8d447286c3a3121052237405e4013105</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Zynder Tech">8d447286c3a3121052237405e4013105</sys_scope>
+        <sys_update_name>sysevent_email_action_b5d39d2cc373121052237405e4013197</sys_update_name>
+        <sys_updated_by>AP</sys_updated_by>
+        <sys_updated_on>2025-02-26 14:51:57</sys_updated_on>
+        <sys_version>2</sys_version>
+        <template display_value="Zynder-Tech Email notification template">1fa9849dc337121052237405e4013159</template>
+        <type>email</type>
+        <weight>0</weight>
+    </sysevent_email_action>
+</record_update>

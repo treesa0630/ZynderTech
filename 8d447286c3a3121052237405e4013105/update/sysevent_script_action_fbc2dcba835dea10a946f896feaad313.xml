@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sysevent_script_action">
+    <sysevent_script_action action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <condition_script/>
+        <description/>
+        <event_name>delete.metadata.records</event_name>
+        <name>delete metadata records</name>
+        <order>100</order>
+        <script><![CDATA[var sysId = event.parm1.toString();
+var tableName = event.parm2.toString();
+
+gs.log('metadata sysID : ' + sysId);
+gs.log('metadata Tablename : ' + tableName);
+
+var grAttach = new GlideRecord('sys_attachment');
+grAttach.addQuery('table_sys_id',sysId);
+grAttach.query();
+if (grAttach.next()){
+	var grAttachDoc = new GlideRecord('sys_attachment_doc');
+	grAttachDoc.addQuery('sys_attachment.sys_id',grAttach.sys_id);
+	while (grAttachDoc.next()){
+		grAttachDoc.deleteRecord();
+	}
+	grAttach.deleteRecord();
+}
+
+var grlink = new GlideRecord('sys_metadata_link');
+grlink.addQuery('documentkey', sysId);
+grlink.addQuery('tablename', tableName);
+grlink.addQuery('sys_class_name', 'sys_metadata_link');
+grlink.query();
+var n = grlink.getRowCount();
+
+gs.log('rowcount 1 ' + n);
+if (grlink.next()) {
+    var recname = grlink.sys_name.toString();
+    gs.log('grLink record name is ' + recname);
+    var gr = new GlideRecord('sys_metadata');
+    gr.addQuery('sys_id', grlink.sys_id);
+    gr.addQuery('sys_class_name', 'sys_metadata_link');
+    gr.query();
+    var num = gr.getRowCount();
+    gs.log('rowcount 2 ' + num);
+
+    if (gr.next()) {
+        gs.log("Inside IF ");
+        gr.deleteRecord();
+        gs.log("After gr.delete");
+    }
+    grlink.deleteRecord();
+    gs.log("After grlink.delete");
+
+    // if (grlink.deleteRecord() == null) {
+    //     var msg2 = grlink.getLastErrorMessage();
+    //     gs.log('Metadata error : ' + msg2 + '. Error in deleting ' + sysId + ' of table : ' + tableName);
+    // }
+}]]></script>
+        <synchronous>false</synchronous>
+        <sys_class_name>sysevent_script_action</sys_class_name>
+        <sys_created_by>Krishna.Raj</sys_created_by>
+        <sys_created_on>2025-05-07 14:36:09</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>fbc2dcba835dea10a946f896feaad313</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>delete metadata records</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Zynder Tech" source="8d447286c3a3121052237405e4013105">8d447286c3a3121052237405e4013105</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Zynder Tech">8d447286c3a3121052237405e4013105</sys_scope>
+        <sys_update_name>sysevent_script_action_fbc2dcba835dea10a946f896feaad313</sys_update_name>
+        <sys_updated_by>Sreerag.Anchery</sys_updated_by>
+        <sys_updated_on>2025-05-20 15:03:03</sys_updated_on>
+    </sysevent_script_action>
+    <sys_es_latest_script action="INSERT_OR_UPDATE">
+        <id>fbc2dcba835dea10a946f896feaad313</id>
+        <sys_created_by>Krishna.Raj</sys_created_by>
+        <sys_created_on>2025-05-07 14:36:09</sys_created_on>
+        <sys_id>4c53dcfa835dea10a946f896feaad300</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Krishna.Raj</sys_updated_by>
+        <sys_updated_on>2025-05-07 14:36:09</sys_updated_on>
+        <table>sysevent_script_action</table>
+        <use_es_latest>true</use_es_latest>
+    </sys_es_latest_script>
+</record_update>

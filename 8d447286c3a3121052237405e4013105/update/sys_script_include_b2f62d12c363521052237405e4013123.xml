@@ -1,0 +1,437 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <active>true</active>
+        <api_name>global.ZynderTechAjaxUtils</api_name>
+        <caller_access/>
+        <client_callable>true</client_callable>
+        <description/>
+        <mobile_callable>false</mobile_callable>
+        <name>ZynderTechAjaxUtils</name>
+        <sandbox_callable>false</sandbox_callable>
+        <script><![CDATA[var ZynderTechAjaxUtils = Class.create();
+ZynderTechAjaxUtils.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
+
+    // Function to compare two dates, developed by Sreerag
+
+    projectEfforts_dateValidation: function() {
+        var start_time = this.getParameter('start_time');
+        var end_time = this.getParameter('end_time');
+        var resourse = this.getParameter('resourse');
+
+        var gd1 = GlideDateTime(start_time);
+        var gd_start_time = gd1.getNumericValue(); // Converting datetime type to a numeric value
+        var startTime = parseInt(gd_start_time);
+        var startType = typeof(startTime);
+
+        var gd2 = GlideDateTime(end_time);
+        var gd_end_time = gd2.getNumericValue();
+        var endTime = parseInt(gd_end_time);
+
+        var start_date_str = start_time.split(' '); // splitting date time based on space(' ').
+        var start_date = start_date_str[0]; // Taking only date from  date time field
+
+
+
+
+
+        var end_date_str = end_time.split(' '); // splitting date time based on space(' ').
+        var end_date = end_date_str[0]; // Taking only date from  date time field
+
+        var objj = {};
+
+        var gr = new GlideRecord('u_project_effort'); // Gliderecord project effort
+        gr.addEncodedQuery("u_dateON" + start_date + "@javascript:gs.dateGenerate('" + start_date + "','start')@javascript:gs.dateGenerate('" + start_date + "','end')^u_resourse.sys_id=" + resourse); // condition - date is start_date && resourse is resourse's sys id.
+
+        // u_dateON2025-03-18@javascript:gs.dateGenerate('2025-03-18','start')@javascript:gs.dateGenerate('2025-03-18','end')
+
+        gr.query();
+        if (gr.next()) {
+            var qry = gr.getEncodedQuery();
+            objj['pro_effrt_exist'] = "true";
+            // objj['qry'] = qry.toString();
+            // objj['start_date'] = start_date.toString();
+        } else {
+            objj['pro_effrt_exist'] = "false";
+            // objj['qry'] = qry.toString();
+            // objj['start_date'] = start_date.toString();
+        }
+
+        if (startTime < endTime) {
+            objj['start_end_time'] = "true";
+        } else {
+            objj['start_end_time'] = "false";
+        }
+
+
+
+        var leaveApplied = new GlideRecord('u_employee_leave_tracker');
+        leaveApplied.addQuery("u_employee_name.sys_id", resourse);
+        leaveApplied.addQuery("u_approval", "approved");
+        leaveApplied.addQuery("u_start_date<=" + start_date + "^u_end_date>=" + start_date);
+        leaveApplied.setLimit(1);
+        leaveApplied.query();
+        while (leaveApplied.next()) {
+            objj['leave_date'] = 'true';
+        }
+
+        var obj = JSON.stringify(objj);
+        return obj;
+
+        // var obj1 = {
+        //     'start Time': startDate.toString(),
+        //     'end Time': endDate.toString()
+
+        // };
+
+        // var obj2 = JSON.stringify(obj1);
+        // return obj2;
+
+        // var obj1 = {
+        //     // 'start time': start_time,
+        //     // 'end time': end_time,
+        //     // 'gd start time': gd_start_time,
+        //     // 'gd end time': gd_end_time,
+        //     // 'start Time': startTime,
+        //     // 'end Time': endTime,
+        //     // 'start Type': startType
+
+        // };
+
+
+
+
+    },
+
+
+
+    // Function to calculate difference of dates in days, developed by Alan
+
+    // leave_dateValidation: function() {
+    //     var start = this.getParameter('start');
+    //     var end = this.getParameter('end');
+
+
+    //     var gdStart = new GlideDate();
+    //     gdStart.setValue(start);
+    //     var startDate = gdStart.getNumericValue(); // Converting datetime type to a numeric value
+
+    //     var gdEnd = new GlideDate();
+    //     gdEnd.setValue(end);
+    //     var endDate = gdEnd.getNumericValue();
+
+    //     // Calculate the difference in days
+    //     var daysOff = (endDate - startDate) / (1000 * 60 * 60 * 24);
+
+
+    //     return daysOff;
+
+    // },
+
+
+    // Function to get if the user requested leave, developed by Sreerag
+
+    leave_requested_users: function() {
+        var empID = this.getParameter('userId');
+        // return empID;
+        // var gruser = new GlideRecord("sys_user");
+        // gruser.addQuery("sys_id", empID);
+        // gruser.query();
+        // if (gruser.next()) {
+        //     var userName = gruser.user_name;
+        //     return userName;
+        var gremp = new GlideRecord("u_employee_leave_tracker");
+        gremp.addQuery("u_employee_name", empID);
+        gremp.addQuery("u_approval", "requested");
+        gremp.query();
+        gremp.setLimit(1);
+        if (gremp._next()) {
+            return 'false';
+        } else {
+            return 'true';
+        }
+
+    },
+
+
+
+    // Function to validate 3 months in appraisal form, developed by Treesa
+
+    dateDifference: function() {
+        var start_day = this.getParameter('start_time');
+        var end_day = this.getParameter('end_time');
+
+        var starting_date = new GlideDate();
+        starting_date.setValue(start_day);
+        var startDate = starting_date.getNumericValue();
+
+        var ending_date = new GlideDate();
+        ending_date.setValue(end_day);
+        var endDate = ending_date.getNumericValue();
+
+        var days = (endDate - startDate) / (1000 * 60 * 60 * 24); // Checking the date difference is in 3 months
+        if (days < 84 || days > 92) {
+            return 'false';
+        } else {
+            return 'true';
+        }
+    },
+
+
+    // Function to get the leave balances, developed by Alan
+
+    leaveEarned: function() {
+        var user = this.getParameter("user");
+        var gr = new GlideRecord("u_employee_leave_information");
+        gr.addQuery("u_employee.sys_id", user);
+        gr.query();
+        if (gr.next()) {
+            return gr.u_leave_balances;
+        }
+
+
+    },
+
+    // Function to claculate differences in dates , developed By Athul
+
+    totalDays: function() {
+
+        var startDate = this.getParameter("startDate").toString();
+        var endDate = this.getParameter("endDate").toString();
+        // var weekOffs = this.totalLeave();
+        var holidays = this.holidaysCount(startDate, endDate);
+        var weekDays = this.daysOfleave(startDate, endDate);
+        var wrkDayCount = this.workdaysCount();
+
+        // gs.info("holdays : " + holidays);
+        // gs.info("weekDays : " + weekDays);
+        // gs.info("wrkDayCount : " + wrkDayCount);
+
+
+        var weeKday = weekDays;
+        var wrkDay = wrkDayCount;
+
+
+        // gs.info("weeKday1 " + weeKday);
+        // gs.info("wrkDay1 " + wrkDay);
+
+        var weekArray = weeKday.split("");
+
+        var wrkArray = wrkDay.split("");
+
+        var arrayDiff = new ArrayUtil();
+        var diff = arrayDiff.diff(weekArray, wrkArray);
+        var count = diff.length;
+        // gs.info("count1 " + count);
+
+        var startDay = new GlideDate(startDate);
+        var endDay = new GlideDate(endDate);
+
+        // gs.info("startDay " + startDay);
+        // gs.info("endDay " + endDay);
+
+
+
+        var dateDiff = endDay.getNumericValue() - startDay.getNumericValue();
+        // gs.info("endDayNum : " + endDay.getNumericValue());
+        // gs.info("startDayNum : " + startDay.getNumericValue());
+        // gs.info("dateDiff : " + dateDiff);
+        var totDiff = dateDiff / (1000 * 60 * 60 * 24) + 1;
+        // gs.info("totDiff : " + totDiff);
+        var totWrk = totDiff - count - holidays;
+        // gs.info("Toatal :" + totWrk);
+        return totWrk;
+
+    },
+
+    // Function to calculate the days of leave , Developed by Athul
+
+    daysOfleave: function(startDate, endDate) {
+
+        var start = startDate.toString();
+        var end = endDate.toString();
+
+        var gdStart = new GlideDate();
+        gdStart.setValue(start);
+
+        var gdEnd = new GlideDate();
+        gdEnd.setValue(end);
+
+        var current = new GlideDate();
+        current.setValue(gdStart.getValue());
+
+        var daysArray = [];
+
+        while (current.compareTo(gdEnd) <= 0) {
+            var dayOfWeek = current.getDayOfWeek();
+            if (daysArray.indexOf(dayOfWeek) === -1) {
+                daysArray.push(dayOfWeek);
+            }
+            current.addDaysLocalTime(1);
+        }
+
+        var result = daysArray.join('');
+        // gs.info("result " + result);
+        return result;
+
+
+    },
+
+    // Function to calculate workdays , developed by Athul
+
+    workdaysCount: function() {
+
+        var sys_id = gs.getProperty("zynder.holiday.schedule.sys_id");
+
+        var grChildschedule = new GlideRecord("cmn_schedule_span");
+        grChildschedule.addQuery("schedule", sys_id);
+        // grChildschedule.setLimit(2);
+        grChildschedule.query();
+        while (grChildschedule.next()) {
+            var workingDays = grChildschedule.days_of_week.toString();
+            // gs.info("workingDays " + workingDays);
+            return workingDays;
+
+        }
+    },
+
+    // Function to calculate holidays , developed by Athul
+
+    holidaysCount: function(startDate, endDate) {
+        var gdt = startDate;
+        var gend = endDate;
+        var minutes = "23:59:00";
+        var endTime = gend + " " + minutes;
+        var date = new GlideDateTime(gdt);
+
+        var utcString = date.getValue();
+        var utcString2 = endTime;
+
+        var gdStart = utcString.replaceAll("-", "")
+            .replaceAll(":", "")
+            .replace(" ", "T") + "Z";
+
+        var gdend = utcString2.replaceAll("-", "")
+            .replaceAll(":", "")
+            .replace(" ", "T") + "Z";
+
+        var grCount = 0;
+
+        var sys_id = gs.getProperty("zynder.holiday.schedule.sys_id");
+        var grHoliday = new GlideRecord("cmn_other_schedule");
+        grHoliday.addQuery("schedule.sys_id", sys_id);
+        grHoliday.setLimit(1);
+        grHoliday.query();
+        if (grHoliday.next()) {
+            var grHolidays = new GlideRecord("cmn_schedule_span");
+            grHolidays.addQuery("schedule", grHoliday.child_schedule.sys_id);
+            grHolidays.addQuery("start_date_time", ">=", gdStart);
+            grHolidays.addQuery("end_date_time", "<=", gdend);
+            grHolidays.query();
+            if (grHolidays.next()) {
+                var counter = grHolidays.getRowCount();
+                // gs.info("counter : " + counter);
+                return counter;
+            } else {
+                // gs.print(grCount);
+                return grCount;
+            }
+        }
+    },
+
+    //  Function to calaculate weekends in selected leave days , developed by Athul
+
+    // totalLeave: function(result, days) {
+    //     var weeKday = result;
+    //     var wrkDay = days;
+
+
+    //     gs.info("weeKday" + weeKday);
+    //     gs.info("wrkDay" + wrkDay);
+
+    //     var weekArray = weeKday.split("");
+
+    //     var wrkArray = wrkDay.split("");
+
+    //     var arrayDiff = new ArrayUtil();
+    //     var diff = arrayDiff.diff(weekArray, wrkArray);
+    //     var count = diff.length;
+    //     gs.info("count" + count);
+    //     return count;
+
+    // },
+
+    //To Display allocated projects in project efforts
+    displayProjects: function() {
+        var sysId = this.getParameter('sys_id');
+        var gr = new GlideRecord('u_project_allocation');
+        gr.addQuery('u_resource.sys_id', sysId);
+        gr.query();
+        var choices = [];
+        while (gr.next()) {
+            var grProject = new GlideRecord('u_project');
+            // grProject.addQuery('u_project','STARTSWITH','Other');
+            // grProject.query();
+
+
+            if (grProject.get(gr.u_project)) {
+                choices.push({
+                    value: grProject.sys_id.toString(),
+                    label: grProject.u_project.toString()
+                });
+
+            }
+        }
+        return JSON.stringify(choices);
+    },
+
+    getPropertyValue: function() {
+        return gs.getProperty('other.project.sys.id');
+    },
+
+	// function to calculate total working hour - developed by athul
+
+    differenceINDay: function(startDate,endDate) {
+        var startTym = this.getParameter("startDate");
+        var endTym = this.getParameter("endDate");
+
+        var tym1 = new GlideDateTime(startTym);
+        var tym2 = new GlideDateTime(endTym);
+
+        var diff = tym2.getNumericValue() - tym1.getNumericValue();
+        var diffHours = diff / (1000 * 60 * 60);
+
+        diffHours = Math.round(diffHours * 100) / 100;
+		return diffHours;
+
+    },
+
+
+
+    type: 'ZynderTechAjaxUtils'
+});]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>AP</sys_created_by>
+        <sys_created_on>2025-02-08 07:36:35</sys_created_on>
+        <sys_id>b2f62d12c363521052237405e4013123</sys_id>
+        <sys_mod_count>264</sys_mod_count>
+        <sys_name>ZynderTechAjaxUtils</sys_name>
+        <sys_package display_value="Zynder Tech" source="8d447286c3a3121052237405e4013105">8d447286c3a3121052237405e4013105</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Zynder Tech">8d447286c3a3121052237405e4013105</sys_scope>
+        <sys_update_name>sys_script_include_b2f62d12c363521052237405e4013123</sys_update_name>
+        <sys_updated_by>Athul</sys_updated_by>
+        <sys_updated_on>2025-05-21 07:21:10</sys_updated_on>
+    </sys_script_include>
+    <sys_es_latest_script action="INSERT_OR_UPDATE">
+        <id>b2f62d12c363521052237405e4013123</id>
+        <sys_created_by>AP</sys_created_by>
+        <sys_created_on>2025-02-08 07:36:34</sys_created_on>
+        <sys_id>0c672ddec323521052237405e40131bc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>AP</sys_updated_by>
+        <sys_updated_on>2025-02-08 07:36:34</sys_updated_on>
+        <table>sys_script_include</table>
+        <use_es_latest>true</use_es_latest>
+    </sys_es_latest_script>
+</record_update>

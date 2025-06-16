@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_fix">
+    <sys_script_fix action="INSERT_OR_UPDATE">
+        <before>false</before>
+        <description/>
+        <name>Update the resourse sys_ids</name>
+        <record_for_rollback>true</record_for_rollback>
+        <script><![CDATA[var sysIdsString = gs.getProperty('employee.sys.ids');
+var sysIds = JSON.parse(sysIdsString);
+var usrIdsString = gs.getProperty('employee.user.ids');
+var usrIds = JSON.parse(usrIdsString);
+
+var gr = new GlideRecord('u_project_effort');
+gr.query();
+while (gr.next()) {
+    if (gr.sys_created_by == 'AM') {
+        gr.u_resourse = sysIds["Amal.Madhav"];
+		gr.sys_created_by = usrIds.AM;
+		gr.update();
+    } else if (gr.sys_created_by == 'SA') {
+        gr.u_resourse = sysIds["Sreerag.Anchery"];
+		gr.sys_created_by = usrIds.SA;
+		gr.update();
+	} else if (gr.sys_created_by == 'KR') {
+        gr.u_resourse = sysIds["Krishna.Raj"];
+		gr.sys_created_by = usrIds.KR;
+		gr.update();
+	} else if (gr.sys_created_by == 'athul') {
+        gr.u_resourse = sysIds["Athul"];
+		gr.sys_created_by = usrIds.athul;
+		gr.update();
+	} else if (gr.sys_created_by == 'AP') {
+        gr.u_resourse = sysIds["Alan.Paul"];
+		gr.sys_created_by = usrIds.AP;
+		gr.update();
+	} else if (gr.sys_created_by == 'RD') {
+        gr.u_resourse = sysIds["Rose.Denna"];
+		gr.sys_created_by = usrIds.RD;
+		gr.update();
+	} else if (gr.sys_created_by == 'TT') {
+        gr.u_resourse = sysIds["Treesa.Thomas"];
+		gr.sys_created_by = usrIds.TT;
+		gr.update();
+	} else if (gr.sys_created_by == 'SP') {
+        gr.u_resourse = sysIds["Suchithra.PS"];
+		gr.sys_created_by = usrIds.SP;
+		gr.update();
+	}
+}
+]]></script>
+        <sys_class_name>sys_script_fix</sys_class_name>
+        <sys_created_by>Sreerag.Anchery</sys_created_by>
+        <sys_created_on>2025-04-22 10:17:50</sys_created_on>
+        <sys_id>5501adf9830d2a50a946f896feaad3a1</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>Update the resourse sys_ids</sys_name>
+        <sys_package display_value="Zynder Tech" source="8d447286c3a3121052237405e4013105">8d447286c3a3121052237405e4013105</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Zynder Tech">8d447286c3a3121052237405e4013105</sys_scope>
+        <sys_update_name>sys_script_fix_5501adf9830d2a50a946f896feaad3a1</sys_update_name>
+        <sys_updated_by>Sreerag.Anchery</sys_updated_by>
+        <sys_updated_on>2025-04-22 11:51:45</sys_updated_on>
+        <unloadable>false</unloadable>
+    </sys_script_fix>
+    <sys_es_latest_script action="INSERT_OR_UPDATE">
+        <id>5501adf9830d2a50a946f896feaad3a1</id>
+        <sys_created_by>Sreerag.Anchery</sys_created_by>
+        <sys_created_on>2025-04-22 10:17:50</sys_created_on>
+        <sys_id>8658063183016a50a946f896feaad328</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Sreerag.Anchery</sys_updated_by>
+        <sys_updated_on>2025-04-22 10:17:50</sys_updated_on>
+        <table>sys_script_fix</table>
+        <use_es_latest>true</use_es_latest>
+    </sys_es_latest_script>
+</record_update>

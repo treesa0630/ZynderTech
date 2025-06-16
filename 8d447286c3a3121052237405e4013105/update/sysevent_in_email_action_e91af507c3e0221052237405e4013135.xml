@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sysevent_in_email_action">
+    <sysevent_in_email_action action="INSERT_OR_UPDATE">
+        <action>record_action</action>
+        <active>false</active>
+        <assignment_operator/>
+        <condition_script/>
+        <description/>
+        <event_name>email.read</event_name>
+        <filter_condition table="sys_email">type=received^user_id=efbde6cec363121052237405e4013102^EQ<item display_value="received" endquery="false" field="type" goto="false" newquery="false" operator="=" or="false" value="received"/>
+            <item endquery="false" field="user_id" goto="false" newquery="false" operator="=" or="false" value="efbde6cec363121052237405e4013102"/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </filter_condition>
+        <from/>
+        <name>Project Activity Creation</name>
+        <order>100</order>
+        <reply_email/>
+        <required_roles/>
+        <script><![CDATA[(function runAction( /*GlideRecord*/ current, /*GlideRecord*/ event, /*EmailWrapper*/ email, /*ScopedEmailLogger*/ logger, /*EmailClassifier*/ classifier) {
+
+    // Implement email action here
+
+    current.u_work_notes = email.body_text.toString();
+    var sysId = current.insert();
+   
+
+
+
+
+
+
+})(current, event, email, logger, classifier);]]></script>
+        <stop_processing>false</stop_processing>
+        <sys_class_name>sysevent_in_email_action</sys_class_name>
+        <sys_created_by>KR</sys_created_by>
+        <sys_created_on>2025-04-01 10:57:24</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>e91af507c3e0221052237405e4013135</sys_id>
+        <sys_mod_count>71</sys_mod_count>
+        <sys_name>Project Activity Creation</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Zynder Tech" source="8d447286c3a3121052237405e4013105">8d447286c3a3121052237405e4013105</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Zynder Tech">8d447286c3a3121052237405e4013105</sys_scope>
+        <sys_update_name>sysevent_in_email_action_e91af507c3e0221052237405e4013135</sys_update_name>
+        <sys_updated_by>KR</sys_updated_by>
+        <sys_updated_on>2025-04-02 09:59:26</sys_updated_on>
+        <table>u_project_activity</table>
+        <template/>
+        <type>forward</type>
+    </sysevent_in_email_action>
+    <sys_es_latest_script action="INSERT_OR_UPDATE">
+        <id>e91af507c3e0221052237405e4013135</id>
+        <sys_created_by>KR</sys_created_by>
+        <sys_created_on>2025-04-01 10:57:24</sys_created_on>
+        <sys_id>3408cac3c324221052237405e40131aa</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>KR</sys_updated_by>
+        <sys_updated_on>2025-04-01 10:57:24</sys_updated_on>
+        <table>sysevent_in_email_action</table>
+        <use_es_latest>true</use_es_latest>
+    </sys_es_latest_script>
+</record_update>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <applies_extended>false</applies_extended>
+        <condition/>
+        <description/>
+        <field>u_action_status</field>
+        <global>true</global>
+        <isolate_script>true</isolate_script>
+        <messages/>
+        <name>Make Comment Mandatory</name>
+        <order/>
+        <script><![CDATA[function onChange(control, oldValue, newValue, isLoading, isTemplate) {
+   if (isLoading || newValue === '') {
+      return;
+   }
+
+   var actionType = newValue;
+   if(actionType != 'submitted'){
+	g_form.setMandatory('u_comments',true);
+   }else{
+	g_form.setMandatory('u_comments',false);
+   }
+
+   //Type appropriate comment here, and begin script below
+   
+}]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>AM</sys_created_by>
+        <sys_created_on>2025-02-15 07:23:18</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>cfe6ed6cc3f3121052237405e4013158</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>Make Comment Mandatory</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Zynder Tech" source="8d447286c3a3121052237405e4013105">8d447286c3a3121052237405e4013105</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Zynder Tech">8d447286c3a3121052237405e4013105</sys_scope>
+        <sys_update_name>sys_script_client_cfe6ed6cc3f3121052237405e4013158</sys_update_name>
+        <sys_updated_by>AM</sys_updated_by>
+        <sys_updated_on>2025-02-15 07:25:54</sys_updated_on>
+        <table>u_csr</table>
+        <type>onChange</type>
+        <ui_type>10</ui_type>
+        <view/>
+    </sys_script_client>
+</record_update>

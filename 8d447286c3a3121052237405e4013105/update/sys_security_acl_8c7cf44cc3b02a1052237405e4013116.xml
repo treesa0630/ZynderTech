@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl">
+    <sys_security_acl action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <admin_overrides>false</admin_overrides>
+        <advanced>false</advanced>
+        <applies_to/>
+        <condition/>
+        <controlled_by_refs/>
+        <decision_type>allow</decision_type>
+        <description>Allow create for records in u_project_allocation, for users with role Super Admin, and if users satisfy the conditions of the Security Attribute "ACL_8c7cf44cc3b02a1052237405e4013116".</description>
+        <local_or_existing>Local</local_or_existing>
+        <name>u_project_allocation</name>
+        <operation display_value="create">create</operation>
+        <script/>
+        <security_attribute display_value="ACL_8c7cf44cc3b02a1052237405e4013116">48a4e110c370ea1052237405e40131b4</security_attribute>
+        <sys_class_name>sys_security_acl</sys_class_name>
+        <sys_created_by>KR</sys_created_by>
+        <sys_created_on>2025-04-04 08:01:59</sys_created_on>
+        <sys_id>8c7cf44cc3b02a1052237405e4013116</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>u_project_allocation</sys_name>
+        <sys_package display_value="Zynder Tech" source="8d447286c3a3121052237405e4013105">8d447286c3a3121052237405e4013105</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Zynder Tech">8d447286c3a3121052237405e4013105</sys_scope>
+        <sys_update_name>sys_security_acl_8c7cf44cc3b02a1052237405e4013116</sys_update_name>
+        <sys_updated_by>KR</sys_updated_by>
+        <sys_updated_on>2025-04-05 05:35:13</sys_updated_on>
+        <type display_value="record">record</type>
+    </sys_security_acl>
+</record_update>

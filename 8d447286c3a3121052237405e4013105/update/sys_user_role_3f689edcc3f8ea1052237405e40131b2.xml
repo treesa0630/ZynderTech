@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_user_role">
+    <sys_user_role action="INSERT_OR_UPDATE">
+        <assignable_by/>
+        <can_delegate>true</can_delegate>
+        <description/>
+        <elevated_privilege>false</elevated_privilege>
+        <grantable>true</grantable>
+        <includes_roles/>
+        <name>u_portal_modules_user</name>
+        <scoped_admin>false</scoped_admin>
+        <suffix/>
+        <sys_class_name>sys_user_role</sys_class_name>
+        <sys_created_by>AP</sys_created_by>
+        <sys_created_on>2025-04-05 09:21:32</sys_created_on>
+        <sys_id>3f689edcc3f8ea1052237405e40131b2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>u_portal_modules_user</sys_name>
+        <sys_package display_value="Zynder Tech" source="8d447286c3a3121052237405e4013105">8d447286c3a3121052237405e4013105</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Zynder Tech">8d447286c3a3121052237405e4013105</sys_scope>
+        <sys_update_name>sys_user_role_3f689edcc3f8ea1052237405e40131b2</sys_update_name>
+        <sys_updated_by>AP</sys_updated_by>
+        <sys_updated_on>2025-04-05 09:21:32</sys_updated_on>
+    </sys_user_role>
+</record_update>

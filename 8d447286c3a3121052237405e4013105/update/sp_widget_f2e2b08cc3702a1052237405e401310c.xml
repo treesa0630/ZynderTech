@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_widget">
+    <sp_widget action="INSERT_OR_UPDATE">
+        <category>custom</category>
+        <client_script><![CDATA[api.controller = function($scope,$element) {
+  var c = this;
+
+  // Initialize flip state
+  $scope.isFlipped = false;
+
+  // Function to toggle the flip effect
+  $scope.toggleFlip = function() {
+    $scope.isFlipped = !$scope.isFlipped;
+	
+  };
+	
+	
+	//This is a test
+	
+  // Cycle directions based on index
+
+	
+	  // Cycle directions based on index
+  $scope.getScrollAnimationClass = function(index) {
+    var directions = ['slide-in-left', 'slide-in-right', 'slide-in-top', 'slide-in-bottom'];
+    return directions[index % directions.length];
+  };
+
+  var observer = new IntersectionObserver(function(entries) {
+    entries.forEach(function(entry) {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('show');
+        observer.unobserve(entry.target); // animate only once
+      }
+    });
+  });
+
+  // Wait for DOM rendering
+  setTimeout(function() {
+    var elements = $element[0].querySelectorAll('.animate-hidden');
+    Array.prototype.forEach.call(elements, function(el) {
+      observer.observe(el);
+    });
+  }, 0);
+	
+	
+	
+
+	
+	
+};]]></client_script>
+        <controller_as>c</controller_as>
+        <css>.dip {
+  perspective: 1000px;
+}
+.s-icon{
+  width:100px;
+  height:100px;
+}
+.flip-container {
+ 
+  height: 280px; /* Adjust as needed */
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 0.6s;
+
+  border-radius:10px;
+  border:3px solid #dee2e6;
+
+}
+
+body{
+ overflow-X: hidden;
+}
+
+.flip-container:hover {
+
+    box-shadow: 2px 2px 6px 3px grey;
+  transform: scale(1.05);
+  border:1px solid #f2a900;
+}
+.front{
+
+}
+
+.g-box h6{
+  font-size:19px;
+  font-weight:700;
+}
+
+.front, .back {
+  position: absolute;
+  color: white;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius:10px;
+  background: #FEA648;
+}
+
+.front {
+  background: #FEA648; /* Adjust as needed */
+}
+h6{
+  font-family: times new roman;
+}
+
+.back {
+ 
+
+  display: flex;
+  flex-direction:column;
+  align-items: center;
+  justify-content: center;
+  transform: rotateY(180deg);
+  padding:10px;
+  
+}
+.back  p{
+  font-size:12px;
+  font-weight:600;
+  font-family: times new roman;
+}
+
+.flipped .flip-container {
+  transform: rotateY(180deg);
+}
+
+.g-box{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  padding:20px
+}
+.btn-div{
+  position: absolute;
+  width: 700px;
+  height: 250px;
+}
+.reqBtn{
+  position: relative;
+  width:80px;
+  height:35px;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  background-color:#f2a900;
+  color:white;
+  font-weight:600;
+  border-radius:3px;
+  font-size:13px;
+  transition:all 0.4s;
+  right: -380px;
+  bottom: -200px;
+  font-family: times new roman;
+  
+}
+
+.reqBtn:hover {
+  background-color: #f6bb5b;
+}
+.reqBtn:active{
+  transform: translateY(2px);
+  box-shadow: 2px 2px 0px 0px rgb(37, 36, 36);
+}
+
+
+.main-box{
+  padding-top:15px;
+  padding-bottom:25px;
+}
+
+.p-short{
+  text-align:center;
+  font-family: times new roman;
+}
+.back-text{
+  font-size: 18px;
+  font-family: times new roman;
+}
+//////////////////////////////////////////////////////
+
+/* General hidden state */
+.animate-hidden {
+  opacity: 0;
+  transition: all 1.2s ease-out; 
+}
+
+/* Animate in from left */
+.slide-in-left {
+  transform: translateX(-100%);
+}
+
+.slide-in-left.show {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* Animate in from right */
+.slide-in-right {
+  transform: translateX(100%);
+}
+
+.slide-in-right.show {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* Animate in from top */
+.slide-in-top {
+  transform: translateY(-100%);
+}
+
+.slide-in-top.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+/* Slide in from bottom */
+.slide-in-bottom {
+  transform: translateY(100%);
+}
+
+.slide-in-bottom.show {
+  opacity: 1;
+  transform: translateY(0);
+}</css>
+        <data_table>sp_instance</data_table>
+        <demo_data/>
+        <description/>
+        <docs/>
+        <field_list/>
+        <has_preview>true</has_preview>
+        <id>testwidget</id>
+        <internal>false</internal>
+        <link><![CDATA[function link(scope, element, attrs, controller) {
+  
+}]]></link>
+        <name>Catalog Cards</name>
+        <option_schema>[{"name":"image","section":"other","label":"Image","type":"string"},{"name":"shortdesc","section":"other","label":"shortDesc","type":"string"},{"name":"desc","section":"other","label":"Desc","type":"string"},{"name":"link","section":"other","default_value":"/zt?id=sc_cat_item&amp;sys_id=1c63f3bfc3a3121052237405e4013191","label":"Link","type":"string"},{"name":"name","section":"other","label":"Name","type":"string"},{"name":"animation","section":"other","label":"animation","type":"string"}]</option_schema>
+        <public>true</public>
+        <roles/>
+        <script><![CDATA[(function() {
+  /* populate the 'data' object */
+  /* e.g., data.table = $sp.getValue('table'); */
+	data.isSuperAdmin = gs.hasRole('super_admin');
+	data.image=options.image;
+	data.shortDesc=options.shortdesc;
+	data.link=options.link;
+	data.desc=options.desc;
+	data.name=options.name;
+	data.animate=options.animation;
+})();
+
+
+]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>AP</sys_created_by>
+        <sys_created_on>2025-04-04 07:19:51</sys_created_on>
+        <sys_id>f2e2b08cc3702a1052237405e401310c</sys_id>
+        <sys_mod_count>231</sys_mod_count>
+        <sys_name>Catalog Cards</sys_name>
+        <sys_package display_value="Zynder Tech" source="8d447286c3a3121052237405e4013105">8d447286c3a3121052237405e4013105</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Zynder Tech">8d447286c3a3121052237405e4013105</sys_scope>
+        <sys_update_name>sp_widget_f2e2b08cc3702a1052237405e401310c</sys_update_name>
+        <sys_updated_by>Treesa.Thomas</sys_updated_by>
+        <sys_updated_on>2025-06-06 11:51:15</sys_updated_on>
+        <template><![CDATA[<div >
+  <div class="main-box">
+<!-- your widget template -->
+  
+  <div class="animate-hidden {{data.animate}}" ng-class="{'flipped': isFlipped}" ng-click="toggleFlip()" >
+  <div class="flip-container">
+    <!-- Front Side -->
+    <div class="front">
+
+        <div class="g-box">
+          <img src="{{data.image}}" class="s-icon" alt="icon"/>
+          <h6>
+            {{data.name}}
+          </h6>
+          <p class="p-short">
+            {{data.shortDesc}}
+          </p>
+            
+        </div>
+
+    </div>
+
+    <!-- Back Side -->
+    <div class="back">
+      <p class="back-text">{{data.desc}}</p>
+      <div class="btn-div">
+        <a href="{{data.link}}" class="reqBtn">Request</a>
+      </div>
+    </div>
+  </div>
+</div>
+  
+
+  
+  
+</div>
+</div>
+]]></template>
+    </sp_widget>
+    <sys_es_latest_script action="INSERT_OR_UPDATE">
+        <id>f2e2b08cc3702a1052237405e401310c</id>
+        <sys_created_by>AP</sys_created_by>
+        <sys_created_on>2025-04-04 07:19:50</sys_created_on>
+        <sys_id>c7f2fc4cc3702a1052237405e4013128</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>AP</sys_updated_by>
+        <sys_updated_on>2025-04-04 07:19:50</sys_updated_on>
+        <table>sp_widget</table>
+        <use_es_latest>true</use_es_latest>
+    </sys_es_latest_script>
+</record_update>

@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_widget">
+    <sp_widget action="INSERT_OR_UPDATE">
+        <category>custom</category>
+        <client_script><![CDATA[api.controller=function() {
+  /* widget controller */
+  var c = this;
+};]]></client_script>
+        <controller_as>c</controller_as>
+        <css>.main-box{
+  width:350px;
+  height:auto;
+  margin-left: -30%;
+  padding:10px 20px 0px -30px;
+  box-sizing:border-box;
+
+  display:flex;
+  flex-direction:column;
+  gap:10px;
+}
+.mDiv{
+ padding-bottom: 4%;
+}
+
+
+.main-box h1{
+  color:#1971c2;
+  font-size:18px;
+  padding-bottom:15px;
+ 
+ 
+  
+}
+.sub-box{
+  width:140%;
+  height:80px;
+
+  padding:10px;
+  padding-bottom:15px;
+  background-color:white;
+  border-radius:10px;
+  
+}
+.pr-1{
+  font-size:16px;
+  font-weight:600;
+  
+}
+
+.peimg{
+height:20px;
+width:20px;
+  
+}
+
+.sbm-m{
+  display:flex;
+  gap:10px;
+  align-items:center;
+  height:30px;
+  width:70%;
+  
+}
+
+.pe-btn{
+  cursor:pointer;
+  width:50px
+  height:30px;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  border:none;
+  background-color:#339af0;
+  font-size:12px;
+  color:white;
+  font-weight:600;
+  border-radius:5px;
+}
+.pe-btn a{
+  color:white;
+  text-decoration:none;
+}
+.sbm{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+.spe{
+  font-size:12px;
+  font-weight:700;
+}
+
+////////////////////////////////////
+.teamImg{
+width:475px;
+  height:380px;
+  border-radius:10px;
+  margin-left: -80px;
+ 
+ 
+  
+}
+.imgDiv{
+  padding:100px 0px;
+ 
+}</css>
+        <data_table>sp_instance</data_table>
+        <demo_data/>
+        <description/>
+        <docs/>
+        <field_list/>
+        <has_preview>true</has_preview>
+        <id>project_effort</id>
+        <internal>false</internal>
+        <link><![CDATA[function link(scope, element, attrs, controller) {
+  
+}]]></link>
+        <name>Project-Efforts</name>
+        <option_schema/>
+        <public>true</public>
+        <roles/>
+        <script><![CDATA[(function() {
+  /* populate the 'data' object */
+  /* e.g., data.table = $sp.getValue('table'); */
+var user=gs.getUserName();
+var date=new GlideDate();
+
+var gr=new GlideRecord("u_project_effort")
+gr.addQuery("sys_created_onONLast 120 days@javascript:gs.beginningOfLast120Days()@javascript:gs.endOfLast120Days()");
+gr.addQuery("sys_created_by",user);
+gr.orderByDesc("u_date");
+gr.setLimit(5);
+gr.query();
+var arr=[];
+while(gr.next()){
+	
+	var obj={};
+	var user_date=gr.u_date;
+
+        var gdStart = new GlideDate();
+        gdStart.setValue(user_date);
+        var startDate = gdStart.getNumericValue(); // Converting datetime type to a numeric value
+
+        var gdEnd = new GlideDate();
+        gdEnd.setValue(date);
+        var endDate = gdEnd.getNumericValue();
+
+        // Calculate the difference in days
+        var days = (endDate - startDate) / (1000 * 60 * 60 * 24);
+
+		obj.projNum=gr.u_number.getDisplayValue();
+		obj.projName=gr.u_project_name.getDisplayValue();
+		obj.status=gr.u_approval.getDisplayValue();
+		obj.daysAgo=days;
+		obj.sysId=gr.sys_id.toString();
+		arr.push(obj);
+	
+	
+
+	
+
+}
+
+data.project=arr;
+	
+gs.info(JSON.stringify(arr));
+	
+	
+	
+
+})();]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>AP</sys_created_by>
+        <sys_created_on>2025-04-03 07:22:03</sys_created_on>
+        <sys_id>1bb9afa7c3e8661052237405e40131c6</sys_id>
+        <sys_mod_count>157</sys_mod_count>
+        <sys_name>Project-Efforts</sys_name>
+        <sys_package display_value="Zynder Tech" source="8d447286c3a3121052237405e4013105">8d447286c3a3121052237405e4013105</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Zynder Tech">8d447286c3a3121052237405e4013105</sys_scope>
+        <sys_update_name>sp_widget_1bb9afa7c3e8661052237405e40131c6</sys_update_name>
+        <sys_updated_by>Treesa.Thomas</sys_updated_by>
+        <sys_updated_on>2025-04-26 18:44:19</sys_updated_on>
+        <template><![CDATA[<div class="mDiv">
+<!-- your widget template -->
+  <div  ng-if="data.project.length > 4" class="main-box">
+    
+    <h1>
+      My Projects Efforts
+    </h1>
+
+    
+    
+    <div  ng-repeat="project in data.project" class="sub-box">
+      
+      
+      
+      <p class="pr-1">
+       {{project.projNum}}
+      </p>
+ 
+      <div class="sbm">
+        
+        <div class="sbm-m">
+          <img src="https://cdn-icons-png.flaticon.com/512/5828/5828188.png" class="peimg"/>
+          <p class="spe">
+            {{project.projName}} - {{project.status}} - {{project.daysAgo}} days ago
+            
+          </p>
+          
+        </div>
+        <button class="pe-btn">
+          <a href="?id=form&table=u_project_effort&sys_id={{project.sysId}}">
+                 open
+          </a>
+     
+        </button>
+      </div>
+      
+      
+      
+    </div>
+ 
+  </div>
+  
+  <div ng-if="!data.project|| data.project.length === 0" class="imgDiv">
+    <img src="team.jpg" class="teamImg"/>
+
+</div>
+  
+  
+</div>]]></template>
+    </sp_widget>
+    <sys_es_latest_script action="INSERT_OR_UPDATE">
+        <id>1bb9afa7c3e8661052237405e40131c6</id>
+        <sys_created_by>AP</sys_created_by>
+        <sys_created_on>2025-04-03 07:21:58</sys_created_on>
+        <sys_id>e0e9afe7c3e8661052237405e4013171</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>AP</sys_updated_by>
+        <sys_updated_on>2025-04-03 07:21:58</sys_updated_on>
+        <table>sp_widget</table>
+        <use_es_latest>true</use_es_latest>
+    </sys_es_latest_script>
+</record_update>

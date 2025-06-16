@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sysevent_register">
+    <sysevent_register action="INSERT_OR_UPDATE">
+        <caller_access/>
+        <derived_priority>100</derived_priority>
+        <description>Triggers notification if error occurs in  metadata creation</description>
+        <event_name>metadata.error.notification</event_name>
+        <fired_by>Scheduled job : Create Metadata</fired_by>
+        <priority>100</priority>
+        <queue/>
+        <suffix/>
+        <sys_class_name>sysevent_register</sys_class_name>
+        <sys_created_by>RD</sys_created_by>
+        <sys_created_on>2025-02-19 04:36:24</sys_created_on>
+        <sys_id>17c661b9c373d21052237405e40131c6</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>metadata.error.notification</sys_name>
+        <sys_package display_value="Zynder Tech" source="8d447286c3a3121052237405e4013105">8d447286c3a3121052237405e4013105</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Zynder Tech">8d447286c3a3121052237405e4013105</sys_scope>
+        <sys_update_name>sysevent_register_17c661b9c373d21052237405e40131c6</sys_update_name>
+        <sys_updated_by>RD</sys_updated_by>
+        <sys_updated_on>2025-02-26 07:39:20</sys_updated_on>
+        <table>u_git_sync_metadata</table>
+    </sysevent_register>
+</record_update>

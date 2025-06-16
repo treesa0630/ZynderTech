@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_instance">
+    <sp_instance action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <class_name/>
+        <color>default</color>
+        <css/>
+        <glyph/>
+        <id/>
+        <order>1</order>
+        <roles/>
+        <short_description/>
+        <size>md</size>
+        <sp_column display_value="2">1aab5fc783adea10a946f896feaad3e4</sp_column>
+        <sp_widget display_value="home_side_bar">2d35eb0783edea10a946f896feaad310</sp_widget>
+        <sys_class_name>sp_instance</sys_class_name>
+        <sys_created_by>Treesa.Thomas</sys_created_by>
+        <sys_created_on>2025-05-21 10:53:31</sys_created_on>
+        <sys_id>5b96ab8783edea10a946f896feaad3b2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Zynder Tech" source="8d447286c3a3121052237405e4013105">8d447286c3a3121052237405e4013105</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Zynder Tech">8d447286c3a3121052237405e4013105</sys_scope>
+        <sys_update_name>sp_instance_5b96ab8783edea10a946f896feaad3b2</sys_update_name>
+        <sys_updated_by>Treesa.Thomas</sys_updated_by>
+        <sys_updated_on>2025-05-21 10:53:31</sys_updated_on>
+        <title/>
+        <url/>
+        <widget_parameters/>
+    </sp_instance>
+    <sys_translated_text action="delete_multiple" query="documentkey=5b96ab8783edea10a946f896feaad3b2"/>
+</record_update>

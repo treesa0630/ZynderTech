@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_module">
+    <sys_app_module action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <application display_value="Zynder Tech">e8538955c37b121052237405e4013101</application>
+        <assessment/>
+        <device_type/>
+        <filter table="u_project_effort">sys_created_on&gt;=javascript:gs.beginningOfThisMonth()^EQ<item endquery="false" field="sys_created_on" goto="false" newquery="false" operator="&gt;=" or="false" value="javascript:gs.beginningOfThisMonth()"/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </filter>
+        <hint/>
+        <homepage/>
+        <image/>
+        <link_type>LIST</link_type>
+        <map_page/>
+        <mobile_title>Pending Project Efforts</mobile_title>
+        <mobile_view_name>Mobile</mobile_view_name>
+        <name>u_project_effort</name>
+        <order>1880</order>
+        <override_menu_roles>false</override_menu_roles>
+        <query/>
+        <report/>
+        <require_confirmation>true</require_confirmation>
+        <roles/>
+        <sys_class_name>sys_app_module</sys_class_name>
+        <sys_created_by>RD</sys_created_by>
+        <sys_created_on>2025-03-07 07:53:14</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>5b1ea483c340221052237405e40131fd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Created this Month</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Zynder Tech" source="8d447286c3a3121052237405e4013105">8d447286c3a3121052237405e4013105</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Zynder Tech">8d447286c3a3121052237405e4013105</sys_scope>
+        <sys_update_name>sys_app_module_5b1ea483c340221052237405e40131fd</sys_update_name>
+        <sys_updated_by>RD</sys_updated_by>
+        <sys_updated_on>2025-03-07 07:53:14</sys_updated_on>
+        <timeline_page/>
+        <title>Created this Month</title>
+        <uncancelable>false</uncancelable>
+        <view_name/>
+        <window_name/>
+    </sys_app_module>
+</record_update>

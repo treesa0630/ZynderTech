@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script">
+    <sys_script action="INSERT_OR_UPDATE">
+        <abort_action>false</abort_action>
+        <access>package_private</access>
+        <action_delete>false</action_delete>
+        <action_insert>true</action_insert>
+        <action_query>false</action_query>
+        <action_update>false</action_update>
+        <active>true</active>
+        <add_message>false</add_message>
+        <advanced>true</advanced>
+        <change_fields>false</change_fields>
+        <client_callable>false</client_callable>
+        <collection>u_employee_leave_information</collection>
+        <condition/>
+        <description/>
+        <execute_function>false</execute_function>
+        <filter_condition/>
+        <is_rest>false</is_rest>
+        <message/>
+        <name>Prevent Duplicate Leave Information</name>
+        <order>100</order>
+        <priority>100</priority>
+        <rest_method/>
+        <rest_method_text/>
+        <rest_service/>
+        <rest_service_text/>
+        <rest_variables/>
+        <role_conditions/>
+        <script><![CDATA[(function executeRule(current, previous /*null when async*/) {
+
+	var gr = new GlideRecord('u_employee_leave_information');
+	gr.addQuery('u_employee',current.u_employee);
+	gr.query();
+	if(gr.hasNext()){
+		gs.addErrorMessage("A record for this user already exists.");
+		current.setAbortAction(true);
+	}
+
+})(current, previous);]]></script>
+        <sys_class_name>sys_script</sys_class_name>
+        <sys_created_by>KR</sys_created_by>
+        <sys_created_on>2025-04-15 10:47:27</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>4d878a2fc3b4221052237405e40131b2</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>Prevent Duplicate Leave Information</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Zynder Tech" source="8d447286c3a3121052237405e4013105">8d447286c3a3121052237405e4013105</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Zynder Tech">8d447286c3a3121052237405e4013105</sys_scope>
+        <sys_update_name>sys_script_4d878a2fc3b4221052237405e40131b2</sys_update_name>
+        <sys_updated_by>KR</sys_updated_by>
+        <sys_updated_on>2025-04-15 10:48:48</sys_updated_on>
+        <template/>
+        <when>before</when>
+    </sys_script>
+    <sys_translated_text action="delete_multiple" query="documentkey=4d878a2fc3b4221052237405e40131b2"/>
+    <sys_es_latest_script action="INSERT_OR_UPDATE">
+        <id>4d878a2fc3b4221052237405e40131b2</id>
+        <sys_created_by>KR</sys_created_by>
+        <sys_created_on>2025-04-15 10:47:26</sys_created_on>
+        <sys_id>dbfbc263c3f4221052237405e40131ca</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>KR</sys_updated_by>
+        <sys_updated_on>2025-04-15 10:47:26</sys_updated_on>
+        <table>sys_script</table>
+        <use_es_latest>true</use_es_latest>
+    </sys_es_latest_script>
+</record_update>

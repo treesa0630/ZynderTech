@@ -1,0 +1,1846 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_flow">
+    <sys_hub_flow action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,timeFromCreateToActivate=6467217000,viewActivatedIn=naturalLanguage</attributes>
+        <authored_on_release_version>26000</authored_on_release_version>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description/>
+        <display_name_after_preview/>
+        <flow_priority>MEDIUM</flow_priority>
+        <generation_source/>
+        <internal_name>project_efforts_approval_workflow</internal_name>
+        <label_cache>[{"name":"flow_variable.approval","label":"Flow Variables➛approval","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","usedInstances":{},"attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"1c81d216-b207-4d7b-8df6-171102bf2fc8"}},{"name":"flow_variable.counter","label":"Flow Variables➛counter","reference":"","reference_display":"","type":"integer","base_type":"integer","column_name":"","usedInstances":{"b08ccaad-13be-48ee-859f-b48915c1c741":["condition"],"2cec74f6-e113-45bd-b333-4f26e3b5c5b1":["counter-0"]},"attributes":{"uiType":"integer","uiTypeLabel":"Integer","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"76df824b-4ea2-441d-89ac-c8ce16651c88"}},{"name":"Created or Updated_1.current.u_project_work","label":"Trigger - Record Created or Updated➛Project Effort Record➛Project work","reference":"","reference_display":"Project work","type":"string","base_type":"string","parent_table_name":"u_project_effort","column_name":"u_project_work","usedInstances":{"651f1583-f23c-4f33-865c-03d559a2f38a":["u_additional_comment","u_work_notes"]}},{"name":"{{static.d625dccec0a8016700a222a0f7900d06}}","label":"Service Desk","reference":"sys_user_group","reference_display":"Group","type":"reference","base_type":"reference","usedInstances":{"4e1a8e65-6061-4780-b542-c3ec3cddd34c":["approval_conditions"]}},{"name":"{{static.58851c2353322010a480ddeeff7b12b0}}","label":"Report Access Request Approvers","reference":"sys_user_group","reference_display":"Group","type":"reference","base_type":"reference","usedInstances":{"4e1a8e65-6061-4780-b542-c3ec3cddd34c":["approval_conditions"]}},{"name":"Created or Updated_1.current.u_remarks","label":"Trigger - Record Created or Updated➛Project Effort Record➛Remarks","reference":"","reference_display":"Remarks","type":"string","base_type":"string","parent_table_name":"u_project_effort","column_name":"u_remarks","usedInstances":{"651f1583-f23c-4f33-865c-03d559a2f38a":["u_additional_comment","u_work_notes"]}},{"name":"Created or Updated_1.current.u_approval","label":"Trigger - Record Created or Updated➛Project Effort Record➛Approval","reference":"","reference_display":"Approval","type":"choice","base_type":"choice","parent_table_name":"u_project_effort","column_name":"u_approval","choices":[{"label":"-- None --","used":false,"image":"","reference":false,"rawLabel":"-- None --","selected":false,"missing":false,"value":""},{"used":false,"label":"Requested","image":"","reference":false,"rawLabel":"Requested","selected":false,"missing":false,"value":"requested","parameters":{"name":"u_project_effort","dependent_values":[""]}},{"used":false,"label":"Approved","image":"","reference":false,"rawLabel":"Approved","selected":false,"missing":false,"value":"Approved","parameters":{"name":"u_project_effort","dependent_values":[""]}},{"used":false,"label":"Rejected","image":"","reference":false,"rawLabel":"Rejected","selected":false,"missing":false,"value":"rejected","parameters":{"name":"u_project_effort","dependent_values":[""]}},{"used":false,"label":"Cancelled","image":"","reference":false,"rawLabel":"Cancelled","selected":false,"missing":false,"value":"cancelled","parameters":{"name":"u_project_effort","dependent_values":[""]}}],"usedInstances":{"7f486d7d-a8df-43a9-a93d-ad3ba3727d51":["condition"]}},{"name":"Created or Updated_1.current","label":"Trigger - Record Created or Updated➛Project Effort Record","reference":"u_project_effort","reference_display":"Project Effort","type":"reference","base_type":"reference","usedInstances":{"4e1a8e65-6061-4780-b542-c3ec3cddd34c":["record"],"651f1583-f23c-4f33-865c-03d559a2f38a":["record","u_additional_comment"],"b150f9eb-2adc-40de-b97d-338980190dbc":["record"],"297a40a1-6702-42bb-abd3-bd1a420d3755":["record"],"89934ebd-a9ef-4394-9e5c-048acd385128":["record"]},"attributes":{}},{"name":"4e1a8e65-6061-4780-b542-c3ec3cddd34c.approval_state","label":"1 - Ask For Approval➛Approval State","reference_display":"Approval State","type":"choice","base_type":"choice","choices":[{"label":"-- None --","value":"","order":0.0},{"label":"Not Yet Requested","value":"not requested","order":1.0},{"label":"Requested","value":"requested","order":2.0},{"label":"Approved","value":"approved","order":3.0},{"label":"Rejected","value":"rejected","order":4.0},{"label":"Cancelled","value":"cancelled","order":5.0},{"label":"No Longer Required","value":"not_required","order":6.0},{"label":"Skipped","value":"skipped","order":7.0}],"usedInstances":{"b08ccaad-13be-48ee-859f-b48915c1c741":["condition"],"97c48065-0863-4766-828b-49511793e421":["approval-0"],"0970990e-a62f-499f-8b0a-29803d356365":["condition"],"62511bff-50db-4e55-9b82-5dfff0762893":["condition"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"Created or Updated_1.table_name","label":"Trigger - Record Created or Updated➛Project Effort Table","reference":"u_project_effort","reference_display":"Project Effort","type":"table_name","base_type":"table_name","usedInstances":{"651f1583-f23c-4f33-865c-03d559a2f38a":["table_name"]},"attributes":{"test_input_hidden":"true"}}]</label_cache>
+        <master_snapshot>aa556656c3e7521052237405e401311e</master_snapshot>
+        <master_snapshot_digest/>
+        <name>Project Efforts Approval Workflow</name>
+        <natlang/>
+        <outputs/>
+        <pre_compiled>false</pre_compiled>
+        <remote_trigger_id>f6556656c3e7521052237405e4013163</remote_trigger_id>
+        <run_as>user</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <show_draft_actions>false</show_draft_actions>
+        <show_triggered_flows>false</show_triggered_flows>
+        <status>published</status>
+        <substatus/>
+        <sys_class_name>sys_hub_flow</sys_class_name>
+        <sys_created_by>AM</sys_created_by>
+        <sys_created_on>2025-02-08 11:17:44</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>abf9da92c3a7521052237405e4013193</sys_id>
+        <sys_mod_count>26</sys_mod_count>
+        <sys_name>Project Efforts Approval Workflow</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Zynder Tech" source="8d447286c3a3121052237405e4013105">8d447286c3a3121052237405e4013105</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Zynder Tech">8d447286c3a3121052237405e4013105</sys_scope>
+        <sys_update_name>sys_hub_flow_abf9da92c3a7521052237405e4013193</sys_update_name>
+        <sys_updated_by>Sreerag.Anchery</sys_updated_by>
+        <sys_updated_on>2025-04-24 08:44:45</sys_updated_on>
+        <type>flow</type>
+        <version>2</version>
+    </sys_hub_flow>
+    <sys_translated_text action="delete_multiple" query="documentkey=abf9da92c3a7521052237405e4013193"/>
+    <sys_variable_value action="delete_multiple" query="document_key=abf9da92c3a7521052237405e4013193"/>
+    <sys_flow_record_trigger action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <condition table="u_project_effort">u_approvalCHANGESTOrequested<item display_value="Requested" endquery="false" field="u_approval" goto="false" newquery="false" operator="CHANGESTO" or="false" value="requested"/>
+        </condition>
+        <name/>
+        <on_delete>false</on_delete>
+        <on_insert>true</on_insert>
+        <on_update>true</on_update>
+        <published_version/>
+        <run_flow_in>background</run_flow_in>
+        <run_on_extended>false</run_on_extended>
+        <run_when_setting>both</run_when_setting>
+        <run_when_user_list/>
+        <run_when_user_setting>any</run_when_user_setting>
+        <sys_class_name>sys_flow_record_trigger</sys_class_name>
+        <sys_created_by>AM</sys_created_by>
+        <sys_created_on>2025-02-08 12:07:22</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>f6556656c3e7521052237405e4013163</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope display_value="Zynder Tech">8d447286c3a3121052237405e4013105</sys_scope>
+        <sys_updated_by>AM</sys_updated_by>
+        <sys_updated_on>2025-02-10 13:27:42</sys_updated_on>
+        <table>u_project_effort</table>
+        <trigger_definition/>
+    </sys_flow_record_trigger>
+    <sys_trigger_runner_mapping action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <data>{"run_flow_in":"background","run_when_user_list":[],"run_when_setting":"both","run_when_user_setting":"any","run_on_extended":"false"}</data>
+        <identifier>abf9da92c3a7521052237405e4013193</identifier>
+        <runner>FDTriggerRunner</runner>
+        <sys_created_by>Sreerag.Anchery</sys_created_by>
+        <sys_created_on>2025-04-24 08:44:45</sys_created_on>
+        <sys_id>8e3680a283052e50a946f896feaad302</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_updated_by>Sreerag.Anchery</sys_updated_by>
+        <sys_updated_on>2025-04-24 08:44:45</sys_updated_on>
+        <trigger display_value="">f6556656c3e7521052237405e4013163</trigger>
+    </sys_trigger_runner_mapping>
+    <sys_trigger_runner_mapping action="delete_multiple" query="identifier=abf9da92c3a7521052237405e4013193^sys_idNOT IN8e3680a283052e50a946f896feaad302"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=abf9da92c3a7521052237405e4013193"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=abf9da92c3a7521052237405e4013193^sys_idNOT IN27f952d2c3a7521052237405e401316a"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>abf9da92c3a7521052237405e4013193</id>
+        <name>project efforts approval workflow</name>
+        <sys_created_by>AM</sys_created_by>
+        <sys_created_on>2025-02-08 11:17:44</sys_created_on>
+        <sys_id>27f952d2c3a7521052237405e401316a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>AM</sys_updated_by>
+        <sys_updated_on>2025-02-08 11:17:44</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=27f952d2c3a7521052237405e401316a"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=abf9da92c3a7521052237405e4013193^sys_idNOT IN1b50ee1ec3a7521052237405e4013172,5b50ee1ec3a7521052237405e401316f,d350ee1ec3a7521052237405e401316b"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name,uiTypeLabel=Table Name</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>table_name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">table_name</internal_type>
+        <label>Table Name</label>
+        <mandatory>false</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Project Efforts Approval Workflow">abf9da92c3a7521052237405e4013193</model>
+        <model_id>abf9da92c3a7521052237405e4013193</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_abf9da92c3a7521052237405e4013193</name>
+        <next_element/>
+        <order>101</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>AM</sys_created_by>
+        <sys_created_on>2025-02-08 11:45:34</sys_created_on>
+        <sys_id>1b50ee1ec3a7521052237405e4013172</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Zynder Tech">8d447286c3a3121052237405e4013105</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>AM</sys_updated_by>
+        <sys_updated_on>2025-02-08 11:45:34</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=1b50ee1ec3a7521052237405e4013172"/>
+    <sys_complex_object action="INSERT_OR_UPDATE">
+        <label/>
+        <name>FDCollection</name>
+        <namespace>FlowDesigner</namespace>
+        <scope_name>global</scope_name>
+        <serialized_content>{"FlowDesigner:FDCollection":{"$COCollectionField":[{"FDChangeDetails":{"previous_display_value":"String","previous_display_value.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Previous Display Value\",\"mandatory\":\"false\",\"order\":\"4\",\"max_length\":\"0\"}"},"previous_value":"String","previous_value.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Previous Value\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"0\"}"},"current_display_value":"String","current_display_value.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Current Display Value\",\"mandatory\":\"false\",\"order\":\"5\",\"max_length\":\"0\"}"},"current_value":"String","current_value.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Current Value\",\"mandatory\":\"false\",\"order\":\"3\",\"max_length\":\"0\"}"},"field_name":"String","field_name.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Field Name\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\"}"}}}],"$COCollectionField.$type_facets":{"SimpleMapFacet":"{\"pwd2droppable\":\"true\",\"default_value\":\"\",\"label\":\"Changed Fields\",\"mandatory\":\"false\",\"child_name\":\"FDChangeDetails\",\"uiTypeLabel\":\"Array.Object\",\"co_type_name\":\"FDCollection\",\"child_label\":\"FDChangeDetails\",\"child_type_label\":\"Object\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"array.object\",\"child_type\":\"object\",\"order\":\"100\",\"max_length\":\"4000\"}"},"$COCollectionField.$field_facets":{"SimpleMapFacet":"{\"up-shift-collection-level\":\"true\"}"}},"FlowDesigner:FDCollection.$type_facets":{"SimpleMapFacet":"{\"pwd2droppable\":\"true\",\"default_value\":\"\",\"label\":\"Changed Fields\",\"mandatory\":\"false\",\"child_name\":\"FDChangeDetails\",\"uiTypeLabel\":\"Array.Object\",\"co_type_name\":\"FDCollection\",\"child_label\":\"FDChangeDetails\",\"child_type_label\":\"Object\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"array.object\",\"child_type\":\"object\",\"order\":\"100\",\"max_length\":\"4000\"}"}}</serialized_content>
+        <sys_class_name>sys_complex_object</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-06-13 23:19:20</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path/>
+        <sys_id>f4f014150f023300ecf0cc52ff767eed</sys_id>
+        <sys_mod_count>101</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package display_value="Flow Designer Designer Model" source="com.glide.hub.designer_backend.model">cf3bf370e11712105590bd68cbbecbce</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Global">global</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-28 05:06:11</sys_updated_on>
+        <type>complex_object_collection</type>
+    </sys_complex_object>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>child_label=FDChangeDetails,child_name=FDChangeDetails,child_type=object,child_type_label=Object,co_type_name=FDCollection,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,pwd2droppable=true,uiType=array.object,uiTypeLabel=Array.Object</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>changed_fields</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Changed Fields</label>
+        <mandatory>false</mandatory>
+        <max_length>4000</max_length>
+        <model display_value="Project Efforts Approval Workflow">abf9da92c3a7521052237405e4013193</model>
+        <model_id>abf9da92c3a7521052237405e4013193</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_abf9da92c3a7521052237405e4013193</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>AM</sys_created_by>
+        <sys_created_on>2025-02-08 11:45:34</sys_created_on>
+        <sys_id>5b50ee1ec3a7521052237405e401316f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Zynder Tech">8d447286c3a3121052237405e4013105</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>AM</sys_updated_by>
+        <sys_updated_on>2025-02-08 11:45:34</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=5b50ee1ec3a7521052237405e401316f"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=document_id,uiTypeLabel=Document ID</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent>table_name</dependent>
+        <dependent_on_field>table_name</dependent_on_field>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>current</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">document_id</internal_type>
+        <label>Record</label>
+        <mandatory>true</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Project Efforts Approval Workflow">abf9da92c3a7521052237405e4013193</model>
+        <model_id>abf9da92c3a7521052237405e4013193</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_abf9da92c3a7521052237405e4013193</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>AM</sys_created_by>
+        <sys_created_on>2025-02-08 11:45:34</sys_created_on>
+        <sys_id>d350ee1ec3a7521052237405e401316b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Zynder Tech">8d447286c3a3121052237405e4013105</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>AM</sys_updated_by>
+        <sys_updated_on>2025-02-08 11:45:34</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>true</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=d350ee1ec3a7521052237405e401316b"/>
+    <sys_hub_flow_output action="delete_multiple" query="model=abf9da92c3a7521052237405e4013193"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=abf9da92c3a7521052237405e4013193"/>
+    <sys_hub_trigger_instance_v2 action="delete_multiple" query="flow=abf9da92c3a7521052237405e4013193^sys_idNOT IN2f50ee1ec3a7521052237405e401319b"/>
+    <sys_hub_trigger_instance_v2 action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="Project Efforts Approval Workflow">abf9da92c3a7521052237405e4013193</flow>
+        <name>Created or Updated</name>
+        <published_version/>
+        <remote_sys_id/>
+        <sys_created_by>AM</sys_created_by>
+        <sys_created_on>2025-02-08 11:45:34</sys_created_on>
+        <sys_id>2f50ee1ec3a7521052237405e401319b</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>Sreerag.Anchery</sys_updated_by>
+        <sys_updated_on>2025-04-23 13:33:34</sys_updated_on>
+        <trigger_definition display_value="Created or Updated">a45d9180c32222002841b63b12d3aea7</trigger_definition>
+        <trigger_inputs>H4sIAAAAAAAA/+VaW3ObOBT+KxqedmeyO2BsE6dP2Vy2mUmTjuN2HzIZRiBhs4uFIwSpt5P/vkcgMObiW5KtnfahLZI4Ot/ROZ8+ydx/1wLs0EA70UbYCah2pPlMUM5wMJrPKDQL2WwzPJV9U8wIFiGfayeCx/RI83g4HdHpLMACBns4iKAx5IRy7cQ40hIcxPRuHl0RsATvp2aUTU11w3Nsz3j4N3WFTT0v5AK6iB+B0flXNeJz1o8u8v4Z5mBLyHm+a+7EDwinTDu5fwAAcjLXM6gxONZdswN/dL1z3DWcvukYHWJiinUwUQVecU404F8go98EZYSSAnQtNJxicsuCeTFiApHNwjDF3yL/X7B+rMtxHgXfXZr1FY+2CkHW7E5C36W3M+GHLGvJ/Mw6wyCespvMfxk86uE4EHnwoCWOwB6dSZelE8oj724SPg3zCS99lqJTnUHo4qB4wkJw34kFjWTAPT+A0NtZbKIw5qn3w4uz2+G5/dfp6OzjxdAeXtyNhldno4tz7TnFZT/G0mLmofLFzuA8Fyt+6dNALmA0j2xYySMtcrk/E6eu8JM8xZ6PFmnLYwY27GI9agmcRa4I4bUfQQDuAUMentQk9HvXyuQwZiiElYO/kBtzCI5AeVZ4V1M8VkH1PudJmAZF5U+CuW1Pben/JHZsCNt4DLHy2SwWNu72yMBoTUtrKTRpeYDpe017eJarRQOogVLOeV+i8tMnP4p8Ni4FqcAoU7IOsUAHuYvyCGZQo8PC+rBUgPmgVeSk6630VE+ppJIqFXbagI8Mt9vRTaevWzIUBvzXM3RL72GPmLruHJf4qD59q1+ikuJlcKsYSrVsQlHdLSkqSosr2KCUqkHNnS9X90Z5miwnubLTkUmhmPBsD12rMLq5FaUXiZg1ny/n4ypor7wTYJJgeIPkGDdh+g0Y3QvCJ6CRHdjcwe4/Yx7GjFT5TtpEPkOLEegXFb9fD4vtyswOeoiuxrs84nBQvjqnL5IqL0vM5juxecc0qNXv9nUgcVPyd28wcFzc8Tyrb1HDqLD5YuJGbw6CxddUT9JUfm202ZiZSVNCb8HlP97BFzG6SsVGPs/69p+5z0JG/BR9nbfzrkh7zbJ2SzMuTpN4BudJeDz7eHrzJ5xCbjl9BCYSqWZaV9uWbhHSSnGuU6rtMt4Gh0QD9Depbf0HHSPVHcCuGTgNCQ3OF+a0pb1GRiuPkB3OKJeRgfe0r6fXamE/qH8vh7efPhSLDe89YSYiW4Q2JsQuxX/DVM9iUj+TbnYafZpQZkdUCLmXbS9gGEj89B2cTVLa1WUmoJSfQo5uQvbb1WIcuqOwe6Z5d0B7fFnJbAIajHH0rlA7oZjUlBsg/QPal5DKA0bLmv/sh/VKxSXLod1e3uFOBw8M03ItCATIO69LHWx0Oz08sPqm1a/Iu8r07Y7tvdDbkGCSVqpqElSbFnDSyAOFwKpKtB1qpJIYyrS5Rlz+vEF5kaDNq6/1hmIXZ/dfAxdlD65yO5Dbe00DjAOf0LzvDaiwPHWyoL3tidB1BqTXs1qIkHpNRFiefJVjoiEW/4s6lhugdKSFGr9kXfv1g8ubJ+pL9Kqck9qhV5Yx5yGCDgSTIN9DSmtQgpw5EhMKtR/AERsmRHL2A9MvZflWR14w+7vGnV1J1FQrNCNVWwcE7G0EaaWuXnrnSInpDkibKO1arVzcrkwr3XsvT7cmlaSJo1bKse3sVm02CrJSTSznwIb68x2jfrMb0wYv9n9Hlk6PsmXYYR8OmVu5N3EP+IOFmPmPMbXdCWbj7GOEHNclLCvF7gRlQ1A25HCR4uAJzyOtqiCgJGXVq59voQHqn2U8faBAaUL5vLaSshHFMyJ32YOCtrVo6KwQDTmMSHB4czwvs2aeH2t/lITDGvV6AN4wzBr4XvmHi2WmafehRRF0XqgIStOrBBD+lKa7TnFZj6ZYuBMaHSHIkvRjhnRT8nkk0tG/v+atl1v+6EMRadOG2co9SRttNW2R6+q7tvLFlll1Zbl4kkqhqde6a++33j/8FwkNFZFmpaGi97rqYofvJbVmefHwH3k9uK3iKwAA</trigger_inputs>
+        <trigger_outputs/>
+        <trigger_type>record_create_or_update</trigger_type>
+    </sys_hub_trigger_instance_v2>
+    <sys_hub_action_instance_v2 action="delete_multiple" query="flow=abf9da92c3a7521052237405e4013193^sys_idNOT IN6f50ee1ec3a7521052237405e401319d,de12aadec3a7521052237405e401314b,ef50ee1ec3a7521052237405e40131a2"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Ask For Approval">f8f2e9920b10030085c083eb37673abd</action_type>
+        <action_type_parent display_value="Ask For Approval">bae0a1120b10030085c083eb37673a92</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>f8f2e9920b10030085c083eb37673abd</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Project Efforts Approval Workflow">abf9da92c3a7521052237405e4013193</flow>
+        <generation_source/>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>AM</sys_created_by>
+        <sys_created_on>2025-02-08 11:45:34</sys_created_on>
+        <sys_id>6f50ee1ec3a7521052237405e401319d</sys_id>
+        <sys_mod_count>38</sys_mod_count>
+        <sys_scope display_value="Zynder Tech">8d447286c3a3121052237405e4013105</sys_scope>
+        <sys_updated_by>Zynder Employee1</sys_updated_by>
+        <sys_updated_on>2025-04-24 08:45:55</sys_updated_on>
+        <ui_id>4e1a8e65-6061-4780-b542-c3ec3cddd34c</ui_id>
+        <values>H4sIAAAAAAAA/+1Y31PbOBD+VzR6uoNgnIT8IPfEkHLXm7tyA7QvmPEo8jpRx5Fdyaakmfzvt5JlJ00gDXfhgbYvgFa7q29X365X3M6piOiA9vpxC05PW/6o6ftt3+93uN9vw6jd6/bajPu0QSWbAmoq4KmKcH3PksII5vNzBSyHiKSKvM8i82fY9HihFMh8sUDVSOgsYbMPzgIlfCKSCPfp4PauQTOm0HkOig7ma1u7okvYCBJUvargrcPNZ5lZRykvpogrFJXwL2c5dDvk7RB30MjA8RsUHnKQESCOmCUaGnTKJAaZqhkd5KpAAYYfXcpkVmtMhMzLOKfsQYsveHC7ZfRiwMC4y0G9DF1+SnE8ZDm7Rs88L1SdrlRw0GVKIohZkeTnq7JS4TLLRSpLk5yNkso6TYqpfFcmhNYOVq6j0AgCMhOnQV6GFV9P0s9XFcgLIW1GXIhJyllSr1ieKzEqcgNnTiEBm+IpyzIhx2Gm0nthjRHK1BsnuPDiJP2MZ2oxlh7jBreHWWXeBcqHVvyBKWGC+BvdoPGiQfVMnydM62UomMPwU2GQlIG5EEKbhTIFxo4rkeVneMo9OMyLhmP+iG/lFl9SqXS3JH5hAvsIPA8hjlOVbxL9n3KfvKn2n0f7HaBVtL9x2NagOtLbZWj3vua8NSPvyg1H+eZ2yjvJkvMlWR6hfN9/RZR3Yb16zn+L7n5zG6ei/pJDiABjYEkYC0hWG/4eGvoOKCpmnzkY5MLBeAqe47pdPsZ1a7/G9dYzuf50f+/7/mui+4/U4flWskF7yamPaaHkyzB+BxAV4/8sUawTfh3cf+F7+yffv3++n3S2Um1lTKh7KE9lJAxivcL6svOCvgIzxOgzOdusg0d1nlcZO8Cth/siAf0t+K4u6k3ljFZro/6oVB5dfZzsa9x/ZeXx/U4/5ZWVMoP0Mc6geJsRPT4I5MHBGcfka2LQHp9Z+MTAJ4XGiEk+ARJHoZWkI1MMHrm2Dsi00DlRgJcrCSO2ujxiPF4a0hFZTEf4S2iSxrGGnIxm5LBJhCRvlMIn9R/Iv8QccQ1l0iyYeyYSO7ynlgKaOEqRIkNgmUKoxiagXkAJi7H8KnjGHB7YNEtggGgU0RN8nOAFcBIUWIFRpejhDY/HoKqnvGcVzQ3auPDU34wvF1ntxQiPAxlI43us0iJzbsfaG0OObyK823z2i5G2el9mhmReDnziJcDuwatuyKttW71f0ak7J3ik5/x+G9BDq34Y0LuABpIuFsvv/9YGE58uG0pUgIl89ZE3D2jJ1YAOAipTCQFtBNRohaajWDFqICPrDSubzxeLUlIo5hw0V5ZL64jNtNXUfAIRNiQr/UoS2g7o5Pv4j8oOOama7rAAMiyTspkm12xrnGVexMYwcu0UrKfjG7E6lHT2NpSc/Oy5/7fnIkwRViVoJg5shS/wDIWTbruDP3px22+2mn4fuv0+P/UZ73e7nZOVmXz5HQem0fdep/IdYGy8Q68qHE8CrIoCb0uO1wuhEu79Bdrs/kjsL8TNWpZLyUaeX65M3kvxqYC3hkfd1qh76vejoyj2R0cn/XbniHHwj6Db7EAn6vJOs73HKrr7FyVF1na3FwAA</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>f9d01dd2c31332002841b63b12d3aea1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Project Efforts Approval Workflow">abf9da92c3a7521052237405e4013193</flow>
+        <generation_source/>
+        <order>3</order>
+        <parent_ui_id>0970990e-a62f-499f-8b0a-29803d356365</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>AM</sys_created_by>
+        <sys_created_on>2025-02-08 11:53:08</sys_created_on>
+        <sys_id>de12aadec3a7521052237405e401314b</sys_id>
+        <sys_mod_count>35</sys_mod_count>
+        <sys_scope display_value="Zynder Tech">8d447286c3a3121052237405e4013105</sys_scope>
+        <sys_updated_by>Zynder Employee1</sys_updated_by>
+        <sys_updated_on>2025-04-24 08:45:55</sys_updated_on>
+        <ui_id>297a40a1-6702-42bb-abd3-bd1a420d3755</ui_id>
+        <values>H4sIAAAAAAAA/+VVXW/aMBT9K5GfoyghFLW8VTCkSV07tVtfuipy7Bvw5HzMsWkZ4r/vOnECg4pRqS9oPHG/7HNO7kme1kRwMiZD4GF0FY1YHMXxIAwHl8MoHcVpNOAxBYiITwqaA3YqYKXiGC+pNDaxXk8UUA3cK5X3veL2bxIFzCgFhd5ssJWLupJ09egmMMMWQnKsk/HTs08qqvBwDYqM13ulU9FJmoLE1vsO3j5cvapszEtmcsSViC554yanruJ9nmIFhyycKPQJvGooOCCQjMoafJLTAlmWakXGWhlMIH9+V8hV37EQhW6J5vS1Fr/x5mFo+zJAZsyJ0IeJE6hNZ1Oq6QOezLRRvV6lYFC3mnDIqJF6sptrG+4qLcqiHdE0ld10KU1e3LaKkP6AnedhagQBleVpkbe0sodF+XLfgZyJopHEUZQlo7KPqNZKpEZbOGsCEhqNc1pVopgnlSqXohlGKHkwlxgEmSxf8M5azIuAMos7QFVpMMP8tEk/UiUsiS94DA5vfFKv6omkdb2lghomv4xF0hJzFJJGhUaCpNkEO8yUqPQ1XrUEB3zju/1PL45tGLvaLtTOmVsPGEvxJzCdQJaVSh/u/Ne27n3q6u9zwAn4Ogd8a57723idCQ5yN7uz3m1bcBa4+DALXJ6TBRyNs/fAvzY/HBx9t+5sUrPs9V9bj6CQFpU/TBjG/LqJgB9u/5HO9/ngBLSdD2YCJK/fgN+ZAHKEqCFp6ewZwRW9R1fsvwcf5oZoFDa/M/LEf/NZeP4D0rXGNBgJAAA=</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>f9d01dd2c31332002841b63b12d3aea1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Project Efforts Approval Workflow">abf9da92c3a7521052237405e4013193</flow>
+        <generation_source/>
+        <order>6</order>
+        <parent_ui_id>62511bff-50db-4e55-9b82-5dfff0762893</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>AM</sys_created_by>
+        <sys_created_on>2025-02-08 11:45:34</sys_created_on>
+        <sys_id>ef50ee1ec3a7521052237405e40131a2</sys_id>
+        <sys_mod_count>42</sys_mod_count>
+        <sys_scope display_value="Zynder Tech">8d447286c3a3121052237405e4013105</sys_scope>
+        <sys_updated_by>Zynder Employee1</sys_updated_by>
+        <sys_updated_on>2025-04-24 08:45:55</sys_updated_on>
+        <ui_id>651f1583-f23c-4f33-865c-03d559a2f38a</ui_id>
+        <values>H4sIAAAAAAAA/+1WW0/bMBT+K5GfqyhpC4K+TVSVJjGYYGMPXCLXPgUPx858Aboq/33HiRM6QNBpfUFbn+pzy/d9Puck5ysiOJmQMfAs38932SgfjYZZNtwb5/Pd0Twf8hEFyMmAKFoCRhpg2nA831Hpg2G1OjBAHfBEm+RrxcPfIk+ZNwaUq2sM5cJWki7PYgZa2I2QHP1kcn45IBU1WNyBIZPVE9em6CSdg8TQkw7eU7huWYUz18yXiKsQnfEwZk6jJ/k4RQ8mBTh5NiDw4EBxQCALKi0MSEkVstRmSSbOeDQgf36s5LKPuBHKtURL+mDFT3zyOAtxC0BmLIrQH4soUGteTKmjp1iZOW96vbRgYFtNOCyol+5g3dYGHFdOaNWmODqXXbaWvlRHrSKkL7B2H94iCKgCz4C8pbU4vdH3Jx3ImVCNJJGi1IzK/kSdM2LuXYCzIiCh0bikVSXUdVEZfSeaZIRSptcSD+lC6nt8phXXKqUs4E5RVZrO0D5tzGfUiEDiE5bB5HpA7NIeSGrtIxXUsPjhA5KWWKRQNCo0EhRNJ4RkZkTlPuCj7iACrwex/+c7r3UY239sqLWab87AY+xWxmADkN0YfGku/2XQcRKe2Q7Xc5Oj1hHnYGdrc7D3nuYg0nj3g/BW+2fDVxfsWic1HW/XWt8XCAppUXnhs2yELfsdGLb/FTo4F4EOlQWyDUK0IZ+NDjHJN21uJ8mFev0NkvogW0go7jGhri/UCZTU3NpJ8mamaSPr+ur3Ki0QNIZDoTTe13Nsyd+A2yy5x/d8PfwXdlvC/tmW3WAWui07EyC5fWE4uhULJd6og6IdlidrNjqTs+jsPzm2tmvz3az5vaON+698eXRGBF3Xl78AkvCCGIcLAAA=</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_sub_flow_instance_v2 action="delete_multiple" query="flow=abf9da92c3a7521052237405e4013193"/>
+    <sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=abf9da92c3a7521052237405e4013193^sys_idNOT IN2f50ee1ec3a7521052237405e401319f,39167883c32b161052237405e4013123,5612aadec3a7521052237405e401314d,e350ee1ec3a7521052237405e40131a2"/>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">dfbe33ce834daa50a946f896feaad362</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Project Efforts Approval Workflow">abf9da92c3a7521052237405e4013193</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>2</order>
+        <outputs_assigned/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>AM</sys_created_by>
+        <sys_created_on>2025-02-08 11:45:34</sys_created_on>
+        <sys_id>2f50ee1ec3a7521052237405e401319f</sys_id>
+        <sys_mod_count>49</sys_mod_count>
+        <sys_scope display_value="Zynder Tech">8d447286c3a3121052237405e4013105</sys_scope>
+        <sys_updated_by>Sreerag.Anchery</sys_updated_by>
+        <sys_updated_on>2025-04-24 08:44:41</sys_updated_on>
+        <ui_id>0970990e-a62f-499f-8b0a-29803d356365</ui_id>
+        <values>H4sIAAAAAAAA/+1U227TQBD9lcjPjrW+kuYtAlVCAirRqi9QWePdcbJi7TXeddMQ5d+Z9SWNSgII9ZE3z5nbObMz3nu6s01nzZ1eGSPXtbf88uB7snYYfe+9Gir0lh7XtZBW6jrvAd97BNU5x6ppWk3GTJrZ8I2C3EKaRsHu/vdRfCOVaHHs2kBLtS223nL/wmV3DeYKClRU7Na2sl5TuhRklQzK8IqHPI6yOGIsWiRhkcVFGIkYEGKKmxLfTiJmH3rEv6jO9SPcTJ10KxytkPkePlmsBdFflqAM+l4FtQCr290RaRHETa2egY2sLZXzXPCTkT+odpSmLrBE0shxcB7NfBzfAPONlhxvGkdwQCwUaszhWnVV/WnQ4QaPJXTKToMnpDNUDxtH2rEYKZW3G739PDW8lnUvcHQqzUEdLbA0hqKzaNzDoMKKCuUVNA0NJ3ePKftk4lIFa0VGUCq9paZuowLgjnhAM4LgmvB3PXwPrXQqPlIZSh5oFmAkz/vto3K2JQmHfiz5984RGgSOUvJhGhRgeCsbu6I+jziyPvi/ru7J1u73CYawwCydZywL58mbBZsXaRLNeYw85kKIOOEBjGubGwsWD4evHWOxgItr/lplX+MuriAt05Cl5+8iyc7dxZmLuHwM0R+OwT3fX94CY+z/MZwegzT5sNSjtr75P9/Cg1v8oYMZ9kYgl4aI3Dns/fS3d44dLYDkp9BWt9+chGfs8BPftZXlNwYAAA==</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">1fbe33ce834daa50a946f896feaad368</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Project Efforts Approval Workflow">abf9da92c3a7521052237405e4013193</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="End">d176605ea76103004f27b0d2187901c7</logic_definition>
+        <order>7</order>
+        <outputs_assigned/>
+        <parent_ui_id>62511bff-50db-4e55-9b82-5dfff0762893</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>AM</sys_created_by>
+        <sys_created_on>2025-02-10 11:56:42</sys_created_on>
+        <sys_id>39167883c32b161052237405e4013123</sys_id>
+        <sys_mod_count>36</sys_mod_count>
+        <sys_scope display_value="Zynder Tech">8d447286c3a3121052237405e4013105</sys_scope>
+        <sys_updated_by>Sreerag.Anchery</sys_updated_by>
+        <sys_updated_on>2025-04-24 08:44:41</sys_updated_on>
+        <ui_id>57f7c5ad-f8b0-4181-8baa-0c24942e17dc</ui_id>
+        <values>H4sIAAAAAAAA/6tWyi8tKSgtKQ7JdywuzkzPU7KKjtVRyswDiUHYZYlFmYlJOalQbkpqcmZxZn5eCEjME0ldSmVeYm5mMrJQeX5RdlpOfjlCrBYAD1ouqHEAAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">57be33ce834daa50a946f896feaad365</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Project Efforts Approval Workflow">abf9da92c3a7521052237405e4013193</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="End">d176605ea76103004f27b0d2187901c7</logic_definition>
+        <order>4</order>
+        <outputs_assigned/>
+        <parent_ui_id>0970990e-a62f-499f-8b0a-29803d356365</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>AM</sys_created_by>
+        <sys_created_on>2025-02-08 11:53:08</sys_created_on>
+        <sys_id>5612aadec3a7521052237405e401314d</sys_id>
+        <sys_mod_count>48</sys_mod_count>
+        <sys_scope display_value="Zynder Tech">8d447286c3a3121052237405e4013105</sys_scope>
+        <sys_updated_by>Sreerag.Anchery</sys_updated_by>
+        <sys_updated_on>2025-04-24 08:44:41</sys_updated_on>
+        <ui_id>895f4f7a-7821-421d-ae0b-fe43fe130646</ui_id>
+        <values>H4sIAAAAAAAA/6tWyi8tKSgtKQ7JdywuzkzPU7KKjtVRyswDiUHYZYlFmYlJOalQbkpqcmZxZn5eCEjME0ldSmVeYm5mMrJQeX5RdlpOfjlCrBYAD1ouqHEAAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">93be33ce834daa50a946f896feaad367</block>
+        <comment/>
+        <connected_to>0970990e-a62f-499f-8b0a-29803d356365</connected_to>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Project Efforts Approval Workflow">abf9da92c3a7521052237405e4013193</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="Else If">666e5545c3e232002841b63b12d3ae99</logic_definition>
+        <order>5</order>
+        <outputs_assigned/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>AM</sys_created_by>
+        <sys_created_on>2025-02-08 11:45:34</sys_created_on>
+        <sys_id>e350ee1ec3a7521052237405e40131a2</sys_id>
+        <sys_mod_count>50</sys_mod_count>
+        <sys_scope display_value="Zynder Tech">8d447286c3a3121052237405e4013105</sys_scope>
+        <sys_updated_by>Sreerag.Anchery</sys_updated_by>
+        <sys_updated_on>2025-04-24 08:44:41</sys_updated_on>
+        <ui_id>62511bff-50db-4e55-9b82-5dfff0762893</ui_id>
+        <values>H4sIAAAAAAAA/+1UTY/TMBD9K6uc0ygfbSm9VaCVkICVdld7gVU0sSetwbGN7Wy3VP3vjPPRrWALCCFO3OI345n3xm+yj3TrTevdrV45J9YqWn64jyOhAkbf+0hBg9EyYlpx4YVWZQfE0QPINgRWxlhNhwvhLq7xEzKPnMJcOCNhd/fzLLYRklscuhqwVNujjZb770J+Z7CUUKGkYjfeCrWm64LTqU6hzl6yjBX5vMjTNF9Ms2peVFnOC0DIKW+8+GoUcfG2Q+Kz6kI/wt3YSVseaGVpHOGjR8WJ/rIG6TCOGlAcvLa7I2IR+JWST8BGKE/lopD86MRXqp3PZiGxRtLIsA8ej+Uwvh5mGy0YXplAsEc8VHK4w7RsG/W+1xEGjzW00o+DJ6R1VA9NIB1YDJTqm43eXo8NL4XqBA5BqRnI4wk8jaFqPbrwMCixoUJlA8bQcMrwsKK7TFyaZC3pkNRSb6lpcFQCLBBPaEaQXBL+uoPvwIqg4h2Vocs9zQqcYGXnPirnLUk4dGMpv7SBUC9wkFL206AEx6wwfkV9HnBgfYh/tO6Ja/f7KWawwPlsMk/n2WT6YpFOqtk0n7ACWcE458WUJTDYtnQePB4OH9s0LciV52z+t8r+g73IntuLZzbi/DLkv1iG8Hy/uQtpmv5fhtNlEK7sTT1o65r/8S7cB+P3HVzvG45MOCJyG7A3498+BHZkAMFOoa22n4OEJ+zwDXVRfp83BgAA</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=abf9da92c3a7521052237405e4013193^sys_idNOT IN6eef60168381ea50a946f896feaad353,aaef60168381ea50a946f896feaad353"/>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>abf9da92c3a7521052237405e4013193</attached_to>
+        <extra_info/>
+        <order>1</order>
+        <prescription/>
+        <source_ui_id>3bb4e2c0-5541-4178-97c0-732c6edb4eb9</source_ui_id>
+        <sys_created_by>Sreerag.Anchery</sys_created_by>
+        <sys_created_on>2025-04-23 17:08:26</sys_created_on>
+        <sys_id>6eef60168381ea50a946f896feaad353</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="Zynder Tech">8d447286c3a3121052237405e4013105</sys_scope>
+        <sys_updated_by>Sreerag.Anchery</sys_updated_by>
+        <sys_updated_on>2025-04-23 17:08:26</sys_updated_on>
+        <transform_compositions>[{"id":"06190ffa23a220103a3339e1d7bf65f9","transformType":null,"transformDefinition":null,"order":0,"parameters":[{"id":null,"name":"number","label":"Number","order":0,"attributes":{},"value":"1","type":"int","defaultValue":"","typeLabel":null,"mandatory":true,"choices":[]}]}]</transform_compositions>
+        <transform_definition_id display_value="add">50980bfa23a220103a3339e1d7bf6510</transform_definition_id>
+        <ui_id>dfc5f9f3-9ed8-4fe7-9065-f08fe035a543</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>abf9da92c3a7521052237405e4013193</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{flow_variable.counter}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>Sreerag.Anchery</sys_created_by>
+        <sys_created_on>2025-04-23 17:08:26</sys_created_on>
+        <sys_id>aaef60168381ea50a946f896feaad353</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="Zynder Tech">8d447286c3a3121052237405e4013105</sys_scope>
+        <sys_updated_by>Sreerag.Anchery</sys_updated_by>
+        <sys_updated_on>2025-04-23 17:08:26</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>3bb4e2c0-5541-4178-97c0-732c6edb4eb9</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_flow_variable action="delete_multiple" query="model=abf9da92c3a7521052237405e4013193^sys_idNOT IN03be33ce834daa50a946f896feaad33f,47be33ce834daa50a946f896feaad349,c7be33ce834daa50a946f896feaad346"/>
+    <sys_hub_flow_variable action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=integer,uiTypeLabel=Integer,uiUniqueId=76df824b-4ea2-441d-89ac-c8ce16651c88</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>counter</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Integer">integer</internal_type>
+        <label>counter</label>
+        <mandatory>false</mandatory>
+        <max_length>40</max_length>
+        <model display_value="Project Efforts Approval Workflow">abf9da92c3a7521052237405e4013193</model>
+        <model_id>abf9da92c3a7521052237405e4013193</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_variable_abf9da92c3a7521052237405e4013193</name>
+        <next_element/>
+        <order>0</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_variable</sys_class_name>
+        <sys_created_by>Sreerag.Anchery</sys_created_by>
+        <sys_created_on>2025-04-23 13:33:34</sys_created_on>
+        <sys_id>03be33ce834daa50a946f896feaad33f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Zynder Tech">8d447286c3a3121052237405e4013105</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>Sreerag.Anchery</sys_updated_by>
+        <sys_updated_on>2025-04-23 13:33:34</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_variable>
+    <sys_hub_flow_variable action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=70af9c95-a054-42eb-9986-37ae3bdb4ca6</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>approval_group</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>approval_group</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Project Efforts Approval Workflow">abf9da92c3a7521052237405e4013193</model>
+        <model_id>abf9da92c3a7521052237405e4013193</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_variable_abf9da92c3a7521052237405e4013193</name>
+        <next_element/>
+        <order>0</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_variable</sys_class_name>
+        <sys_created_by>Sreerag.Anchery</sys_created_by>
+        <sys_created_on>2025-04-23 13:33:34</sys_created_on>
+        <sys_id>47be33ce834daa50a946f896feaad349</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Zynder Tech">8d447286c3a3121052237405e4013105</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>Sreerag.Anchery</sys_updated_by>
+        <sys_updated_on>2025-04-23 13:33:34</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_variable>
+    <sys_hub_flow_variable action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=1c81d216-b207-4d7b-8df6-171102bf2fc8</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>approval</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>approval</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Project Efforts Approval Workflow">abf9da92c3a7521052237405e4013193</model>
+        <model_id>abf9da92c3a7521052237405e4013193</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_variable_abf9da92c3a7521052237405e4013193</name>
+        <next_element/>
+        <order>0</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_variable</sys_class_name>
+        <sys_created_by>Sreerag.Anchery</sys_created_by>
+        <sys_created_on>2025-04-23 13:33:34</sys_created_on>
+        <sys_id>c7be33ce834daa50a946f896feaad346</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Zynder Tech">8d447286c3a3121052237405e4013105</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>Sreerag.Anchery</sys_updated_by>
+        <sys_updated_on>2025-04-23 13:33:34</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_variable>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>current</element>
+        <help/>
+        <hint/>
+        <label>Record</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_abf9da92c3a7521052237405e4013193</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>AM</sys_created_by>
+        <sys_created_on>2025-02-08 11:45:34</sys_created_on>
+        <sys_id>1f50ee1ec3a7521052237405e401316e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Zynder Tech" source="8d447286c3a3121052237405e4013105">8d447286c3a3121052237405e4013105</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Zynder Tech">8d447286c3a3121052237405e4013105</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>AM</sys_updated_by>
+        <sys_updated_on>2025-02-08 11:45:34</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>table_name</element>
+        <help/>
+        <hint/>
+        <label>Table Name</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_abf9da92c3a7521052237405e4013193</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>AM</sys_created_by>
+        <sys_created_on>2025-02-08 11:45:34</sys_created_on>
+        <sys_id>5750ee1ec3a7521052237405e4013174</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Zynder Tech" source="8d447286c3a3121052237405e4013105">8d447286c3a3121052237405e4013105</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Zynder Tech">8d447286c3a3121052237405e4013105</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>AM</sys_updated_by>
+        <sys_updated_on>2025-02-08 11:45:34</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>changed_fields</element>
+        <help/>
+        <hint/>
+        <label>Changed Fields</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_abf9da92c3a7521052237405e4013193</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>AM</sys_created_by>
+        <sys_created_on>2025-02-08 11:45:34</sys_created_on>
+        <sys_id>db50ee1ec3a7521052237405e4013171</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Zynder Tech" source="8d447286c3a3121052237405e4013105">8d447286c3a3121052237405e4013105</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Zynder Tech">8d447286c3a3121052237405e4013105</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>AM</sys_updated_by>
+        <sys_updated_on>2025-02-08 11:45:34</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_abf9da92c3a7521052237405e4013193"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_abf9da92c3a7521052237405e4013193"/>
+    <sys_hub_flow_snapshot action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,viewActivatedIn=naturalLanguage</attributes>
+        <authored_on_release_version>26000</authored_on_release_version>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description/>
+        <flow_priority>MEDIUM</flow_priority>
+        <internal_name>project_efforts_approval_workflow</internal_name>
+        <label_cache>[{"name":"flow_variable.approval","label":"Flow Variables➛approval","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","usedInstances":{},"attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"1c81d216-b207-4d7b-8df6-171102bf2fc8"}},{"name":"flow_variable.counter","label":"Flow Variables➛counter","reference":"","reference_display":"","type":"integer","base_type":"integer","column_name":"","usedInstances":{"b08ccaad-13be-48ee-859f-b48915c1c741":["condition"],"2cec74f6-e113-45bd-b333-4f26e3b5c5b1":["counter-0"]},"attributes":{"uiType":"integer","uiTypeLabel":"Integer","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"76df824b-4ea2-441d-89ac-c8ce16651c88"}},{"name":"Created or Updated_1.current.u_project_work","label":"Trigger - Record Created or Updated➛Project Effort Record➛Project work","reference":"","reference_display":"Project work","type":"string","base_type":"string","parent_table_name":"u_project_effort","column_name":"u_project_work","usedInstances":{"651f1583-f23c-4f33-865c-03d559a2f38a":["u_additional_comment","u_work_notes"]}},{"name":"{{static.d625dccec0a8016700a222a0f7900d06}}","label":"Service Desk","reference":"sys_user_group","reference_display":"Group","type":"reference","base_type":"reference","usedInstances":{"4e1a8e65-6061-4780-b542-c3ec3cddd34c":["approval_conditions"]}},{"name":"{{static.58851c2353322010a480ddeeff7b12b0}}","label":"Report Access Request Approvers","reference":"sys_user_group","reference_display":"Group","type":"reference","base_type":"reference","usedInstances":{"4e1a8e65-6061-4780-b542-c3ec3cddd34c":["approval_conditions"]}},{"name":"Created or Updated_1.current.u_remarks","label":"Trigger - Record Created or Updated➛Project Effort Record➛Remarks","reference":"","reference_display":"Remarks","type":"string","base_type":"string","parent_table_name":"u_project_effort","column_name":"u_remarks","usedInstances":{"651f1583-f23c-4f33-865c-03d559a2f38a":["u_additional_comment","u_work_notes"]}},{"name":"Created or Updated_1.current.u_approval","label":"Trigger - Record Created or Updated➛Project Effort Record➛Approval","reference":"","reference_display":"Approval","type":"choice","base_type":"choice","parent_table_name":"u_project_effort","column_name":"u_approval","choices":[{"label":"-- None --","used":false,"image":"","reference":false,"rawLabel":"-- None --","selected":false,"missing":false,"value":""},{"used":false,"label":"Requested","image":"","reference":false,"rawLabel":"Requested","selected":false,"missing":false,"value":"requested","parameters":{"name":"u_project_effort","dependent_values":[""]}},{"used":false,"label":"Approved","image":"","reference":false,"rawLabel":"Approved","selected":false,"missing":false,"value":"Approved","parameters":{"name":"u_project_effort","dependent_values":[""]}},{"used":false,"label":"Rejected","image":"","reference":false,"rawLabel":"Rejected","selected":false,"missing":false,"value":"rejected","parameters":{"name":"u_project_effort","dependent_values":[""]}},{"used":false,"label":"Cancelled","image":"","reference":false,"rawLabel":"Cancelled","selected":false,"missing":false,"value":"cancelled","parameters":{"name":"u_project_effort","dependent_values":[""]}}],"usedInstances":{"7f486d7d-a8df-43a9-a93d-ad3ba3727d51":["condition"]}},{"name":"Created or Updated_1.current","label":"Trigger - Record Created or Updated➛Project Effort Record","reference":"u_project_effort","reference_display":"Project Effort","type":"reference","base_type":"reference","usedInstances":{"4e1a8e65-6061-4780-b542-c3ec3cddd34c":["record"],"651f1583-f23c-4f33-865c-03d559a2f38a":["record","u_additional_comment"],"b150f9eb-2adc-40de-b97d-338980190dbc":["record"],"297a40a1-6702-42bb-abd3-bd1a420d3755":["record"],"89934ebd-a9ef-4394-9e5c-048acd385128":["record"]},"attributes":{}},{"name":"4e1a8e65-6061-4780-b542-c3ec3cddd34c.approval_state","label":"1 - Ask For Approval➛Approval State","reference_display":"Approval State","type":"choice","base_type":"choice","choices":[{"label":"-- None --","value":"","order":0.0},{"label":"Not Yet Requested","value":"not requested","order":1.0},{"label":"Requested","value":"requested","order":2.0},{"label":"Approved","value":"approved","order":3.0},{"label":"Rejected","value":"rejected","order":4.0},{"label":"Cancelled","value":"cancelled","order":5.0},{"label":"No Longer Required","value":"not_required","order":6.0},{"label":"Skipped","value":"skipped","order":7.0}],"usedInstances":{"b08ccaad-13be-48ee-859f-b48915c1c741":["condition"],"97c48065-0863-4766-828b-49511793e421":["approval-0"],"0970990e-a62f-499f-8b0a-29803d356365":["condition"],"62511bff-50db-4e55-9b82-5dfff0762893":["condition"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"Created or Updated_1.table_name","label":"Trigger - Record Created or Updated➛Project Effort Table","reference":"u_project_effort","reference_display":"Project Effort","type":"table_name","base_type":"table_name","usedInstances":{"651f1583-f23c-4f33-865c-03d559a2f38a":["table_name"]},"attributes":{"test_input_hidden":"true"}}]</label_cache>
+        <master>true</master>
+        <name>Project Efforts Approval Workflow</name>
+        <natlang/>
+        <outputs/>
+        <parent_flow display_value="Project Efforts Approval Workflow">abf9da92c3a7521052237405e4013193</parent_flow>
+        <remote_trigger_id/>
+        <run_as>user</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <status>published</status>
+        <sys_class_name>sys_hub_flow_snapshot</sys_class_name>
+        <sys_created_by>AM</sys_created_by>
+        <sys_created_on>2025-02-08 12:07:21</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>aa556656c3e7521052237405e401311e</sys_id>
+        <sys_mod_count>20</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Zynder Tech">8d447286c3a3121052237405e4013105</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>Sreerag.Anchery</sys_updated_by>
+        <sys_updated_on>2025-04-24 08:44:44</sys_updated_on>
+        <type>flow</type>
+        <version>2</version>
+    </sys_hub_flow_snapshot>
+    <sys_translated_text action="delete_multiple" query="documentkey=aa556656c3e7521052237405e401311e"/>
+    <sys_variable_value action="delete_multiple" query="document_key=aa556656c3e7521052237405e401311e"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=aa556656c3e7521052237405e401311e"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=aa556656c3e7521052237405e401311e^sys_idNOT IN2a556656c3e7521052237405e401311f"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>aa556656c3e7521052237405e401311e</id>
+        <name>Project Efforts Approval Workflow</name>
+        <sys_created_by>AM</sys_created_by>
+        <sys_created_on>2025-02-08 12:07:21</sys_created_on>
+        <sys_id>2a556656c3e7521052237405e401311f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>AM</sys_updated_by>
+        <sys_updated_on>2025-02-08 12:07:21</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=2a556656c3e7521052237405e401311f"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=aa556656c3e7521052237405e401311e^sys_idNOT IN2a556656c3e7521052237405e4013134,aa556656c3e7521052237405e401312d,ea556656c3e7521052237405e4013120"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>table_name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">table_name</internal_type>
+        <label>Table Name</label>
+        <mandatory>false</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Project Efforts Approval Workflow">aa556656c3e7521052237405e401311e</model>
+        <model_id>aa556656c3e7521052237405e401311e</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_aa556656c3e7521052237405e401311e</name>
+        <next_element/>
+        <order>101</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>AM</sys_created_by>
+        <sys_created_on>2025-02-08 12:07:21</sys_created_on>
+        <sys_id>2a556656c3e7521052237405e4013134</sys_id>
+        <sys_mod_count>39</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Zynder Tech">8d447286c3a3121052237405e4013105</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>Sreerag.Anchery</sys_updated_by>
+        <sys_updated_on>2025-04-24 08:44:43</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=2a556656c3e7521052237405e4013134"/>
+    <sys_complex_object action="INSERT_OR_UPDATE">
+        <label/>
+        <name>FDCollection</name>
+        <namespace>FlowDesigner</namespace>
+        <scope_name>global</scope_name>
+        <serialized_content>{"FlowDesigner:FDCollection":{"$COCollectionField":[{"FDChangeDetails":{"previous_display_value":"String","previous_display_value.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Previous Display Value\",\"mandatory\":\"false\",\"order\":\"4\",\"max_length\":\"0\"}"},"previous_value":"String","previous_value.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Previous Value\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"0\"}"},"current_display_value":"String","current_display_value.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Current Display Value\",\"mandatory\":\"false\",\"order\":\"5\",\"max_length\":\"0\"}"},"current_value":"String","current_value.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Current Value\",\"mandatory\":\"false\",\"order\":\"3\",\"max_length\":\"0\"}"},"field_name":"String","field_name.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Field Name\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\"}"}}}],"$COCollectionField.$type_facets":{"SimpleMapFacet":"{\"pwd2droppable\":\"true\",\"default_value\":\"\",\"label\":\"Changed Fields\",\"mandatory\":\"false\",\"child_name\":\"FDChangeDetails\",\"uiTypeLabel\":\"Array.Object\",\"co_type_name\":\"FDCollection\",\"child_label\":\"FDChangeDetails\",\"child_type_label\":\"Object\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"array.object\",\"child_type\":\"object\",\"order\":\"100\",\"max_length\":\"4000\"}"},"$COCollectionField.$field_facets":{"SimpleMapFacet":"{\"up-shift-collection-level\":\"true\"}"}},"FlowDesigner:FDCollection.$type_facets":{"SimpleMapFacet":"{\"pwd2droppable\":\"true\",\"default_value\":\"\",\"label\":\"Changed Fields\",\"mandatory\":\"false\",\"child_name\":\"FDChangeDetails\",\"uiTypeLabel\":\"Array.Object\",\"co_type_name\":\"FDCollection\",\"child_label\":\"FDChangeDetails\",\"child_type_label\":\"Object\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"array.object\",\"child_type\":\"object\",\"order\":\"100\",\"max_length\":\"4000\"}"}}</serialized_content>
+        <sys_class_name>sys_complex_object</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-06-13 23:19:20</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path/>
+        <sys_id>f4f014150f023300ecf0cc52ff767eed</sys_id>
+        <sys_mod_count>101</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package display_value="Flow Designer Designer Model" source="com.glide.hub.designer_backend.model">cf3bf370e11712105590bd68cbbecbce</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Global">global</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-28 05:06:11</sys_updated_on>
+        <type>complex_object_collection</type>
+    </sys_complex_object>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>child_label=FDChangeDetails,child_name=FDChangeDetails,child_type=object,child_type_label=Object,co_type_name=FDCollection,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,pwd2droppable=true,uiType=array.object,uiTypeLabel=Array.Object</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>changed_fields</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Changed Fields</label>
+        <mandatory>false</mandatory>
+        <max_length>4000</max_length>
+        <model display_value="Project Efforts Approval Workflow">aa556656c3e7521052237405e401311e</model>
+        <model_id>aa556656c3e7521052237405e401311e</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_aa556656c3e7521052237405e401311e</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>AM</sys_created_by>
+        <sys_created_on>2025-02-08 12:07:21</sys_created_on>
+        <sys_id>aa556656c3e7521052237405e401312d</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Zynder Tech">8d447286c3a3121052237405e4013105</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>AM</sys_updated_by>
+        <sys_updated_on>2025-02-08 12:30:09</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=aa556656c3e7521052237405e401312d"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=document_id</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent>table_name</dependent>
+        <dependent_on_field>table_name</dependent_on_field>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>current</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">document_id</internal_type>
+        <label>Record</label>
+        <mandatory>true</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Project Efforts Approval Workflow">aa556656c3e7521052237405e401311e</model>
+        <model_id>aa556656c3e7521052237405e401311e</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_aa556656c3e7521052237405e401311e</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>AM</sys_created_by>
+        <sys_created_on>2025-02-08 12:07:21</sys_created_on>
+        <sys_id>ea556656c3e7521052237405e4013120</sys_id>
+        <sys_mod_count>39</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Zynder Tech">8d447286c3a3121052237405e4013105</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>Sreerag.Anchery</sys_updated_by>
+        <sys_updated_on>2025-04-24 08:44:44</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>true</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=ea556656c3e7521052237405e4013120"/>
+    <sys_hub_flow_output action="delete_multiple" query="model=aa556656c3e7521052237405e401311e"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=aa556656c3e7521052237405e401311e"/>
+    <sys_hub_trigger_instance_v2 action="delete_multiple" query="flow=aa556656c3e7521052237405e401311e^sys_idNOT IN2e556656c3e7521052237405e4013145"/>
+    <sys_hub_trigger_instance_v2 action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="Project Efforts Approval Workflow">aa556656c3e7521052237405e401311e</flow>
+        <name>Created or Updated</name>
+        <published_version/>
+        <remote_sys_id/>
+        <sys_created_by>AM</sys_created_by>
+        <sys_created_on>2025-02-08 12:07:22</sys_created_on>
+        <sys_id>2e556656c3e7521052237405e4013145</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>Sreerag.Anchery</sys_updated_by>
+        <sys_updated_on>2025-04-23 13:35:45</sys_updated_on>
+        <trigger_definition display_value="Created or Updated">a45d9180c32222002841b63b12d3aea7</trigger_definition>
+        <trigger_inputs>H4sIAAAAAAAA/+VaW3ObOBT+KxqedmeyO2BsE6dP2Vy2mUmTjuN2HzIZRiBhs4uFIwSpt5P/vkcgMObiW5KtnfahLZI4Ot/ROZ8+ydx/1wLs0EA70UbYCah2pPlMUM5wMJrPKDQL2WwzPJV9U8wIFiGfayeCx/RI83g4HdHpLMACBns4iKAx5IRy7cQ40hIcxPRuHl0RsATvp2aUTU11w3Nsz3j4N3WFTT0v5AK6iB+B0flXNeJz1o8u8v4Z5mBLyHm+a+7EDwinTDu5fwAAcjLXM6gxONZdswN/dL1z3DWcvukYHWJiinUwUQVecU404F8go98EZYSSAnQtNJxicsuCeTFiApHNwjDF3yL/X7B+rMtxHgXfXZr1FY+2CkHW7E5C36W3M+GHLGvJ/Mw6wyCespvMfxk86uE4EHnwoCWOwB6dSZelE8oj724SPg3zCS99lqJTnUHo4qB4wkJw34kFjWTAPT+A0NtZbKIw5qn3w4uz2+G5/dfp6OzjxdAeXtyNhldno4tz7TnFZT/G0mLmofLFzuA8Fyt+6dNALmA0j2xYySMtcrk/E6eu8JM8xZ6PFmnLYwY27GI9agmcRa4I4bUfQQDuAUMentQk9HvXyuQwZiiElYO/kBtzCI5AeVZ4V1M8VkH1PudJmAZF5U+CuW1Pben/JHZsCNt4DLHy2SwWNu72yMBoTUtrKTRpeYDpe017eJarRQOogVLOeV+i8tMnP4p8Ni4FqcAoU7IOsUAHuYvyCGZQo8PC+rBUgPmgVeSk6630VE+ppJIqFXbagI8Mt9vRTaevWzIUBvzXM3RL72GPmLruHJf4qD59q1+ikuJlcKsYSrVsQlHdLSkqSosr2KCUqkHNnS9X90Z5miwnubLTkUmhmPBsD12rMLq5FaUXiZg1ny/n4ypor7wTYJJgeIPkGDdh+g0Y3QvCJ6CRHdjcwe4/Yx7GjFT5TtpEPkOLEegXFb9fD4vtyswOeoiuxrs84nBQvjqnL5IqL0vM5juxecc0qNXv9nUgcVPyd28wcFzc8Tyrb1HDqLD5YuJGbw6CxddUT9JUfm202ZiZSVNCb8HlP97BFzG6SsVGPs/69p+5z0JG/BR9nbfzrkh7zbJ2SzMuTpN4BudJeDz7eHrzJ5xCbjl9BCYSqWZaV9uWbhHSSnGuU6rtMt4Gh0QD9Depbf0HHSPVHcCuGTgNCQ3OF+a0pb1GRiuPkB3OKJeRgfe0r6fXamE/qH8vh7efPhSLDe89YSYiW4Q2JsQuxX/DVM9iUj+TbnYafZpQZkdUCLmXbS9gGEj89B2cTVLa1WUmoJSfQo5uQvbb1WIcuqOwe6Z5d0B7fFnJbAIajHH0rlA7oZjUlBsg/QPal5DKA0bLmv/sh/VKxSXLod1e3uFOBw8M03ItCATIO69LHWx0Oz08sPqm1a/Iu8r07Y7tvdDbkGCSVqpqElSbFnDSyAOFwKpKtB1qpJIYyrS5Rlz+vEF5kaDNq6/1hmIXZ/dfAxdlD65yO5Dbe00DjAOf0LzvDaiwPHWyoL3tidB1BqTXs1qIkHpNRFiefJVjoiEW/4s6lhugdKSFGr9kXfv1g8ubJ+pL9Kqck9qhV5Yx5yGCDgSTIN9DSmtQgpw5EhMKtR/AERsmRHL2A9MvZflWR14w+7vGnV1J1FQrNCNVWwcE7G0EaaWuXnrnSInpDkibKO1arVzcrkwr3XsvT7cmlaSJo1bKse3sVm02CrJSTSznwIb68x2jfrMb0wYv9n9Hlk6PsmXYYR8OmVu5N3EP+IOFmPmPMbXdCWbj7GOEHNclLCvF7gRlQ1A25HCR4uAJzyOtqiCgJGXVq59voQHqn2U8faBAaUL5vLaSshHFMyJ32YOCtrVo6KwQDTmMSHB4czwvs2aeH2t/lITDGvV6AN4wzBr4XvmHi2WmafehRRF0XqgIStOrBBD+lKa7TnFZj6ZYuBMaHSHIkvRjhnRT8nkk0tG/v+atl1v+6EMRadOG2co9SRttNW2R6+q7tvLFlll1Zbl4kkqhqde6a++33j/8FwkNFZFmpaGi97rqYofvJbVmefHwH3k9uK3iKwAA</trigger_inputs>
+        <trigger_outputs/>
+        <trigger_type>record_create_or_update</trigger_type>
+    </sys_hub_trigger_instance_v2>
+    <sys_hub_action_instance_v2 action="delete_multiple" query="flow=aa556656c3e7521052237405e401311e^sys_idNOT IN66556656c3e7521052237405e4013145,6a556656c3e7521052237405e4013143,6e556656c3e7521052237405e4013144"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>f9d01dd2c31332002841b63b12d3aea1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Project Efforts Approval Workflow">aa556656c3e7521052237405e401311e</flow>
+        <generation_source/>
+        <order>6</order>
+        <parent_ui_id>62511bff-50db-4e55-9b82-5dfff0762893</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>AM</sys_created_by>
+        <sys_created_on>2025-02-08 12:07:22</sys_created_on>
+        <sys_id>66556656c3e7521052237405e4013145</sys_id>
+        <sys_mod_count>12</sys_mod_count>
+        <sys_scope display_value="Zynder Tech">8d447286c3a3121052237405e4013105</sys_scope>
+        <sys_updated_by>Sreerag.Anchery</sys_updated_by>
+        <sys_updated_on>2025-04-24 08:40:25</sys_updated_on>
+        <ui_id>651f1583-f23c-4f33-865c-03d559a2f38a</ui_id>
+        <values>H4sIAAAAAAAA/+1WW0/bMBT+K5GfqyhpC4K+TVSVJjGYYGMPXCLXPgUPx858Aboq/33HiRM6QNBpfUFbn+pzy/d9Puck5ysiOJmQMfAs38932SgfjYZZNtwb5/Pd0Twf8hEFyMmAKFoCRhpg2nA831Hpg2G1OjBAHfBEm+RrxcPfIk+ZNwaUq2sM5cJWki7PYgZa2I2QHP1kcn45IBU1WNyBIZPVE9em6CSdg8TQkw7eU7huWYUz18yXiKsQnfEwZk6jJ/k4RQ8mBTh5NiDw4EBxQCALKi0MSEkVstRmSSbOeDQgf36s5LKPuBHKtURL+mDFT3zyOAtxC0BmLIrQH4soUGteTKmjp1iZOW96vbRgYFtNOCyol+5g3dYGHFdOaNWmODqXXbaWvlRHrSKkL7B2H94iCKgCz4C8pbU4vdH3Jx3ImVCNJJGi1IzK/kSdM2LuXYCzIiCh0bikVSXUdVEZfSeaZIRSptcSD+lC6nt8phXXKqUs4E5RVZrO0D5tzGfUiEDiE5bB5HpA7NIeSGrtIxXUsPjhA5KWWKRQNCo0EhRNJ4RkZkTlPuCj7iACrwex/+c7r3UY239sqLWab87AY+xWxmADkN0YfGku/2XQcRKe2Q7Xc5Oj1hHnYGdrc7D3nuYg0nj3g/BW+2fDVxfsWic1HW/XWt8XCAppUXnhs2yELfsdGLb/FTo4F4EOlQWyDUK0IZ+NDjHJN21uJ8mFev0NkvogW0go7jGhri/UCZTU3NpJ8mamaSPr+ur3Ki0QNIZDoTTe13Nsyd+A2yy5x/d8PfwXdlvC/tmW3WAWui07EyC5fWE4uhULJd6og6IdlidrNjqTs+jsPzm2tmvz3az5vaON+698eXRGBF3Xl78AkvCCGIcLAAA=</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Ask For Approval">f8f2e9920b10030085c083eb37673abd</action_type>
+        <action_type_parent display_value="Ask For Approval">bae0a1120b10030085c083eb37673a92</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>f8f2e9920b10030085c083eb37673abd</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Project Efforts Approval Workflow">aa556656c3e7521052237405e401311e</flow>
+        <generation_source/>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>AM</sys_created_by>
+        <sys_created_on>2025-02-08 12:07:21</sys_created_on>
+        <sys_id>6a556656c3e7521052237405e4013143</sys_id>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_scope display_value="Zynder Tech">8d447286c3a3121052237405e4013105</sys_scope>
+        <sys_updated_by>Sreerag.Anchery</sys_updated_by>
+        <sys_updated_on>2025-04-24 08:40:25</sys_updated_on>
+        <ui_id>4e1a8e65-6061-4780-b542-c3ec3cddd34c</ui_id>
+        <values>H4sIAAAAAAAA/+1Y31PbOBD+VzR6uoNgnIT8IPfEkHLXm7tyA7QvmPEo8jpRx5Fdyaakmfzvt5JlJ00gDXfhgbYvgFa7q29X365X3M6piOiA9vpxC05PW/6o6ftt3+93uN9vw6jd6/bajPu0QSWbAmoq4KmKcH3PksII5vNzBSyHiKSKvM8i82fY9HihFMh8sUDVSOgsYbMPzgIlfCKSCPfp4PauQTOm0HkOig7ma1u7okvYCBJUvargrcPNZ5lZRykvpogrFJXwL2c5dDvk7RB30MjA8RsUHnKQESCOmCUaGnTKJAaZqhkd5KpAAYYfXcpkVmtMhMzLOKfsQYsveHC7ZfRiwMC4y0G9DF1+SnE8ZDm7Rs88L1SdrlRw0GVKIohZkeTnq7JS4TLLRSpLk5yNkso6TYqpfFcmhNYOVq6j0AgCMhOnQV6GFV9P0s9XFcgLIW1GXIhJyllSr1ieKzEqcgNnTiEBm+IpyzIhx2Gm0nthjRHK1BsnuPDiJP2MZ2oxlh7jBreHWWXeBcqHVvyBKWGC+BvdoPGiQfVMnydM62UomMPwU2GQlIG5EEKbhTIFxo4rkeVneMo9OMyLhmP+iG/lFl9SqXS3JH5hAvsIPA8hjlOVbxL9n3KfvKn2n0f7HaBVtL9x2NagOtLbZWj3vua8NSPvyg1H+eZ2yjvJkvMlWR6hfN9/RZR3Yb16zn+L7n5zG6ei/pJDiABjYEkYC0hWG/4eGvoOKCpmnzkY5MLBeAqe47pdPsZ1a7/G9dYzuf50f+/7/mui+4/U4flWskF7yamPaaHkyzB+BxAV4/8sUawTfh3cf+F7+yffv3++n3S2Um1lTKh7KE9lJAxivcL6svOCvgIzxOgzOdusg0d1nlcZO8Cth/siAf0t+K4u6k3ljFZro/6oVB5dfZzsa9x/ZeXx/U4/5ZWVMoP0Mc6geJsRPT4I5MHBGcfka2LQHp9Z+MTAJ4XGiEk+ARJHoZWkI1MMHrm2Dsi00DlRgJcrCSO2ujxiPF4a0hFZTEf4S2iSxrGGnIxm5LBJhCRvlMIn9R/Iv8QccQ1l0iyYeyYSO7ynlgKaOEqRIkNgmUKoxiagXkAJi7H8KnjGHB7YNEtggGgU0RN8nOAFcBIUWIFRpejhDY/HoKqnvGcVzQ3auPDU34wvF1ntxQiPAxlI43us0iJzbsfaG0OObyK823z2i5G2el9mhmReDnziJcDuwatuyKttW71f0ak7J3ik5/x+G9BDq34Y0LuABpIuFsvv/9YGE58uG0pUgIl89ZE3D2jJ1YAOAipTCQFtBNRohaajWDFqICPrDSubzxeLUlIo5hw0V5ZL64jNtNXUfAIRNiQr/UoS2g7o5Pv4j8oOOama7rAAMiyTspkm12xrnGVexMYwcu0UrKfjG7E6lHT2NpSc/Oy5/7fnIkwRViVoJg5shS/wDIWTbruDP3px22+2mn4fuv0+P/UZ73e7nZOVmXz5HQem0fdep/IdYGy8Q68qHE8CrIoCb0uO1wuhEu79Bdrs/kjsL8TNWpZLyUaeX65M3kvxqYC3hkfd1qh76vejoyj2R0cn/XbniHHwj6Db7EAn6vJOs73HKrr7FyVF1na3FwAA</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>f9d01dd2c31332002841b63b12d3aea1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Project Efforts Approval Workflow">aa556656c3e7521052237405e401311e</flow>
+        <generation_source/>
+        <order>3</order>
+        <parent_ui_id>0970990e-a62f-499f-8b0a-29803d356365</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>AM</sys_created_by>
+        <sys_created_on>2025-02-08 12:07:22</sys_created_on>
+        <sys_id>6e556656c3e7521052237405e4013144</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_scope display_value="Zynder Tech">8d447286c3a3121052237405e4013105</sys_scope>
+        <sys_updated_by>Sreerag.Anchery</sys_updated_by>
+        <sys_updated_on>2025-04-24 08:40:25</sys_updated_on>
+        <ui_id>297a40a1-6702-42bb-abd3-bd1a420d3755</ui_id>
+        <values>H4sIAAAAAAAA/+VVXW/aMBT9K5GfoyghFLW8VTCkSV07tVtfuipy7Bvw5HzMsWkZ4r/vOnECg4pRqS9oPHG/7HNO7kme1kRwMiZD4GF0FY1YHMXxIAwHl8MoHcVpNOAxBYiITwqaA3YqYKXiGC+pNDaxXk8UUA3cK5X3veL2bxIFzCgFhd5ssJWLupJ09egmMMMWQnKsk/HTs08qqvBwDYqM13ulU9FJmoLE1vsO3j5cvapszEtmcsSViC554yanruJ9nmIFhyycKPQJvGooOCCQjMoafJLTAlmWakXGWhlMIH9+V8hV37EQhW6J5vS1Fr/x5mFo+zJAZsyJ0IeJE6hNZ1Oq6QOezLRRvV6lYFC3mnDIqJF6sptrG+4qLcqiHdE0ld10KU1e3LaKkP6AnedhagQBleVpkbe0sodF+XLfgZyJopHEUZQlo7KPqNZKpEZbOGsCEhqNc1pVopgnlSqXohlGKHkwlxgEmSxf8M5azIuAMos7QFVpMMP8tEk/UiUsiS94DA5vfFKv6omkdb2lghomv4xF0hJzFJJGhUaCpNkEO8yUqPQ1XrUEB3zju/1PL45tGLvaLtTOmVsPGEvxJzCdQJaVSh/u/Ne27n3q6u9zwAn4Ogd8a57723idCQ5yN7uz3m1bcBa4+DALXJ6TBRyNs/fAvzY/HBx9t+5sUrPs9V9bj6CQFpU/TBjG/LqJgB9u/5HO9/ngBLSdD2YCJK/fgN+ZAHKEqCFp6ewZwRW9R1fsvwcf5oZoFDa/M/LEf/NZeP4D0rXGNBgJAAA=</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_sub_flow_instance_v2 action="delete_multiple" query="flow=aa556656c3e7521052237405e401311e"/>
+    <sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=aa556656c3e7521052237405e401311e^sys_idNOT IN1f16b883c32b161052237405e401314e,2e556656c3e7521052237405e401313f,6a556656c3e7521052237405e4013141,ae556656c3e7521052237405e4013140"/>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">1fbe33ce834daa50a946f896feaad368</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Project Efforts Approval Workflow">aa556656c3e7521052237405e401311e</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="End">d176605ea76103004f27b0d2187901c7</logic_definition>
+        <order>7</order>
+        <outputs_assigned/>
+        <parent_ui_id>62511bff-50db-4e55-9b82-5dfff0762893</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>AM</sys_created_by>
+        <sys_created_on>2025-02-10 11:56:47</sys_created_on>
+        <sys_id>1f16b883c32b161052237405e401314e</sys_id>
+        <sys_mod_count>36</sys_mod_count>
+        <sys_scope display_value="Zynder Tech">8d447286c3a3121052237405e4013105</sys_scope>
+        <sys_updated_by>Sreerag.Anchery</sys_updated_by>
+        <sys_updated_on>2025-04-24 08:44:44</sys_updated_on>
+        <ui_id>57f7c5ad-f8b0-4181-8baa-0c24942e17dc</ui_id>
+        <values>H4sIAAAAAAAA/6tWyi8tKSgtKQ7JdywuzkzPU7KKjtVRyswDiUHYZYlFmYlJOalQbkpqcmZxZn5eCEjME0ldSmVeYm5mMrJQeX5RdlpOfjlCrBYAD1ouqHEAAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">dfbe33ce834daa50a946f896feaad362</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Project Efforts Approval Workflow">aa556656c3e7521052237405e401311e</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>2</order>
+        <outputs_assigned/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>AM</sys_created_by>
+        <sys_created_on>2025-02-08 12:07:21</sys_created_on>
+        <sys_id>2e556656c3e7521052237405e401313f</sys_id>
+        <sys_mod_count>44</sys_mod_count>
+        <sys_scope display_value="Zynder Tech">8d447286c3a3121052237405e4013105</sys_scope>
+        <sys_updated_by>Sreerag.Anchery</sys_updated_by>
+        <sys_updated_on>2025-04-24 08:44:44</sys_updated_on>
+        <ui_id>0970990e-a62f-499f-8b0a-29803d356365</ui_id>
+        <values>H4sIAAAAAAAA/+1Vy27bMBD8lYBnWdC7jm+GgwAF0gZoglzaQFiRlE2UIlWRiuMK/vcu9bCN1mkbNMfexNnl7sxyB+qIbm3dWnOvl8aItSKLz48eEcph+N0RBRUnC0K1YsIKrfIe8MgTyNYFlnXdaDxcCHMxfHOGYSZMLWH38PssuhGSNXzsWkODtS1vyKL7KSQYFikDKMNLGtI4yuIoCKJ5EhZZXIQRi4FDjAUlFFxi6mqie3HTI96LOuyudrixjVDr8XwzVrmbQN0wxyoMPMKfLVcM2S9KkIZ7pALFwOpmd0AaDuxWySOwEcpiOeKSn434jg2jNHWJJUeJlA/BwzEfpzfA5RVYQCottW0zptKNFpSbYTiMl9BKuzrFhoTb2kkdrlgo5HRby7ZSH4eJkEOB6bEQaQ2S4LVT6qiPOsq7jd5+mlheC9VPZQxKTUEeTmBxdkVrHZ+OcMkrLJRXUNc40dwtgOgvI5fKX0s8+KXUW2zqttAH6oj7OFjwrxG/6uEHaIRT8QHL4OWBZgFG0LzfWCyHY+Jk7xGzMysJxhxF4nTzb62jOEgexeXDfNwV2ojaLrHzEx917L1fDXCy+12X8BDmPEtnWZCFs+TdPJgVaRLNaMxpTBljcUJ9GJc/NxYs3++/tEEQM3jRLG9V9nXuuoS0TMMgPe+uJDvnrjO+eqWloj9Yyr3nXzoqCIL/lvpnSwmTD0YYtfXN39BRj84+Q8/DrKkwSO3eYe+nP48L7HC5BD2Ftrr56kQdsf0P9naQzMMGAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">93be33ce834daa50a946f896feaad367</block>
+        <comment/>
+        <connected_to>0970990e-a62f-499f-8b0a-29803d356365</connected_to>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Project Efforts Approval Workflow">aa556656c3e7521052237405e401311e</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="Else If">666e5545c3e232002841b63b12d3ae99</logic_definition>
+        <order>5</order>
+        <outputs_assigned/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>AM</sys_created_by>
+        <sys_created_on>2025-02-08 12:07:21</sys_created_on>
+        <sys_id>6a556656c3e7521052237405e4013141</sys_id>
+        <sys_mod_count>44</sys_mod_count>
+        <sys_scope display_value="Zynder Tech">8d447286c3a3121052237405e4013105</sys_scope>
+        <sys_updated_by>Sreerag.Anchery</sys_updated_by>
+        <sys_updated_on>2025-04-24 08:44:44</sys_updated_on>
+        <ui_id>62511bff-50db-4e55-9b82-5dfff0762893</ui_id>
+        <values>H4sIAAAAAAAA/+1V227bMAz9lULPjuFLkmV5C1IUGNCtQFv0ZSsMWqITbbLkWXLTLMi/j/IlCbZ2FyyPewsPKfIcmgfZMdO4qnH23iyslSvN5h8fAya1x+j3jmkokc0ZN1pIJ43OWiBgT6Aan1hUVW0ouJD24hY/I3coKC2krRRsH35dxddSiRr7qRXU1Nthzea7H1JSUJMigiJ+y2OeJtM0iaJkNo7zaZrHiUgBIaGGCnJUVLoc6F5ct0jwqg63rTxuXS31qo+v+y53A2hq4VnFUcDw2aEWxH5egLIYsBK0AGfq7QGpEcSNVkdgLbWjdswXP1v5jQYmk4kvLJAkcuyShzDrt9fBxSU4ICoNd03dl/K1kRxttxyBBTTKLU+xruCm8lK7Jw5yNbw2qin1h24j7NBg+FiENJZIYOWVeuq9juJubTa3A8srqdut9EllOKhDBI52lzfO89kxVFhSo6yEqqKNZv4YZPuYuJThSlEQFspsaKi/whC4Jx7SYiG8IvyyhR+gll7Fe2pDjzuaOVjJs/ZiqR2tCdk+YHZrlwqsPYqk7WZfG0+xk9yLy7r9+Ce8lpVb0OQn7HXsg58NcHL7u90YY5jhdDKaRtN4NH4zi0b5ZJyMeIo85UKIdMxD6I8/sw4c7vefmihK6bZfM8u52p7VXfFL7nrBV39pqeQ3lvLf8w8dFUXRf0v9s6WkzToj9Nra4Wd01KO3TzfzsGsuLVG799i74Z/HJ7Z0XJKfQhtTf/Gijtj+O1zIMSvDBgAA</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">57be33ce834daa50a946f896feaad365</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Project Efforts Approval Workflow">aa556656c3e7521052237405e401311e</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="End">d176605ea76103004f27b0d2187901c7</logic_definition>
+        <order>4</order>
+        <outputs_assigned/>
+        <parent_ui_id>0970990e-a62f-499f-8b0a-29803d356365</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>AM</sys_created_by>
+        <sys_created_on>2025-02-08 12:07:21</sys_created_on>
+        <sys_id>ae556656c3e7521052237405e4013140</sys_id>
+        <sys_mod_count>44</sys_mod_count>
+        <sys_scope display_value="Zynder Tech">8d447286c3a3121052237405e4013105</sys_scope>
+        <sys_updated_by>Sreerag.Anchery</sys_updated_by>
+        <sys_updated_on>2025-04-24 08:44:44</sys_updated_on>
+        <ui_id>895f4f7a-7821-421d-ae0b-fe43fe130646</ui_id>
+        <values>H4sIAAAAAAAA/6tWyi8tKSgtKQ7JdywuzkzPU7KKjtVRyswDiUHYZYlFmYlJOalQbkpqcmZxZn5eCEjME0ldSmVeYm5mMrJQeX5RdlpOfjlCrBYAD1ouqHEAAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=aa556656c3e7521052237405e401311e^sys_idNOT IN020034168381ea50a946f896feaad38a,4e0034168381ea50a946f896feaad389"/>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>aa556656c3e7521052237405e401311e</attached_to>
+        <extra_info/>
+        <order>1</order>
+        <prescription/>
+        <source_ui_id>3bb4e2c0-5541-4178-97c0-732c6edb4eb9</source_ui_id>
+        <sys_created_by>Sreerag.Anchery</sys_created_by>
+        <sys_created_on>2025-04-23 17:08:57</sys_created_on>
+        <sys_id>020034168381ea50a946f896feaad38a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="Zynder Tech">8d447286c3a3121052237405e4013105</sys_scope>
+        <sys_updated_by>Sreerag.Anchery</sys_updated_by>
+        <sys_updated_on>2025-04-23 17:08:57</sys_updated_on>
+        <transform_compositions>[{"id":"06190ffa23a220103a3339e1d7bf65f9","transformType":null,"transformDefinition":null,"order":0,"parameters":[{"id":null,"name":"number","label":"Number","order":0,"attributes":{},"value":"1","type":"int","defaultValue":"","typeLabel":null,"mandatory":true,"choices":[]}]}]</transform_compositions>
+        <transform_definition_id display_value="add">50980bfa23a220103a3339e1d7bf6510</transform_definition_id>
+        <ui_id>dfc5f9f3-9ed8-4fe7-9065-f08fe035a543</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>aa556656c3e7521052237405e401311e</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{flow_variable.counter}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>Sreerag.Anchery</sys_created_by>
+        <sys_created_on>2025-04-23 17:08:57</sys_created_on>
+        <sys_id>4e0034168381ea50a946f896feaad389</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="Zynder Tech">8d447286c3a3121052237405e4013105</sys_scope>
+        <sys_updated_by>Sreerag.Anchery</sys_updated_by>
+        <sys_updated_on>2025-04-23 17:08:57</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>3bb4e2c0-5541-4178-97c0-732c6edb4eb9</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_flow_variable action="delete_multiple" query="model=aa556656c3e7521052237405e401311e^sys_idNOT IN3a3ffbce834daa50a946f896feaad3f8,b23ffbce834daa50a946f896feaad3f5,b63ffbce834daa50a946f896feaad3fb"/>
+    <sys_hub_flow_variable action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=70af9c95-a054-42eb-9986-37ae3bdb4ca6</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>approval_group</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>approval_group</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Project Efforts Approval Workflow">aa556656c3e7521052237405e401311e</model>
+        <model_id>aa556656c3e7521052237405e401311e</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_variable_aa556656c3e7521052237405e401311e</name>
+        <next_element/>
+        <order>0</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_variable</sys_class_name>
+        <sys_created_by>Sreerag.Anchery</sys_created_by>
+        <sys_created_on>2025-04-23 13:35:44</sys_created_on>
+        <sys_id>3a3ffbce834daa50a946f896feaad3f8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Zynder Tech">8d447286c3a3121052237405e4013105</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>Sreerag.Anchery</sys_updated_by>
+        <sys_updated_on>2025-04-23 13:35:44</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_variable>
+    <sys_hub_flow_variable action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=integer,uiTypeLabel=Integer,uiUniqueId=76df824b-4ea2-441d-89ac-c8ce16651c88</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>counter</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Integer">integer</internal_type>
+        <label>counter</label>
+        <mandatory>false</mandatory>
+        <max_length>40</max_length>
+        <model display_value="Project Efforts Approval Workflow">aa556656c3e7521052237405e401311e</model>
+        <model_id>aa556656c3e7521052237405e401311e</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_variable_aa556656c3e7521052237405e401311e</name>
+        <next_element/>
+        <order>0</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_variable</sys_class_name>
+        <sys_created_by>Sreerag.Anchery</sys_created_by>
+        <sys_created_on>2025-04-23 13:35:44</sys_created_on>
+        <sys_id>b23ffbce834daa50a946f896feaad3f5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Zynder Tech">8d447286c3a3121052237405e4013105</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>Sreerag.Anchery</sys_updated_by>
+        <sys_updated_on>2025-04-23 13:35:44</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_variable>
+    <sys_hub_flow_variable action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=1c81d216-b207-4d7b-8df6-171102bf2fc8</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>approval</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>approval</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Project Efforts Approval Workflow">aa556656c3e7521052237405e401311e</model>
+        <model_id>aa556656c3e7521052237405e401311e</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_variable_aa556656c3e7521052237405e401311e</name>
+        <next_element/>
+        <order>0</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_variable</sys_class_name>
+        <sys_created_by>Sreerag.Anchery</sys_created_by>
+        <sys_created_on>2025-04-23 13:35:44</sys_created_on>
+        <sys_id>b63ffbce834daa50a946f896feaad3fb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Zynder Tech">8d447286c3a3121052237405e4013105</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>Sreerag.Anchery</sys_updated_by>
+        <sys_updated_on>2025-04-23 13:35:44</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_variable>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>table_name</element>
+        <help/>
+        <hint/>
+        <label>Table Name</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_aa556656c3e7521052237405e401311e</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>AM</sys_created_by>
+        <sys_created_on>2025-02-08 12:07:21</sys_created_on>
+        <sys_id>2e556656c3e7521052237405e4013138</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Zynder Tech" source="8d447286c3a3121052237405e4013105">8d447286c3a3121052237405e4013105</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Zynder Tech">8d447286c3a3121052237405e4013105</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>AM</sys_updated_by>
+        <sys_updated_on>2025-02-08 12:07:21</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>changed_fields</element>
+        <help/>
+        <hint/>
+        <label>Changed Fields</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_aa556656c3e7521052237405e401311e</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>AM</sys_created_by>
+        <sys_created_on>2025-02-08 12:07:21</sys_created_on>
+        <sys_id>62556656c3e7521052237405e4013132</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Zynder Tech" source="8d447286c3a3121052237405e4013105">8d447286c3a3121052237405e4013105</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Zynder Tech">8d447286c3a3121052237405e4013105</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>AM</sys_updated_by>
+        <sys_updated_on>2025-02-08 12:07:21</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>current</element>
+        <help/>
+        <hint/>
+        <label>Record</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_aa556656c3e7521052237405e401311e</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>AM</sys_created_by>
+        <sys_created_on>2025-02-08 12:07:21</sys_created_on>
+        <sys_id>e2556656c3e7521052237405e401312b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Zynder Tech" source="8d447286c3a3121052237405e4013105">8d447286c3a3121052237405e4013105</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Zynder Tech">8d447286c3a3121052237405e4013105</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>AM</sys_updated_by>
+        <sys_updated_on>2025-02-08 12:07:21</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_aa556656c3e7521052237405e401311e"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_aa556656c3e7521052237405e401311e"/>
+    <sys_hub_flow action="UPDATE">
+        <sys_id>abf9da92c3a7521052237405e4013193</sys_id>
+        <latest_snapshot>aa556656c3e7521052237405e401311e</latest_snapshot>
+        <compiler_build>glide-yokohama-12-18-2024__patch2-03-20-2025_04-02-2025_0516.zip</compiler_build>
+    </sys_hub_flow>
+    <sys_flow_trigger_plan action="delete_multiple" query="plan_id=abf9da92c3a7521052237405e4013193^sys_idNOT IN3a556656c3e7521052237405e4013165"/>
+    <sys_flow_trigger_plan action="INSERT_OR_UPDATE">
+        <binding_strategy>com.snc.process_flow.engine.binding.RunAlways</binding_strategy>
+        <plan>{"type":"PlanProxy","persistor":{"@class":".ChunkingPlanPersistor","table":"sys_flow_trigger_plan","id":"3a556656c3e7521052237405e4013165","name":"plan","plan_signature":null}}</plan>
+        <plan_id>abf9da92c3a7521052237405e4013193</plan_id>
+        <snapshot>c37688a283052e50a946f896feaad3ba</snapshot>
+        <sys_created_by>AM</sys_created_by>
+        <sys_created_on>2025-02-08 12:07:22</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>3a556656c3e7521052237405e4013165</sys_id>
+        <sys_mod_count>16</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope/>
+        <sys_updated_by>Sreerag.Anchery</sys_updated_by>
+        <sys_updated_on>2025-04-24 08:44:45</sys_updated_on>
+        <trigger display_value="">f6556656c3e7521052237405e4013163</trigger>
+    </sys_flow_trigger_plan>
+    <sys_flow_subflow_plan action="delete_multiple" query="plan_id=abf9da92c3a7521052237405e4013193"/>
+</record_update>

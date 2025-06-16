@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_section caption="" section_id="9e815ec7c364221052237405e401310f" sys_domain="global" table="u_project_activity" version="3" view="">
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_project</element>
+            <position>0</position>
+            <sys_created_by>RD</sys_created_by>
+            <sys_created_on>2025-04-09 12:59:33</sys_created_on>
+            <sys_id>d8b07fedc3b0665052237405e401316c</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="u_project_activity" sys_domain="global" view="Default view">9e815ec7c364221052237405e401310f</sys_ui_section>
+            <sys_updated_by>RD</sys_updated_by>
+            <sys_updated_on>2025-04-09 12:59:33</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_resources</element>
+            <position>1</position>
+            <sys_created_by>RD</sys_created_by>
+            <sys_created_on>2025-04-09 12:59:33</sys_created_on>
+            <sys_id>18b07fedc3b0665052237405e401316d</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="u_project_activity" sys_domain="global" view="Default view">9e815ec7c364221052237405e401310f</sys_ui_section>
+            <sys_updated_by>RD</sys_updated_by>
+            <sys_updated_on>2025-04-09 12:59:33</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_short_description</element>
+            <position>2</position>
+            <sys_created_by>RD</sys_created_by>
+            <sys_created_on>2025-04-09 12:59:33</sys_created_on>
+            <sys_id>10b07fedc3b0665052237405e401316e</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="u_project_activity" sys_domain="global" view="Default view">9e815ec7c364221052237405e401310f</sys_ui_section>
+            <sys_updated_by>RD</sys_updated_by>
+            <sys_updated_on>2025-04-09 12:59:33</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_work_notes</element>
+            <position>3</position>
+            <sys_created_by>RD</sys_created_by>
+            <sys_created_on>2025-04-09 12:59:33</sys_created_on>
+            <sys_id>18b07fedc3b0665052237405e401316e</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="u_project_activity" sys_domain="global" view="Default view">9e815ec7c364221052237405e401310f</sys_ui_section>
+            <sys_updated_by>RD</sys_updated_by>
+            <sys_updated_on>2025-04-09 12:59:33</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_section action="INSERT_OR_UPDATE">
+            <caption/>
+            <header>false</header>
+            <name>u_project_activity</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>RD</sys_created_by>
+            <sys_created_on>2025-04-01 11:39:00</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>9e815ec7c364221052237405e401310f</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>u_project_activity</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="Zynder Tech" source="8d447286c3a3121052237405e4013105">8d447286c3a3121052237405e4013105</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Zynder Tech">8d447286c3a3121052237405e4013105</sys_scope>
+            <sys_update_name>sys_ui_section_9e815ec7c364221052237405e401310f</sys_update_name>
+            <sys_updated_by>RD</sys_updated_by>
+            <sys_updated_on>2025-04-01 11:39:00</sys_updated_on>
+            <sys_user/>
+            <title>true</title>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_section>
+    </sys_ui_section>
+</record_update>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sysevent_email_template">
+    <sysevent_email_template action="INSERT_OR_UPDATE">
+        <collection/>
+        <email_layout display_value="Zynder-Tech  Email notification layout">28494c5dc337121052237405e40131a2</email_layout>
+        <message/>
+        <message_html/>
+        <message_list/>
+        <message_text/>
+        <name>Zynder-Tech Email notification template</name>
+        <sms_alternate/>
+        <subject/>
+        <sys_class_name>sysevent_email_template</sys_class_name>
+        <sys_created_by>athul</sys_created_by>
+        <sys_created_on>2025-02-17 08:29:55</sys_created_on>
+        <sys_id>1fa9849dc337121052237405e4013159</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>Zynder-Tech Email notification template</sys_name>
+        <sys_package display_value="Zynder Tech" source="8d447286c3a3121052237405e4013105">8d447286c3a3121052237405e4013105</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Zynder Tech">8d447286c3a3121052237405e4013105</sys_scope>
+        <sys_update_name>sysevent_email_template_1fa9849dc337121052237405e4013159</sys_update_name>
+        <sys_updated_by>athul</sys_updated_by>
+        <sys_updated_on>2025-02-17 08:31:33</sys_updated_on>
+        <sys_version>2</sys_version>
+    </sysevent_email_template>
+</record_update>

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_fix">
+    <sys_script_fix action="INSERT_OR_UPDATE">
+        <before>false</before>
+        <description/>
+        <name>Add Records to Metadata</name>
+        <record_for_rollback>true</record_for_rollback>
+        <script><![CDATA[// //Scheduled job to create metadata for records that were updated in the last hour.
+// var current_table ='';
+// var dir_choicelist = 'update';
+// var recCntr = 0;
+// var invRecCntr = 0;
+// var tableName = "u_git_sync_metadata";
+// var query = "active=true";
+
+// 	var item = new GlideRecord(tableName);
+//     item.addEncodedQuery(query);
+//     item.query();
+//     while (item.next()) {
+// 		current_table = tableName;
+//         if (!this.metadataAlreadyExists(item)) {
+//             this.addMetadata(item);
+//             recCntr++;
+//         } else {
+//             if (this.overwriteMetadata(item))
+//                 invRecCntr++;
+//         }
+//     }
+
+// function metadataAlreadyExists(gr) {
+//     var output = new GlideRecord('sys_metadata_link');
+//     output.query();
+
+//     // Searches for current record in metadata table, outputs false if it doesn't exist
+//     while (output.next()) {
+//         // Checking if the record already exists in the metadata link table
+//         if (output.documentkey == gr.sys_id && output.sys_scope == gs.getCurrentApplicationId() &&
+//             output.directory == dir_choicelist && output.tablename == current_table) {
+//             //gs.info('Already Exists');
+//             return true;
+//         }
+//     }
+//     //gs.info('Does not exist');
+//     return false;
+// }
+
+// function addMetadata(linkedRecord) {
+//     var payloadStr = gs.unloadRecordToXML(linkedRecord, true);
+//     var output = new GlideRecord('sys_metadata_link');
+//     output.query();
+//     output.initialize();
+//     output.payload = payloadStr;
+//     output.documentkey = linkedRecord.sys_id;
+//     output.tablename = current_table;
+//     output.sys_name = linkedRecord.getDisplayValue();
+//     output.directory = dir_choicelist;
+//     //gs.info('Created');
+//     output.insert();
+// }
+
+// function overwriteMetadata(linkedRecord) {
+//     var payloadStr = gs.unloadRecordToXML(linkedRecord, true);
+//     var output = new GlideRecord('sys_metadata_link');
+//     output.addQuery('documentkey', linkedRecord.sys_id);
+//     output.addQuery('sys_scope', gs.getCurrentApplicationId());
+//     output.addQuery('tablename', current_table);
+//     output.addQuery('directory', dir_choicelist);
+//     output.query();
+
+//     if (output.next()) {
+//         output.payload = payloadStr;
+//         output.sys_name = linkedRecord.getDisplayValue();
+//         return output.update();
+//     }
+
+//     return null;
+// }
+
+
+new global.ZynderTechUtils().createMetadata();]]></script>
+        <sys_class_name>sys_script_fix</sys_class_name>
+        <sys_created_by>RD</sys_created_by>
+        <sys_created_on>2025-02-15 12:59:38</sys_created_on>
+        <sys_id>bb54b6a8c3bb121052237405e4013193</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_name>Add Records to Metadata</sys_name>
+        <sys_package display_value="Zynder Tech" source="8d447286c3a3121052237405e4013105">8d447286c3a3121052237405e4013105</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Zynder Tech">8d447286c3a3121052237405e4013105</sys_scope>
+        <sys_update_name>sys_script_fix_bb54b6a8c3bb121052237405e4013193</sys_update_name>
+        <sys_updated_by>Sreerag.Anchery</sys_updated_by>
+        <sys_updated_on>2025-04-23 07:46:18</sys_updated_on>
+        <unloadable>false</unloadable>
+    </sys_script_fix>
+    <sys_es_latest_script action="INSERT_OR_UPDATE">
+        <id>bb54b6a8c3bb121052237405e4013193</id>
+        <sys_created_by>RD</sys_created_by>
+        <sys_created_on>2025-02-15 12:59:38</sys_created_on>
+        <sys_id>e474fee8c3bb121052237405e401319a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>RD</sys_updated_by>
+        <sys_updated_on>2025-02-15 12:59:38</sys_updated_on>
+        <table>sys_script_fix</table>
+        <use_es_latest>true</use_es_latest>
+    </sys_es_latest_script>
+</record_update>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="question_choice">
+    <question_choice action="INSERT_OR_UPDATE">
+        <inactive>false</inactive>
+        <misc>0</misc>
+        <order>600</order>
+        <published_ref/>
+        <question display_value="Table Name">d211e98fc344221052237405e401319b</question>
+        <rec_misc>0</rec_misc>
+        <sys_class_name>question_choice</sys_class_name>
+        <sys_created_by>RD</sys_created_by>
+        <sys_created_on>2025-03-07 15:02:56</sys_created_on>
+        <sys_id>fd701e4bc348221052237405e401316c</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>Project Effort</sys_name>
+        <sys_package display_value="Zynder Tech" source="8d447286c3a3121052237405e4013105">8d447286c3a3121052237405e4013105</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Zynder Tech">8d447286c3a3121052237405e4013105</sys_scope>
+        <sys_update_name>question_choice_fd701e4bc348221052237405e401316c</sys_update_name>
+        <sys_updated_by>RD</sys_updated_by>
+        <sys_updated_on>2025-03-07 15:09:55</sys_updated_on>
+        <text>Project Effort</text>
+        <value>u_project_effort</value>
+    </question_choice>
+    <fx_price action="delete_multiple" query="id=fd701e4bc348221052237405e401316c"/>
+    <fx_price action="INSERT_OR_UPDATE">
+        <amount>0</amount>
+        <currency display_value="USD">USD</currency>
+        <field>misc</field>
+        <id>fd701e4bc348221052237405e401316c</id>
+        <parent/>
+        <reference_amount>0</reference_amount>
+        <reference_currency display_value="USD">USD</reference_currency>
+        <sys_created_by>RD</sys_created_by>
+        <sys_created_on>2025-03-07 15:02:56</sys_created_on>
+        <sys_id>bd701a8bc348221052237405e40131fc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>RD</sys_updated_by>
+        <sys_updated_on>2025-03-07 15:02:56</sys_updated_on>
+        <table>question_choice</table>
+        <type>calculated</type>
+    </fx_price>
+    <fx_price action="INSERT_OR_UPDATE">
+        <amount>0</amount>
+        <currency display_value="USD">USD</currency>
+        <field>rec_misc</field>
+        <id>fd701e4bc348221052237405e401316c</id>
+        <parent/>
+        <reference_amount>0</reference_amount>
+        <reference_currency display_value="USD">USD</reference_currency>
+        <sys_created_by>RD</sys_created_by>
+        <sys_created_on>2025-03-07 15:02:56</sys_created_on>
+        <sys_id>75701a8bc348221052237405e40131fc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>RD</sys_updated_by>
+        <sys_updated_on>2025-03-07 15:02:56</sys_updated_on>
+        <table>question_choice</table>
+        <type>calculated</type>
+    </fx_price>
+</record_update>

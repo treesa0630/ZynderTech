@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="user_criteria">
+    <user_criteria action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <advanced>false</advanced>
+        <company/>
+        <department/>
+        <group/>
+        <location/>
+        <match_all>false</match_all>
+        <name>Zyndertech manager</name>
+        <role name="Super Admin">b6b4f246c3a3121052237405e401314a</role>
+        <script><![CDATA[/** Scripted User Criteria is not cached, and evaluated everytime, so performance is dependent on the script.
+* Populate `answer` with true/false or evaluate to true/false
+* The script is evaluated in the scope the user criteria is defined
+* Don't use `current` in the script or populate the variable
+* Don't use `gs.getUser()` or  `gs.getUserID()`, 
+* instead use `user_id` which contains the user sys_id against whom the evaluation is happening.
+*/]]></script>
+        <short_description/>
+        <sys_class_name>user_criteria</sys_class_name>
+        <sys_created_by>KR</sys_created_by>
+        <sys_created_on>2025-04-05 06:55:31</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>8bc63d54c3b4ea1052237405e401314a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Zyndertech manager</sys_name>
+        <sys_package display_value="Zynder Tech" source="8d447286c3a3121052237405e4013105">8d447286c3a3121052237405e4013105</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Zynder Tech">8d447286c3a3121052237405e4013105</sys_scope>
+        <sys_update_name>user_criteria_8bc63d54c3b4ea1052237405e401314a</sys_update_name>
+        <sys_updated_by>KR</sys_updated_by>
+        <sys_updated_on>2025-04-05 06:55:31</sys_updated_on>
+        <user/>
+    </user_criteria>
+    <sys_translated_text action="delete_multiple" query="documentkey=8bc63d54c3b4ea1052237405e401314a"/>
+</record_update>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="u_resourse" label="Resource" language="en" table="u_project_effort">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>u_resourse</element>
+            <help/>
+            <hint/>
+            <label>Resource</label>
+            <language>en</language>
+            <name>u_project_effort</name>
+            <plural>Resources</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>AM</sys_created_by>
+            <sys_created_on>2025-02-08 06:55:01</sys_created_on>
+            <sys_id>a48b51288301ea10a946f896feaad354</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_name>Resource</sys_name>
+            <sys_package display_value="Zynder Tech" source="8d447286c3a3121052237405e4013105">8d447286c3a3121052237405e4013105</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Zynder Tech">8d447286c3a3121052237405e4013105</sys_scope>
+            <sys_update_name>sys_documentation_u_project_effort_u_resourse_en</sys_update_name>
+            <sys_updated_by>SA</sys_updated_by>
+            <sys_updated_on>2025-04-05 06:57:00</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

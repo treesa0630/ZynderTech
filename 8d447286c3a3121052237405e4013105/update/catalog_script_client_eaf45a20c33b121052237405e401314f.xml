@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="catalog_script_client">
+    <catalog_script_client action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <applies_catalog>true</applies_catalog>
+        <applies_extended>false</applies_extended>
+        <applies_req_item>false</applies_req_item>
+        <applies_sc_task>false</applies_sc_task>
+        <applies_target_record>false</applies_target_record>
+        <applies_to>item</applies_to>
+        <cat_item display_value="Submit your appraisal for manager review">b56a852cc333121052237405e401314e</cat_item>
+        <cat_variable>IO:e126dd60c3b3121052237405e4013151</cat_variable>
+        <condition/>
+        <description/>
+        <field/>
+        <global>true</global>
+        <isolate_script>true</isolate_script>
+        <messages/>
+        <name>84 days diff b/w end date and start date</name>
+        <order/>
+        <published_ref/>
+        <script><![CDATA[function onChange(control, oldValue, newValue, isLoading) {
+    if (isLoading || newValue == '') {
+        return;
+    }
+
+    var start_date = g_form.getValue('u_start_date');
+    var end_date = g_form.getValue('u_end_date');
+
+	if(!g_user.hasRoleExactly('Super Admin')){
+		if (start_date != "" && end_date != "") {
+        var ga = new GlideAjax('global.ZynderTechAjaxUtils');
+        ga.addParam('sysparm_name', 'dateDifference');
+        ga.addParam('start_time', start_date);
+        ga.addParam('end_time', end_date);
+        ga.getXMLAnswer(answerFn);
+
+    }
+	}
+
+
+}
+
+function answerFn(response) {
+    if (response == 'false') {
+        g_form.addErrorMessage("The difference between Start Date and End Date should be around 84 days.");
+        g_form.clearValue('u_end_date');
+    }
+}]]></script>
+        <sys_class_name>catalog_script_client</sys_class_name>
+        <sys_created_by>TT</sys_created_by>
+        <sys_created_on>2025-02-15 10:51:18</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>eaf45a20c33b121052237405e401314f</sys_id>
+        <sys_mod_count>9</sys_mod_count>
+        <sys_name>84 days diff b/w end date and start date</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Zynder Tech" source="8d447286c3a3121052237405e4013105">8d447286c3a3121052237405e4013105</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Zynder Tech">8d447286c3a3121052237405e4013105</sys_scope>
+        <sys_update_name>catalog_script_client_eaf45a20c33b121052237405e401314f</sys_update_name>
+        <sys_updated_by>Krishna.Raj</sys_updated_by>
+        <sys_updated_on>2025-04-26 07:42:03</sys_updated_on>
+        <table/>
+        <type>onChange</type>
+        <ui_type>10</ui_type>
+        <va_supported>true</va_supported>
+        <variable_set/>
+        <view/>
+    </catalog_script_client>
+    <sys_es_latest_script action="INSERT_OR_UPDATE">
+        <id>eaf45a20c33b121052237405e401314f</id>
+        <sys_created_by>TT</sys_created_by>
+        <sys_created_on>2025-02-15 10:51:18</sys_created_on>
+        <sys_id>ec175ea0c33b121052237405e4013171</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>TT</sys_updated_by>
+        <sys_updated_on>2025-02-15 10:51:18</sys_updated_on>
+        <table>catalog_script_client</table>
+        <use_es_latest>false</use_es_latest>
+    </sys_es_latest_script>
+</record_update>

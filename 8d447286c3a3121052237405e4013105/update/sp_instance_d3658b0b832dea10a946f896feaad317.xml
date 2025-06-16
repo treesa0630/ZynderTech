@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_instance">
+    <sp_instance action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <class_name/>
+        <color>default</color>
+        <css/>
+        <glyph/>
+        <id/>
+        <order>1</order>
+        <roles/>
+        <short_description/>
+        <size>md</size>
+        <sp_column display_value="1">87ab9fc783adea10a946f896feaad333</sp_column>
+        <sp_widget display_value="Catalog Cards">f2e2b08cc3702a1052237405e401310c</sp_widget>
+        <sys_class_name>sp_instance</sys_class_name>
+        <sys_created_by>Treesa.Thomas</sys_created_by>
+        <sys_created_on>2025-05-21 08:28:31</sys_created_on>
+        <sys_id>d3658b0b832dea10a946f896feaad317</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Zynder Tech" source="8d447286c3a3121052237405e4013105">8d447286c3a3121052237405e4013105</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Zynder Tech">8d447286c3a3121052237405e4013105</sys_scope>
+        <sys_update_name>sp_instance_d3658b0b832dea10a946f896feaad317</sys_update_name>
+        <sys_updated_by>Treesa.Thomas</sys_updated_by>
+        <sys_updated_on>2025-05-21 10:05:50</sys_updated_on>
+        <title/>
+        <url/>
+        <widget_parameters><![CDATA[{
+	"image": {
+		"value": "https://upload.wikimedia.org/wikipedia/commons/0/07/Station_clock.gif",
+		"displayValue": "https://upload.wikimedia.org/wikipedia/commons/0/07/Station_clock.gif"
+	},
+	"shortdesc": {
+		"value": "The Project Effort form in the Service Portal allows employees to log their daily.",
+		"displayValue": "The Project Effort form in the Service Portal allows employees to log their daily."
+	},
+	"desc": {
+		"value": "​The Project Effort form in the Service Portal enables employees to document their daily work activities, including tasks performed and time allocated to each. This structured reporting facilitates accurate tracking of individual contributions and project progress.",
+		"displayValue": "​The Project Effort form in the Service Portal enables employees to document their daily work activities, including tasks performed and time allocated to each. This structured reporting facilitates accurate tracking of individual contributions and project progress."
+	},
+	"link": {
+		"value": "/zt?id=sc_cat_item&sys_id=1c63f3bfc3a3121052237405e4013191",
+		"displayValue": "/zt?id=sc_cat_item&sys_id=1c63f3bfc3a3121052237405e4013191"
+	},
+	"name": {
+		"value": "Leave Application",
+		"displayValue": "Leave Application"
+	},
+	"animation": {
+		"value": "slide-in-left",
+		"displayValue": "slide-in-left"
+	}
+}]]></widget_parameters>
+    </sp_instance>
+    <sys_translated_text action="delete_multiple" query="documentkey=d3658b0b832dea10a946f896feaad317"/>
+</record_update>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl">
+    <sys_security_acl action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <admin_overrides>false</admin_overrides>
+        <advanced>true</advanced>
+        <applies_to table="sys_user">user_name!=AV^user_name!=PV^EQ<item endquery="false" field="user_name" goto="false" newquery="false" operator="!=" or="false" value="AV"/>
+            <item endquery="false" field="user_name" goto="false" newquery="false" operator="!=" or="false" value="PV"/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </applies_to>
+        <condition/>
+        <controlled_by_refs/>
+        <decision_type>allow</decision_type>
+        <description>This also prevents the user from deleting his own user record</description>
+        <local_or_existing/>
+        <name>sys_user</name>
+        <operation display_value="delete">delete</operation>
+        <script><![CDATA[answer = gs.getUserID() != current.getUniqueValue();]]></script>
+        <security_attribute/>
+        <sys_class_name>sys_security_acl</sys_class_name>
+        <sys_created_by>glide.maint</sys_created_by>
+        <sys_created_on>2011-05-10 20:49:06</sys_created_on>
+        <sys_id>93c234f1072200000ca55720e1021e5f</sys_id>
+        <sys_mod_count>14</sys_mod_count>
+        <sys_name>sys_user</sys_name>
+        <sys_package display_value="Security Jump Start (ACL Rules)" source="com.snc.system_security">8ea87bb0e1d312105590bd68cbbecb23</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Zynder Tech">8d447286c3a3121052237405e4013105</sys_scope>
+        <sys_update_name>sys_security_acl_93c234f1072200000ca55720e1021e5f</sys_update_name>
+        <sys_updated_by>AV</sys_updated_by>
+        <sys_updated_on>2025-02-07 19:18:36</sys_updated_on>
+        <type display_value="record">record</type>
+    </sys_security_acl>
+    <sys_claim action="INSERT_OR_UPDATE">
+        <claim_owner_scope display_value="Zynder Tech">8d447286c3a3121052237405e4013105</claim_owner_scope>
+        <claim_timestamp>194e1d984e80000001</claim_timestamp>
+        <metadata_update_name>sys_security_acl_93c234f1072200000ca55720e1021e5f</metadata_update_name>
+        <previous_claim_app_version>1.0.0</previous_claim_app_version>
+        <previous_claim_name>Zynder Tech</previous_claim_name>
+        <previous_claim_scope>8d447286c3a3121052237405e4013105</previous_claim_scope>
+        <sys_created_by>AV</sys_created_by>
+        <sys_created_on>2025-02-07 19:18:36</sys_created_on>
+        <sys_id>b97e7a46c3e3121052237405e40131bf</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>AV</sys_updated_by>
+        <sys_updated_on>2025-02-07 19:18:36</sys_updated_on>
+    </sys_claim>
+    <sys_claim action="INSERT_OR_UPDATE">
+        <claim_owner_scope display_value="Zynder Tech">8d447286c3a3121052237405e4013105</claim_owner_scope>
+        <claim_timestamp>194e1d984e70000001</claim_timestamp>
+        <metadata_update_name>sys_security_acl_93c234f1072200000ca55720e1021e5f</metadata_update_name>
+        <previous_claim_app_version/>
+        <previous_claim_name>com.snc.system_security</previous_claim_name>
+        <previous_claim_scope>com.snc.system_security</previous_claim_scope>
+        <sys_created_by>AV</sys_created_by>
+        <sys_created_on>2025-02-07 19:18:36</sys_created_on>
+        <sys_id>7d7e7a46c3e3121052237405e40131bf</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>AV</sys_updated_by>
+        <sys_updated_on>2025-02-07 19:18:36</sys_updated_on>
+    </sys_claim>
+    <sys_es_latest_script action="INSERT_OR_UPDATE">
+        <id>93c234f1072200000ca55720e1021e5f</id>
+        <sys_created_by>AV</sys_created_by>
+        <sys_created_on>2025-02-07 19:04:45</sys_created_on>
+        <sys_id>4f4b3e02c3e3121052237405e4013183</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>AV</sys_updated_by>
+        <sys_updated_on>2025-02-07 19:04:45</sys_updated_on>
+        <table>sys_security_acl</table>
+        <use_es_latest>false</use_es_latest>
+    </sys_es_latest_script>
+</record_update>

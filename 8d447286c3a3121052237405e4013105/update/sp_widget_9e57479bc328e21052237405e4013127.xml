@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_widget">
+    <sp_widget action="INSERT_OR_UPDATE">
+        <category>custom</category>
+        <client_script><![CDATA[api.controller=function() {
+  /* widget controller */
+  var c = this;
+};]]></client_script>
+        <controller_as>c</controller_as>
+        <css>.s-icon{
+  width:100px;
+  height:100px;
+  transition: all 0.6s;
+  overflow: hidden;
+  
+}
+.dip{
+ padding-top:20px;
+}
+
+
+.m-gbox{
+  padding-bottom:40px;
+}
+.g-box{
+  border:1px solid #dee2e6;
+  border-radius:10px;
+
+  padding-bottom:20px;
+  padding-top:14px;
+  height:230px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction:column;
+  cursor:pointer;
+  color:black;
+  transition:all 0.3s;
+ 
+  
+}
+.g-box:hover{
+  box-shadow: 3px 3px 3px 3px lightgrey;
+  transform: scale(1.1);
+  border:1px solid #f2a900;
+}
+
+.lp1{
+  font-size:20px;
+  text-align:center;
+}
+.lp2{
+    text-align:center;
+}
+
+.g-box:hover img{
+transform: translateY(-10px);
+}</css>
+        <data_table>sp_instance</data_table>
+        <demo_data/>
+        <description/>
+        <docs/>
+        <field_list/>
+        <has_preview>false</has_preview>
+        <id>cards</id>
+        <internal>false</internal>
+        <link><![CDATA[function link(scope, element, attrs, controller) {
+  
+}]]></link>
+        <name>Cards</name>
+        <option_schema>[{"name":"para1","section":"other","label":"Para1","type":"string"},{"name":"para2","section":"other","label":"Para2","type":"string"},{"name":"para3","section":"other","label":"para3","type":"string"},{"name":"para4","section":"other","label":"para4","type":"string"},{"name":"image","section":"other","label":"Image","type":"string"},{"name":"link","section":"other","label":"Link","type":"string"}]</option_schema>
+        <public>true</public>
+        <roles/>
+        <script><![CDATA[(function() {
+  /* populate the 'data' object */
+  /* e.g., data.table = $sp.getValue('table'); */
+	
+	data.para1=options.para1
+	data.para2=options.para2
+	data.para3=options.para3
+	data.para4=options.para4
+	data.image=options.image
+	data.link=options.link
+	
+
+	
+
+})();]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>AP</sys_created_by>
+        <sys_created_on>2025-04-02 10:17:05</sys_created_on>
+        <sys_id>9e57479bc328e21052237405e4013127</sys_id>
+        <sys_mod_count>29</sys_mod_count>
+        <sys_name>Cards</sys_name>
+        <sys_package display_value="Zynder Tech" source="8d447286c3a3121052237405e4013105">8d447286c3a3121052237405e4013105</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Zynder Tech">8d447286c3a3121052237405e4013105</sys_scope>
+        <sys_update_name>sp_widget_9e57479bc328e21052237405e4013127</sys_update_name>
+        <sys_updated_by>AP</sys_updated_by>
+        <sys_updated_on>2025-04-03 12:05:30</sys_updated_on>
+        <template><![CDATA[<div class="dip">
+<!-- your widget template -->
+  
+  
+    <div class="m-gbox">
+      
+      <a href="{{data.link}}">
+      
+    
+      <div class="g-box">
+    <img src={{data.image}} class="s-icon"/>
+    <p class="lp1">
+{{data.para1}} <br/>{{data.para2}}
+    </p>
+    <p class="lp2">
+{{data.para3}} <br/>
+    {{data.para4}}
+    </p>
+  </div>
+        
+        
+  </a>
+    
+  </div>
+
+  
+</div>]]></template>
+    </sp_widget>
+    <sys_es_latest_script action="INSERT_OR_UPDATE">
+        <id>9e57479bc328e21052237405e4013127</id>
+        <sys_created_by>AP</sys_created_by>
+        <sys_created_on>2025-04-02 10:17:04</sys_created_on>
+        <sys_id>37588f5bc328e21052237405e40131c9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>AP</sys_updated_by>
+        <sys_updated_on>2025-04-02 10:17:04</sys_updated_on>
+        <table>sp_widget</table>
+        <use_es_latest>true</use_es_latest>
+    </sys_es_latest_script>
+</record_update>

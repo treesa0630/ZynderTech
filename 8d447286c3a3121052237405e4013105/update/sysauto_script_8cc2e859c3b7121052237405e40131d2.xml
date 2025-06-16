@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sysauto_script">
+    <sysauto_script action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <business_calendar/>
+        <condition><![CDATA[// var answer='false';
+// answer = new ZynderTechUtils().gitPushCondition(answer);
+// answer == 'true' ;]]></condition>
+        <conditional>true</conditional>
+        <entered_time>1970-01-01 00:00:00</entered_time>
+        <max_drift/>
+        <name>Metadata push to Git - Zynder Tech</name>
+        <offset/>
+        <offset_type>0</offset_type>
+        <run_as display_value="System Administrator">6816f79cc0a8016401c5a33be04be441</run_as>
+        <run_as_tz/>
+        <run_dayofmonth>1</run_dayofmonth>
+        <run_dayofweek>1</run_dayofweek>
+        <run_period>1970-01-01 02:00:00</run_period>
+        <run_start>2025-02-17 10:18:32</run_start>
+        <run_time>1969-12-31 18:30:00</run_time>
+        <run_type>periodically</run_type>
+        <script><![CDATA[gs.info('script of Metadata push is Running');
+new ZynderTechUtils().gitRestApiZynderTech();
+
+
+]]></script>
+        <sys_class_name>sysauto_script</sys_class_name>
+        <sys_created_by>AM</sys_created_by>
+        <sys_created_on>2025-02-17 10:20:17</sys_created_on>
+        <sys_id>8cc2e859c3b7121052237405e40131d2</sys_id>
+        <sys_mod_count>44</sys_mod_count>
+        <sys_name>Metadata push to Git - Zynder Tech</sys_name>
+        <sys_package display_value="Zynder Tech" source="8d447286c3a3121052237405e4013105">8d447286c3a3121052237405e4013105</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Zynder Tech">8d447286c3a3121052237405e4013105</sys_scope>
+        <sys_update_name>sysauto_script_8cc2e859c3b7121052237405e40131d2</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-06-12 07:32:31</sys_updated_on>
+        <time_zone/>
+        <upgrade_safe>false</upgrade_safe>
+    </sysauto_script>
+    <sys_es_latest_script action="INSERT_OR_UPDATE">
+        <id>8cc2e859c3b7121052237405e40131d2</id>
+        <sys_created_by>AM</sys_created_by>
+        <sys_created_on>2025-02-17 10:20:17</sys_created_on>
+        <sys_id>b523241dc3b7121052237405e40131e7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>AM</sys_updated_by>
+        <sys_updated_on>2025-02-17 10:20:17</sys_updated_on>
+        <table>sysauto_script</table>
+        <use_es_latest>true</use_es_latest>
+    </sys_es_latest_script>
+</record_update>

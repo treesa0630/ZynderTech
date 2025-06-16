@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_properties">
+    <sys_properties action="INSERT_OR_UPDATE">
+        <choices/>
+        <description>Employee Leave Tracker activity formatter fields</description>
+        <ignore_cache>false</ignore_cache>
+        <is_private>false</is_private>
+        <name>glide.ui.u_employee_leave_tracker_activity.fields</name>
+        <read_roles/>
+        <suffix>global</suffix>
+        <sys_class_name>sys_properties</sys_class_name>
+        <sys_created_by>AM</sys_created_by>
+        <sys_created_on>2025-02-13 07:43:21</sys_created_on>
+        <sys_id>08e8977fc323121052237405e40131a5</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>glide.ui.u_employee_leave_tracker_activity.fields</sys_name>
+        <sys_package display_value="Zynder Tech" source="8d447286c3a3121052237405e4013105">8d447286c3a3121052237405e4013105</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Zynder Tech">8d447286c3a3121052237405e4013105</sys_scope>
+        <sys_update_name>sys_properties_08e8977fc323121052237405e40131a5</sys_update_name>
+        <sys_updated_by>AM</sys_updated_by>
+        <sys_updated_on>2025-02-13 10:28:10</sys_updated_on>
+        <type>string</type>
+        <value>u_work_note,u_additional_comments</value>
+        <write_roles/>
+    </sys_properties>
+    <sys_translated_text action="delete_multiple" query="documentkey=08e8977fc323121052237405e40131a5"/>
+</record_update>

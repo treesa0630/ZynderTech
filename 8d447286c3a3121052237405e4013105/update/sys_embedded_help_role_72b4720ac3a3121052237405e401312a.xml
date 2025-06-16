@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_embedded_help_role">
+    <sys_embedded_help_role action="INSERT_OR_UPDATE">
+        <order>10</order>
+        <role display_value="Super Admin" name="Super Admin">b6b4f246c3a3121052237405e401314a</role>
+        <sys_class_name>sys_embedded_help_role</sys_class_name>
+        <sys_created_by>AV</sys_created_by>
+        <sys_created_on>2025-02-07 18:36:04</sys_created_on>
+        <sys_id>72b4720ac3a3121052237405e401312a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>b6b4f246c3a3121052237405e401314a</sys_name>
+        <sys_package display_value="Zynder Tech" source="8d447286c3a3121052237405e4013105">8d447286c3a3121052237405e4013105</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Zynder Tech">8d447286c3a3121052237405e4013105</sys_scope>
+        <sys_update_name>sys_embedded_help_role_72b4720ac3a3121052237405e401312a</sys_update_name>
+        <sys_updated_by>AV</sys_updated_by>
+        <sys_updated_on>2025-02-07 18:36:04</sys_updated_on>
+    </sys_embedded_help_role>
+</record_update>

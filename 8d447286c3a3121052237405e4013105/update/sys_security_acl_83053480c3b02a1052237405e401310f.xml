@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl">
+    <sys_security_acl action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <admin_overrides>false</admin_overrides>
+        <advanced>true</advanced>
+        <applies_to/>
+        <condition/>
+        <controlled_by_refs/>
+        <decision_type>allow</decision_type>
+        <description>Allow read for records in u_project_allocation, for users with roles (Super Admin, Employee), and if users satisfy the conditions of the Security Attribute "ACL_83053480c3b02a1052237405e401310f", and if the ACL script returns true.</description>
+        <local_or_existing>Local</local_or_existing>
+        <name>u_project_allocation</name>
+        <operation display_value="read">read</operation>
+        <script><![CDATA[var answer = false;
+if(current.u_resource == gs.getUserID()){
+	answer = true;
+}
+
+else if(hasRoleExactly("super admin")){
+	answer = true;
+}else {
+	answer = false;
+}
+
+
+function hasRoleExactly(role) {
+    var au = new ArrayUtil();
+    var roles = gs.getSession().getRoles() + ''; 
+    var roleArray = roles.split(","); 
+    var isAuthorized = au.contains(roleArray, role); 
+    return isAuthorized; 
+}]]></script>
+        <security_attribute display_value="ACL_83053480c3b02a1052237405e401310f">ffff6d18c334ea1052237405e40131ce</security_attribute>
+        <sys_class_name>sys_security_acl</sys_class_name>
+        <sys_created_by>KR</sys_created_by>
+        <sys_created_on>2025-04-04 07:29:36</sys_created_on>
+        <sys_id>83053480c3b02a1052237405e401310f</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_name>u_project_allocation</sys_name>
+        <sys_package display_value="Zynder Tech" source="8d447286c3a3121052237405e4013105">8d447286c3a3121052237405e4013105</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Zynder Tech">8d447286c3a3121052237405e4013105</sys_scope>
+        <sys_update_name>sys_security_acl_83053480c3b02a1052237405e401310f</sys_update_name>
+        <sys_updated_by>KR</sys_updated_by>
+        <sys_updated_on>2025-04-05 07:28:50</sys_updated_on>
+        <type display_value="record">record</type>
+    </sys_security_acl>
+    <sys_es_latest_script action="INSERT_OR_UPDATE">
+        <id>83053480c3b02a1052237405e401310f</id>
+        <sys_created_by>KR</sys_created_by>
+        <sys_created_on>2025-04-04 08:00:22</sys_created_on>
+        <sys_id>bc4c788cc3b02a1052237405e401318a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>KR</sys_updated_by>
+        <sys_updated_on>2025-04-04 08:00:22</sys_updated_on>
+        <table>sys_security_acl</table>
+        <use_es_latest>false</use_es_latest>
+    </sys_es_latest_script>
+</record_update>

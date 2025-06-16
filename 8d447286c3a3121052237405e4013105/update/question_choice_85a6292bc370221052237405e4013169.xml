@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="question_choice">
+    <question_choice action="INSERT_OR_UPDATE">
+        <inactive>false</inactive>
+        <misc>0</misc>
+        <order>400</order>
+        <published_ref/>
+        <question display_value="What type of leave are you applying for ?">6ea9c1d2c3af121052237405e40131d1</question>
+        <rec_misc>0</rec_misc>
+        <sys_class_name>question_choice</sys_class_name>
+        <sys_created_by>TT</sys_created_by>
+        <sys_created_on>2025-04-15 08:04:16</sys_created_on>
+        <sys_id>85a6292bc370221052237405e4013169</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>Leave Without Pay</sys_name>
+        <sys_package display_value="Zynder Tech" source="8d447286c3a3121052237405e4013105">8d447286c3a3121052237405e4013105</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Zynder Tech">8d447286c3a3121052237405e4013105</sys_scope>
+        <sys_update_name>question_choice_85a6292bc370221052237405e4013169</sys_update_name>
+        <sys_updated_by>TT</sys_updated_by>
+        <sys_updated_on>2025-04-15 08:05:06</sys_updated_on>
+        <text>Leave Without Pay</text>
+        <value>leave_without_pay</value>
+    </question_choice>
+    <fx_price action="delete_multiple" query="id=85a6292bc370221052237405e4013169"/>
+    <fx_price action="INSERT_OR_UPDATE">
+        <amount>0</amount>
+        <currency display_value="USD">USD</currency>
+        <field>misc</field>
+        <id>85a6292bc370221052237405e4013169</id>
+        <parent/>
+        <reference_amount>0</reference_amount>
+        <reference_currency display_value="USD">USD</reference_currency>
+        <sys_created_by>TT</sys_created_by>
+        <sys_created_on>2025-04-15 08:04:16</sys_created_on>
+        <sys_id>59a66d2bc370221052237405e40131fb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>TT</sys_updated_by>
+        <sys_updated_on>2025-04-15 08:04:16</sys_updated_on>
+        <table>question_choice</table>
+        <type>calculated</type>
+    </fx_price>
+    <fx_price action="INSERT_OR_UPDATE">
+        <amount>0</amount>
+        <currency display_value="USD">USD</currency>
+        <field>rec_misc</field>
+        <id>85a6292bc370221052237405e4013169</id>
+        <parent/>
+        <reference_amount>0</reference_amount>
+        <reference_currency display_value="USD">USD</reference_currency>
+        <sys_created_by>TT</sys_created_by>
+        <sys_created_on>2025-04-15 08:04:16</sys_created_on>
+        <sys_id>11a66d2bc370221052237405e40131fb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>TT</sys_updated_by>
+        <sys_updated_on>2025-04-15 08:04:16</sys_updated_on>
+        <table>question_choice</table>
+        <type>calculated</type>
+    </fx_price>
+</record_update>

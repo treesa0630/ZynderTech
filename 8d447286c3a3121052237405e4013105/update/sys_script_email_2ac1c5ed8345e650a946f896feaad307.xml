@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_email">
+    <sys_script_email action="INSERT_OR_UPDATE">
+        <name>la.remainder</name>
+        <new_lines_to_html>false</new_lines_to_html>
+        <script><![CDATA[(function runMailScript( /* GlideRecord */ current, /* TemplatePrinter */ template,
+    /* Optional EmailOutbound */
+    email, /* Optional GlideRecord */ email_action,
+    /* Optional GlideRecord */
+    event) {
+
+    var gr = new GlideRecord('u_employee_leave_tracker');
+    gr.addEncodedQuery('u_approval=requested^sys_created_on>=javascript:gs.beginningOfLast7Days()');
+    gr.orderBy('sys_created_on');
+	gr.query();
+
+	var tableHTML = '<table style="border-collapse: collapse; width: 100%;" border="1">';
+    tableHTML += '<thead><tr><th>Number</th><th>Name</th><th>Date</th></tr></thead><tbody>';
+
+    while (gr.next()) {
+        var employeeLink = '<a href="https://' + gs.getProperty('instance_name') + '.service-now.com/u_employee_leave_tracker.do?sys_id=' + gr.sys_id + '&sysparm_record_target=u_employee_leave_tracker&sysparm_record_row=' + gr.getRowNumber() + '&sysparm_record_rows=' + gr.getRowCount() + '&sysparm_record_list=u_approval=requested^sys_created_on>=javascript:gs.beginningOfLast7Days()//">' + gr.u_employee_name.name + '</a>';
+
+        tableHTML += '<tr>';
+		tableHTML += '<td>' + gr.u_number + '</td>';
+        tableHTML += '<td>' + employeeLink + '</td>';
+        tableHTML += '<td>' + gr.sys_created_on + '</td>';
+        tableHTML += '</tr>';
+    }
+
+    tableHTML += '</tbody></table>';
+
+
+    template.print(tableHTML);
+
+})(current, template, email, email_action, event);
+
+
+
+
+// https://dev268649.service-now.com/u_employee_leave_tracker.do?sys_id=269f230cc341261052237405e40131d2&sysparm_record_target=u_employee_leave_tracker&sysparm_record_row=1&sysparm_record_rows=12&sysparm_record_list=u_approval%3Drequested%5Esys_created_on%3E%3Djavascript%3Ags.beginningOfLast7Days%28%29%5EORDERBYDESCsys_created_on]]></script>
+        <sys_class_name>sys_script_email</sys_class_name>
+        <sys_created_by>SA</sys_created_by>
+        <sys_created_on>2025-04-21 10:40:50</sys_created_on>
+        <sys_id>2ac1c5ed8345e650a946f896feaad307</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>la.remainder</sys_name>
+        <sys_package display_value="Zynder Tech" source="8d447286c3a3121052237405e4013105">8d447286c3a3121052237405e4013105</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Zynder Tech">8d447286c3a3121052237405e4013105</sys_scope>
+        <sys_update_name>sys_script_email_2ac1c5ed8345e650a946f896feaad307</sys_update_name>
+        <sys_updated_by>SA</sys_updated_by>
+        <sys_updated_on>2025-04-21 15:05:40</sys_updated_on>
+    </sys_script_email>
+    <sys_es_latest_script action="INSERT_OR_UPDATE">
+        <id>2ac1c5ed8345e650a946f896feaad307</id>
+        <sys_created_by>SA</sys_created_by>
+        <sys_created_on>2025-04-21 10:40:49</sys_created_on>
+        <sys_id>890405e18385e650a946f896feaad328</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>SA</sys_updated_by>
+        <sys_updated_on>2025-04-21 10:40:49</sys_updated_on>
+        <table>sys_script_email</table>
+        <use_es_latest>true</use_es_latest>
+    </sys_es_latest_script>
+</record_update>

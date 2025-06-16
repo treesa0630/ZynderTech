@@ -1,0 +1,566 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <active>true</active>
+        <api_name>global.ZynderTechUtils</api_name>
+        <caller_access/>
+        <client_callable>false</client_callable>
+        <description/>
+        <mobile_callable>false</mobile_callable>
+        <name>ZynderTechUtils</name>
+        <sandbox_callable>false</sandbox_callable>
+        <script><![CDATA[var ZynderTechUtils = Class.create();
+ZynderTechUtils.prototype = {
+    initialize: function() {},
+
+    //AmalMadhav
+    //function used for metadata push to git
+
+    gitRestApiZynderTech: function() {
+		gs.info("Started commit from zynder tech");
+        var instanceName = gs.getProperty('instance_name');
+        var appID = gs.getProperty('REST.git.push.appIDZynderTech');
+        var repoID = gs.getProperty('REST.git.push.RepoIDZynderTech');
+        var gdt = new GlideDateTime();
+        var request = new sn_ws.RESTMessageV2("Metadata Push To Git", "POST");
+        request.setEndpoint('https://' + instanceName + '.service-now.com/api/sn_devstudio/v1/vcs/apps/' + appID + '/repos/' + repoID + '/commits');
+        request.setRequestHeader("Accept", "application/json");
+        request.setRequestHeader('Content-Type', 'application/json');
+        request.setRequestBody("{\"commitMessage\":\"" + gdt + "\"}");
+        var response = request.execute();
+        var responseBody = JSON.parse(response.getBody());
+        var pwSysId = responseBody["result"]["progressId"];
+        //  gs.info(pwSysId)
+        // script for the table git sync log created by amal madhav
+        var grGitLog = new GlideRecord("u_git_sync_log");
+        grGitLog.initialize();
+        grGitLog.u_progress_worker = pwSysId;
+        grGitLog.u_state = 'Running';
+        grGitLog.insert();
+
+        // updated by Athul and Rose
+        var progressWorker = new GlideRecord('sys_progress_worker');
+        progressWorker.addQuery('sys_id', pwSysId);
+        progressWorker.setLimit(1);
+        progressWorker.query();
+        if (progressWorker.next()) {
+            if (progressWorker.state_code == "error") {
+                gs.eventQueue('notification_progress_worker', progressWorker, '', '');
+            }
+
+        }
+		gs.info("Completed commit from zynder tech");
+
+
+        // gs.log(JSON.stringify(response.getBody()));
+
+    },
+
+	gitRestApiZynderDataHub: function() {
+        var instanceName = gs.getProperty('instance_name');
+        var appID = gs.getProperty('REST.git.push.appIDZynderDataHub');
+        var repoID = gs.getProperty('REST.git.push.RepoIDZynderDataHub');
+        var gdt = new GlideDateTime();
+        var request = new sn_ws.RESTMessageV2("Metadata Push To Git", "POST");
+        request.setEndpoint('https://' + instanceName + '.service-now.com/api/sn_devstudio/v1/vcs/apps/' + appID + '/repos/' + repoID + '/commits');
+        request.setRequestHeader("Accept", "application/json");
+        request.setRequestHeader('Content-Type', 'application/json');
+        request.setRequestBody("{\"commitMessage\":\"" + gdt + "\"}");
+        var response = request.execute();
+        var responseBody = JSON.parse(response.getBody());
+        var pwSysId = responseBody["result"]["progressId"];
+        //  gs.info(pwSysId)
+        // script for the table git sync log created by amal madhav
+        var grGitLog = new GlideRecord("u_git_sync_log");
+        grGitLog.initialize();
+        grGitLog.u_progress_worker = pwSysId;
+        grGitLog.u_state = 'Running';
+        grGitLog.insert();
+
+        // updated by Athul and Rose
+        var progressWorker = new GlideRecord('sys_progress_worker');
+        progressWorker.addQuery('sys_id', pwSysId);
+        progressWorker.setLimit(1);
+        progressWorker.query();
+        if (progressWorker.next()) {
+            if (progressWorker.state_code == "error") {
+                gs.eventQueue('notification_progress_worker', progressWorker, '', '');
+            }
+
+        }
+
+
+        // gs.log(JSON.stringify(response.getBody()));
+
+    },
+
+	gitRestApiZynderAttachments: function() {
+        var instanceName = gs.getProperty('instance_name');
+        var appID = gs.getProperty('REST.git.push.appIDZynderAttachments');
+        var repoID = gs.getProperty('REST.git.push.RepoIDZynderAttachments');
+        var gdt = new GlideDateTime();
+        var request = new sn_ws.RESTMessageV2("Metadata Push To Git", "POST");
+        request.setEndpoint('https://' + instanceName + '.service-now.com/api/sn_devstudio/v1/vcs/apps/' + appID + '/repos/' + repoID + '/commits');
+        request.setRequestHeader("Accept", "application/json");
+        request.setRequestHeader('Content-Type', 'application/json');
+        request.setRequestBody("{\"commitMessage\":\"" + gdt + "\"}");
+        var response = request.execute();
+        var responseBody = JSON.parse(response.getBody());
+        var pwSysId = responseBody["result"]["progressId"];
+        //  gs.info(pwSysId)
+        // script for the table git sync log created by amal madhav
+        var grGitLog = new GlideRecord("u_git_sync_log");
+        grGitLog.initialize();
+        grGitLog.u_progress_worker = pwSysId;
+        grGitLog.u_state = 'Running';
+        grGitLog.insert();
+
+        // updated by Athul and Rose
+        var progressWorker = new GlideRecord('sys_progress_worker');
+        progressWorker.addQuery('sys_id', pwSysId);
+        progressWorker.setLimit(1);
+        progressWorker.query();
+        if (progressWorker.next()) {
+            if (progressWorker.state_code == "error") {
+                gs.eventQueue('notification_progress_worker', progressWorker, '', '');
+            }
+
+        }
+
+
+        // gs.log(JSON.stringify(response.getBody()));
+
+    },
+
+
+    gitPushCondition: function(answer) {
+
+        var gr = new GlideRecord("sys_metadata");
+        gr.addEncodedQuery("sys_scope=8d447286c3a3121052237405e4013105^sys_updated_on>=javascript:gs.beginningOfLastHour()");
+        gr.query();
+        if (gr.next()) {
+            answer = 'true';
+
+        }
+        return answer;
+    },
+    //AmalMadhav
+    //fuction to trigger BR when sourcetable in approver table is one of!
+    requestEmailApproval: function(current) {
+        if (current.source_table == "u_employee_leave_tracker") {
+            gs.eventQueue('leave_tracker', current, '', '');
+        } else if (current.source_table == "u_project_effort") {
+            gs.eventQueue('event_project_effort', current, '', '');
+        }
+
+
+    },
+
+    reminderProjectEfforts: function() {
+        var gr = new GlideRecord('u_project_effort');
+        gr.addEncodedQuery('sys_created_on<=javascript:gs.endOfYesterday()^u_approval=requested');
+        gr.orderBy('u_date');
+        gr.query();
+        if (gr.next()) {
+            gs.eventQueue('pe.notification.remainder', gr, gs.getProperty('project_efforts_sysid.group'));
+        }
+    },
+
+    // Remainder for pending Leave Apllications. Developed by Sreerag
+    remainderLeaveApplication: function() {
+        var grLeave = new GlideRecord('u_employee_leave_tracker');
+        grLeave.addEncodedQuery('u_approval=requested^sys_created_on>=javascript:gs.beginningOfLast7Days()'); // Requested leave applications which are created at or after last 7 days.
+        grLeave.query();
+        if (grLeave.next()) {
+            gs.eventQueue('la.notification.remainder', grLeave, gs.getProperty('zynder.tech.leave.approval.group'));
+        }
+
+        // Auto rejecting the requested leaves which are created before 7 days.
+        var grLeaveAutoreject = new GlideRecord('u_employee_leave_tracker');
+        grLeaveAutoreject.addEncodedQuery('u_approval=requested^sys_created_on<=javascript:gs.beginningOfLast7Days()');
+        grLeaveAutoreject.query();
+        while (grLeaveAutoreject.next()) {
+            grLeaveAutoreject.u_approval = 'rejected';
+            grLeaveAutoreject.update();
+        }
+    },
+
+
+    // SJ - Activate SJ - "Checking for pending appraisal"
+    pendingAppraisalActivate: function() {
+        gs.info("Appraisal - Run");
+        var gr = new GlideRecord('sysauto');
+        gr.addQuery('name', 'Checking for pending appraisal');
+        gr.setLimit(1);
+        gr.query();
+        if (gr.next()) {
+            gr.active = true;
+            gr.update();
+        }
+    },
+
+
+    // SJ - Activating SJ - "Notification for managers"
+    pendingAppraisalNotification: function() {
+        var gr = new GlideRecord('sysauto');
+        gr.addQuery('name', 'Notification for managers');
+        gr.setLimit(1);
+        gr.query();
+        if (gr.next()) {
+            gr.active = true;
+            gr.update();
+        }
+    },
+
+
+    // SJ - Checking for pending appraisal
+    pemdingAppraisalCheck: function() {
+        var appraisalSubmittedEmployee = [];
+        var gr = new GlideRecord('u_appraisal');
+        gr.addQuery('sys_created_on', 'ON', 'This quarter@javascript:gs.beginningOfThisQuarter()@javascript:gs.endOfThisQuarter()');
+        gr.query();
+
+        while (gr.next()) {
+            appraisalSubmittedEmployee.push(gr.u_employee.toString());
+        }
+        //gs.print('Appraisal Submitted Employee Names : ' + appraisalSubmittedEmployee);
+
+        var emp = new GlideRecord('u_employee');
+        emp.addQuery('active', 'true');
+        emp.query();
+        var employeeName = [];
+        while (emp.next()) {
+            employeeName.push(emp.sys_id.toString());
+        }
+        //gs.print('Employee Name: ' + employeeName);
+
+        // Corrected filter logic
+        var appraisalNotSubmittedEmployee = employeeName.filter(function(item) {
+            return !appraisalSubmittedEmployee.includes(item);
+        });
+        //gs.print('Appraisal Not Submitted Employee Names: ' + appraisalNotSubmittedEmployee);
+
+        for (var i = 0; i < appraisalNotSubmittedEmployee.length; i++) {
+            gs.eventQueue('appraisal.notifications.employees', null, appraisalNotSubmittedEmployee[i]);
+        }
+
+        var propertyCounter = gs.getProperty('zynder.tech.day.counter');
+        var counter = JSON.parseInt(propertyCounter);
+        //gs.print(propertyCounter);
+        if (propertyCounter <= 7) {
+            propertyCounter++;
+            gs.setProperty("zynder.tech.day.counter", propertyCounter.toString());
+        } else {
+            gs.info("Inside loop");
+            gs.setProperty("zynder.tech.day.counter", 1);
+            var de = new GlideRecord('sysauto');
+            de.addQuery('name', 'Checking for pending appraisal');
+            de.query();
+            if (de.next()) {
+                de.active = false;
+                de.update();
+            }
+        }
+
+        //gs.print(propertyCounter);
+    },
+
+
+    // SJ - Create Metadata
+    createMetadata: function() {
+        //Scheduled job to create metadata for records that were updated in the last hour.
+
+        try {
+            gs.info("Metadata Running");         
+            var dir_choicelist = 'update';
+            var recCntr = 0;
+            var invRecCntr = 0;
+            //Searching in the Metadata Snapshots for the records that were updated in the last hour
+            var gr = new GlideRecord('u_git_sync_metadata');
+            //gr.addQuery('sys_updated_on', 'ON', 'Last hour@javascript:gs.beginningOfLastHour()@javascript:gs.endOfLastHour()');
+            gr.addQuery('u_active', "true");
+			gr.addQuery('sys_scope',gs.getCurrentApplicationId());
+			
+            gr.query();
+            while (gr.next()) {
+                var current_table = gr.u_table_name.toString();
+                var filter = gr.u_query.toString();
+                //Glide Recording in the table from the retrieved records
+                if (current_table == 'db_image') {
+                    var grimage = new GlideRecord(current_table);
+                    grimage.addEncodedQuery(filter);
+                    grimage.query();
+                    while (grimage.next()) {
+                        if (!this.metadataAlreadyExists(grimage, dir_choicelist, current_table)) {
+                            this.addMetadata(grimage, current_table, dir_choicelist);
+                            recCntr++;
+
+                            // var grAttachment = new GlideRecord('sys_attachment');
+                            // grAttachment.addQuery('table_sys_id', grimage.sys_id);
+                            // grAttachment.query();
+                            // while (grAttachment.next()) {
+                            //     if (!this.metadataAlreadyExists(grAttachment, dir_choicelist, 'sys_attachment')) {
+                            //         this.addMetadata(grAttachment, 'sys_attachment', dir_choicelist);
+                            //         recCntr++;
+                            //     } else {
+                            //         if (this.overwriteMetadata(grAttachment, 'sys_attachment', dir_choicelist))
+                            //             invRecCntr++;
+                            //     }
+
+                            //     var grAttachmentDoc = new GlideRecord('sys_attachment_doc');
+                            //     grAttachmentDoc.addQuery('sys_attachment.sys_id', grAttachment.sys_id);
+                            //     grAttachment.query();
+                            //     while (grAttachmentDoc.next()) {
+                            //         if (!this.metadataAlreadyExists(grAttachmentDoc, dir_choicelist, 'sys_attachment_doc')) {
+                            //             this.addMetadata(grAttachment, 'sys_attachment_doc', dir_choicelist);
+                            //             recCntr++;
+                            //         } else {
+                            //             if (this.overwriteMetadata(grAttachmentDoc, 'sys_attachment_doc', dir_choicelist))
+                            //                 invRecCntr++;
+                            //         }
+                            //     }
+                            // }
+                        } else {
+                            if (this.overwriteMetadata(grimage, current_table, dir_choicelist))
+                                invRecCntr++;
+                        }
+                        var grAttachment2 = new GlideRecord('sys_attachment');
+                        grAttachment2.addQuery('table_sys_id', grimage.sys_id);
+                        grAttachment2.query();
+                        while (grAttachment2.next()) {
+                            this.addMetadata(grAttachment2, 'sys_attachment', dir_choicelist);
+
+
+
+                            var grAttachmentDoc2 = new GlideRecord('sys_attachment_doc');
+                            grAttachmentDoc2.addQuery('sys_attachment.sys_id', grAttachment2.sys_id);
+                            grAttachmentDoc2.query();
+                            while (grAttachmentDoc2.next()) {
+                                this.addMetadata(grAttachmentDoc2, 'sys_attachment_doc', dir_choicelist);
+                            }
+                        }
+
+                    }
+                } else {
+                    var item = new GlideRecord(current_table);
+                    item.addEncodedQuery(filter);
+                    item.query();
+                    while (item.next()) {
+                        // gs.info('Current table:' + current_table);
+                        if (!this.metadataAlreadyExists(item, dir_choicelist, current_table)) {
+                            this.addMetadata(item, current_table, dir_choicelist, );
+                            recCntr++;
+                            // gs.info("Not Existing Item");
+                        } else {
+                            if (this.overwriteMetadata(item, current_table, dir_choicelist))
+                                invRecCntr++;
+                            // gs.info("Existing Item");
+                        }
+                    }
+                }
+            }
+            gs.info("Metadata Successfull Records Created: " + recCntr + " Records Updated: " + invRecCntr);
+
+        } catch (err) {
+            var errorMsg = {
+                "error": err.message,
+                "table": current_table.getDisplayValue(),
+                "number": gr.number,
+            };
+
+            var formattedDetails = JSON.stringify(errorMsg);
+            gs.eventQueue('metadata.error.notification', gr, gs.getProperty('metdata.creation.error'), formattedDetails);
+            gs.info("Metadata error");
+
+        }
+    },
+
+    metadataAlreadyExists: function(gr, dir_choicelist, current_table) {
+
+
+        // gs.info("Application : " + gs.getCurrentApplicationId());
+        var output = new GlideRecord('sys_metadata_link');
+        output.addQuery("documentkey", gr.sys_id);
+        output.addQuery("sys_scope", gs.getCurrentApplicationId());
+        output.addQuery("directory", dir_choicelist);
+        output.addQuery("tablename", current_table);
+        output.setLimit(1);
+        output.query();
+
+        // Searches for current record in metadata table, outputs false if it doesn't exist
+        if (output.next()) {
+
+            gs.info('Already Exists');
+            return true;
+            // Checking if the record already exists in the metadata link table
+            //     if (output.documentkey == gr.sys_id && output.sys_scope == gs.getCurrentApplicationId() &&
+            //         output.directory == dir_choicelist && output.tablename == current_table) {
+            //         //gs.info('Already Exists');
+            //         return true;
+            //     }
+            // }
+            // return false;
+        } else {
+            gs.info('Does not exist');
+            return false;
+        }
+    },
+
+    addMetadata: function(linkedRecord, current_table, dir_choicelist) {
+        var payloadStr = gs.unloadRecordToXML(linkedRecord, true);
+        var output = new GlideRecord('sys_metadata_link');
+        // output.query();
+        output.initialize();
+        output.payload = payloadStr;
+        output.documentkey = linkedRecord.sys_id;
+        output.tablename = current_table;
+        output.sys_name = linkedRecord.getDisplayValue();
+        output.directory = dir_choicelist;
+        gs.info('Added Metdata');
+        output.insert();
+    },
+
+    overwriteMetadata: function(linkedRecord, current_table, dir_choicelist) {
+        var payloadStr = gs.unloadRecordToXML(linkedRecord, true);
+        var output = new GlideRecord('sys_metadata_link');
+        output.addQuery('documentkey', linkedRecord.sys_id);
+        output.addQuery('sys_scope', gs.getCurrentApplicationId());
+        output.addQuery('tablename', current_table);
+        output.addQuery('directory', dir_choicelist);
+        output.setLimit(1);
+        output.query();
+
+        if (output.next()) {
+            output.payload = payloadStr;
+            output.sys_name = linkedRecord.getDisplayValue();
+            gs.info("OverWrited Meta Data");
+            return output.update();
+        }
+
+        return null;
+    },
+
+
+
+    // Notification for managers
+    notifyManager: function() {
+        var pendingAppraisalViews = [];
+        var gr = new GlideRecord("u_appraisal");
+        gr.addQuery("u_state", "Submitted");
+        gr.query();
+        while (gr.next()) {
+            pendingAppraisalViews.push(gr.u_employee.toString());
+
+        }
+        gs.eventQueue('appraisal.notification.managers', gr);
+
+        //gs.print('pendingAppraisalViews: '+pendingAppraisalViews);
+
+        var propertyCounter = gs.getProperty('zynder.tech.day.counter');
+        var counter = JSON.parseInt(propertyCounter);
+        //gs.print(propertyCounter);
+        if (propertyCounter <= 7) {
+            propertyCounter++;
+            gs.setProperty("zynder.tech.day.counter", propertyCounter.toString());
+        } else {
+            gs.setProperty("zynder.tech.day.counter", 1);
+            var de = new GlideRecord('sysauto');
+            de.addQuery('name', 'Notification for managers');
+            de.query();
+            if (de.next()) {
+
+                de.active = false;
+                de.update();
+            }
+        }
+
+        //gs.print(propertyCounter);
+    },
+
+
+    // SJ - Update leave balances - monthly
+    leaveBalance: function() {
+        var leaveBalance = new GlideRecord('u_employee_leave_information');
+        leaveBalance.addQuery("u_active", "true");
+        leaveBalance.query();
+        while (leaveBalance.next()) {
+            leaveBalance.u_leave_balances = leaveBalance.u_leave_balances++;
+            leaveBalance.update();
+        }
+    },
+
+
+    // metadataDelete: function(sysId, tableName) {
+    // gs.log('metadata sysID : ' + sysId);
+    // gs.log('metadata Tablename : ' + tableName);
+    // var grlink = new GlideRecord('sys_metadata_link');
+    // grlink.addQuery('documentkey', sysId);
+    // grlink.addQuery('tablename', tableName);
+    // grlink.addQuery('sys_class_name', 'sys_metadata_link');
+    // grlink.query();
+    // var n = grlink.getRowCount();
+
+    // gs.log('rowcount 1 ' + n);
+    // if (grlink.next()) {
+    //     var recname = grlink.sys_name.toString();
+    //     gs.log('grLink record name is ' + recname);
+    //     var gr = new GlideRecord('sys_metadata');
+    //     gr.addQuery('sys_id', grlink.sys_id);
+    //     gr.addQuery('sys_class_name', 'sys_metadata_link');
+    //     gr.query();
+    //     var num = gr.getRowCount();
+    //     gs.log('rowcount 2 ' + num);
+
+    //     if (gr.next()) {
+    //         gs.log("Inside IF ");
+    // 		gr.setWorkflow(false);
+    //         gr.deleteRecord();
+    //         gs.log("After gr.delete");
+    //         // if (gr.deleteRecord() == null) {
+    //         //     var msg1 = gr.getLastErrorMessage();
+    //         //     gs.log('Metadata error : ' + msg1 + '. Error in deleting ' + sysId + ' of table : ' + tableName);
+    //         // }
+    //     }
+    // 	grlink.setWorkflow(false);
+    //     grlink.deleteRecord();
+    //     gs.log("After grlink.delete");
+
+    //     // if (grlink.deleteRecord() == null) {
+    //     //     var msg2 = grlink.getLastErrorMessage();
+    //     //     gs.log('Metadata error : ' + msg2 + '. Error in deleting ' + sysId + ' of table : ' + tableName);
+    //     // }
+    // }
+
+
+
+    // },
+
+
+
+    type: 'ZynderTechUtils'
+};]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>AK</sys_created_by>
+        <sys_created_on>2025-02-08 08:22:13</sys_created_on>
+        <sys_id>5191f992c3a3521052237405e401311a</sys_id>
+        <sys_mod_count>102</sys_mod_count>
+        <sys_name>ZynderTechUtils</sys_name>
+        <sys_package display_value="Zynder Tech" source="8d447286c3a3121052237405e4013105">8d447286c3a3121052237405e4013105</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Zynder Tech">8d447286c3a3121052237405e4013105</sys_scope>
+        <sys_update_name>sys_script_include_5191f992c3a3521052237405e401311a</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-06-12 07:43:02</sys_updated_on>
+    </sys_script_include>
+    <sys_es_latest_script action="INSERT_OR_UPDATE">
+        <id>5191f992c3a3521052237405e401311a</id>
+        <sys_created_by>AK</sys_created_by>
+        <sys_created_on>2025-02-08 08:22:13</sys_created_on>
+        <sys_id>e4d1b152c3a3521052237405e4013134</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>AK</sys_updated_by>
+        <sys_updated_on>2025-02-08 08:22:13</sys_updated_on>
+        <table>sys_script_include</table>
+        <use_es_latest>true</use_es_latest>
+    </sys_es_latest_script>
+</record_update>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_properties">
+    <sys_properties action="INSERT_OR_UPDATE">
+        <choices/>
+        <description/>
+        <ignore_cache>true</ignore_cache>
+        <is_private>false</is_private>
+        <name>employee.sys.ids</name>
+        <read_roles/>
+        <suffix/>
+        <sys_class_name>sys_properties</sys_class_name>
+        <sys_created_by>Sreerag.Anchery</sys_created_by>
+        <sys_created_on>2025-04-22 10:38:16</sys_created_on>
+        <sys_id>555cce7583016a50a946f896feaad322</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>employee.sys.ids</sys_name>
+        <sys_package display_value="Zynder Tech" source="8d447286c3a3121052237405e4013105">8d447286c3a3121052237405e4013105</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Zynder Tech">8d447286c3a3121052237405e4013105</sys_scope>
+        <sys_update_name>sys_properties_555cce7583016a50a946f896feaad322</sys_update_name>
+        <sys_updated_by>Sreerag.Anchery</sys_updated_by>
+        <sys_updated_on>2025-04-22 11:32:37</sys_updated_on>
+        <type>string</type>
+        <value>{"Amal.Madhav":"5a8898a98381e650a946f896feaad37d",&#13;
+"Sreerag.Anchery":"902c62cac363121052237405e40131e0",&#13;
+"Krishna.Raj":"16b594e58381e650a946f896feaad3e0",&#13;
+"Athul":"63c6dce58381e650a946f896feaad3f7",&#13;
+"Alan.Paul":"a728d8a98381e650a946f896feaad3a0",&#13;
+"Rose.Denna":"550890a98381e650a946f896feaad3e9",&#13;
+"Suchithra.PS":"864718698381e650a946f896feaad336",&#13;
+"Treesa.Thomas":"2ea750a98381e650a946f896feaad3e1"}</value>
+        <write_roles/>
+    </sys_properties>
+    <sys_translated_text action="delete_multiple" query="documentkey=555cce7583016a50a946f896feaad322"/>
+</record_update>

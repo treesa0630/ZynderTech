@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_page">
+    <sp_page action="INSERT_OR_UPDATE">
+        <category>custom</category>
+        <css>.container.headergap{&#13;
+ margin-top: -15px;&#13;
+}</css>
+        <draft>false</draft>
+        <dynamic_title_structure/>
+        <human_readable_url_structure/>
+        <id>home_page</id>
+        <internal>false</internal>
+        <omit_watcher>false</omit_watcher>
+        <public>false</public>
+        <roles/>
+        <seo_script/>
+        <short_description>This is the home page for Zynder Tech</short_description>
+        <sys_class_name>sp_page</sys_class_name>
+        <sys_created_by>AP</sys_created_by>
+        <sys_created_on>2025-04-01 11:24:45</sys_created_on>
+        <sys_id>150e4e83c364221052237405e40131e4</sys_id>
+        <sys_mod_count>13</sys_mod_count>
+        <sys_name>home_page</sys_name>
+        <sys_package display_value="Zynder Tech" source="8d447286c3a3121052237405e4013105">8d447286c3a3121052237405e4013105</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Zynder Tech">8d447286c3a3121052237405e4013105</sys_scope>
+        <sys_update_name>sp_page_150e4e83c364221052237405e40131e4</sys_update_name>
+        <sys_updated_by>TT</sys_updated_by>
+        <sys_updated_on>2025-04-15 08:18:46</sys_updated_on>
+        <title>Home Page</title>
+        <use_seo_script>false</use_seo_script>
+    </sp_page>
+    <sys_translated_text action="delete_multiple" query="documentkey=150e4e83c364221052237405e40131e4"/>
+</record_update>

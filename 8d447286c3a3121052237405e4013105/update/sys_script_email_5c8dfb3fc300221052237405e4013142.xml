@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_email">
+    <sys_script_email action="INSERT_OR_UPDATE">
+        <name>Choice.Approval</name>
+        <new_lines_to_html>false</new_lines_to_html>
+        <script><![CDATA[(function runMailScript( /* GlideRecord */ current, /* TemplatePrinter */ template,
+    /* Optional EmailOutbound */
+    email, /* Optional GlideRecord */ email_action,
+    /* Optional GlideRecord */
+    event) {
+
+    var gr = new GlideRecord('sc_req_item');
+    gr.addQuery('cat_item.sys_name','Choice Configuration');
+	gr.orderByDesc('sys_created_on');
+    gr.orderByDesc('sys_updated_on');
+	
+	gr.setLimit(1);
+    gr.query();
+	if(gr.next()){
+		var action = gr.variables.action;
+		var table = gr.variables.table;
+		var field = gr.variables.field;
+		var existing = gr.variables.existing_values.u_value;
+		var newValue = gr.variables.new_value;
+		var requestor = gr.requested_for.getDisplayValue();
+	}
+
+
+	var value = "";
+	if(action == 'update') {
+		value = "Existing Value : "+ existing + "<br>New Value : "+ newValue ;
+	}else if(action == 'remove'){
+		value = "Existing Value : "+ existing;
+	}else {
+		value = "New Value : "+ newValue ;
+	}
+
+	email.setSubject("Choice Configuration has been Requested to " + action + " by " + requestor);
+
+
+
+
+	template.print("A Choice has been requested to "+ action + " and requires your review and approval. Below are the details.<br><br> Action : "+ action + "<br>Table : " + table + "<br>Field : "+ field + "<br>" + value  );
+
+})(current, template, email, email_action, event);]]></script>
+        <sys_class_name>sys_script_email</sys_class_name>
+        <sys_created_by>KR</sys_created_by>
+        <sys_created_on>2025-03-10 07:17:23</sys_created_on>
+        <sys_id>5c8dfb3fc300221052237405e4013142</sys_id>
+        <sys_mod_count>23</sys_mod_count>
+        <sys_name>Choice.Approval</sys_name>
+        <sys_package display_value="Zynder Tech" source="8d447286c3a3121052237405e4013105">8d447286c3a3121052237405e4013105</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Zynder Tech">8d447286c3a3121052237405e4013105</sys_scope>
+        <sys_update_name>sys_script_email_5c8dfb3fc300221052237405e4013142</sys_update_name>
+        <sys_updated_by>KR</sys_updated_by>
+        <sys_updated_on>2025-04-02 12:52:17</sys_updated_on>
+    </sys_script_email>
+    <sys_es_latest_script action="INSERT_OR_UPDATE">
+        <id>5c8dfb3fc300221052237405e4013142</id>
+        <sys_created_by>KR</sys_created_by>
+        <sys_created_on>2025-03-10 07:17:22</sys_created_on>
+        <sys_id>cba20844c350221052237405e401312c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>KR</sys_updated_by>
+        <sys_updated_on>2025-03-10 07:17:22</sys_updated_on>
+        <table>sys_script_email</table>
+        <use_es_latest>true</use_es_latest>
+    </sys_es_latest_script>
+</record_update>

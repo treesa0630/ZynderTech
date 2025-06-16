@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="db_image">
+    <db_image action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <category/>
+        <format>JPEG</format>
+        <height>148</height>
+        <image>95fee2e283112a10a946f896feaad399</image>
+        <name>zynderRose2test.jpg</name>
+        <size_bytes>12143</size_bytes>
+        <sys_class_name>db_image</sys_class_name>
+        <sys_created_by>Sreerag.Anchery</sys_created_by>
+        <sys_created_on>2025-05-07 07:17:32</sys_created_on>
+        <sys_id>cbdeae6283112a10a946f896feaad3e2</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>zynderRose2test.jpg</sys_name>
+        <sys_package display_value="Zynder Tech" source="8d447286c3a3121052237405e4013105">8d447286c3a3121052237405e4013105</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Zynder Tech">8d447286c3a3121052237405e4013105</sys_scope>
+        <sys_update_name>db_image_cbdeae6283112a10a946f896feaad3e2</sys_update_name>
+        <sys_updated_by>Sreerag.Anchery</sys_updated_by>
+        <sys_updated_on>2025-05-07 07:22:57</sys_updated_on>
+        <thumbnail/>
+        <width>270</width>
+    </db_image>
+</record_update>

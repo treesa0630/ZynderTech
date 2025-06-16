@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_attribute">
+    <sys_security_attribute action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <condition>RoleExplicit=b6b4f246c3a3121052237405e401314a^ORRoleExplicit=0fb4720ac3a3121052237405e4013132</condition>
+        <description>Auto Created Attribute - ACL_4bd749a4c333121052237405e401310b</description>
+        <is_dynamic>true</is_dynamic>
+        <is_localized>true</is_localized>
+        <is_system>false</is_system>
+        <label>ACL_4bd749a4c333121052237405e401310b</label>
+        <lookup_table/>
+        <lookup_table_column/>
+        <name>ACL_4bd749a4c333121052237405e401310b</name>
+        <script/>
+        <sys_class_name>sys_security_attribute</sys_class_name>
+        <sys_created_by>KR</sys_created_by>
+        <sys_created_on>2025-04-04 15:53:26</sys_created_on>
+        <sys_id>2e882a0cc3706a1052237405e40131eb</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>ACL_4bd749a4c333121052237405e401310b</sys_name>
+        <sys_package display_value="Zynder Tech" source="8d447286c3a3121052237405e4013105">8d447286c3a3121052237405e4013105</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Zynder Tech">8d447286c3a3121052237405e4013105</sys_scope>
+        <sys_update_name>sys_security_attribute_2e882a0cc3706a1052237405e40131eb</sys_update_name>
+        <sys_updated_by>KR</sys_updated_by>
+        <sys_updated_on>2025-04-05 05:15:06</sys_updated_on>
+        <type>compound</type>
+    </sys_security_attribute>
+</record_update>

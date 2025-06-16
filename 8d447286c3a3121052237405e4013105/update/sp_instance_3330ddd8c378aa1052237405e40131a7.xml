@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_instance">
+    <sp_instance action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <class_name/>
+        <color>default</color>
+        <css/>
+        <glyph>empty</glyph>
+        <id/>
+        <order>1</order>
+        <roles>Super Admin</roles>
+        <short_description/>
+        <size>md</size>
+        <sp_column display_value="3">d4cb130b83adea10a946f896feaad383</sp_column>
+        <sp_widget display_value="Catalog Cards">f2e2b08cc3702a1052237405e401310c</sp_widget>
+        <sys_class_name>sp_instance</sys_class_name>
+        <sys_created_by>AP</sys_created_by>
+        <sys_created_on>2025-04-05 04:06:10</sys_created_on>
+        <sys_id>3330ddd8c378aa1052237405e40131a7</sys_id>
+        <sys_mod_count>11</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Zynder Tech" source="8d447286c3a3121052237405e4013105">8d447286c3a3121052237405e4013105</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Zynder Tech">8d447286c3a3121052237405e4013105</sys_scope>
+        <sys_update_name>sp_instance_3330ddd8c378aa1052237405e40131a7</sys_update_name>
+        <sys_updated_by>Treesa.Thomas</sys_updated_by>
+        <sys_updated_on>2025-05-21 10:06:51</sys_updated_on>
+        <title/>
+        <url/>
+        <widget_parameters><![CDATA[{
+	"image": {
+		"value": "https://ugokawaii.com/wp-content/uploads/2023/01/piggy-bank.gif",
+		"displayValue": "https://ugokawaii.com/wp-content/uploads/2023/01/piggy-bank.gif"
+	},
+	"shortdesc": {
+		"value": "The Expense Tracker form in the Service Portal enables manager to submit business-related expenses",
+		"displayValue": "The Expense Tracker form in the Service Portal enables manager to submit business-related expenses"
+	},
+	"desc": {
+		"value": "The Expense Tracker form in the Service Portal streamlines the process of recording and managing employee-incurred business expenses. Employees can input details such as the date of expenditure, vendor name, expense category (e.g., travel, meals, office supplies), and the total amount spent",
+		"displayValue": "The Expense Tracker form in the Service Portal streamlines the process of recording and managing employee-incurred business expenses. Employees can input details such as the date of expenditure, vendor name, expense category (e.g., travel, meals, office supplies), and the total amount spent"
+	},
+	"link": {
+		"value": "/zt?id=sc_cat_item&sys_id=f68cd6d6c3a7521052237405e401317c",
+		"displayValue": "/zt?id=sc_cat_item&sys_id=f68cd6d6c3a7521052237405e401317c"
+	},
+	"name": {
+		"value": "Expense Tracker",
+		"displayValue": "Expense Tracker"
+	},
+	"animation": {
+		"value": "slide-in-right",
+		"displayValue": "slide-in-right"
+	}
+}]]></widget_parameters>
+    </sp_instance>
+    <sys_translated_text action="delete_multiple" query="documentkey=3330ddd8c378aa1052237405e40131a7"/>
+</record_update>

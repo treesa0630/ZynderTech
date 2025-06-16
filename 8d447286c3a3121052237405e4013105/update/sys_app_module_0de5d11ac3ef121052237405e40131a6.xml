@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_module">
+    <sys_app_module action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <application display_value="Project Efforts">7a05859ac36f121052237405e4013157</application>
+        <assessment/>
+        <device_type/>
+        <filter/>
+        <hint/>
+        <homepage/>
+        <image/>
+        <link_type>LIST</link_type>
+        <map_page/>
+        <mobile_title>project efforts</mobile_title>
+        <mobile_view_name>Mobile</mobile_view_name>
+        <name>u_project_effort</name>
+        <order/>
+        <override_menu_roles>false</override_menu_roles>
+        <query/>
+        <report/>
+        <require_confirmation>true</require_confirmation>
+        <roles>u_project_effort_user</roles>
+        <sys_class_name>sys_app_module</sys_class_name>
+        <sys_created_by>AM</sys_created_by>
+        <sys_created_on>2025-02-08 06:20:11</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>0de5d11ac3ef121052237405e40131a6</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>Project Efforts</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Zynder Tech" source="8d447286c3a3121052237405e4013105">8d447286c3a3121052237405e4013105</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Zynder Tech">8d447286c3a3121052237405e4013105</sys_scope>
+        <sys_update_name>sys_app_module_0de5d11ac3ef121052237405e40131a6</sys_update_name>
+        <sys_updated_by>AM</sys_updated_by>
+        <sys_updated_on>2025-02-08 11:09:44</sys_updated_on>
+        <timeline_page/>
+        <title>Project Efforts</title>
+        <uncancelable>false</uncancelable>
+        <view_name/>
+        <window_name/>
+    </sys_app_module>
+</record_update>

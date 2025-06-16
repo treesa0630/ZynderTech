@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sysauto_script">
+    <sysauto_script action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <business_calendar/>
+        <condition/>
+        <conditional>false</conditional>
+        <entered_time>1970-01-01 00:00:00</entered_time>
+        <max_drift/>
+        <name>Notify manager if leave application status remains requested</name>
+        <offset/>
+        <offset_type>0</offset_type>
+        <run_as display_value="Sreerag  Anchery">902c62cac363121052237405e40131e0</run_as>
+        <run_as_tz/>
+        <run_dayofmonth>1</run_dayofmonth>
+        <run_dayofweek>1</run_dayofweek>
+        <run_period/>
+        <run_start>2025-04-17 07:58:13</run_start>
+        <run_time>1969-12-31 18:30:00</run_time>
+        <run_type>daily</run_type>
+        <script><![CDATA[new global.ZynderTechUtils().remainderLeaveApplication();]]></script>
+        <sys_class_name>sysauto_script</sys_class_name>
+        <sys_created_by>SA</sys_created_by>
+        <sys_created_on>2025-04-17 07:59:45</sys_created_on>
+        <sys_id>4c7837c4c381261052237405e4013195</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>Notify manager if leave application status remains requested</sys_name>
+        <sys_package display_value="Zynder Tech" source="8d447286c3a3121052237405e4013105">8d447286c3a3121052237405e4013105</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Zynder Tech">8d447286c3a3121052237405e4013105</sys_scope>
+        <sys_update_name>sysauto_script_4c7837c4c381261052237405e4013195</sys_update_name>
+        <sys_updated_by>Sreerag.Anchery</sys_updated_by>
+        <sys_updated_on>2025-05-21 07:47:51</sys_updated_on>
+        <time_zone/>
+        <upgrade_safe>false</upgrade_safe>
+    </sysauto_script>
+    <sys_es_latest_script action="INSERT_OR_UPDATE">
+        <id>4c7837c4c381261052237405e4013195</id>
+        <sys_created_by>SA</sys_created_by>
+        <sys_created_on>2025-04-17 07:59:45</sys_created_on>
+        <sys_id>6ac87308c381261052237405e40131fb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>SA</sys_updated_by>
+        <sys_updated_on>2025-04-17 07:59:45</sys_updated_on>
+        <table>sysauto_script</table>
+        <use_es_latest>true</use_es_latest>
+    </sys_es_latest_script>
+</record_update>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sysevent_register">
+    <sysevent_register action="INSERT_OR_UPDATE">
+        <caller_access/>
+        <derived_priority>100</derived_priority>
+        <description/>
+        <event_name>event_project_effort</event_name>
+        <fired_by/>
+        <priority>100</priority>
+        <queue/>
+        <suffix/>
+        <sys_class_name>sysevent_register</sys_class_name>
+        <sys_created_by>athul</sys_created_by>
+        <sys_created_on>2025-02-18 15:06:40</sys_created_on>
+        <sys_id>532eeea5c337921052237405e4013111</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>event_project_effort</sys_name>
+        <sys_package display_value="Zynder Tech" source="8d447286c3a3121052237405e4013105">8d447286c3a3121052237405e4013105</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Zynder Tech">8d447286c3a3121052237405e4013105</sys_scope>
+        <sys_update_name>sysevent_register_532eeea5c337921052237405e4013111</sys_update_name>
+        <sys_updated_by>athul</sys_updated_by>
+        <sys_updated_on>2025-02-18 15:06:40</sys_updated_on>
+        <table>sysapproval_approver</table>
+    </sysevent_register>
+</record_update>

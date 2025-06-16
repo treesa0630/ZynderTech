@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_email">
+    <sys_script_email action="INSERT_OR_UPDATE">
+        <name>Approval.Button</name>
+        <new_lines_to_html>false</new_lines_to_html>
+        <script><![CDATA[(function runMailScript(/* GlideRecord */ current, /* TemplatePrinter */ template,
+          /* Optional EmailOutbound */ email, /* Optional GlideRecord */ email_action,
+          /* Optional GlideRecord */ event) {
+
+	var link = current.getLink();
+	template.print('<font face="helvetica">');
+		
+	var backgroundColor = 'background-color: #d4fad9;';
+	var border = 'border: 1px solid #d4fad9;';
+	var color = 'color: #000000;';
+	var fontSize = 'font-size: 19px;';
+	var fontFamily = 'font-family: Helvetica, Arial, sans-serif;';
+	var textDecoration = 'text-decoration: none; border-radius: 3px;';
+	var webKitBorder = '-webkit-border-radius: 5px;';
+	var mozBorder = '-moz-border-radius: 5px;';
+	var display = 'display: inline-block;';
+	var padding = 'padding: 10px;';
+	
+		
+	
+	
+	template.print('<table><tr><td style="'+  backgroundColor + border + webKitBorder + mozBorder + display + padding + '"><a href="mailto:'+gs.getProperty('instance.email')+'?subject=Re%3A${current.document_id.u_number}%20-%20approve&body=%0A%0A' + email.watermark + '" style="'+ color + fontSize + fontFamily + textDecoration  +'">'+ gs.getMessage('Approve') +'</a></td></tr></table>');
+	
+	
+
+	
+	template.print('</font>');
+	//template.print('<p><font size="3" color="#808080" face="helvetica">');
+	//template.print('</font></p>');
+})(current, template, email, email_action, event);
+]]></script>
+        <sys_class_name>sys_script_email</sys_class_name>
+        <sys_created_by>AM</sys_created_by>
+        <sys_created_on>2025-02-19 09:55:18</sys_created_on>
+        <sys_id>a61072f5c3f7d21052237405e401316c</sys_id>
+        <sys_mod_count>11</sys_mod_count>
+        <sys_name>Approval.Button</sys_name>
+        <sys_package display_value="Zynder Tech" source="8d447286c3a3121052237405e4013105">8d447286c3a3121052237405e4013105</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Zynder Tech">8d447286c3a3121052237405e4013105</sys_scope>
+        <sys_update_name>sys_script_email_a61072f5c3f7d21052237405e401316c</sys_update_name>
+        <sys_updated_by>SA</sys_updated_by>
+        <sys_updated_on>2025-04-03 12:19:48</sys_updated_on>
+    </sys_script_email>
+    <sys_es_latest_script action="INSERT_OR_UPDATE">
+        <id>a61072f5c3f7d21052237405e401316c</id>
+        <sys_created_by>AM</sys_created_by>
+        <sys_created_on>2025-02-19 09:55:18</sys_created_on>
+        <sys_id>df903ef5c3f7d21052237405e401311d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>AM</sys_updated_by>
+        <sys_updated_on>2025-02-19 09:55:18</sys_updated_on>
+        <table>sys_script_email</table>
+        <use_es_latest>true</use_es_latest>
+    </sys_es_latest_script>
+</record_update>

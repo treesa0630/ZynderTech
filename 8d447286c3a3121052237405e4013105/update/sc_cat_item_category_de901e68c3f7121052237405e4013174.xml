@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_category">
+    <sc_cat_item_category action="INSERT_OR_UPDATE">
+        <sc_cat_item display_value="Expense tracker">f68cd6d6c3a7521052237405e401317c</sc_cat_item>
+        <sc_category display_value="Services">109f0438c6112276003ae8ac13e7009d</sc_category>
+        <sys_class_name>sc_cat_item_category</sys_class_name>
+        <sys_created_by>KR</sys_created_by>
+        <sys_created_on>2025-02-15 10:23:00</sys_created_on>
+        <sys_id>de901e68c3f7121052237405e4013174</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Services.Expense tracker</sys_name>
+        <sys_package display_value="Zynder Tech" source="8d447286c3a3121052237405e4013105">8d447286c3a3121052237405e4013105</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Zynder Tech">8d447286c3a3121052237405e4013105</sys_scope>
+        <sys_update_name>sc_cat_item_category_de901e68c3f7121052237405e4013174</sys_update_name>
+        <sys_updated_by>KR</sys_updated_by>
+        <sys_updated_on>2025-02-15 10:23:00</sys_updated_on>
+    </sc_cat_item_category>
+</record_update>

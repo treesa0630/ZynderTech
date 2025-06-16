@@ -1,0 +1,1782 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_flow">
+    <sys_hub_flow action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,timeFromCreateToActivate=78000,viewActivatedIn=naturalLanguage</attributes>
+        <authored_on_release_version>26000</authored_on_release_version>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description/>
+        <display_name_after_preview/>
+        <flow_priority>MEDIUM</flow_priority>
+        <generation_source/>
+        <internal_name>test</internal_name>
+        <label_cache>[{"name":"Inbound Email_1.target_table_name","label":"Trigger - Inbound Email➛Incident Table","reference":"incident","reference_display":"Incident","type":"table_name","base_type":"table_name","usedInstances":{"7714c61d-c4d0-4722-986e-0f9f123316a7":["table"]},"attributes":{"test_input_hidden":"true"}},{"name":"Inbound Email_1.inbound_email.instance","label":"Trigger - Inbound Email➛Email Record➛Target","reference":"","reference_display":"Target","type":"document_id","base_type":"document_id","parent_table_name":"sys_email","column_name":"instance","usedInstances":{"7714c61d-c4d0-4722-986e-0f9f123316a7":["conditions"]}}]</label_cache>
+        <master_snapshot>49943e8bc3a8221052237405e4013160</master_snapshot>
+        <master_snapshot_digest/>
+        <name>test</name>
+        <natlang/>
+        <outputs/>
+        <pre_compiled>false</pre_compiled>
+        <remote_trigger_id>e5947e8bc3a8221052237405e401319d</remote_trigger_id>
+        <run_as>user</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <show_draft_actions>false</show_draft_actions>
+        <show_triggered_flows>false</show_triggered_flows>
+        <status>published</status>
+        <substatus/>
+        <sys_class_name>sys_hub_flow</sys_class_name>
+        <sys_created_by>RD</sys_created_by>
+        <sys_created_on>2025-04-01 14:10:48</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>0e44bac7c3a8221052237405e4013147</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>test</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Zynder Tech" source="8d447286c3a3121052237405e4013105">8d447286c3a3121052237405e4013105</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Zynder Tech">8d447286c3a3121052237405e4013105</sys_scope>
+        <sys_update_name>sys_hub_flow_0e44bac7c3a8221052237405e4013147</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-04-18 09:52:27</sys_updated_on>
+        <type>flow</type>
+        <version>2</version>
+    </sys_hub_flow>
+    <sys_translated_text action="delete_multiple" query="documentkey=0e44bac7c3a8221052237405e4013147"/>
+    <sys_variable_value action="delete_multiple" query="document_key=0e44bac7c3a8221052237405e4013147"/>
+    <sys_flow_email_trigger action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <email_conditions table="sys_email">^EQ<item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </email_conditions>
+        <event_name>email.read</event_name>
+        <name/>
+        <order/>
+        <published_version/>
+        <stop_condition_evaluation>true</stop_condition_evaluation>
+        <sys_class_name>sys_flow_email_trigger</sys_class_name>
+        <sys_created_by>RD</sys_created_by>
+        <sys_created_on>2025-04-01 14:12:09</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>e5947e8bc3a8221052237405e401319d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope/>
+        <sys_updated_by>RD</sys_updated_by>
+        <sys_updated_on>2025-04-01 14:12:09</sys_updated_on>
+        <target_table>incident</target_table>
+        <trigger_definition/>
+    </sys_flow_email_trigger>
+    <sys_trigger_runner_mapping action="delete_multiple" query="identifier=0e44bac7c3a8221052237405e4013147"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=0e44bac7c3a8221052237405e4013147"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=0e44bac7c3a8221052237405e4013147^sys_idNOT IN0a44bac7c3a8221052237405e4013148"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>0e44bac7c3a8221052237405e4013147</id>
+        <name>test</name>
+        <sys_created_by>RD</sys_created_by>
+        <sys_created_on>2025-04-01 14:10:48</sys_created_on>
+        <sys_id>0a44bac7c3a8221052237405e4013148</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>RD</sys_updated_by>
+        <sys_updated_on>2025-04-01 14:10:48</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=0a44bac7c3a8221052237405e4013148"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=0e44bac7c3a8221052237405e4013147^sys_idNOT IN20943e0bc3a8221052237405e4013171,3894fa8bc3a8221052237405e401313e,3c94fa8bc3a8221052237405e4013138,7494fa8bc3a8221052237405e401319b,b894fa8bc3a8221052237405e401313b,bc94fa8bc3a8221052237405e4013135,f494fa8bc3a8221052237405e4013198"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=reference,uiTypeLabel=Reference</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>inbound_email</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Reference">reference</internal_type>
+        <label>Inbound Email</label>
+        <mandatory>false</mandatory>
+        <max_length>32</max_length>
+        <model display_value="test">0e44bac7c3a8221052237405e4013147</model>
+        <model_id>0e44bac7c3a8221052237405e4013147</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_0e44bac7c3a8221052237405e4013147</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference display_value="" name="sys_email">sys_email</reference>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual>type=received^sys_created_onONLast 3 months@javascript:gs.beginningOfLast3Months()@javascript:gs.endOfLast3Months()^EQ</reference_qual>
+        <reference_qual_condition table="sys_email">type=received^sys_created_onONLast 3 months@javascript:gs.beginningOfLast3Months()@javascript:gs.endOfLast3Months()^EQ<item display_value="received" endquery="false" field="type" goto="false" newquery="false" operator="=" or="false" value="received"/>
+            <item endquery="false" field="sys_created_on" goto="false" newquery="false" operator="ON" or="false" value="Last 3 months@javascript:gs.beginningOfLast3Months()@javascript:gs.endOfLast3Months()"/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </reference_qual_condition>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>RD</sys_created_by>
+        <sys_created_on>2025-04-01 14:12:04</sys_created_on>
+        <sys_id>20943e0bc3a8221052237405e4013171</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Zynder Tech">8d447286c3a3121052237405e4013105</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>RD</sys_updated_by>
+        <sys_updated_on>2025-04-01 14:12:04</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=20943e0bc3a8221052237405e4013171"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=reference,uiTypeLabel=Reference</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>user</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Reference">reference</internal_type>
+        <label>User</label>
+        <mandatory>false</mandatory>
+        <max_length>32</max_length>
+        <model display_value="test">0e44bac7c3a8221052237405e4013147</model>
+        <model_id>0e44bac7c3a8221052237405e4013147</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_0e44bac7c3a8221052237405e4013147</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference display_value="" name="sys_user">sys_user</reference>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>RD</sys_created_by>
+        <sys_created_on>2025-04-01 14:12:05</sys_created_on>
+        <sys_id>3894fa8bc3a8221052237405e401313e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Zynder Tech">8d447286c3a3121052237405e4013105</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>RD</sys_updated_by>
+        <sys_updated_on>2025-04-01 14:12:05</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=3894fa8bc3a8221052237405e401313e"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=string_full_utf8,uiTypeLabel=String (Full UTF-8)</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>body_text</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">string_full_utf8</internal_type>
+        <label>Body Text</label>
+        <mandatory>false</mandatory>
+        <max_length>255</max_length>
+        <model display_value="test">0e44bac7c3a8221052237405e4013147</model>
+        <model_id>0e44bac7c3a8221052237405e4013147</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_0e44bac7c3a8221052237405e4013147</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>RD</sys_created_by>
+        <sys_created_on>2025-04-01 14:12:05</sys_created_on>
+        <sys_id>3c94fa8bc3a8221052237405e4013138</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Zynder Tech">8d447286c3a3121052237405e4013105</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>RD</sys_updated_by>
+        <sys_updated_on>2025-04-01 14:12:05</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=3c94fa8bc3a8221052237405e4013138"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=string_full_utf8,uiTypeLabel=String (Full UTF-8)</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>from_address</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">string_full_utf8</internal_type>
+        <label>From address</label>
+        <mandatory>false</mandatory>
+        <max_length>255</max_length>
+        <model display_value="test">0e44bac7c3a8221052237405e4013147</model>
+        <model_id>0e44bac7c3a8221052237405e4013147</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_0e44bac7c3a8221052237405e4013147</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>RD</sys_created_by>
+        <sys_created_on>2025-04-01 14:12:05</sys_created_on>
+        <sys_id>7494fa8bc3a8221052237405e401319b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Zynder Tech">8d447286c3a3121052237405e4013105</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>RD</sys_updated_by>
+        <sys_updated_on>2025-04-01 14:12:05</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=7494fa8bc3a8221052237405e401319b"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=string_full_utf8,uiTypeLabel=String (Full UTF-8)</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>subject</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">string_full_utf8</internal_type>
+        <label>Subject</label>
+        <mandatory>false</mandatory>
+        <max_length>255</max_length>
+        <model display_value="test">0e44bac7c3a8221052237405e4013147</model>
+        <model_id>0e44bac7c3a8221052237405e4013147</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_0e44bac7c3a8221052237405e4013147</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>RD</sys_created_by>
+        <sys_created_on>2025-04-01 14:12:05</sys_created_on>
+        <sys_id>b894fa8bc3a8221052237405e401313b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Zynder Tech">8d447286c3a3121052237405e4013105</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>RD</sys_updated_by>
+        <sys_updated_on>2025-04-01 14:12:05</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=b894fa8bc3a8221052237405e401313b"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name,uiTypeLabel=Table Name</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>target_table_name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">table_name</internal_type>
+        <label>Target Table</label>
+        <mandatory>false</mandatory>
+        <max_length>255</max_length>
+        <model display_value="test">0e44bac7c3a8221052237405e4013147</model>
+        <model_id>0e44bac7c3a8221052237405e4013147</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_0e44bac7c3a8221052237405e4013147</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>RD</sys_created_by>
+        <sys_created_on>2025-04-01 14:12:05</sys_created_on>
+        <sys_id>bc94fa8bc3a8221052237405e4013135</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Zynder Tech">8d447286c3a3121052237405e4013105</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>RD</sys_updated_by>
+        <sys_updated_on>2025-04-01 14:12:05</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=bc94fa8bc3a8221052237405e4013135"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=document_id,uiTypeLabel=Document ID</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent>target_table_name</dependent>
+        <dependent_on_field>target_table_name</dependent_on_field>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>target_record</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">document_id</internal_type>
+        <label>Target Record</label>
+        <mandatory>false</mandatory>
+        <max_length>255</max_length>
+        <model display_value="test">0e44bac7c3a8221052237405e4013147</model>
+        <model_id>0e44bac7c3a8221052237405e4013147</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_0e44bac7c3a8221052237405e4013147</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>RD</sys_created_by>
+        <sys_created_on>2025-04-01 14:12:05</sys_created_on>
+        <sys_id>f494fa8bc3a8221052237405e4013198</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Zynder Tech">8d447286c3a3121052237405e4013105</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>RD</sys_updated_by>
+        <sys_updated_on>2025-04-01 14:12:05</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>true</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=f494fa8bc3a8221052237405e4013198"/>
+    <sys_hub_flow_output action="delete_multiple" query="model=0e44bac7c3a8221052237405e4013147"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=0e44bac7c3a8221052237405e4013147"/>
+    <sys_hub_trigger_instance_v2 action="delete_multiple" query="flow=0e44bac7c3a8221052237405e4013147^sys_idNOT IN7c94fa8bc3a8221052237405e40131de"/>
+    <sys_hub_trigger_instance_v2 action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="test">0e44bac7c3a8221052237405e4013147</flow>
+        <name>Inbound Email</name>
+        <published_version/>
+        <remote_sys_id/>
+        <sys_created_by>RD</sys_created_by>
+        <sys_created_on>2025-04-01 14:12:06</sys_created_on>
+        <sys_id>7c94fa8bc3a8221052237405e40131de</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>RD</sys_updated_by>
+        <sys_updated_on>2025-04-01 14:12:06</sys_updated_on>
+        <trigger_definition display_value="Inbound Email">6f0180400b320300f4eb8bf637673ad4</trigger_definition>
+        <trigger_inputs>H4sIAAAAAAAA/9WWTU/cMBCG/4qV87bNbgILe6takLiACqg9IBo5zmRjyWuntrNLivrfO3YSkv0U6lYqvSD5IzPvvPOMl4fnQNAURDALLhaUC8KUzLjlSppgFHBpQUsq7usS8Mba2YLKjFql62CWU2FgFCidgQ5m4zAcBUsqKrirzVWG3+FtSRcuArgcyVocfxOPvl98wVXGTSlo/bXdxJ2SavzWusjPASu4yDTIYPbwOAosyko6+Z/WhLu047NwHEbxlE2j8SQKwzyGlI7jyQk9n55G+RTvHah9v2K7w41h7fBkQWaQvRizbZUGmt1I0W8UaPVaEcQq8qOiguc1WRWcFcQrMcRYqi2pVaVJLtTqvW/Fk+E/UVMcuvwackCPmBNpapP4D4PBftK63BWOZ6xQnMFN6XI3vluairYFTIlqIa8bQ1yTIKeVsIMmVQaDQunKdnW0ReV3hVrddlkvufQetYdCMSpeVtRazdPKgvFt7mxI0gob7r4KlpPgl68hcbZ0QtqUSaMaLximeWk/MsuX0Eb/Neohv/F92iLbLef+YC/WkwNYqzbqsnfkz0G+etHiKT4N0yhEhndTPIUBxV1xG6rsZo3Dio6A9b4AUmquNLc1maPf0kFrcRd7OcdURC3dH9zRhMtUVTJrKO4umA1619ndg+ybo3XJDW+y++O/gemdVSV6qxgYw+V8G9hUKQFUHgI2OgCswfj9o5aAu0a9mz3EVldwFMj3GODDpbekZRkJjs/2spwPWd524BXS7aY5QyuOIP1b4djGckadJDBE4UVPu3uGyYrbwq9wAca+8y4Sn/8fQN71rtn9vN7C9vDtT8EtlGjxLTC0kXjwt+bAW5J4NA6MQnxgFPDndA42abzt6eeScW/M1gRc9SevngQXnFw3Kv0kpOdjnIT47CQaR24SIJ2ykOJ/LKcZi+L0ZDAJu1zYrd3u8GTowJFvvY9LVO4x140eaoxinFrI+glA69QCZxbvOOX+xV+bgbP/86F/DdGt+ksOosVsF+OPvwH3j63udwsAAA==</trigger_inputs>
+        <trigger_outputs/>
+        <trigger_type>email</trigger_type>
+    </sys_hub_trigger_instance_v2>
+    <sys_hub_action_instance_v2 action="delete_multiple" query="flow=0e44bac7c3a8221052237405e4013147^sys_idNOT IN7094fa8bc3a8221052237405e40131ed"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Look Up Record">9d09f99587003300663ca1bb36cb0ba3</action_type>
+        <action_type_parent display_value="Look Up Record">b93f42810b30030085c083eb37673a63</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot/>
+        <display_text/>
+        <flow display_value="test">0e44bac7c3a8221052237405e4013147</flow>
+        <generation_source/>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>RD</sys_created_by>
+        <sys_created_on>2025-04-01 14:12:06</sys_created_on>
+        <sys_id>7094fa8bc3a8221052237405e40131ed</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Zynder Tech">8d447286c3a3121052237405e4013105</sys_scope>
+        <sys_updated_by>RD</sys_updated_by>
+        <sys_updated_on>2025-04-01 14:12:06</sys_updated_on>
+        <ui_id>7714c61d-c4d0-4722-986e-0f9f123316a7</ui_id>
+        <values>H4sIAAAAAAAA/9VY33PaOBD+Vzx+JpyNAUPeOk2ZycxdM9P2+pJmNLIlB01lyZXkpIThf+/Klg0BAgS4a/ooaX98u/vtsuZ27jPiX/pkHIyz8XgwioMgioJgOIxSHCZJNEyTIMF9v+MLnFOQNDjhFI4PmJf2PJ9fi0SWgngfcsw4CrsGq3tqUCWIrNZiAfKE6YLj2VenBjfplHGiqPAvb+86foEViBqq/Mv52pOZFRRxnFAOil+sWe+jBdM5GPsz5c1YrIPmWCGGO6mIxRJ0fPrTUEEouMow17Tj51gQbKSatTeKYnIj+PJiyoSpo8zxT82ewPwosHIZhbBSl4H2iFx2msRIltKbwjAp6psaaP0oeZmLj3UANq80wyU3K3ktNdijhcVsQThE2eepfPzUOJwwUYXnHrlMMW9P2BjFktJQbWtBOc3BEMpxUTBxjwolH1ilDFjy7j2HQzfj8hGcanYvuji1wLuQItydwP1Vdf0VK2aj+AfMgDIAYhyq7WiiZamqrDyglJe6elBY6NqWv6hyhX6UFmUdtYsP1SkCAZ0qVph3oPBAXSiLTkPvwU6KjJeUSKUgzPrUKxzXM40Y+VaCMtnkO6vPiNoznLTBkOFtpD/aznGt8n41lkPzsFV5W3Jc0zy7c00Tnq1p+kHwm9rGqPLtdc2+PqgD3tMMIdlJArKst5bKoDpzK91wxmE+YZSTZ8P8AHCN8o0lm5fMXsLrCJpZH2tTvffHT/UT6ZkRVOeFCc5E9eMHBsHNG+btYCc1knCNB1X5V2a4vcM63WQv9oz0no6fslVdG/4eALJR/AyIvC81yi3Am/namHfUjc5G3aj3OuoCcW7nLfo2a1sS3OxOtnSN/JOVx+vyQKIVhXBx11L//XE+w9f67Fmfa70Zvao5V5lVv1y9QLAzb2b/cxN3rMMpqDp/qG5W9MgI7PtL740UkeYR8+/b3h272h6qwjt5ywt3fggkK1sey1AOdWIFrJ6KpkAFjbCiKKsWMLd0Lmlj65YxpY0T3pwhn6gplfAktJxnptSrpL1W+hyT5YDoGsXrzGvCcxi0B+F5VXheG97rkvHCPOqfcdc7ZR5NYGmuUg8fD8VK7ahSUr0wk/ZUbUf5DxxYB4IKzwrq9Im2je9bJ9serH/El+ipUyelOOn38DCOwjAIwoDEwSiOw9EwyYY47mfLRkNIixTGIljO7CefFKghQlPVYHO01LPx6L9LYOb+NXEmDsXbKF9JYT9We7HxLGCos9cA3h+SmxeJlJxisaTn4LcNjLfyj0rJ7Nb397YK/Ve/3LXLZ+Uo2b+C/SjptSXFiAa9UUjSi1Ecxhf9jAwvxgQPLvA4GcQRoWk/O/73+e4XuyJME2YUAAA=</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_sub_flow_instance_v2 action="delete_multiple" query="flow=0e44bac7c3a8221052237405e4013147"/>
+    <sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=0e44bac7c3a8221052237405e4013147"/>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=0e44bac7c3a8221052237405e4013147"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=0e44bac7c3a8221052237405e4013147"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>target_record</element>
+        <help/>
+        <hint/>
+        <label>Target Record</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_0e44bac7c3a8221052237405e4013147</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>RD</sys_created_by>
+        <sys_created_on>2025-04-01 14:12:05</sys_created_on>
+        <sys_id>3894fa8bc3a8221052237405e401319a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Target Record</sys_name>
+        <sys_package display_value="Zynder Tech" source="8d447286c3a3121052237405e4013105">8d447286c3a3121052237405e4013105</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Zynder Tech">8d447286c3a3121052237405e4013105</sys_scope>
+        <sys_update_name>sys_documentation_var__m_sys_hub_flow_input_0e44bac7c3a8221052237405e4013147_target_record_en</sys_update_name>
+        <sys_updated_by>RD</sys_updated_by>
+        <sys_updated_on>2025-04-01 14:12:05</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>inbound_email</element>
+        <help/>
+        <hint>The record representing the inbound email.</hint>
+        <label>Inbound Email</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_0e44bac7c3a8221052237405e4013147</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>RD</sys_created_by>
+        <sys_created_on>2025-04-01 14:12:05</sys_created_on>
+        <sys_id>7094fa8bc3a8221052237405e4013135</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Inbound Email</sys_name>
+        <sys_package display_value="Zynder Tech" source="8d447286c3a3121052237405e4013105">8d447286c3a3121052237405e4013105</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Zynder Tech">8d447286c3a3121052237405e4013105</sys_scope>
+        <sys_update_name>sys_documentation_var__m_sys_hub_flow_input_0e44bac7c3a8221052237405e4013147_inbound_email_en</sys_update_name>
+        <sys_updated_by>RD</sys_updated_by>
+        <sys_updated_on>2025-04-01 14:12:05</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>body_text</element>
+        <help/>
+        <hint/>
+        <label>Body Text</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_0e44bac7c3a8221052237405e4013147</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>RD</sys_created_by>
+        <sys_created_on>2025-04-01 14:12:05</sys_created_on>
+        <sys_id>7c94fa8bc3a8221052237405e401313a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Body Text</sys_name>
+        <sys_package display_value="Zynder Tech" source="8d447286c3a3121052237405e4013105">8d447286c3a3121052237405e4013105</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Zynder Tech">8d447286c3a3121052237405e4013105</sys_scope>
+        <sys_update_name>sys_documentation_var__m_sys_hub_flow_input_0e44bac7c3a8221052237405e4013147_body_text_en</sys_update_name>
+        <sys_updated_by>RD</sys_updated_by>
+        <sys_updated_on>2025-04-01 14:12:05</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>from_address</element>
+        <help/>
+        <hint/>
+        <label>From address</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_0e44bac7c3a8221052237405e4013147</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>RD</sys_created_by>
+        <sys_created_on>2025-04-01 14:12:05</sys_created_on>
+        <sys_id>b494fa8bc3a8221052237405e401319d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>From address</sys_name>
+        <sys_package display_value="Zynder Tech" source="8d447286c3a3121052237405e4013105">8d447286c3a3121052237405e4013105</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Zynder Tech">8d447286c3a3121052237405e4013105</sys_scope>
+        <sys_update_name>sys_documentation_var__m_sys_hub_flow_input_0e44bac7c3a8221052237405e4013147_from_address_en</sys_update_name>
+        <sys_updated_by>RD</sys_updated_by>
+        <sys_updated_on>2025-04-01 14:12:05</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>user</element>
+        <help/>
+        <hint/>
+        <label>User</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_0e44bac7c3a8221052237405e4013147</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>RD</sys_created_by>
+        <sys_created_on>2025-04-01 14:12:05</sys_created_on>
+        <sys_id>b894fa8bc3a8221052237405e4013197</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>User</sys_name>
+        <sys_package display_value="Zynder Tech" source="8d447286c3a3121052237405e4013105">8d447286c3a3121052237405e4013105</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Zynder Tech">8d447286c3a3121052237405e4013105</sys_scope>
+        <sys_update_name>sys_documentation_var__m_sys_hub_flow_input_0e44bac7c3a8221052237405e4013147_user_en</sys_update_name>
+        <sys_updated_by>RD</sys_updated_by>
+        <sys_updated_on>2025-04-01 14:12:05</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>subject</element>
+        <help/>
+        <hint/>
+        <label>Subject</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_0e44bac7c3a8221052237405e4013147</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>RD</sys_created_by>
+        <sys_created_on>2025-04-01 14:12:05</sys_created_on>
+        <sys_id>f894fa8bc3a8221052237405e401313d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Subject</sys_name>
+        <sys_package display_value="Zynder Tech" source="8d447286c3a3121052237405e4013105">8d447286c3a3121052237405e4013105</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Zynder Tech">8d447286c3a3121052237405e4013105</sys_scope>
+        <sys_update_name>sys_documentation_var__m_sys_hub_flow_input_0e44bac7c3a8221052237405e4013147_subject_en</sys_update_name>
+        <sys_updated_by>RD</sys_updated_by>
+        <sys_updated_on>2025-04-01 14:12:05</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>target_table_name</element>
+        <help/>
+        <hint/>
+        <label>Target Table</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_0e44bac7c3a8221052237405e4013147</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>RD</sys_created_by>
+        <sys_created_on>2025-04-01 14:12:05</sys_created_on>
+        <sys_id>fc94fa8bc3a8221052237405e4013137</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Target Table</sys_name>
+        <sys_package display_value="Zynder Tech" source="8d447286c3a3121052237405e4013105">8d447286c3a3121052237405e4013105</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Zynder Tech">8d447286c3a3121052237405e4013105</sys_scope>
+        <sys_update_name>sys_documentation_var__m_sys_hub_flow_input_0e44bac7c3a8221052237405e4013147_target_table_name_en</sys_update_name>
+        <sys_updated_by>RD</sys_updated_by>
+        <sys_updated_on>2025-04-01 14:12:05</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_0e44bac7c3a8221052237405e4013147"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_0e44bac7c3a8221052237405e4013147"/>
+    <sys_hub_flow_snapshot action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,viewActivatedIn=naturalLanguage</attributes>
+        <authored_on_release_version>26000</authored_on_release_version>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description/>
+        <flow_priority>MEDIUM</flow_priority>
+        <internal_name>test</internal_name>
+        <label_cache>[{"name":"Inbound Email_1.target_table_name","label":"Trigger - Inbound Email➛Incident Table","reference":"incident","reference_display":"Incident","type":"table_name","base_type":"table_name","usedInstances":{"7714c61d-c4d0-4722-986e-0f9f123316a7":["table"]},"attributes":{"test_input_hidden":"true"}},{"name":"Inbound Email_1.inbound_email.instance","label":"Trigger - Inbound Email➛Email Record➛Target","reference":"","reference_display":"Target","type":"document_id","base_type":"document_id","parent_table_name":"sys_email","column_name":"instance","usedInstances":{"7714c61d-c4d0-4722-986e-0f9f123316a7":["conditions"]}}]</label_cache>
+        <master>true</master>
+        <name>test</name>
+        <natlang/>
+        <outputs/>
+        <parent_flow display_value="test">0e44bac7c3a8221052237405e4013147</parent_flow>
+        <remote_trigger_id/>
+        <run_as>user</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <status>published</status>
+        <sys_class_name>sys_hub_flow_snapshot</sys_class_name>
+        <sys_created_by>RD</sys_created_by>
+        <sys_created_on>2025-04-01 14:12:06</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>49943e8bc3a8221052237405e4013160</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Zynder Tech">8d447286c3a3121052237405e4013105</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>RD</sys_updated_by>
+        <sys_updated_on>2025-04-01 14:12:06</sys_updated_on>
+        <type>flow</type>
+        <version>2</version>
+    </sys_hub_flow_snapshot>
+    <sys_translated_text action="delete_multiple" query="documentkey=49943e8bc3a8221052237405e4013160"/>
+    <sys_variable_value action="delete_multiple" query="document_key=49943e8bc3a8221052237405e4013160"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=49943e8bc3a8221052237405e4013160"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=49943e8bc3a8221052237405e4013160^sys_idNOT IN85943e8bc3a8221052237405e4013161"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>49943e8bc3a8221052237405e4013160</id>
+        <name>test</name>
+        <sys_created_by>RD</sys_created_by>
+        <sys_created_on>2025-04-01 14:12:06</sys_created_on>
+        <sys_id>85943e8bc3a8221052237405e4013161</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>RD</sys_updated_by>
+        <sys_updated_on>2025-04-01 14:12:06</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=85943e8bc3a8221052237405e4013161"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=49943e8bc3a8221052237405e4013160^sys_idNOT IN19943e8bc3a8221052237405e4013198,45943e8bc3a8221052237405e4013162,55943e8bc3a8221052237405e40131dd,ad947e8bc3a8221052237405e4013128,dd943e8bc3a8221052237405e4013191,dd943e8bc3a8221052237405e40131e3,e9947e8bc3a8221052237405e401312f"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=string_full_utf8,uiTypeLabel=String (Full UTF-8)</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>subject</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">string_full_utf8</internal_type>
+        <label>Subject</label>
+        <mandatory>false</mandatory>
+        <max_length>255</max_length>
+        <model display_value="test">49943e8bc3a8221052237405e4013160</model>
+        <model_id>49943e8bc3a8221052237405e4013160</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_49943e8bc3a8221052237405e4013160</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>RD</sys_created_by>
+        <sys_created_on>2025-04-01 14:12:07</sys_created_on>
+        <sys_id>19943e8bc3a8221052237405e4013198</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Zynder Tech">8d447286c3a3121052237405e4013105</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>RD</sys_updated_by>
+        <sys_updated_on>2025-04-01 14:12:07</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=19943e8bc3a8221052237405e4013198"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=string_full_utf8,uiTypeLabel=String (Full UTF-8)</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>body_text</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">string_full_utf8</internal_type>
+        <label>Body Text</label>
+        <mandatory>false</mandatory>
+        <max_length>255</max_length>
+        <model display_value="test">49943e8bc3a8221052237405e4013160</model>
+        <model_id>49943e8bc3a8221052237405e4013160</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_49943e8bc3a8221052237405e4013160</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>RD</sys_created_by>
+        <sys_created_on>2025-04-01 14:12:06</sys_created_on>
+        <sys_id>45943e8bc3a8221052237405e4013162</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Zynder Tech">8d447286c3a3121052237405e4013105</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>RD</sys_updated_by>
+        <sys_updated_on>2025-04-01 14:12:06</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=45943e8bc3a8221052237405e4013162"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=reference,uiTypeLabel=Reference</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>inbound_email</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Reference">reference</internal_type>
+        <label>Inbound Email</label>
+        <mandatory>false</mandatory>
+        <max_length>32</max_length>
+        <model display_value="test">49943e8bc3a8221052237405e4013160</model>
+        <model_id>49943e8bc3a8221052237405e4013160</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_49943e8bc3a8221052237405e4013160</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference display_value="" name="sys_email">sys_email</reference>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual>type=received^sys_created_onONLast 3 months@javascript:gs.beginningOfLast3Months()@javascript:gs.endOfLast3Months()^EQ</reference_qual>
+        <reference_qual_condition table="sys_email">type=received^sys_created_onONLast 3 months@javascript:gs.beginningOfLast3Months()@javascript:gs.endOfLast3Months()^EQ<item display_value="received" endquery="false" field="type" goto="false" newquery="false" operator="=" or="false" value="received"/>
+            <item endquery="false" field="sys_created_on" goto="false" newquery="false" operator="ON" or="false" value="Last 3 months@javascript:gs.beginningOfLast3Months()@javascript:gs.endOfLast3Months()"/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </reference_qual_condition>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>RD</sys_created_by>
+        <sys_created_on>2025-04-01 14:12:07</sys_created_on>
+        <sys_id>55943e8bc3a8221052237405e40131dd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Zynder Tech">8d447286c3a3121052237405e4013105</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>RD</sys_updated_by>
+        <sys_updated_on>2025-04-01 14:12:07</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=55943e8bc3a8221052237405e40131dd"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=string_full_utf8,uiTypeLabel=String (Full UTF-8)</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>from_address</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">string_full_utf8</internal_type>
+        <label>From address</label>
+        <mandatory>false</mandatory>
+        <max_length>255</max_length>
+        <model display_value="test">49943e8bc3a8221052237405e4013160</model>
+        <model_id>49943e8bc3a8221052237405e4013160</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_49943e8bc3a8221052237405e4013160</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>RD</sys_created_by>
+        <sys_created_on>2025-04-01 14:12:08</sys_created_on>
+        <sys_id>ad947e8bc3a8221052237405e4013128</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Zynder Tech">8d447286c3a3121052237405e4013105</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>RD</sys_updated_by>
+        <sys_updated_on>2025-04-01 14:12:08</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=ad947e8bc3a8221052237405e4013128"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name,uiTypeLabel=Table Name</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>target_table_name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">table_name</internal_type>
+        <label>Target Table</label>
+        <mandatory>false</mandatory>
+        <max_length>255</max_length>
+        <model display_value="test">49943e8bc3a8221052237405e4013160</model>
+        <model_id>49943e8bc3a8221052237405e4013160</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_49943e8bc3a8221052237405e4013160</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>RD</sys_created_by>
+        <sys_created_on>2025-04-01 14:12:07</sys_created_on>
+        <sys_id>dd943e8bc3a8221052237405e4013191</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Zynder Tech">8d447286c3a3121052237405e4013105</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>RD</sys_updated_by>
+        <sys_updated_on>2025-04-01 14:12:07</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=dd943e8bc3a8221052237405e4013191"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=reference,uiTypeLabel=Reference</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>user</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Reference">reference</internal_type>
+        <label>User</label>
+        <mandatory>false</mandatory>
+        <max_length>32</max_length>
+        <model display_value="test">49943e8bc3a8221052237405e4013160</model>
+        <model_id>49943e8bc3a8221052237405e4013160</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_49943e8bc3a8221052237405e4013160</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference display_value="" name="sys_user">sys_user</reference>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>RD</sys_created_by>
+        <sys_created_on>2025-04-01 14:12:08</sys_created_on>
+        <sys_id>dd943e8bc3a8221052237405e40131e3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Zynder Tech">8d447286c3a3121052237405e4013105</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>RD</sys_updated_by>
+        <sys_updated_on>2025-04-01 14:12:08</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=dd943e8bc3a8221052237405e40131e3"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=document_id,uiTypeLabel=Document ID</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent>target_table_name</dependent>
+        <dependent_on_field>target_table_name</dependent_on_field>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>target_record</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">document_id</internal_type>
+        <label>Target Record</label>
+        <mandatory>false</mandatory>
+        <max_length>255</max_length>
+        <model display_value="test">49943e8bc3a8221052237405e4013160</model>
+        <model_id>49943e8bc3a8221052237405e4013160</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_49943e8bc3a8221052237405e4013160</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>RD</sys_created_by>
+        <sys_created_on>2025-04-01 14:12:08</sys_created_on>
+        <sys_id>e9947e8bc3a8221052237405e401312f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Zynder Tech">8d447286c3a3121052237405e4013105</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>RD</sys_updated_by>
+        <sys_updated_on>2025-04-01 14:12:08</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>true</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=e9947e8bc3a8221052237405e401312f"/>
+    <sys_hub_flow_output action="delete_multiple" query="model=49943e8bc3a8221052237405e4013160"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=49943e8bc3a8221052237405e4013160"/>
+    <sys_hub_trigger_instance_v2 action="delete_multiple" query="flow=49943e8bc3a8221052237405e4013160^sys_idNOT INa5947e8bc3a8221052237405e401316e"/>
+    <sys_hub_trigger_instance_v2 action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="test">49943e8bc3a8221052237405e4013160</flow>
+        <name>Inbound Email</name>
+        <published_version/>
+        <remote_sys_id/>
+        <sys_created_by>RD</sys_created_by>
+        <sys_created_on>2025-04-01 14:12:09</sys_created_on>
+        <sys_id>a5947e8bc3a8221052237405e401316e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>RD</sys_updated_by>
+        <sys_updated_on>2025-04-01 14:12:09</sys_updated_on>
+        <trigger_definition display_value="Inbound Email">6f0180400b320300f4eb8bf637673ad4</trigger_definition>
+        <trigger_inputs>H4sIAAAAAAAA/9WWTU/cMBCG/4qV87bNbgILe6takLiACqg9IBo5zmRjyWuntrNLivrfO3YSkv0U6lYqvSD5IzPvvPOMl4fnQNAURDALLhaUC8KUzLjlSppgFHBpQUsq7usS8Mba2YLKjFql62CWU2FgFCidgQ5m4zAcBUsqKrirzVWG3+FtSRcuArgcyVocfxOPvl98wVXGTSlo/bXdxJ2SavzWusjPASu4yDTIYPbwOAosyko6+Z/WhLu047NwHEbxlE2j8SQKwzyGlI7jyQk9n55G+RTvHah9v2K7w41h7fBkQWaQvRizbZUGmt1I0W8UaPVaEcQq8qOiguc1WRWcFcQrMcRYqi2pVaVJLtTqvW/Fk+E/UVMcuvwackCPmBNpapP4D4PBftK63BWOZ6xQnMFN6XI3vluairYFTIlqIa8bQ1yTIKeVsIMmVQaDQunKdnW0ReV3hVrddlkvufQetYdCMSpeVtRazdPKgvFt7mxI0gob7r4KlpPgl68hcbZ0QtqUSaMaLximeWk/MsuX0Eb/Neohv/F92iLbLef+YC/WkwNYqzbqsnfkz0G+etHiKT4N0yhEhndTPIUBxV1xG6rsZo3Dio6A9b4AUmquNLc1maPf0kFrcRd7OcdURC3dH9zRhMtUVTJrKO4umA1619ndg+ybo3XJDW+y++O/gemdVSV6qxgYw+V8G9hUKQFUHgI2OgCswfj9o5aAu0a9mz3EVldwFMj3GODDpbekZRkJjs/2spwPWd524BXS7aY5QyuOIP1b4djGckadJDBE4UVPu3uGyYrbwq9wAca+8y4Sn/8fQN71rtn9vN7C9vDtT8EtlGjxLTC0kXjwt+bAW5J4NA6MQnxgFPDndA42abzt6eeScW/M1gRc9SevngQXnFw3Kv0kpOdjnIT47CQaR24SIJ2ykOJ/LKcZi+L0ZDAJu1zYrd3u8GTowJFvvY9LVO4x140eaoxinFrI+glA69QCZxbvOOX+xV+bgbP/86F/DdGt+ksOosVsF+OPvwH3j63udwsAAA==</trigger_inputs>
+        <trigger_outputs/>
+        <trigger_type>email</trigger_type>
+    </sys_hub_trigger_instance_v2>
+    <sys_hub_action_instance_v2 action="delete_multiple" query="flow=49943e8bc3a8221052237405e4013160^sys_idNOT INed947e8bc3a8221052237405e401316d"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Look Up Record">9d09f99587003300663ca1bb36cb0ba3</action_type>
+        <action_type_parent display_value="Look Up Record">b93f42810b30030085c083eb37673a63</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>9d09f99587003300663ca1bb36cb0ba3</compiled_snapshot>
+        <display_text/>
+        <flow display_value="test">49943e8bc3a8221052237405e4013160</flow>
+        <generation_source/>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>RD</sys_created_by>
+        <sys_created_on>2025-04-01 14:12:08</sys_created_on>
+        <sys_id>ed947e8bc3a8221052237405e401316d</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Zynder Tech">8d447286c3a3121052237405e4013105</sys_scope>
+        <sys_updated_by>RD</sys_updated_by>
+        <sys_updated_on>2025-04-01 14:12:08</sys_updated_on>
+        <ui_id>7714c61d-c4d0-4722-986e-0f9f123316a7</ui_id>
+        <values>H4sIAAAAAAAA/+VY32/jKBD+Vyw/pzk7v5z07dRepEp7W2nb25e9FcIGN+gIeAG320b533cwOLESN4nvUqnVPTIM8M3wfcPY31YhI+FlSGbRLJ/NxtMkiobDKJpMhhmO03Q4ydIoxaOwFwq8pOBpcMopDB8xL+14tboRqSwFCf5YYsZR3DdYPVCDKkdkV63X4E+YLjh+/uqXgSVbME4UFeHlt++9sMAKXA1V4eVqZ+pUhBynlIPrvYe4g9g8F5thhcvbPjWXBZ/dhFTEQol6If1pqCAUMOSYa9oLl1gQbKR63lgUxeRW8K1hwYRxQS7xT81e4NxpZP1yClFlPgGbIfLJceb8Ght8Z1SZmVJtciVZRrXLB6E5Lrm5atqcw21hmBRuiQvbrZa8XIrPLh3hZoPGXZQaQNDCBmqR+zDyu4V8+lKjnDNR5cRPcplhvhlhYxRLS2PxrELK6RI2QktcFEw8oELJR1YtBizL/gOHQT/n8gkO1exB9HFmgfchr7g/B/t1Zf6KFbNR/AnbwGIAxDgwxFNLy1JVqXxEGS91NaGw0G6vcN0L9bO+4ljrbeSQcvSjtLhdHnzEyCXNLskUK8zvsMUj9cGte7VIxgcpONtSLpOCMItCN5QCaBAjf5ewmOyrhrkxonYMI20w5LxNOv96n46COx5tLbirZrhtKfDS27N9atvASy8+m/RGUfSRxAeHvz/tdVeTS8ERScXkIMnIlk9aKoNcLhuaOsPDcgKEmue3lplB+vwaKk/znFFO2l6YuZ3YeWEG/88X5l2SHAAR5G6PCc5E1S4A0Ldi//gg9dJ4h2cVvRrvibVhne1rAAdGBi+dlXACnFoJd3B2cO/wtECs631Fmd1aXxu9AIZnE8BwcB4BrDZhbhLZkvO6Q7S3Wfu/WH+86w8UbCyI120C63Rm3PXMwXpfwMNOCm6Szc1cv8K5M7eSryiy95YlYAFL/XnI6Rc9MQIfNdvTay8izRPm/7TNe8ah+qKq8N6gLY0PfhmljbaU5WgJN8cK6J4VzYAcGmFFUV51jL5v3hLJ3mTOlDbeeb/QfKGgHxFIEGZgFjSovIONd8eH+HgcdSpv8qAOxJ+mAwgkqAIJNoF0C7tL0RqdsTk9d9GaQ+Nf3QZ8EhWN66RKSfVK4TpykQcYcWJVOxFUfFZQ/73stUmgtfwdwfohvq/PX5oyitPRAE+SYRxHURyRJJomSTydpPkEJ6N8q1GEtMigmsLOuf2QlQLV1KjvOdqvP66kdi00J6CqKXgthf3QHiQmsLDgfoMa1nHgvqCkUnKKxU5FuYd34re5x+/5On53VeVD/G0q2f1upp2pNddv1TeU7C/BfpT0xlJsSqPBNCbZxTSJk4tRTiYXM4LHF3iWjpMhodkoP2cr8P0Xlm8N+8gVAAA=</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_sub_flow_instance_v2 action="delete_multiple" query="flow=49943e8bc3a8221052237405e4013160"/>
+    <sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=49943e8bc3a8221052237405e4013160"/>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=49943e8bc3a8221052237405e4013160"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=49943e8bc3a8221052237405e4013160"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>body_text</element>
+        <help/>
+        <hint/>
+        <label>Body Text</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_49943e8bc3a8221052237405e4013160</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>RD</sys_created_by>
+        <sys_created_on>2025-04-01 14:12:07</sys_created_on>
+        <sys_id>19943e8bc3a8221052237405e401318f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Body Text</sys_name>
+        <sys_package display_value="Zynder Tech" source="8d447286c3a3121052237405e4013105">8d447286c3a3121052237405e4013105</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Zynder Tech">8d447286c3a3121052237405e4013105</sys_scope>
+        <sys_update_name>sys_documentation_var__m_sys_hub_flow_input_49943e8bc3a8221052237405e4013160_body_text_en</sys_update_name>
+        <sys_updated_by>RD</sys_updated_by>
+        <sys_updated_on>2025-04-01 14:12:07</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>inbound_email</element>
+        <help/>
+        <hint>The record representing the inbound email.</hint>
+        <label>Inbound Email</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_49943e8bc3a8221052237405e4013160</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>RD</sys_created_by>
+        <sys_created_on>2025-04-01 14:12:08</sys_created_on>
+        <sys_id>19943e8bc3a8221052237405e40131e1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Inbound Email</sys_name>
+        <sys_package display_value="Zynder Tech" source="8d447286c3a3121052237405e4013105">8d447286c3a3121052237405e4013105</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Zynder Tech">8d447286c3a3121052237405e4013105</sys_scope>
+        <sys_update_name>sys_documentation_var__m_sys_hub_flow_input_49943e8bc3a8221052237405e4013160_inbound_email_en</sys_update_name>
+        <sys_updated_by>RD</sys_updated_by>
+        <sys_updated_on>2025-04-01 14:12:08</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>from_address</element>
+        <help/>
+        <hint/>
+        <label>From address</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_49943e8bc3a8221052237405e4013160</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>RD</sys_created_by>
+        <sys_created_on>2025-04-01 14:12:08</sys_created_on>
+        <sys_id>25947e8bc3a8221052237405e401312d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>From address</sys_name>
+        <sys_package display_value="Zynder Tech" source="8d447286c3a3121052237405e4013105">8d447286c3a3121052237405e4013105</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Zynder Tech">8d447286c3a3121052237405e4013105</sys_scope>
+        <sys_update_name>sys_documentation_var__m_sys_hub_flow_input_49943e8bc3a8221052237405e4013160_from_address_en</sys_update_name>
+        <sys_updated_by>RD</sys_updated_by>
+        <sys_updated_on>2025-04-01 14:12:08</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>target_table_name</element>
+        <help/>
+        <hint/>
+        <label>Target Table</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_49943e8bc3a8221052237405e4013160</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>RD</sys_created_by>
+        <sys_created_on>2025-04-01 14:12:07</sys_created_on>
+        <sys_id>51943e8bc3a8221052237405e4013196</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Target Table</sys_name>
+        <sys_package display_value="Zynder Tech" source="8d447286c3a3121052237405e4013105">8d447286c3a3121052237405e4013105</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Zynder Tech">8d447286c3a3121052237405e4013105</sys_scope>
+        <sys_update_name>sys_documentation_var__m_sys_hub_flow_input_49943e8bc3a8221052237405e4013160_target_table_name_en</sys_update_name>
+        <sys_updated_by>RD</sys_updated_by>
+        <sys_updated_on>2025-04-01 14:12:07</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>subject</element>
+        <help/>
+        <hint/>
+        <label>Subject</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_49943e8bc3a8221052237405e4013160</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>RD</sys_created_by>
+        <sys_created_on>2025-04-01 14:12:07</sys_created_on>
+        <sys_id>9d943e8bc3a8221052237405e40131da</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Subject</sys_name>
+        <sys_package display_value="Zynder Tech" source="8d447286c3a3121052237405e4013105">8d447286c3a3121052237405e4013105</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Zynder Tech">8d447286c3a3121052237405e4013105</sys_scope>
+        <sys_update_name>sys_documentation_var__m_sys_hub_flow_input_49943e8bc3a8221052237405e4013160_subject_en</sys_update_name>
+        <sys_updated_by>RD</sys_updated_by>
+        <sys_updated_on>2025-04-01 14:12:07</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>target_record</element>
+        <help/>
+        <hint/>
+        <label>Target Record</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_49943e8bc3a8221052237405e4013160</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>RD</sys_created_by>
+        <sys_created_on>2025-04-01 14:12:08</sys_created_on>
+        <sys_id>ad947e8bc3a8221052237405e4013165</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Target Record</sys_name>
+        <sys_package display_value="Zynder Tech" source="8d447286c3a3121052237405e4013105">8d447286c3a3121052237405e4013105</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Zynder Tech">8d447286c3a3121052237405e4013105</sys_scope>
+        <sys_update_name>sys_documentation_var__m_sys_hub_flow_input_49943e8bc3a8221052237405e4013160_target_record_en</sys_update_name>
+        <sys_updated_by>RD</sys_updated_by>
+        <sys_updated_on>2025-04-01 14:12:08</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>user</element>
+        <help/>
+        <hint/>
+        <label>User</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_49943e8bc3a8221052237405e4013160</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>RD</sys_created_by>
+        <sys_created_on>2025-04-01 14:12:08</sys_created_on>
+        <sys_id>e5947e8bc3a8221052237405e4013126</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>User</sys_name>
+        <sys_package display_value="Zynder Tech" source="8d447286c3a3121052237405e4013105">8d447286c3a3121052237405e4013105</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Zynder Tech">8d447286c3a3121052237405e4013105</sys_scope>
+        <sys_update_name>sys_documentation_var__m_sys_hub_flow_input_49943e8bc3a8221052237405e4013160_user_en</sys_update_name>
+        <sys_updated_by>RD</sys_updated_by>
+        <sys_updated_on>2025-04-01 14:12:08</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_49943e8bc3a8221052237405e4013160"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_49943e8bc3a8221052237405e4013160"/>
+    <sys_hub_flow action="UPDATE">
+        <sys_id>0e44bac7c3a8221052237405e4013147</sys_id>
+        <latest_snapshot>49943e8bc3a8221052237405e4013160</latest_snapshot>
+        <compiler_build/>
+    </sys_hub_flow>
+    <sys_flow_trigger_plan action="delete_multiple" query="plan_id=0e44bac7c3a8221052237405e4013147^sys_idNOT INad947e8bc3a8221052237405e401319d"/>
+    <sys_flow_trigger_plan action="INSERT_OR_UPDATE">
+        <binding_strategy>com.snc.process_flow.engine.binding.RunAlways</binding_strategy>
+        <plan/>
+        <plan_id>0e44bac7c3a8221052237405e4013147</plan_id>
+        <snapshot>49943e8bc3a8221052237405e4013160</snapshot>
+        <sys_created_by>RD</sys_created_by>
+        <sys_created_on>2025-04-01 14:12:09</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>ad947e8bc3a8221052237405e401319d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope/>
+        <sys_updated_by>RD</sys_updated_by>
+        <sys_updated_on>2025-04-01 14:12:09</sys_updated_on>
+        <trigger display_value="">e5947e8bc3a8221052237405e401319d</trigger>
+    </sys_flow_trigger_plan>
+    <sys_flow_subflow_plan action="delete_multiple" query="plan_id=0e44bac7c3a8221052237405e4013147"/>
+</record_update>

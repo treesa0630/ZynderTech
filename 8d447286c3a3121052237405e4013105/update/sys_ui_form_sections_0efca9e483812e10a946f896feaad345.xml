@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_form_sections form_id="0efca9e483812e10a946f896feaad345" sys_domain="global" table="u_project_effort" version="3">
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>0</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-04-18 11:05:49</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>0afca9e483812e10a946f896feaad346</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="u_project_effort" name="u_project_effort" sys_domain="global" view="Default view">0efca9e483812e10a946f896feaad345</sys_ui_form>
+            <sys_ui_section caption="Notes" display_value="Notes" name="u_project_effort" sys_domain="global" view="Default view">3a89e916c363521052237405e40131b1</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-04-18 11:05:49</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>1</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-04-18 11:05:49</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>82fca9e483812e10a946f896feaad347</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="u_project_effort" name="u_project_effort" sys_domain="global" view="Default view">0efca9e483812e10a946f896feaad345</sys_ui_form>
+            <sys_ui_section caption="NULL" display_value="" name="u_project_effort" sys_domain="global" view="Default view">6afcdd12c323521052237405e401319d</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-04-18 11:05:49</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form action="INSERT_OR_UPDATE">
+            <name>u_project_effort</name>
+            <roles/>
+            <sys_class_name>sys_ui_form</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-04-18 11:05:49</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>0efca9e483812e10a946f896feaad345</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>u_project_effort</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="Zynder Tech" source="8d447286c3a3121052237405e4013105">8d447286c3a3121052237405e4013105</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Zynder Tech">8d447286c3a3121052237405e4013105</sys_scope>
+            <sys_update_name>sys_ui_form_sections_0efca9e483812e10a946f896feaad345</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-04-18 11:05:49</sys_updated_on>
+            <sys_user/>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_form>
+    </sys_ui_form_sections>
+</record_update>

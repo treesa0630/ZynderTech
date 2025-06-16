@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sysevent_email_action">
+    <sysevent_email_action action="INSERT_OR_UPDATE">
+        <action_insert>true</action_insert>
+        <action_update>true</action_update>
+        <active>true</active>
+        <advanced_condition/>
+        <affected_field_on_event/>
+        <category display_value="Uncategorized" name="Uncategorized">c97d83137f4432005f58108c3ffa917a</category>
+        <collection>sysapproval_approver</collection>
+        <condition/>
+        <content_type>text/html</content_type>
+        <default_interval/>
+        <description/>
+        <digest_from/>
+        <digest_html/>
+        <digest_reply_to/>
+        <digest_separator_html><![CDATA[<p>&nbsp;</p>
+<hr>
+<p>&nbsp;</p>]]></digest_separator_html>
+        <digest_separator_text><![CDATA[\n--------------------------------------------------------------------------------\n]]></digest_separator_text>
+        <digest_subject/>
+        <digest_template/>
+        <digest_text/>
+        <digestable>false</digestable>
+        <enable_dynamic_translation>false</enable_dynamic_translation>
+        <event_name>event_project_effort</event_name>
+        <event_parm_1>false</event_parm_1>
+        <event_parm_2>false</event_parm_2>
+        <exclude_delegates>false</exclude_delegates>
+        <force_delivery>false</force_delivery>
+        <from/>
+        <generation_type>event</generation_type>
+        <importance/>
+        <include_attachments>false</include_attachments>
+        <item>event.parm1</item>
+        <item_table/>
+        <mandatory>false</mandatory>
+        <message/>
+        <message_html><![CDATA[<p><span style="font-size: 12pt;">Hi ${approver.name},</span></p>
+<p><span style="font-size: 12pt;">${mail_script:projectEfforts.manager.notification}</span></p>
+<p><span style="font-size: 12pt;">${mail_script:Approval.Button}</span></p>
+<p><span style="font-size: 12pt;">${mail_script:Reject.Button}</span></p>
+<p><span style="font-size: 12pt;"><a href="/sysapproval_approver.do?sys_id=${current.sys_id}&amp;sysparm_record_target=sysapproval_approver">click here to view approval record.</a></span></p>
+<p><span style="font-size: 12pt;"><a href="/u_project_effort.do?sys_id=${document_id.sys_id}&amp;sysparm_record_target=u_project_effort">click here to view Project efforts record.</a></span></p>
+<p><span style="font-size: 12pt;">Regards,</span></p>
+<p><span style="font-size: 12pt;">Zynder Tech.</span></p>]]></message_html>
+        <message_list/>
+        <message_text/>
+        <name>Project Efforts to Approver</name>
+        <omit_watermark>false</omit_watermark>
+        <order>100</order>
+        <push_message_only>false</push_message_only>
+        <recipient_fields>approver.email</recipient_fields>
+        <recipient_groups/>
+        <recipient_users/>
+        <reply_to/>
+        <send_self>true</send_self>
+        <sms_alternate/>
+        <style/>
+        <subject/>
+        <subscribable>false</subscribable>
+        <sys_class_name>sysevent_email_action</sys_class_name>
+        <sys_created_by>athul</sys_created_by>
+        <sys_created_on>2025-02-18 10:16:05</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>14e72d61c3ff521052237405e40131d2</sys_id>
+        <sys_mod_count>37</sys_mod_count>
+        <sys_name>Project Efforts to Approver</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Zynder Tech" source="8d447286c3a3121052237405e4013105">8d447286c3a3121052237405e4013105</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Zynder Tech">8d447286c3a3121052237405e4013105</sys_scope>
+        <sys_update_name>sysevent_email_action_14e72d61c3ff521052237405e40131d2</sys_update_name>
+        <sys_updated_by>SA</sys_updated_by>
+        <sys_updated_on>2025-03-08 10:34:17</sys_updated_on>
+        <sys_version>2</sys_version>
+        <template display_value="Zynder-Tech Email notification template">1fa9849dc337121052237405e4013159</template>
+        <type>email</type>
+        <weight>0</weight>
+    </sysevent_email_action>
+    <sys_es_latest_script action="INSERT_OR_UPDATE">
+        <id>14e72d61c3ff521052237405e40131d2</id>
+        <sys_created_by>SA</sys_created_by>
+        <sys_created_on>2025-02-19 07:46:59</sys_created_on>
+        <sys_id>3f331ebdc337d21052237405e4013159</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>SA</sys_updated_by>
+        <sys_updated_on>2025-02-19 07:46:59</sys_updated_on>
+        <table>sysevent_email_action</table>
+        <use_es_latest>false</use_es_latest>
+    </sys_es_latest_script>
+</record_update>
