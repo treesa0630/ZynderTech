@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="approval_group" label="approval_group" language="en" table="var__m_sys_hub_flow_variable_abf9da92c3a7521052237405e4013193">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>approval_group</element>
+            <help/>
+            <hint/>
+            <label>approval_group</label>
+            <language>en</language>
+            <name>var__m_sys_hub_flow_variable_abf9da92c3a7521052237405e4013193</name>
+            <plural/>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>Sreerag.Anchery</sys_created_by>
+            <sys_created_on>2025-04-23 13:33:35</sys_created_on>
+            <sys_id>87be33ce834daa50a946f896feaad34b</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name/>
+            <sys_package display_value="Zynder Tech" source="8d447286c3a3121052237405e4013105">8d447286c3a3121052237405e4013105</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Zynder Tech">8d447286c3a3121052237405e4013105</sys_scope>
+            <sys_update_name/>
+            <sys_updated_by>Sreerag.Anchery</sys_updated_by>
+            <sys_updated_on>2025-04-23 13:33:35</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>
