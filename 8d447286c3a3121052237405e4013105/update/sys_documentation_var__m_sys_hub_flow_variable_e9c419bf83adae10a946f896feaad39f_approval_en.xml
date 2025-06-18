@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="approval" label="approval" language="en" table="var__m_sys_hub_flow_variable_e9c419bf83adae10a946f896feaad39f">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>approval</element>
+            <help/>
+            <hint/>
+            <label>approval</label>
+            <language>en</language>
+            <name>var__m_sys_hub_flow_variable_e9c419bf83adae10a946f896feaad39f</name>
+            <plural/>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>Athul</sys_created_by>
+            <sys_created_on>2025-05-23 08:11:47</sys_created_on>
+            <sys_id>3dc419bf83adae10a946f896feaad3e0</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name/>
+            <sys_package display_value="Zynder Tech" source="8d447286c3a3121052237405e4013105">8d447286c3a3121052237405e4013105</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Zynder Tech">8d447286c3a3121052237405e4013105</sys_scope>
+            <sys_update_name/>
+            <sys_updated_by>Athul</sys_updated_by>
+            <sys_updated_on>2025-05-23 08:11:47</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>
