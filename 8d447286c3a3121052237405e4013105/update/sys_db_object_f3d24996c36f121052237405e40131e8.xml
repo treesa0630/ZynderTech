@@ -31,13 +31,7 @@
         <sys_update_name>sys_db_object_f3d24996c36f121052237405e40131e8</sys_update_name>
         <sys_updated_by>RD</sys_updated_by>
         <sys_updated_on>2025-02-08 05:02:40</sys_updated_on>
-        <u_glide_date_2/>
         <u_glide_date_3/>
-        <u_reference_1/>
-        <u_string_4/>
-        <u_string_5/>
-        <u_string_6/>
-        <u_string_7/>
         <update_access>true</update_access>
         <user_role display_value="u_git_sync_metadata_user" name="u_git_sync_metadata_user">0d24451ac36f121052237405e40131a8</user_role>
         <ws_access>true</ws_access>
