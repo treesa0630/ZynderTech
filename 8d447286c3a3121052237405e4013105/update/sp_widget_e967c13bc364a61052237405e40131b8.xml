@@ -6,57 +6,64 @@
   var c = this;
 };]]></client_script>
         <controller_as>c</controller_as>
-        <css>.zp{
-  color:#4263eb;
-  font-size: 35px
-  font-weight:600;
-  margin-bottom:35px;
-}
-
-.zyn-box{
- font-family: times new roman;
- text-align: center;
-  margin-left: 70px;
-}
-
-.z-box p{
-  font-weight:600;
-}
-
-.z-box{
-
-  width:215px;
-  height:130px;
-  background-color:white;
-  
-}
-.zn1{
-  width:16px;
-  height:16px;
-  
-}
-.zynder-box{
-  display:flex;
-  align-items:center;
-  
-  background-color:white;
-  padding: 3px 35px;
-  width:900px;
-  height: 400px;
-  top: 103px;
-  position:absolute;
-  left:-170px;
-  border-radius:15px;
-
-}
-.main-zyn{
-  padding-top:70px;
-}
-
-.main-zyn{
-
-  position:relative;
-  
+        <css>.zp{&#13;
+  color:#4263eb;&#13;
+  font-size: 35px&#13;
+  font-weight:600;&#13;
+  margin-bottom:35px;&#13;
+}&#13;
+.img{&#13;
+  margin-left: 35px;&#13;
+}&#13;
+&#13;
+.zyn-box{&#13;
+ font-family: times new roman;&#13;
+ text-align: center;&#13;
+  margin-left: 105px;&#13;
+}&#13;
+&#13;
+.z-box p{&#13;
+  font-weight:600;&#13;
+}&#13;
+&#13;
+.z-box{&#13;
+&#13;
+  width:215px;&#13;
+  height:130px;&#13;
+  background-color:white;&#13;
+  &#13;
+}&#13;
+.zn1{&#13;
+  width:16px;&#13;
+  height:16px;&#13;
+  &#13;
+}&#13;
+.zynder-box{&#13;
+  display:flex;&#13;
+  align-items:center;&#13;
+  &#13;
+  background-color:white;&#13;
+  padding-left: 33px;&#13;
+  padding-right: 33px;&#13;
+  padding-top: 3px;&#13;
+  padding-bottom: 3px;&#13;
+  width:900px;&#13;
+  height: 400px;&#13;
+  top: 103px;&#13;
+  position:absolute;&#13;
+  left:-170px;&#13;
+  border-radius:15px;&#13;
+}&#13;
+&#13;
+&#13;
+.main-zyn{&#13;
+  padding-top:70px;&#13;
+}&#13;
+&#13;
+.main-zyn{&#13;
+&#13;
+  position:relative;&#13;
+  &#13;
 }</css>
         <data_table>sp_instance</data_table>
         <demo_data/>
@@ -85,18 +92,18 @@
         <sys_created_by>AP</sys_created_by>
         <sys_created_on>2025-04-03 14:13:13</sys_created_on>
         <sys_id>e967c13bc364a61052237405e40131b8</sys_id>
-        <sys_mod_count>134</sys_mod_count>
+        <sys_mod_count>151</sys_mod_count>
         <sys_name>Zynder-New</sys_name>
         <sys_package display_value="Zynder Tech" source="8d447286c3a3121052237405e4013105">8d447286c3a3121052237405e4013105</sys_package>
         <sys_policy/>
         <sys_scope display_value="Zynder Tech">8d447286c3a3121052237405e4013105</sys_scope>
         <sys_update_name>sp_widget_e967c13bc364a61052237405e40131b8</sys_update_name>
         <sys_updated_by>Treesa.Thomas</sys_updated_by>
-        <sys_updated_on>2025-04-29 07:09:42</sys_updated_on>
+        <sys_updated_on>2025-07-11 12:42:11</sys_updated_on>
         <template><![CDATA[<div class="main-zyn">
 <!-- your widget template -->
   <div class="zynder-box">
-    <img src="zynderanimation.gif" style="width: 360px; height: 200px;" class="img"/>
+    <img src="ZynderFullImage.png" style="width: 360px; height: 220px;" class="img"/>
     
     
     <div class="zyn-box">

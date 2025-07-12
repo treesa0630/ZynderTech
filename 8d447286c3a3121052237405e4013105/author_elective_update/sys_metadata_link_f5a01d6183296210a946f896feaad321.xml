@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="DELETE">
+        <directory>update</directory>
+        <documentkey>936ec56d83e56210a946f896feaad3ae</documentkey>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_user_has_role">
+    <sys_user_has_role action="INSERT_OR_UPDATE">
+        <granted_by display_value="">not-applicable</granted_by>
+        <included_in_role/>
+        <included_in_role_instance/>
+        <inh_count>1</inh_count>
+        <inh_map>cdbd68059f0002003d5c77a0942e70ec</inh_map>
+        <inherited>true</inherited>
+        <role display_value="catalog_template_editor" name="catalog_template_editor">8c6d381b73031010e12d1e3014f6a798</role>
+        <state>active</state>
+        <sys_created_by>Sreerag.Anchery</sys_created_by>
+        <sys_created_on>2025-05-16 07:57:42</sys_created_on>
+        <sys_id>936ec56d83e56210a946f896feaad3ae</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Sreerag.Anchery</sys_updated_by>
+        <sys_updated_on>2025-05-16 07:57:42</sys_updated_on>
+        <user display_value="Treesa Thomas">2ea750a98381e650a946f896feaad3e1</user>
+    </sys_user_has_role>
+</record_update>
+]]></payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-05-16 08:07:27</sys_created_on>
+        <sys_id>f5a01d6183296210a946f896feaad321</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Created 2025-05-16 13:27:42</sys_name>
+        <sys_package display_value="Zynder Tech" source="8d447286c3a3121052237405e4013105">8d447286c3a3121052237405e4013105</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Zynder Tech">8d447286c3a3121052237405e4013105</sys_scope>
+        <sys_update_name>sys_metadata_link_f5a01d6183296210a946f896feaad321</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-05-16 08:07:27</sys_updated_on>
+        <tablename>sys_user_has_role</tablename>
+    </sys_metadata_link>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Zynder Tech">8d447286c3a3121052237405e4013105</application>
+        <file_path/>
+        <instance_id>7ac2e572db4e8610ebdd2a5913961964</instance_id>
+        <instance_name>dev268649</instance_name>
+        <name>sys_metadata_link_f5a01d6183296210a946f896feaad321</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_metadata_link"&gt;&lt;sys_metadata_link action="INSERT_OR_UPDATE"&gt;&lt;directory&gt;update&lt;/directory&gt;&lt;documentkey&gt;936ec56d83e56210a946f896feaad3ae&lt;/documentkey&gt;&lt;payload&gt;&lt;![CDATA[&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_user_has_role"&gt;
+    &lt;sys_user_has_role action="INSERT_OR_UPDATE"&gt;
+        &lt;granted_by display_value=""&gt;not-applicable&lt;/granted_by&gt;
+        &lt;included_in_role/&gt;
+        &lt;included_in_role_instance/&gt;
+        &lt;inh_count&gt;1&lt;/inh_count&gt;
+        &lt;inh_map&gt;cdbd68059f0002003d5c77a0942e70ec&lt;/inh_map&gt;
+        &lt;inherited&gt;true&lt;/inherited&gt;
+        &lt;role display_value="catalog_template_editor" name="catalog_template_editor"&gt;8c6d381b73031010e12d1e3014f6a798&lt;/role&gt;
+        &lt;state&gt;active&lt;/state&gt;
+        &lt;sys_created_by&gt;Sreerag.Anchery&lt;/sys_created_by&gt;
+        &lt;sys_created_on&gt;2025-05-16 07:57:42&lt;/sys_created_on&gt;
+        &lt;sys_id&gt;936ec56d83e56210a946f896feaad3ae&lt;/sys_id&gt;
+        &lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;
+        &lt;sys_updated_by&gt;Sreerag.Anchery&lt;/sys_updated_by&gt;
+        &lt;sys_updated_on&gt;2025-05-16 07:57:42&lt;/sys_updated_on&gt;
+        &lt;user display_value="Treesa Thomas"&gt;2ea750a98381e650a946f896feaad3e1&lt;/user&gt;
+    &lt;/sys_user_has_role&gt;
+&lt;/record_update&gt;
+]]&gt;&lt;/payload&gt;&lt;sys_class_name&gt;sys_metadata_link&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-05-16 08:07:27&lt;/sys_created_on&gt;&lt;sys_id&gt;f5a01d6183296210a946f896feaad321&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;Created 2025-05-16 13:27:42&lt;/sys_name&gt;&lt;sys_package display_value="Zynder Tech" source="8d447286c3a3121052237405e4013105"&gt;8d447286c3a3121052237405e4013105&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Zynder Tech"&gt;8d447286c3a3121052237405e4013105&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_metadata_link_f5a01d6183296210a946f896feaad321&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-05-16 08:07:27&lt;/sys_updated_on&gt;&lt;tablename&gt;sys_user_has_role&lt;/tablename&gt;&lt;/sys_metadata_link&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>-109975448</payload_hash>
+        <record_name>Created 2025-05-16 13:27:42</record_name>
+        <reverted_from/>
+        <source>75a98e6483496e10a946f896feaad335</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-05-16 08:07:27</sys_created_on>
+        <sys_id>75a01d6183296210a946f896feaad323</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>196d82247580000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-05-16 08:07:27</sys_updated_on>
+        <type>Metadata Snapshot</type>
+        <update_guid>39a01d61ee29621015c4727cae910c22</update_guid>
+        <update_guid_history>39a01d61ee29621015c4727cae910c22:-109975448</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-05-17 10:28:28</sys_created_on>
+        <sys_db_object display_value="" name="sys_metadata_link">sys_metadata_link</sys_db_object>
+        <sys_id>3c66da1b73294e98a249ef9b3f81e289</sys_id>
+        <sys_metadata>f5a01d6183296210a946f896feaad321</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Created 2025-05-16 13:27:42</sys_name>
+        <sys_package display_value="Zynder Tech" source="8d447286c3a3121052237405e4013105">8d447286c3a3121052237405e4013105</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Zynder Tech">8d447286c3a3121052237405e4013105</sys_scope>
+        <sys_scope_delete display_value="">59ae7a785b154974a5e9b8402f90b790</sys_scope_delete>
+        <sys_update_name>sys_metadata_link_f5a01d6183296210a946f896feaad321</sys_update_name>
+        <sys_update_version display_value="sys_metadata_link_f5a01d6183296210a946f896feaad321">75a01d6183296210a946f896feaad323</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-05-17 10:28:28</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

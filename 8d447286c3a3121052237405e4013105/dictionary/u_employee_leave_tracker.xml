@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element audit="true" db_object_id="1f20d652c367521052237405e40131a5" label="Employee Leave Tracker" max_length="40" name="u_employee_leave_tracker" type="collection">
+        <element label="End Date" max_length="40" name="u_end_date" type="glide_date"/>
+        <element label="No of  Leaves Requested" max_length="40" name="u_no_of_leaves_requested" type="integer"/>
+        <element label="Start Date" max_length="40" name="u_start_date" type="glide_date"/>
+        <element choice="1" label="Type of Leave" max_length="40" name="u_type_of_leave" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Personal Time Off" value="personal_time_off"/>
+                <element inactive_on_update="false" label="Sick" value="sick"/>
+            </choice>
+        </element>
+        <element label="Employee Name" max_length="32" name="u_employee_name" reference="sys_user" type="reference"/>
+        <element label="Expected  Leaves" max_length="40" name="u_expected_leaves" type="integer"/>
+        <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="u_number" read_only="true" type="string"/>
+        <element label="Additional Comments" max_length="255" name="u_additional_comments" type="journal_input"/>
+        <element label="Justification" max_length="4000" name="u_justification" type="string"/>
+        <element label="Earned Leaves" max_length="40" name="u_earned_leaves" type="integer"/>
+        <element label="Reason for Leave" max_length="4000" name="u_reason_for_leave" type="string"/>
+        <element choice="1" label="Approval" max_length="40" name="u_approval" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Rejected" value="rejected"/>
+                <element inactive_on_update="false" label="Requested" value="requested"/>
+                <element inactive_on_update="false" label="Approved" value="approved"/>
+            </choice>
+        </element>
+        <element label="work note" max_length="40" name="u_work_note" type="journal_input"/>
+        <index name="index">
+            <element name="u_employee_name"/>
+        </index>
+    </element>
+</database>

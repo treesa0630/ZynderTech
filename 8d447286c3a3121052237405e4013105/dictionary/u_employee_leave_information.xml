@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element audit="true" db_object_id="8244891ac36f121052237405e40131dc" label="Employee Leave Information" max_length="40" name="u_employee_leave_information" type="collection">
+        <element default="0" label="Leave Balances" max_length="3" name="u_leave_balances" read_only="true" type="integer"/>
+        <element label="Employee" max_length="32" name="u_employee" reference="u_employee" type="reference"/>
+        <element label="Active" max_length="40" name="u_active" type="boolean"/>
+        <index name="index">
+            <element name="u_employee"/>
+        </index>
+    </element>
+</database>

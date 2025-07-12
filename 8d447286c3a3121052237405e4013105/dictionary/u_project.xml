@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element audit="true" db_object_id="2bbd459ac3af121052237405e40131ec" label="Project" max_length="40" name="u_project" type="collection">
+        <element choice="1" label="Module" max_length="40" name="u_module" type="choice">
+            <choice/>
+        </element>
+        <element display="true" label="Project" max_length="40" name="u_project" type="string"/>
+        <element choice="1" label="Client name" max_length="40" name="u_client_name" reference="sys_user" reference_qual="title=Client^EQ" reference_qual_condition="title=Client^EQ" type="reference">
+            <choice/>
+        </element>
+        <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="u_number" type="string"/>
+        <index name="index">
+            <element name="u_client_name"/>
+        </index>
+    </element>
+</database>

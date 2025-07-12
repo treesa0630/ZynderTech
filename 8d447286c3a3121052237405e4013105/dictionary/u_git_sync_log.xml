@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element audit="true" db_object_id="1924aa9dc3fca25052237405e40131b5" label="Git Sync Log" max_length="40" name="u_git_sync_log" type="collection">
+        <element choice="1" label="State" max_length="40" name="u_state" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Running" value="Running"/>
+                <element inactive_on_update="false" label="Error" value="error"/>
+                <element inactive_on_update="false" label="Success" value="success"/>
+            </choice>
+        </element>
+        <element label="Total Run Time" max_length="40" name="u_total_run_time" type="glide_duration"/>
+        <element label="Progress Worker" max_length="32" name="u_progress_worker" reference="sys_progress_worker" type="reference"/>
+        <element label="Work Notes" max_length="4000" name="u_work_notes" type="journal"/>
+        <element label="Total Execution Time" max_length="40" name="u_total_execution_time" type="glide_duration"/>
+        <index name="index">
+            <element name="u_progress_worker"/>
+        </index>
+    </element>
+</database>

@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="DELETE">
+        <directory>update</directory>
+        <documentkey>82ce66d8c3d4221052237405e4013144</documentkey>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_email">
+    <sys_email action="INSERT_OR_UPDATE">
+        <blind_copied/>
+        <body>&lt;html&gt;&lt;head&gt;&lt;style&gt;
+	#snc_notification_preference {
+		text-decoration: none;
+	}
+	
+	#snc_notification_unsubscribe {
+		text-decoration: none;
+	}
+&lt;/style&gt;
+
+&lt;/head&gt;&lt;body&gt;&lt;p&gt;TEST EMAIL&lt;/p&gt;
+
+&lt;br&gt;&lt;br&gt;
+
+&lt;a id="snc_notification_unsubscribe" href="mailto:?subject=Unsubscribe from &amp;quot;Reminder for Projectc Efforts approval&amp;quot;&amp;amp;body=Sending this email with the predefined content in the subject and body will unsubscribe you from the notification &amp;quot;Reminder for Projectc Efforts approval&amp;quot;%0D%0A%0D%0AUnsubscribe:{&amp;quot;id&amp;quot;:&amp;quot;bbedee58c3d4221052237405e40131bc&amp;quot;,&amp;quot;token&amp;quot;:&amp;quot;c797e62132&amp;quot;}"&gt;Unsubscribe&lt;/a&gt; | &lt;a id="snc_notification_preference" href="https://dev240427.service-now.com/nav_to.do?uri=notification_preferences.do%3Fsysparm_notification=bbedee58c3d4221052237405e40131bc"&gt;Notification Preferences&lt;/a&gt;&lt;div&gt;&amp;nbsp;&lt;/div&gt;&lt;div style="display:inline"&gt;Ref:MSG0003408_o0ZuCigj1zsQb029uhE4&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</body>
+        <body_text/>
+        <checkpoint>1</checkpoint>
+        <content_type>text/html</content_type>
+        <copied/>
+        <deleted>false</deleted>
+        <direct>vishnupv1024@gmail.com,ashikvinodv@gmail.com</direct>
+        <error_string/>
+        <headers>Date: Tue, 11 Mar 2025 07:32:57 -0700 (PDT)&#13;
+From: Zynder Tech Test &lt;zyndertechtest@gmail.com&gt;&#13;
+Reply-To: Zynder Tech Test &lt;zyndertechtest@gmail.com&gt;&#13;
+To: vishnupv1024@gmail.com, ashikvinodv@gmail.com&#13;
+Message-ID: &lt;774263642.49.1741703577674@app130180.ord191.service-now.com&gt;&#13;
+Subject: &#13;
+MIME-Version: 1.0&#13;
+Content-Type: text/html; charset=UTF-8&#13;
+Content-Transfer-Encoding: 7bit&#13;
+X-ServiceNow-Source: Notification-bbedee58c3d4221052237405e40131bc&#13;
+List-Unsubscribe: &lt;mailto:?subject=Unsubscribe+from+%22Reminder+for+Projectc+Efforts+approval%22&amp;body=Sending+this+email+with+the+predefined+content+in+the+subject+and+body+will+unsubscribe+you+from+the+notification+%22Reminder+for+Projectc+Efforts+approval%22.+%0D%0A%0D%0AUnsubscribe%3A%7B%22id%22%3A%22bbedee58c3d4221052237405e40131bc%22%2C%22token%22%3A%22c797e62132%22%7D&gt;&#13;
+X-ServiceNow-SysEmail-Version: 2&#13;
+Precedence: bulk&#13;
+Auto-Submitted: auto-generated&#13;
+X-ServiceNow-Generated: true</headers>
+        <importance/>
+        <instance>06b919d7c308621052237405e4013139</instance>
+        <mailbox display_value="Sent">sent</mailbox>
+        <message_id>&lt;774263642.49.1741703577674@app130180.ord191.service-now.com&gt;</message_id>
+        <notification_type>SMTP</notification_type>
+        <receive_type>new</receive_type>
+        <recipients>vishnupv1024@gmail.com,ashikvinodv@gmail.com</recipients>
+        <reply_to/>
+        <state>processed</state>
+        <status/>
+        <subject/>
+        <sys_created_by>system</sys_created_by>
+        <sys_created_on>2025-03-11 14:27:48</sys_created_on>
+        <sys_id>82ce66d8c3d4221052237405e4013144</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2025-03-11 14:32:58</sys_updated_on>
+        <target_table>u_project_effort</target_table>
+        <type>sent</type>
+        <uid>N/A</uid>
+        <user/>
+        <user_id/>
+        <weight>0</weight>
+    </sys_email>
+</record_update>
+]]></payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-05-13 07:39:52</sys_created_on>
+        <sys_id>bc9da1648365e6d0a946f896feaad3c6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Zynder Tech" source="8d447286c3a3121052237405e4013105">8d447286c3a3121052237405e4013105</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Zynder Tech">8d447286c3a3121052237405e4013105</sys_scope>
+        <sys_update_name>sys_metadata_link_bc9da1648365e6d0a946f896feaad3c6</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-05-13 07:39:52</sys_updated_on>
+        <tablename>sys_email</tablename>
+    </sys_metadata_link>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Zynder Tech">8d447286c3a3121052237405e4013105</application>
+        <file_path/>
+        <instance_id>7ac2e572db4e8610ebdd2a5913961964</instance_id>
+        <instance_name>dev268649</instance_name>
+        <name>sys_metadata_link_bc9da1648365e6d0a946f896feaad3c6</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_metadata_link"&gt;&lt;sys_metadata_link action="INSERT_OR_UPDATE"&gt;&lt;directory&gt;update&lt;/directory&gt;&lt;documentkey&gt;82ce66d8c3d4221052237405e4013144&lt;/documentkey&gt;&lt;payload&gt;&lt;![CDATA[&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_email"&gt;
+    &lt;sys_email action="INSERT_OR_UPDATE"&gt;
+        &lt;blind_copied/&gt;
+        &lt;body&gt;&amp;lt;html&amp;gt;&amp;lt;head&amp;gt;&amp;lt;style&amp;gt;
+	#snc_notification_preference {
+		text-decoration: none;
+	}
+	
+	#snc_notification_unsubscribe {
+		text-decoration: none;
+	}
+&amp;lt;/style&amp;gt;
+
+&amp;lt;/head&amp;gt;&amp;lt;body&amp;gt;&amp;lt;p&amp;gt;TEST EMAIL&amp;lt;/p&amp;gt;
+
+&amp;lt;br&amp;gt;&amp;lt;br&amp;gt;
+
+&amp;lt;a id="snc_notification_unsubscribe" href="mailto:?subject=Unsubscribe from &amp;amp;quot;Reminder for Projectc Efforts approval&amp;amp;quot;&amp;amp;amp;body=Sending this email with the predefined content in the subject and body will unsubscribe you from the notification &amp;amp;quot;Reminder for Projectc Efforts approval&amp;amp;quot;%0D%0A%0D%0AUnsubscribe:{&amp;amp;quot;id&amp;amp;quot;:&amp;amp;quot;bbedee58c3d4221052237405e40131bc&amp;amp;quot;,&amp;amp;quot;token&amp;amp;quot;:&amp;amp;quot;c797e62132&amp;amp;quot;}"&amp;gt;Unsubscribe&amp;lt;/a&amp;gt; | &amp;lt;a id="snc_notification_preference" href="https://dev240427.service-now.com/nav_to.do?uri=notification_preferences.do%3Fsysparm_notification=bbedee58c3d4221052237405e40131bc"&amp;gt;Notification Preferences&amp;lt;/a&amp;gt;&amp;lt;div&amp;gt;&amp;amp;nbsp;&amp;lt;/div&amp;gt;&amp;lt;div style="display:inline"&amp;gt;Ref:MSG0003408_o0ZuCigj1zsQb029uhE4&amp;lt;/div&amp;gt;&amp;lt;/body&amp;gt;&amp;lt;/html&amp;gt;&lt;/body&gt;
+        &lt;body_text/&gt;
+        &lt;checkpoint&gt;1&lt;/checkpoint&gt;
+        &lt;content_type&gt;text/html&lt;/content_type&gt;
+        &lt;copied/&gt;
+        &lt;deleted&gt;false&lt;/deleted&gt;
+        &lt;direct&gt;vishnupv1024@gmail.com,ashikvinodv@gmail.com&lt;/direct&gt;
+        &lt;error_string/&gt;
+        &lt;headers&gt;Date: Tue, 11 Mar 2025 07:32:57 -0700 (PDT)&amp;#13;
+From: Zynder Tech Test &amp;lt;zyndertechtest@gmail.com&amp;gt;&amp;#13;
+Reply-To: Zynder Tech Test &amp;lt;zyndertechtest@gmail.com&amp;gt;&amp;#13;
+To: vishnupv1024@gmail.com, ashikvinodv@gmail.com&amp;#13;
+Message-ID: &amp;lt;774263642.49.1741703577674@app130180.ord191.service-now.com&amp;gt;&amp;#13;
+Subject: &amp;#13;
+MIME-Version: 1.0&amp;#13;
+Content-Type: text/html; charset=UTF-8&amp;#13;
+Content-Transfer-Encoding: 7bit&amp;#13;
+X-ServiceNow-Source: Notification-bbedee58c3d4221052237405e40131bc&amp;#13;
+List-Unsubscribe: &amp;lt;mailto:?subject=Unsubscribe+from+%22Reminder+for+Projectc+Efforts+approval%22&amp;amp;body=Sending+this+email+with+the+predefined+content+in+the+subject+and+body+will+unsubscribe+you+from+the+notification+%22Reminder+for+Projectc+Efforts+approval%22.+%0D%0A%0D%0AUnsubscribe%3A%7B%22id%22%3A%22bbedee58c3d4221052237405e40131bc%22%2C%22token%22%3A%22c797e62132%22%7D&amp;gt;&amp;#13;
+X-ServiceNow-SysEmail-Version: 2&amp;#13;
+Precedence: bulk&amp;#13;
+Auto-Submitted: auto-generated&amp;#13;
+X-ServiceNow-Generated: true&lt;/headers&gt;
+        &lt;importance/&gt;
+        &lt;instance&gt;06b919d7c308621052237405e4013139&lt;/instance&gt;
+        &lt;mailbox display_value="Sent"&gt;sent&lt;/mailbox&gt;
+        &lt;message_id&gt;&amp;lt;774263642.49.1741703577674@app130180.ord191.service-now.com&amp;gt;&lt;/message_id&gt;
+        &lt;notification_type&gt;SMTP&lt;/notification_type&gt;
+        &lt;receive_type&gt;new&lt;/receive_type&gt;
+        &lt;recipients&gt;vishnupv1024@gmail.com,ashikvinodv@gmail.com&lt;/recipients&gt;
+        &lt;reply_to/&gt;
+        &lt;state&gt;processed&lt;/state&gt;
+        &lt;status/&gt;
+        &lt;subject/&gt;
+        &lt;sys_created_by&gt;system&lt;/sys_created_by&gt;
+        &lt;sys_created_on&gt;2025-03-11 14:27:48&lt;/sys_created_on&gt;
+        &lt;sys_id&gt;82ce66d8c3d4221052237405e4013144&lt;/sys_id&gt;
+        &lt;sys_mod_count&gt;2&lt;/sys_mod_count&gt;
+        &lt;sys_updated_by&gt;system&lt;/sys_updated_by&gt;
+        &lt;sys_updated_on&gt;2025-03-11 14:32:58&lt;/sys_updated_on&gt;
+        &lt;target_table&gt;u_project_effort&lt;/target_table&gt;
+        &lt;type&gt;sent&lt;/type&gt;
+        &lt;uid&gt;N/A&lt;/uid&gt;
+        &lt;user/&gt;
+        &lt;user_id/&gt;
+        &lt;weight&gt;0&lt;/weight&gt;
+    &lt;/sys_email&gt;
+&lt;/record_update&gt;
+]]&gt;&lt;/payload&gt;&lt;sys_class_name&gt;sys_metadata_link&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-05-13 07:39:52&lt;/sys_created_on&gt;&lt;sys_id&gt;bc9da1648365e6d0a946f896feaad3c6&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package display_value="Zynder Tech" source="8d447286c3a3121052237405e4013105"&gt;8d447286c3a3121052237405e4013105&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Zynder Tech"&gt;8d447286c3a3121052237405e4013105&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_metadata_link_bc9da1648365e6d0a946f896feaad3c6&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-05-13 07:39:52&lt;/sys_updated_on&gt;&lt;tablename&gt;sys_email&lt;/tablename&gt;&lt;/sys_metadata_link&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>-850736178</payload_hash>
+        <record_name/>
+        <reverted_from/>
+        <source>75a98e6483496e10a946f896feaad335</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-05-13 07:39:52</sys_created_on>
+        <sys_id>b09da1648365e6d0a946f896feaad3ee</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>196c895f2720000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-05-13 07:39:52</sys_updated_on>
+        <type>Metadata Snapshot</type>
+        <update_guid>749da164e265e6d007e6550e4d3440ed</update_guid>
+        <update_guid_history>749da164e265e6d007e6550e4d3440ed:-850736178</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-05-17 10:27:39</sys_created_on>
+        <sys_db_object display_value="" name="sys_metadata_link">sys_metadata_link</sys_db_object>
+        <sys_id>56b350bd7d9244ada407c1fec2f2bce9</sys_id>
+        <sys_metadata>bc9da1648365e6d0a946f896feaad3c6</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Zynder Tech" source="8d447286c3a3121052237405e4013105">8d447286c3a3121052237405e4013105</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Zynder Tech">8d447286c3a3121052237405e4013105</sys_scope>
+        <sys_scope_delete display_value="">59ae7a785b154974a5e9b8402f90b790</sys_scope_delete>
+        <sys_update_name>sys_metadata_link_bc9da1648365e6d0a946f896feaad3c6</sys_update_name>
+        <sys_update_version display_value="sys_metadata_link_bc9da1648365e6d0a946f896feaad3c6">b09da1648365e6d0a946f896feaad3ee</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-05-17 10:27:39</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

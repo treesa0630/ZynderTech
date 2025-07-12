@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element audit="true" db_object_id="9e597983c3e0221052237405e40131bc" label="Project Allocation" max_length="40" name="u_project_allocation" type="collection">
+        <element label="Percentage" max_length="15" name="u_percentage" type="percent_complete"/>
+        <element label="Resource" max_length="32" name="u_resource" reference="u_employee" type="reference"/>
+        <element label="Project" max_length="32" name="u_project" reference="u_project" type="reference"/>
+        <index name="index">
+            <element name="u_project"/>
+        </index>
+        <index name="index2">
+            <element name="u_resource"/>
+        </index>
+    </element>
+</database>

@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="DELETE">
+        <directory>update</directory>
+        <documentkey>b9f2f08fc31c221052237405e4013151</documentkey>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_email">
+    <sys_email action="INSERT_OR_UPDATE">
+        <blind_copied/>
+        <body>&lt;html&gt;&lt;head&gt;&lt;style&gt;
+	#snc_notification_preference {
+		text-decoration: none;
+	}
+	
+	#snc_notification_unsubscribe {
+		text-decoration: none;
+	}
+&lt;/style&gt;
+
+&lt;/head&gt;&lt;body&gt;&lt;p&gt;&lt;span style="font-size: 12pt;"&gt;Hi team,&lt;/span&gt;&lt;/p&gt;&#13;
+&lt;p&gt;&lt;span style="font-size: 12pt;"&gt;This is a reminder that there are pending project effort approvals that require your attention. Please review and approve them at your earliest convenience. &lt;/span&gt;&lt;/p&gt;&#13;
+&lt;p&gt;&lt;span style="font-size: 12pt;"&gt;&lt;/span&gt;&lt;/p&gt;&lt;table style="border-collapse: collapse; width: 100%;" border="1"&gt;&lt;thead&gt;&lt;tr&gt;&lt;th&gt;Number&lt;/th&gt;&lt;th&gt;Name&lt;/th&gt;&lt;th&gt;Date&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;PE0001072&lt;/td&gt;&lt;td&gt;&lt;a href="https://dev240427.service-now.com/u_project_effort.do?sys_id=0a203ddec310221052237405e40131f1&amp;amp;sysparm_record_target=u_project_effort&amp;amp;sysparm_record_row=-1&amp;amp;sysparm_record_rows=12&amp;amp;sysparm_record_list=sys_created_on&lt;=javascript:gs.endOfYesterday()^u_approval=requested//"&gt;Rose  Denna&lt;/a&gt;&lt;/td&gt;&lt;td&gt;2025-03-17&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;PE0001077&lt;/td&gt;&lt;td&gt;&lt;a href="https://dev240427.service-now.com/u_project_effort.do?sys_id=2fc2da32c350221052237405e4013140&amp;amp;sysparm_record_target=u_project_effort&amp;amp;sysparm_record_row=-1&amp;amp;sysparm_record_rows=12&amp;amp;sysparm_record_list=sys_created_on&lt;=javascript:gs.endOfYesterday()^u_approval=requested//"&gt;Athul  V  Nair&lt;/a&gt;&lt;/td&gt;&lt;td&gt;2025-03-18&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;PE0001078&lt;/td&gt;&lt;td&gt;&lt;a href="https://dev240427.service-now.com/u_project_effort.do?sys_id=360412f2c350221052237405e401310d&amp;amp;sysparm_record_target=u_project_effort&amp;amp;sysparm_record_row=-1&amp;amp;sysparm_record_rows=12&amp;amp;sysparm_record_list=sys_created_on&lt;=javascript:gs.endOfYesterday()^u_approval=requested//"&gt;Treesa  Thomas&lt;/a&gt;&lt;/td&gt;&lt;td&gt;2025-03-18&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;PE0001073&lt;/td&gt;&lt;td&gt;&lt;a href="https://dev240427.service-now.com/u_project_effort.do?sys_id=3de0b912c350221052237405e40131f1&amp;amp;sysparm_record_target=u_project_effort&amp;amp;sysparm_record_row=-1&amp;amp;sysparm_record_rows=12&amp;amp;sysparm_record_list=sys_created_on&lt;=javascript:gs.endOfYesterday()^u_approval=requested//"&gt;Alan Paul&lt;/a&gt;&lt;/td&gt;&lt;td&gt;2025-03-17&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;PE0001080&lt;/td&gt;&lt;td&gt;&lt;a href="https://dev240427.service-now.com/u_project_effort.do?sys_id=402432fac3d0221052237405e40131bb&amp;amp;sysparm_record_target=u_project_effort&amp;amp;sysparm_record_row=-1&amp;amp;sysparm_record_rows=12&amp;amp;sysparm_record_list=sys_created_on&lt;=javascript:gs.endOfYesterday()^u_approval=requested//"&gt;Krishna Raj&lt;/a&gt;&lt;/td&gt;&lt;td&gt;2025-03-18&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;PE0001070&lt;/td&gt;&lt;td&gt;&lt;a href="https://dev240427.service-now.com/u_project_effort.do?sys_id=5339ed96c310221052237405e4013194&amp;amp;sysparm_record_target=u_project_effort&amp;amp;sysparm_record_row=-1&amp;amp;sysparm_record_rows=12&amp;amp;sysparm_record_list=sys_created_on&lt;=javascript:gs.endOfYesterday()^u_approval=requested//"&gt;Sreerag  Anchery&lt;/a&gt;&lt;/td&gt;&lt;td&gt;2025-03-17&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;PE0001082&lt;/td&gt;&lt;td&gt;&lt;a href="https://dev240427.service-now.com/u_project_effort.do?sys_id=5537ff3ac354221052237405e401312b&amp;amp;sysparm_record_target=u_project_effort&amp;amp;sysparm_record_row=-1&amp;amp;sysparm_record_rows=12&amp;amp;sysparm_record_list=sys_created_on&lt;=javascript:gs.endOfYesterday()^u_approval=requested//"&gt;Alan Paul&lt;/a&gt;&lt;/td&gt;&lt;td&gt;2025-03-18&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;PE0001079&lt;/td&gt;&lt;td&gt;&lt;a href="https://dev240427.service-now.com/u_project_effort.do?sys_id=5bde6e36c3d0221052237405e4013143&amp;amp;sysparm_record_target=u_project_effort&amp;amp;sysparm_record_row=-1&amp;amp;sysparm_record_rows=12&amp;amp;sysparm_record_list=sys_created_on&lt;=javascript:gs.endOfYesterday()^u_approval=requested//"&gt;Sreerag  Anchery&lt;/a&gt;&lt;/td&gt;&lt;td&gt;2025-03-18&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;PE0001074&lt;/td&gt;&lt;td&gt;&lt;a href="https://dev240427.service-now.com/u_project_effort.do?sys_id=5d873d1ac350221052237405e40131b5&amp;amp;sysparm_record_target=u_project_effort&amp;amp;sysparm_record_row=-1&amp;amp;sysparm_record_rows=12&amp;amp;sysparm_record_list=sys_created_on&lt;=javascript:gs.endOfYesterday()^u_approval=requested//"&gt;Amal Madhav&lt;/a&gt;&lt;/td&gt;&lt;td&gt;2025-03-17&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;PE0001076&lt;/td&gt;&lt;td&gt;&lt;a href="https://dev240427.service-now.com/u_project_effort.do?sys_id=75a21272c350221052237405e40131ce&amp;amp;sysparm_record_target=u_project_effort&amp;amp;sysparm_record_row=-1&amp;amp;sysparm_record_rows=12&amp;amp;sysparm_record_list=sys_created_on&lt;=javascript:gs.endOfYesterday()^u_approval=requested//"&gt;Suchithra  PS&lt;/a&gt;&lt;/td&gt;&lt;td&gt;2025-03-18&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;PE0001071&lt;/td&gt;&lt;td&gt;&lt;a href="https://dev240427.service-now.com/u_project_effort.do?sys_id=7729ed96c310221052237405e401319e&amp;amp;sysparm_record_target=u_project_effort&amp;amp;sysparm_record_row=-1&amp;amp;sysparm_record_rows=12&amp;amp;sysparm_record_list=sys_created_on&lt;=javascript:gs.endOfYesterday()^u_approval=requested//"&gt;Krishna Raj&lt;/a&gt;&lt;/td&gt;&lt;td&gt;2025-03-17&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;PE0001081&lt;/td&gt;&lt;td&gt;&lt;a href="https://dev240427.service-now.com/u_project_effort.do?sys_id=f0a63b3ac318221052237405e40131cd&amp;amp;sysparm_record_target=u_project_effort&amp;amp;sysparm_record_row=-1&amp;amp;sysparm_record_rows=12&amp;amp;sysparm_record_list=sys_created_on&lt;=javascript:gs.endOfYesterday()^u_approval=requested//"&gt;Rose  Denna&lt;/a&gt;&lt;/td&gt;&lt;td&gt;2025-03-18&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;p&gt;&lt;/p&gt;&#13;
+&lt;p&gt;&lt;span style="font-size: 12pt;"&gt;Regards,&lt;/span&gt;&lt;/p&gt;&#13;
+&lt;p&gt;&lt;span style="font-size: 12pt;"&gt;Zynder Tech&lt;/span&gt;&lt;/p&gt;
+
+&lt;br&gt;&lt;br&gt;
+
+&lt;a id="snc_notification_unsubscribe" href="mailto:?subject=Unsubscribe from &amp;quot;Reminder for Projectc Efforts approval&amp;quot;&amp;amp;body=Sending this email with the predefined content in the subject and body will unsubscribe you from the notification &amp;quot;Reminder for Projectc Efforts approval&amp;quot;%0D%0A%0D%0AUnsubscribe:{&amp;quot;id&amp;quot;:&amp;quot;bbedee58c3d4221052237405e40131bc&amp;quot;,&amp;quot;token&amp;quot;:&amp;quot;c797e62132&amp;quot;}"&gt;Unsubscribe&lt;/a&gt; | &lt;a id="snc_notification_preference" href="https://dev240427.service-now.com/nav_to.do?uri=notification_preferences.do%3Fsysparm_notification=bbedee58c3d4221052237405e40131bc"&gt;Notification Preferences&lt;/a&gt;&lt;div&gt;&amp;nbsp;&lt;/div&gt;&lt;div style="display:inline"&gt;Ref:MSG0003547_JqDfdKnY7DCsejpQAjKx&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</body>
+        <body_text/>
+        <checkpoint>0</checkpoint>
+        <content_type>text/html</content_type>
+        <copied/>
+        <deleted>false</deleted>
+        <direct>vishnupv1024@gmail.com,ashikvinodv@gmail.com</direct>
+        <error_string/>
+        <headers>X-ServiceNow-Source:Notification-bbedee58c3d4221052237405e40131bc&#13;
+List-Unsubscribe:&lt;mailto:?subject=Unsubscribe+from+%22Reminder+for+Projectc+Efforts+approval%22&amp;body=Sending+this+email+with+the+predefined+content+in+the+subject+and+body+will+unsubscribe+you+from+the+notification+%22Reminder+for+Projectc+Efforts+approval%22.+%0D%0A%0D%0AUnsubscribe%3A%7B%22id%22%3A%22bbedee58c3d4221052237405e40131bc%22%2C%22token%22%3A%22c797e62132%22%7D&gt;&#13;
+X-ServiceNow-SysEmail-Version:2&#13;
+</headers>
+        <importance/>
+        <instance>0a203ddec310221052237405e40131f1</instance>
+        <mailbox display_value="Outbox">outbox</mailbox>
+        <message_id/>
+        <notification_type>SMTP</notification_type>
+        <receive_type>new</receive_type>
+        <recipients>vishnupv1024@gmail.com,ashikvinodv@gmail.com</recipients>
+        <reply_to/>
+        <state>ready</state>
+        <status/>
+        <subject>Pending project efforts approvals</subject>
+        <sys_created_by>system</sys_created_by>
+        <sys_created_on>2025-03-19 18:30:07</sys_created_on>
+        <sys_id>b9f2f08fc31c221052237405e4013151</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2025-03-19 18:30:07</sys_updated_on>
+        <target_table>u_project_effort</target_table>
+        <type>send-ready</type>
+        <uid>N/A</uid>
+        <user/>
+        <user_id/>
+        <weight>0</weight>
+    </sys_email>
+</record_update>
+]]></payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-05-13 07:39:59</sys_created_on>
+        <sys_id>629d69648365e6d0a946f896feaad31a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Pending project efforts approvals</sys_name>
+        <sys_package display_value="Zynder Tech" source="8d447286c3a3121052237405e4013105">8d447286c3a3121052237405e4013105</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Zynder Tech">8d447286c3a3121052237405e4013105</sys_scope>
+        <sys_update_name>sys_metadata_link_629d69648365e6d0a946f896feaad31a</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-05-13 07:39:59</sys_updated_on>
+        <tablename>sys_email</tablename>
+    </sys_metadata_link>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Zynder Tech">8d447286c3a3121052237405e4013105</application>
+        <file_path/>
+        <instance_id>7ac2e572db4e8610ebdd2a5913961964</instance_id>
+        <instance_name>dev268649</instance_name>
+        <name>sys_metadata_link_629d69648365e6d0a946f896feaad31a</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_metadata_link"&gt;&lt;sys_metadata_link action="INSERT_OR_UPDATE"&gt;&lt;directory&gt;update&lt;/directory&gt;&lt;documentkey&gt;b9f2f08fc31c221052237405e4013151&lt;/documentkey&gt;&lt;payload&gt;&lt;![CDATA[&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_email"&gt;
+    &lt;sys_email action="INSERT_OR_UPDATE"&gt;
+        &lt;blind_copied/&gt;
+        &lt;body&gt;&amp;lt;html&amp;gt;&amp;lt;head&amp;gt;&amp;lt;style&amp;gt;
+	#snc_notification_preference {
+		text-decoration: none;
+	}
+	
+	#snc_notification_unsubscribe {
+		text-decoration: none;
+	}
+&amp;lt;/style&amp;gt;
+
+&amp;lt;/head&amp;gt;&amp;lt;body&amp;gt;&amp;lt;p&amp;gt;&amp;lt;span style="font-size: 12pt;"&amp;gt;Hi team,&amp;lt;/span&amp;gt;&amp;lt;/p&amp;gt;&amp;#13;
+&amp;lt;p&amp;gt;&amp;lt;span style="font-size: 12pt;"&amp;gt;This is a reminder that there are pending project effort approvals that require your attention. Please review and approve them at your earliest convenience. &amp;lt;/span&amp;gt;&amp;lt;/p&amp;gt;&amp;#13;
+&amp;lt;p&amp;gt;&amp;lt;span style="font-size: 12pt;"&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;/p&amp;gt;&amp;lt;table style="border-collapse: collapse; width: 100%;" border="1"&amp;gt;&amp;lt;thead&amp;gt;&amp;lt;tr&amp;gt;&amp;lt;th&amp;gt;Number&amp;lt;/th&amp;gt;&amp;lt;th&amp;gt;Name&amp;lt;/th&amp;gt;&amp;lt;th&amp;gt;Date&amp;lt;/th&amp;gt;&amp;lt;/tr&amp;gt;&amp;lt;/thead&amp;gt;&amp;lt;tbody&amp;gt;&amp;lt;tr&amp;gt;&amp;lt;td&amp;gt;PE0001072&amp;lt;/td&amp;gt;&amp;lt;td&amp;gt;&amp;lt;a href="https://dev240427.service-now.com/u_project_effort.do?sys_id=0a203ddec310221052237405e40131f1&amp;amp;amp;sysparm_record_target=u_project_effort&amp;amp;amp;sysparm_record_row=-1&amp;amp;amp;sysparm_record_rows=12&amp;amp;amp;sysparm_record_list=sys_created_on&amp;lt;=javascript:gs.endOfYesterday()^u_approval=requested//"&amp;gt;Rose  Denna&amp;lt;/a&amp;gt;&amp;lt;/td&amp;gt;&amp;lt;td&amp;gt;2025-03-17&amp;lt;/td&amp;gt;&amp;lt;/tr&amp;gt;&amp;lt;tr&amp;gt;&amp;lt;td&amp;gt;PE0001077&amp;lt;/td&amp;gt;&amp;lt;td&amp;gt;&amp;lt;a href="https://dev240427.service-now.com/u_project_effort.do?sys_id=2fc2da32c350221052237405e4013140&amp;amp;amp;sysparm_record_target=u_project_effort&amp;amp;amp;sysparm_record_row=-1&amp;amp;amp;sysparm_record_rows=12&amp;amp;amp;sysparm_record_list=sys_created_on&amp;lt;=javascript:gs.endOfYesterday()^u_approval=requested//"&amp;gt;Athul  V  Nair&amp;lt;/a&amp;gt;&amp;lt;/td&amp;gt;&amp;lt;td&amp;gt;2025-03-18&amp;lt;/td&amp;gt;&amp;lt;/tr&amp;gt;&amp;lt;tr&amp;gt;&amp;lt;td&amp;gt;PE0001078&amp;lt;/td&amp;gt;&amp;lt;td&amp;gt;&amp;lt;a href="https://dev240427.service-now.com/u_project_effort.do?sys_id=360412f2c350221052237405e401310d&amp;amp;amp;sysparm_record_target=u_project_effort&amp;amp;amp;sysparm_record_row=-1&amp;amp;amp;sysparm_record_rows=12&amp;amp;amp;sysparm_record_list=sys_created_on&amp;lt;=javascript:gs.endOfYesterday()^u_approval=requested//"&amp;gt;Treesa  Thomas&amp;lt;/a&amp;gt;&amp;lt;/td&amp;gt;&amp;lt;td&amp;gt;2025-03-18&amp;lt;/td&amp;gt;&amp;lt;/tr&amp;gt;&amp;lt;tr&amp;gt;&amp;lt;td&amp;gt;PE0001073&amp;lt;/td&amp;gt;&amp;lt;td&amp;gt;&amp;lt;a href="https://dev240427.service-now.com/u_project_effort.do?sys_id=3de0b912c350221052237405e40131f1&amp;amp;amp;sysparm_record_target=u_project_effort&amp;amp;amp;sysparm_record_row=-1&amp;amp;amp;sysparm_record_rows=12&amp;amp;amp;sysparm_record_list=sys_created_on&amp;lt;=javascript:gs.endOfYesterday()^u_approval=requested//"&amp;gt;Alan Paul&amp;lt;/a&amp;gt;&amp;lt;/td&amp;gt;&amp;lt;td&amp;gt;2025-03-17&amp;lt;/td&amp;gt;&amp;lt;/tr&amp;gt;&amp;lt;tr&amp;gt;&amp;lt;td&amp;gt;PE0001080&amp;lt;/td&amp;gt;&amp;lt;td&amp;gt;&amp;lt;a href="https://dev240427.service-now.com/u_project_effort.do?sys_id=402432fac3d0221052237405e40131bb&amp;amp;amp;sysparm_record_target=u_project_effort&amp;amp;amp;sysparm_record_row=-1&amp;amp;amp;sysparm_record_rows=12&amp;amp;amp;sysparm_record_list=sys_created_on&amp;lt;=javascript:gs.endOfYesterday()^u_approval=requested//"&amp;gt;Krishna Raj&amp;lt;/a&amp;gt;&amp;lt;/td&amp;gt;&amp;lt;td&amp;gt;2025-03-18&amp;lt;/td&amp;gt;&amp;lt;/tr&amp;gt;&amp;lt;tr&amp;gt;&amp;lt;td&amp;gt;PE0001070&amp;lt;/td&amp;gt;&amp;lt;td&amp;gt;&amp;lt;a href="https://dev240427.service-now.com/u_project_effort.do?sys_id=5339ed96c310221052237405e4013194&amp;amp;amp;sysparm_record_target=u_project_effort&amp;amp;amp;sysparm_record_row=-1&amp;amp;amp;sysparm_record_rows=12&amp;amp;amp;sysparm_record_list=sys_created_on&amp;lt;=javascript:gs.endOfYesterday()^u_approval=requested//"&amp;gt;Sreerag  Anchery&amp;lt;/a&amp;gt;&amp;lt;/td&amp;gt;&amp;lt;td&amp;gt;2025-03-17&amp;lt;/td&amp;gt;&amp;lt;/tr&amp;gt;&amp;lt;tr&amp;gt;&amp;lt;td&amp;gt;PE0001082&amp;lt;/td&amp;gt;&amp;lt;td&amp;gt;&amp;lt;a href="https://dev240427.service-now.com/u_project_effort.do?sys_id=5537ff3ac354221052237405e401312b&amp;amp;amp;sysparm_record_target=u_project_effort&amp;amp;amp;sysparm_record_row=-1&amp;amp;amp;sysparm_record_rows=12&amp;amp;amp;sysparm_record_list=sys_created_on&amp;lt;=javascript:gs.endOfYesterday()^u_approval=requested//"&amp;gt;Alan Paul&amp;lt;/a&amp;gt;&amp;lt;/td&amp;gt;&amp;lt;td&amp;gt;2025-03-18&amp;lt;/td&amp;gt;&amp;lt;/tr&amp;gt;&amp;lt;tr&amp;gt;&amp;lt;td&amp;gt;PE0001079&amp;lt;/td&amp;gt;&amp;lt;td&amp;gt;&amp;lt;a href="https://dev240427.service-now.com/u_project_effort.do?sys_id=5bde6e36c3d0221052237405e4013143&amp;amp;amp;sysparm_record_target=u_project_effort&amp;amp;amp;sysparm_record_row=-1&amp;amp;amp;sysparm_record_rows=12&amp;amp;amp;sysparm_record_list=sys_created_on&amp;lt;=javascript:gs.endOfYesterday()^u_approval=requested//"&amp;gt;Sreerag  Anchery&amp;lt;/a&amp;gt;&amp;lt;/td&amp;gt;&amp;lt;td&amp;gt;2025-03-18&amp;lt;/td&amp;gt;&amp;lt;/tr&amp;gt;&amp;lt;tr&amp;gt;&amp;lt;td&amp;gt;PE0001074&amp;lt;/td&amp;gt;&amp;lt;td&amp;gt;&amp;lt;a href="https://dev240427.service-now.com/u_project_effort.do?sys_id=5d873d1ac350221052237405e40131b5&amp;amp;amp;sysparm_record_target=u_project_effort&amp;amp;amp;sysparm_record_row=-1&amp;amp;amp;sysparm_record_rows=12&amp;amp;amp;sysparm_record_list=sys_created_on&amp;lt;=javascript:gs.endOfYesterday()^u_approval=requested//"&amp;gt;Amal Madhav&amp;lt;/a&amp;gt;&amp;lt;/td&amp;gt;&amp;lt;td&amp;gt;2025-03-17&amp;lt;/td&amp;gt;&amp;lt;/tr&amp;gt;&amp;lt;tr&amp;gt;&amp;lt;td&amp;gt;PE0001076&amp;lt;/td&amp;gt;&amp;lt;td&amp;gt;&amp;lt;a href="https://dev240427.service-now.com/u_project_effort.do?sys_id=75a21272c350221052237405e40131ce&amp;amp;amp;sysparm_record_target=u_project_effort&amp;amp;amp;sysparm_record_row=-1&amp;amp;amp;sysparm_record_rows=12&amp;amp;amp;sysparm_record_list=sys_created_on&amp;lt;=javascript:gs.endOfYesterday()^u_approval=requested//"&amp;gt;Suchithra  PS&amp;lt;/a&amp;gt;&amp;lt;/td&amp;gt;&amp;lt;td&amp;gt;2025-03-18&amp;lt;/td&amp;gt;&amp;lt;/tr&amp;gt;&amp;lt;tr&amp;gt;&amp;lt;td&amp;gt;PE0001071&amp;lt;/td&amp;gt;&amp;lt;td&amp;gt;&amp;lt;a href="https://dev240427.service-now.com/u_project_effort.do?sys_id=7729ed96c310221052237405e401319e&amp;amp;amp;sysparm_record_target=u_project_effort&amp;amp;amp;sysparm_record_row=-1&amp;amp;amp;sysparm_record_rows=12&amp;amp;amp;sysparm_record_list=sys_created_on&amp;lt;=javascript:gs.endOfYesterday()^u_approval=requested//"&amp;gt;Krishna Raj&amp;lt;/a&amp;gt;&amp;lt;/td&amp;gt;&amp;lt;td&amp;gt;2025-03-17&amp;lt;/td&amp;gt;&amp;lt;/tr&amp;gt;&amp;lt;tr&amp;gt;&amp;lt;td&amp;gt;PE0001081&amp;lt;/td&amp;gt;&amp;lt;td&amp;gt;&amp;lt;a href="https://dev240427.service-now.com/u_project_effort.do?sys_id=f0a63b3ac318221052237405e40131cd&amp;amp;amp;sysparm_record_target=u_project_effort&amp;amp;amp;sysparm_record_row=-1&amp;amp;amp;sysparm_record_rows=12&amp;amp;amp;sysparm_record_list=sys_created_on&amp;lt;=javascript:gs.endOfYesterday()^u_approval=requested//"&amp;gt;Rose  Denna&amp;lt;/a&amp;gt;&amp;lt;/td&amp;gt;&amp;lt;td&amp;gt;2025-03-18&amp;lt;/td&amp;gt;&amp;lt;/tr&amp;gt;&amp;lt;/tbody&amp;gt;&amp;lt;/table&amp;gt;&amp;lt;p&amp;gt;&amp;lt;/p&amp;gt;&amp;#13;
+&amp;lt;p&amp;gt;&amp;lt;span style="font-size: 12pt;"&amp;gt;Regards,&amp;lt;/span&amp;gt;&amp;lt;/p&amp;gt;&amp;#13;
+&amp;lt;p&amp;gt;&amp;lt;span style="font-size: 12pt;"&amp;gt;Zynder Tech&amp;lt;/span&amp;gt;&amp;lt;/p&amp;gt;
+
+&amp;lt;br&amp;gt;&amp;lt;br&amp;gt;
+
+&amp;lt;a id="snc_notification_unsubscribe" href="mailto:?subject=Unsubscribe from &amp;amp;quot;Reminder for Projectc Efforts approval&amp;amp;quot;&amp;amp;amp;body=Sending this email with the predefined content in the subject and body will unsubscribe you from the notification &amp;amp;quot;Reminder for Projectc Efforts approval&amp;amp;quot;%0D%0A%0D%0AUnsubscribe:{&amp;amp;quot;id&amp;amp;quot;:&amp;amp;quot;bbedee58c3d4221052237405e40131bc&amp;amp;quot;,&amp;amp;quot;token&amp;amp;quot;:&amp;amp;quot;c797e62132&amp;amp;quot;}"&amp;gt;Unsubscribe&amp;lt;/a&amp;gt; | &amp;lt;a id="snc_notification_preference" href="https://dev240427.service-now.com/nav_to.do?uri=notification_preferences.do%3Fsysparm_notification=bbedee58c3d4221052237405e40131bc"&amp;gt;Notification Preferences&amp;lt;/a&amp;gt;&amp;lt;div&amp;gt;&amp;amp;nbsp;&amp;lt;/div&amp;gt;&amp;lt;div style="display:inline"&amp;gt;Ref:MSG0003547_JqDfdKnY7DCsejpQAjKx&amp;lt;/div&amp;gt;&amp;lt;/body&amp;gt;&amp;lt;/html&amp;gt;&lt;/body&gt;
+        &lt;body_text/&gt;
+        &lt;checkpoint&gt;0&lt;/checkpoint&gt;
+        &lt;content_type&gt;text/html&lt;/content_type&gt;
+        &lt;copied/&gt;
+        &lt;deleted&gt;false&lt;/deleted&gt;
+        &lt;direct&gt;vishnupv1024@gmail.com,ashikvinodv@gmail.com&lt;/direct&gt;
+        &lt;error_string/&gt;
+        &lt;headers&gt;X-ServiceNow-Source:Notification-bbedee58c3d4221052237405e40131bc&amp;#13;
+List-Unsubscribe:&amp;lt;mailto:?subject=Unsubscribe+from+%22Reminder+for+Projectc+Efforts+approval%22&amp;amp;body=Sending+this+email+with+the+predefined+content+in+the+subject+and+body+will+unsubscribe+you+from+the+notification+%22Reminder+for+Projectc+Efforts+approval%22.+%0D%0A%0D%0AUnsubscribe%3A%7B%22id%22%3A%22bbedee58c3d4221052237405e40131bc%22%2C%22token%22%3A%22c797e62132%22%7D&amp;gt;&amp;#13;
+X-ServiceNow-SysEmail-Version:2&amp;#13;
+&lt;/headers&gt;
+        &lt;importance/&gt;
+        &lt;instance&gt;0a203ddec310221052237405e40131f1&lt;/instance&gt;
+        &lt;mailbox display_value="Outbox"&gt;outbox&lt;/mailbox&gt;
+        &lt;message_id/&gt;
+        &lt;notification_type&gt;SMTP&lt;/notification_type&gt;
+        &lt;receive_type&gt;new&lt;/receive_type&gt;
+        &lt;recipients&gt;vishnupv1024@gmail.com,ashikvinodv@gmail.com&lt;/recipients&gt;
+        &lt;reply_to/&gt;
+        &lt;state&gt;ready&lt;/state&gt;
+        &lt;status/&gt;
+        &lt;subject&gt;Pending project efforts approvals&lt;/subject&gt;
+        &lt;sys_created_by&gt;system&lt;/sys_created_by&gt;
+        &lt;sys_created_on&gt;2025-03-19 18:30:07&lt;/sys_created_on&gt;
+        &lt;sys_id&gt;b9f2f08fc31c221052237405e4013151&lt;/sys_id&gt;
+        &lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;
+        &lt;sys_updated_by&gt;system&lt;/sys_updated_by&gt;
+        &lt;sys_updated_on&gt;2025-03-19 18:30:07&lt;/sys_updated_on&gt;
+        &lt;target_table&gt;u_project_effort&lt;/target_table&gt;
+        &lt;type&gt;send-ready&lt;/type&gt;
+        &lt;uid&gt;N/A&lt;/uid&gt;
+        &lt;user/&gt;
+        &lt;user_id/&gt;
+        &lt;weight&gt;0&lt;/weight&gt;
+    &lt;/sys_email&gt;
+&lt;/record_update&gt;
+]]&gt;&lt;/payload&gt;&lt;sys_class_name&gt;sys_metadata_link&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-05-13 07:39:59&lt;/sys_created_on&gt;&lt;sys_id&gt;629d69648365e6d0a946f896feaad31a&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;Pending project efforts approvals&lt;/sys_name&gt;&lt;sys_package display_value="Zynder Tech" source="8d447286c3a3121052237405e4013105"&gt;8d447286c3a3121052237405e4013105&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Zynder Tech"&gt;8d447286c3a3121052237405e4013105&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_metadata_link_629d69648365e6d0a946f896feaad31a&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-05-13 07:39:59&lt;/sys_updated_on&gt;&lt;tablename&gt;sys_email&lt;/tablename&gt;&lt;/sys_metadata_link&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>-1334723167</payload_hash>
+        <record_name>Pending project efforts approvals</record_name>
+        <reverted_from/>
+        <source>75a98e6483496e10a946f896feaad335</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-05-13 07:39:59</sys_created_on>
+        <sys_id>229d69648365e6d0a946f896feaad31c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>196c89610050000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-05-13 07:39:59</sys_updated_on>
+        <type>Metadata Snapshot</type>
+        <update_guid>e29d69649065e6d012658fa516d9be1b</update_guid>
+        <update_guid_history>e29d69649065e6d012658fa516d9be1b:-1334723167</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-05-17 10:26:28</sys_created_on>
+        <sys_db_object display_value="" name="sys_metadata_link">sys_metadata_link</sys_db_object>
+        <sys_id>a4c344a56f394a8e8c21c3153af0b624</sys_id>
+        <sys_metadata>629d69648365e6d0a946f896feaad31a</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Pending project efforts approvals</sys_name>
+        <sys_package display_value="Zynder Tech" source="8d447286c3a3121052237405e4013105">8d447286c3a3121052237405e4013105</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Zynder Tech">8d447286c3a3121052237405e4013105</sys_scope>
+        <sys_scope_delete display_value="">59ae7a785b154974a5e9b8402f90b790</sys_scope_delete>
+        <sys_update_name>sys_metadata_link_629d69648365e6d0a946f896feaad31a</sys_update_name>
+        <sys_update_version display_value="sys_metadata_link_629d69648365e6d0a946f896feaad31a">229d69648365e6d0a946f896feaad31c</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-05-17 10:26:28</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

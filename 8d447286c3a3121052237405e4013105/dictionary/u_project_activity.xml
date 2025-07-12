@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element audit="true" db_object_id="51dcb5c7c3e0221052237405e40131e4" label="Project Activity" max_length="40" name="u_project_activity" type="collection">
+        <element label="Work notes" max_length="4000" name="u_work_notes" type="journal"/>
+        <element label="Project" max_length="32" name="u_project" reference="u_project" type="reference"/>
+        <element attributes="array=denormalized,no_sort=true,slushbucket_ref_no_expand=true" label="Resources" max_length="4000" name="u_resources" reference="u_employee" type="glide_list"/>
+        <element label="Short description" max_length="180" name="u_short_description" type="string"/>
+        <index name="index">
+            <element name="u_project"/>
+        </index>
+    </element>
+</database>

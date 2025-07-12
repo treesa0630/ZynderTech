@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element audit="true" db_object_id="b0298168c333121052237405e40131be" extends="sys_user" label="Employee" max_length="40" name="u_employee" type="collection">
+        <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="u_number" type="string"/>
+    </element>
+</database>

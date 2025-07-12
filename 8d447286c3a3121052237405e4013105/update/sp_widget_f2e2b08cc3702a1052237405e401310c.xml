@@ -49,181 +49,181 @@
 	
 };]]></client_script>
         <controller_as>c</controller_as>
-        <css>.dip {&#13;
-  perspective: 1000px;&#13;
-}&#13;
-.s-icon{&#13;
-  width:100px;&#13;
-  height:100px;&#13;
-}&#13;
-.flip-container {&#13;
- &#13;
-  height: 280px; /* Adjust as needed */&#13;
-  position: relative;&#13;
-  transform-style: preserve-3d;&#13;
-  transition: transform 0.6s;&#13;
-&#13;
-  border-radius:10px;&#13;
-  border:3px solid #dee2e6;&#13;
-&#13;
-}&#13;
-&#13;
-body{&#13;
- overflow-X: hidden;&#13;
-}&#13;
-&#13;
-.flip-container:hover {&#13;
-&#13;
-    box-shadow: 2px 2px 6px 3px grey;&#13;
-  transform: scale(1.05);&#13;
-  border:1px solid #f2a900;&#13;
-}&#13;
-.front{&#13;
-&#13;
-}&#13;
-&#13;
-.g-box h6{&#13;
-  font-size:19px;&#13;
-  font-weight:700;&#13;
-}&#13;
-&#13;
-.front, .back {&#13;
-  position: absolute;&#13;
-  color: white;&#13;
-  width: 100%;&#13;
-  height: 100%;&#13;
-  backface-visibility: hidden;&#13;
-  border-radius:10px;&#13;
-  background: #FEA648;&#13;
-}&#13;
-&#13;
-.front {&#13;
-  background: #FEA648; /* Adjust as needed */&#13;
-}&#13;
-h6{&#13;
-  font-family: times new roman;&#13;
-}&#13;
-&#13;
-.back {&#13;
- &#13;
-&#13;
-  display: flex;&#13;
-  flex-direction:column;&#13;
-  align-items: center;&#13;
-  justify-content: center;&#13;
-  transform: rotateY(180deg);&#13;
-  padding:10px;&#13;
-  &#13;
-}&#13;
-.back  p{&#13;
-  font-size:12px;&#13;
-  font-weight:600;&#13;
-  font-family: times new roman;&#13;
-}&#13;
-&#13;
-.flipped .flip-container {&#13;
-  transform: rotateY(180deg);&#13;
-}&#13;
-&#13;
-.g-box{&#13;
-  display:flex;&#13;
-  flex-direction:column;&#13;
-  align-items:center;&#13;
-  padding:20px&#13;
-}&#13;
-.btn-div{&#13;
-  position: absolute;&#13;
-  width: 700px;&#13;
-  height: 250px;&#13;
-}&#13;
-.reqBtn{&#13;
-  position: relative;&#13;
-  width:80px;&#13;
-  height:35px;&#13;
-  display:flex;&#13;
-  justify-content:center;&#13;
-  align-items:center;&#13;
-  background-color:#f2a900;&#13;
-  color:white;&#13;
-  font-weight:600;&#13;
-  border-radius:3px;&#13;
-  font-size:13px;&#13;
-  transition:all 0.4s;&#13;
-  right: -380px;&#13;
-  bottom: -200px;&#13;
-  font-family: times new roman;&#13;
-  &#13;
-}&#13;
-&#13;
-.reqBtn:hover {&#13;
-  background-color: #f6bb5b;&#13;
-}&#13;
-.reqBtn:active{&#13;
-  transform: translateY(2px);&#13;
-  box-shadow: 2px 2px 0px 0px rgb(37, 36, 36);&#13;
-}&#13;
-&#13;
-&#13;
-.main-box{&#13;
-  padding-top:15px;&#13;
-  padding-bottom:25px;&#13;
-}&#13;
-&#13;
-.p-short{&#13;
-  text-align:center;&#13;
-  font-family: times new roman;&#13;
-}&#13;
-.back-text{&#13;
-  font-size: 18px;&#13;
-  font-family: times new roman;&#13;
-}&#13;
-//////////////////////////////////////////////////////&#13;
-&#13;
-/* General hidden state */&#13;
-.animate-hidden {&#13;
-  opacity: 0;&#13;
-  transition: all 1.2s ease-out; &#13;
-}&#13;
-&#13;
-/* Animate in from left */&#13;
-.slide-in-left {&#13;
-  transform: translateX(-100%);&#13;
-}&#13;
-&#13;
-.slide-in-left.show {&#13;
-  opacity: 1;&#13;
-  transform: translateX(0);&#13;
-}&#13;
-&#13;
-/* Animate in from right */&#13;
-.slide-in-right {&#13;
-  transform: translateX(100%);&#13;
-}&#13;
-&#13;
-.slide-in-right.show {&#13;
-  opacity: 1;&#13;
-  transform: translateX(0);&#13;
-}&#13;
-&#13;
-/* Animate in from top */&#13;
-.slide-in-top {&#13;
-  transform: translateY(-100%);&#13;
-}&#13;
-&#13;
-.slide-in-top.show {&#13;
-  opacity: 1;&#13;
-  transform: translateY(0);&#13;
-}&#13;
-&#13;
-&#13;
-/* Slide in from bottom */&#13;
-.slide-in-bottom {&#13;
-  transform: translateY(100%);&#13;
-}&#13;
-&#13;
-.slide-in-bottom.show {&#13;
-  opacity: 1;&#13;
-  transform: translateY(0);&#13;
+        <css>.dip {
+  perspective: 1000px;
+}
+.s-icon{
+  width:100px;
+  height:100px;
+}
+.flip-container {
+ 
+  height: 280px; /* Adjust as needed */
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 0.6s;
+
+  border-radius:10px;
+  border:3px solid #dee2e6;
+
+}
+
+body{
+ overflow-X: hidden;
+}
+
+.flip-container:hover {
+
+    box-shadow: 2px 2px 6px 3px grey;
+  transform: scale(1.05);
+  border:1px solid #f2a900;
+}
+.front{
+
+}
+
+.g-box h6{
+  font-size:19px;
+  font-weight:700;
+}
+
+.front, .back {
+  position: absolute;
+  color: white;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius:10px;
+  background: #FEA648;
+}
+
+.front {
+  background: #FEA648; /* Adjust as needed */
+}
+h6{
+  font-family: times new roman;
+}
+
+.back {
+ 
+
+  display: flex;
+  flex-direction:column;
+  align-items: center;
+  justify-content: center;
+  transform: rotateY(180deg);
+  padding:10px;
+  
+}
+.back  p{
+  font-size:12px;
+  font-weight:600;
+  font-family: times new roman;
+}
+
+.flipped .flip-container {
+  transform: rotateY(180deg);
+}
+
+.g-box{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  padding:20px
+}
+.btn-div{
+  position: absolute;
+  width: 700px;
+  height: 250px;
+}
+.reqBtn{
+  position: relative;
+  width:80px;
+  height:35px;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  background-color:#f2a900;
+  color:white;
+  font-weight:600;
+  border-radius:3px;
+  font-size:13px;
+  transition:all 0.4s;
+  right: -380px;
+  bottom: -200px;
+  font-family: times new roman;
+  
+}
+
+.reqBtn:hover {
+  background-color: #f6bb5b;
+}
+.reqBtn:active{
+  transform: translateY(2px);
+  box-shadow: 2px 2px 0px 0px rgb(37, 36, 36);
+}
+
+
+.main-box{
+  padding-top:15px;
+  padding-bottom:25px;
+}
+
+.p-short{
+  text-align:center;
+  font-family: times new roman;
+}
+.back-text{
+  font-size: 18px;
+  font-family: times new roman;
+}
+//////////////////////////////////////////////////////
+
+/* General hidden state */
+.animate-hidden {
+  opacity: 0;
+  transition: all 1.2s ease-out; 
+}
+
+/* Animate in from left */
+.slide-in-left {
+  transform: translateX(-100%);
+}
+
+.slide-in-left.show {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* Animate in from right */
+.slide-in-right {
+  transform: translateX(100%);
+}
+
+.slide-in-right.show {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* Animate in from top */
+.slide-in-top {
+  transform: translateY(-100%);
+}
+
+.slide-in-top.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+/* Slide in from bottom */
+.slide-in-bottom {
+  transform: translateY(100%);
+}
+
+.slide-in-bottom.show {
+  opacity: 1;
+  transform: translateY(0);
 }</css>
         <data_table>sp_instance</data_table>
         <demo_data/>

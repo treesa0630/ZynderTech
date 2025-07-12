@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="u_type_of_expense" table="u_express_tracker" version="3">
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>u_type_of_expense</element>
+            <name>u_express_tracker</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>KR</sys_created_by>
+            <sys_created_on>2025-02-08 11:17:36</sys_created_on>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>u_type_of_expense</sys_name>
+            <sys_package display_value="Zynder Tech" source="8d447286c3a3121052237405e4013105">8d447286c3a3121052237405e4013105</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Zynder Tech">8d447286c3a3121052237405e4013105</sys_scope>
+            <sys_update_name>sys_choice_u_express_tracker_u_type_of_expense</sys_update_name>
+            <sys_updated_by>KR</sys_updated_by>
+            <sys_updated_on>2025-02-08 11:17:36</sys_updated_on>
+        </sys_choice_set>
+    </sys_choice>
+</record_update>
