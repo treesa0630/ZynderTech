@@ -1,0 +1,517 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="DELETE">
+        <directory>update</directory>
+        <documentkey>9151ebbfc378a21052237405e40131ad</documentkey>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_email">
+    <sys_email action="INSERT_OR_UPDATE">
+        <blind_copied/>
+        <body>&lt;html&gt;&lt;head&gt;&lt;/head&gt;&lt;body&gt;&lt;p&gt;&lt;/p&gt;&#13;
+&lt;style type="text/css"&gt;&#13;
+	* {&#13;
+		-webkit-text-size-adjust: none;&#13;
+	}&#13;
+&#13;
+	body {&#13;
+		margin: 0 auto !important;&#13;
+		padding: 0 !important;&#13;
+		font-family: Lato, Arial, sans-serif;&#13;
+	}&#13;
+&#13;
+	.btn a {&#13;
+		text-decoration: none;&#13;
+	}&#13;
+&#13;
+	.btn.inverse a {&#13;
+		color: #fff;&#13;
+	}&#13;
+&#13;
+	#requestapprove a {&#13;
+		color: #fff !important;&#13;
+	}&#13;
+&#13;
+	span.footer,&#13;
+	#templateAddress,&#13;
+	#templateCopyright,&#13;
+	#templateCopyright *,&#13;
+	#templateAddress * {&#13;
+		margin: 0;&#13;
+		font-size: 14px;&#13;
+		line-height: 18px;&#13;
+		color: #ffffff;&#13;
+	}&#13;
+&#13;
+	#snc_notification_unsubscribe,&#13;
+	#snc_notification_preference {&#13;
+		color: #3C59E7;&#13;
+		font-size: 10px;&#13;
+		line-height: 15px;&#13;
+	}&#13;
+&#13;
+	#snc_notification_unsubscribe {&#13;
+		padding-right: 5px;&#13;
+	}&#13;
+&#13;
+	#snc_notification_preference {&#13;
+		padding-left: 5px;&#13;
+	}&#13;
+&#13;
+	body,&#13;
+	table,&#13;
+	td,&#13;
+	p,&#13;
+	a {&#13;
+		-ms-text-size-adjust: 100% !important;&#13;
+		-webkit-text-size-adjust: 100% !important;&#13;
+	}&#13;
+&#13;
+	table,&#13;
+	tr,&#13;
+	td {&#13;
+		border-spacing: 0 !important;&#13;
+		mso-table-lspace: 0 !important;&#13;
+		mso-table-rspace: 0 !important;&#13;
+		border-collapse: collapse !important;&#13;
+		mso-line-height-rule: exactly !important;&#13;
+	}&#13;
+&#13;
+	.ExternalClass * {&#13;
+		line-height: 100%;&#13;
+	}&#13;
+&#13;
+	.mobile-link a,&#13;
+	.mobile-link span {&#13;
+		text-decoration: none !important;&#13;
+		color: inherit !important;&#13;
+		border: none !important;&#13;
+	}&#13;
+&lt;/style&gt;&#13;
+&lt;div style="margin: 0 auto !important;" align="center"&gt;&#13;
+&lt;table class="w100" style="width: 600px; background-color: #fef6e6; margin: 0 auto !important; padding: 0px;" border="0" width="600" cellspacing="0" cellpadding="0" align="center" bgcolor="#FEF6E6"&gt;&#13;
+&lt;tbody&gt;&#13;
+&lt;tr style="height: 150px;"&gt;&#13;
+&lt;td style="background: #FEF6E6; text-align: center; font-family: Arial, Tahoma, sans-serif; color: #425968; font-size: 13px; line-height: 14px;" align="center"&gt;&#13;
+&lt;table border="0" width="600" cellspacing="0" cellpadding="0" style="border-spacing: 0px; width: 100.2%; height: 250px;"&gt;&#13;
+&lt;tbody&gt;&#13;
+&lt;tr style="background-color: rgb(254, 246, 230); height: 250px;"&gt;&#13;
+&lt;td align="center" valign="bottom" height="98" style="height: 250px; width: 94.6844%;"&gt;&#13;
+&lt;table height="30" style="margin: 0px auto; width: 98.4344%; height: 285px;"&gt;&#13;
+&lt;tbody&gt;&#13;
+&lt;tr style="height: 200px;"&gt;&#13;
+&lt;td align="center" height="16" style="width: 100%; height: 200px;"&gt;&lt;img src="zynder_logo.gif" height="100" width="394" style="height: 183px;"&gt;&lt;/td&gt;&#13;
+&lt;/tr&gt;&#13;
+&lt;/tbody&gt;&#13;
+&lt;/table&gt;&#13;
+&lt;/td&gt;&#13;
+&lt;/tr&gt;&#13;
+&lt;/tbody&gt;&#13;
+&lt;/table&gt;&#13;
+&lt;/td&gt;&#13;
+&lt;/tr&gt;&#13;
+&lt;tr&gt;&#13;
+&lt;td&gt;&#13;
+&lt;table border="0" width="600" cellspacing="0" cellpadding="0"&gt;&#13;
+&lt;tbody&gt;&#13;
+&lt;tr&gt;&lt;!-- Left--&gt;&#13;
+&lt;td valign="top" width="18"&gt;&#13;
+&lt;table width="18" cellspacing="0"&gt;&#13;
+&lt;tbody&gt;&#13;
+&lt;tr style="background: #fef6e6;" height="48"&gt;&#13;
+&lt;td&gt;&lt;/td&gt;&#13;
+&lt;/tr&gt;&#13;
+&lt;/tbody&gt;&#13;
+&lt;/table&gt;&#13;
+&lt;/td&gt;&#13;
+&lt;!-- CONTAINER --&gt;&#13;
+&lt;td width="564"&gt;&#13;
+&lt;table class="w100" style="background-image: linear-gradient(rgb(39, 40, 74), rgba(247, 247, 249, 0)); margin: 0px; padding: 0px; box-shadow: rgba(23, 40, 52, 0.08) 0px 2px 10px; height: 20px;" border="0" width="100%" cellspacing="0" cellpadding="0" align="center"&gt;&#13;
+&lt;tbody&gt;&lt;!-- Main Container --&gt;&#13;
+&lt;tr style="height: 20.4px;"&gt;&#13;
+&lt;td class="pad-sides-20" style="border-radius: 6px; text-align: left; background: #ffffff; padding: 24px; height: 20.4px;" align="center"&gt;&lt;p&gt;&lt;span style="font-size: 12pt;"&gt;Hi Treesa  Thomas,&lt;/span&gt;&lt;/p&gt;&#13;
+&lt;p&gt;&lt;span style="font-size: 12pt;"&gt;Your Leave Request has been Approved.&lt;/span&gt;&lt;/p&gt;&#13;
+&lt;p&gt;&lt;span style="font-size: 12pt;"&gt;For any concerns, feel free to reach out.&amp;nbsp;&lt;/span&gt;&lt;/p&gt;&#13;
+&lt;p&gt;&lt;span style="font-size: 12pt;"&gt;&lt;a href="/sp?id=form&amp;amp;is_new_order=true&amp;amp;table=u_employee_leave_tracker&amp;amp;sys_id=2cf0ef7fc378a21052237405e40131d5"&gt;Click here to view your record&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;&#13;
+&lt;p&gt;&lt;span style="font-size: 12pt;"&gt;Regards,&lt;/span&gt;&lt;/p&gt;&#13;
+&lt;p&gt;&lt;span style="font-size: 12pt;"&gt;Zynder Tech&lt;/span&gt;&lt;/p&gt;&#13;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;/td&gt;&#13;
+&lt;/tr&gt;&#13;
+&lt;/tbody&gt;&#13;
+&lt;/table&gt;&#13;
+&lt;/td&gt;&#13;
+&lt;!-- END CONTAINER --&gt; &lt;!-- Right--&gt;&#13;
+&lt;td valign="top" width="18"&gt;&#13;
+&lt;table width="18" cellspacing="0"&gt;&#13;
+&lt;tbody&gt;&#13;
+&lt;tr style="background: #fef6e6;" height="48"&gt;&#13;
+&lt;td&gt;&lt;/td&gt;&#13;
+&lt;/tr&gt;&#13;
+&lt;/tbody&gt;&#13;
+&lt;/table&gt;&#13;
+&lt;/td&gt;&#13;
+&lt;/tr&gt;&#13;
+&lt;/tbody&gt;&#13;
+&lt;/table&gt;&#13;
+&lt;/td&gt;&#13;
+&lt;/tr&gt;&#13;
+&lt;!-- Footer started --&gt;&#13;
+&lt;tr style="background-color: #fef6e6;"&gt;&#13;
+&lt;td&gt;&#13;
+&lt;table style="background-color: #fef6e6; width: 100.2%; height: 218.6px;" border="0" cellspacing="0" cellpadding="0"&gt;&#13;
+&lt;tbody&gt;&#13;
+&lt;tr style="height: 36px;"&gt;&#13;
+&lt;td style="background-color: #fef6e6; width: 99.6678%; height: 36px;" height="36"&gt;&lt;/td&gt;&#13;
+&lt;/tr&gt;&#13;
+&lt;tr style="height: 38.4px;"&gt;&#13;
+&lt;td style="background-color: #fef6e6; ; width: 99.6678%; height: 38.4px;"&gt;&#13;
+&lt;table style="color: #fff;" border="0" width="600" cellspacing="0" cellpadding="0"&gt;&#13;
+&lt;tbody&gt;&#13;
+&lt;tr align="center"&gt;&#13;
+&lt;td&gt;&lt;span id="templateCopyright" class="footer" style="color: #000000; font-size: 14px; line-height: 18px; text-align: center; margin: 0 !important;"&gt; © Zynder-Tech Pvt Ltd. All rights reserved. &lt;/span&gt;&lt;/td&gt;&#13;
+&lt;/tr&gt;&#13;
+&lt;/tbody&gt;&#13;
+&lt;/table&gt;&#13;
+&lt;/td&gt;&#13;
+&lt;/tr&gt;&#13;
+&lt;tr cellspacing="0" style="height: 106.2px;"&gt;&#13;
+&lt;td align="center" bgcolor="#FEF6E6" height="102" style="width: 99.6678%; height: 106.2px;"&gt;&lt;img src="email_template_footer.png" width="600" height="102"&gt;&lt;/td&gt;&#13;
+&lt;/tr&gt;&#13;
+&lt;/tbody&gt;&#13;
+&lt;/table&gt;&#13;
+&lt;/td&gt;&#13;
+&lt;/tr&gt;&#13;
+&lt;!-- Footer end--&gt;&lt;/tbody&gt;&#13;
+&lt;/table&gt;&#13;
+&lt;/div&gt;&lt;div&gt;&amp;nbsp;&lt;/div&gt;&lt;div style="display:inline"&gt;Ref:MSG0004172_pRLm9MFCkTOpytkXkSHZ&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</body>
+        <body_text/>
+        <checkpoint>1</checkpoint>
+        <content_type>text/html</content_type>
+        <copied/>
+        <deleted>false</deleted>
+        <direct>treesathomas.zyndertech@gmail.com</direct>
+        <error_string/>
+        <headers>Date: Wed, 16 Apr 2025 04:39:40 -0700 (PDT)&#13;
+From: Zynder Tech Test &lt;zyndertechtest@gmail.com&gt;&#13;
+Reply-To: Zynder Tech Test &lt;zyndertechtest@gmail.com&gt;&#13;
+To: treesathomas.zyndertech@gmail.com&#13;
+Message-ID: &lt;67716020.140.1744803580917@app130180.ord191.service-now.com&gt;&#13;
+Subject: Your Leave Request has been Approved&#13;
+MIME-Version: 1.0&#13;
+Content-Type: multipart/related; &#13;
+	boundary="----=_Part_139_1121207548.1744803580869"&#13;
+X-ServiceNow-Source: Notification-595b8fb9c37bd21052237405e4013158&#13;
+List-Unsubscribe: &lt;mailto:zyndertechtest@gmail.com?subject=Unsubscribe+from+%22Leave+Tracker+Employee+Notification%22&amp;body=Sending+this+email+with+the+predefined+content+in+the+subject+and+body+will+unsubscribe+you+from+the+notification+%22Leave+Tracker+Employee+Notification%22.+%0D%0A%0D%0AUnsubscribe%3A%7B%22id%22%3A%22595b8fb9c37bd21052237405e4013158%22%2C%22token%22%3A%22c797e62132%22%7D&gt;&#13;
+X-ServiceNow-SysEmail-Version: 2&#13;
+Precedence: bulk&#13;
+Auto-Submitted: auto-generated&#13;
+X-ServiceNow-Generated: true</headers>
+        <importance/>
+        <instance>2cf0ef7fc378a21052237405e40131d5</instance>
+        <mailbox display_value="Sent">sent</mailbox>
+        <message_id>&lt;67716020.140.1744803580917@app130180.ord191.service-now.com&gt;</message_id>
+        <notification_type>SMTP</notification_type>
+        <receive_type>new</receive_type>
+        <recipients>treesathomas.zyndertech@gmail.com</recipients>
+        <reply_to/>
+        <state>processed</state>
+        <status/>
+        <subject>Your Leave Request has been Approved</subject>
+        <sys_created_by>system</sys_created_by>
+        <sys_created_on>2025-04-16 11:38:47</sys_created_on>
+        <sys_id>9151ebbfc378a21052237405e40131ad</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2025-04-16 11:39:42</sys_updated_on>
+        <target_table>u_employee_leave_tracker</target_table>
+        <type>sent</type>
+        <uid>N/A</uid>
+        <user/>
+        <user_id/>
+        <weight>0</weight>
+    </sys_email>
+</record_update>
+]]></payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-05-13 07:39:54</sys_created_on>
+        <sys_id>199d25648365e6d0a946f896feaad346</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Your Leave Request has been Approved</sys_name>
+        <sys_package display_value="Zynder Tech" source="8d447286c3a3121052237405e4013105">8d447286c3a3121052237405e4013105</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Zynder Tech">8d447286c3a3121052237405e4013105</sys_scope>
+        <sys_update_name>sys_metadata_link_199d25648365e6d0a946f896feaad346</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-05-13 07:39:54</sys_updated_on>
+        <tablename>sys_email</tablename>
+    </sys_metadata_link>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Zynder Tech">8d447286c3a3121052237405e4013105</application>
+        <file_path/>
+        <instance_id>7ac2e572db4e8610ebdd2a5913961964</instance_id>
+        <instance_name>dev268649</instance_name>
+        <name>sys_metadata_link_199d25648365e6d0a946f896feaad346</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_metadata_link"&gt;&lt;sys_metadata_link action="INSERT_OR_UPDATE"&gt;&lt;directory&gt;update&lt;/directory&gt;&lt;documentkey&gt;9151ebbfc378a21052237405e40131ad&lt;/documentkey&gt;&lt;payload&gt;&lt;![CDATA[&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_email"&gt;
+    &lt;sys_email action="INSERT_OR_UPDATE"&gt;
+        &lt;blind_copied/&gt;
+        &lt;body&gt;&amp;lt;html&amp;gt;&amp;lt;head&amp;gt;&amp;lt;/head&amp;gt;&amp;lt;body&amp;gt;&amp;lt;p&amp;gt;&amp;lt;/p&amp;gt;&amp;#13;
+&amp;lt;style type="text/css"&amp;gt;&amp;#13;
+	* {&amp;#13;
+		-webkit-text-size-adjust: none;&amp;#13;
+	}&amp;#13;
+&amp;#13;
+	body {&amp;#13;
+		margin: 0 auto !important;&amp;#13;
+		padding: 0 !important;&amp;#13;
+		font-family: Lato, Arial, sans-serif;&amp;#13;
+	}&amp;#13;
+&amp;#13;
+	.btn a {&amp;#13;
+		text-decoration: none;&amp;#13;
+	}&amp;#13;
+&amp;#13;
+	.btn.inverse a {&amp;#13;
+		color: #fff;&amp;#13;
+	}&amp;#13;
+&amp;#13;
+	#requestapprove a {&amp;#13;
+		color: #fff !important;&amp;#13;
+	}&amp;#13;
+&amp;#13;
+	span.footer,&amp;#13;
+	#templateAddress,&amp;#13;
+	#templateCopyright,&amp;#13;
+	#templateCopyright *,&amp;#13;
+	#templateAddress * {&amp;#13;
+		margin: 0;&amp;#13;
+		font-size: 14px;&amp;#13;
+		line-height: 18px;&amp;#13;
+		color: #ffffff;&amp;#13;
+	}&amp;#13;
+&amp;#13;
+	#snc_notification_unsubscribe,&amp;#13;
+	#snc_notification_preference {&amp;#13;
+		color: #3C59E7;&amp;#13;
+		font-size: 10px;&amp;#13;
+		line-height: 15px;&amp;#13;
+	}&amp;#13;
+&amp;#13;
+	#snc_notification_unsubscribe {&amp;#13;
+		padding-right: 5px;&amp;#13;
+	}&amp;#13;
+&amp;#13;
+	#snc_notification_preference {&amp;#13;
+		padding-left: 5px;&amp;#13;
+	}&amp;#13;
+&amp;#13;
+	body,&amp;#13;
+	table,&amp;#13;
+	td,&amp;#13;
+	p,&amp;#13;
+	a {&amp;#13;
+		-ms-text-size-adjust: 100% !important;&amp;#13;
+		-webkit-text-size-adjust: 100% !important;&amp;#13;
+	}&amp;#13;
+&amp;#13;
+	table,&amp;#13;
+	tr,&amp;#13;
+	td {&amp;#13;
+		border-spacing: 0 !important;&amp;#13;
+		mso-table-lspace: 0 !important;&amp;#13;
+		mso-table-rspace: 0 !important;&amp;#13;
+		border-collapse: collapse !important;&amp;#13;
+		mso-line-height-rule: exactly !important;&amp;#13;
+	}&amp;#13;
+&amp;#13;
+	.ExternalClass * {&amp;#13;
+		line-height: 100%;&amp;#13;
+	}&amp;#13;
+&amp;#13;
+	.mobile-link a,&amp;#13;
+	.mobile-link span {&amp;#13;
+		text-decoration: none !important;&amp;#13;
+		color: inherit !important;&amp;#13;
+		border: none !important;&amp;#13;
+	}&amp;#13;
+&amp;lt;/style&amp;gt;&amp;#13;
+&amp;lt;div style="margin: 0 auto !important;" align="center"&amp;gt;&amp;#13;
+&amp;lt;table class="w100" style="width: 600px; background-color: #fef6e6; margin: 0 auto !important; padding: 0px;" border="0" width="600" cellspacing="0" cellpadding="0" align="center" bgcolor="#FEF6E6"&amp;gt;&amp;#13;
+&amp;lt;tbody&amp;gt;&amp;#13;
+&amp;lt;tr style="height: 150px;"&amp;gt;&amp;#13;
+&amp;lt;td style="background: #FEF6E6; text-align: center; font-family: Arial, Tahoma, sans-serif; color: #425968; font-size: 13px; line-height: 14px;" align="center"&amp;gt;&amp;#13;
+&amp;lt;table border="0" width="600" cellspacing="0" cellpadding="0" style="border-spacing: 0px; width: 100.2%; height: 250px;"&amp;gt;&amp;#13;
+&amp;lt;tbody&amp;gt;&amp;#13;
+&amp;lt;tr style="background-color: rgb(254, 246, 230); height: 250px;"&amp;gt;&amp;#13;
+&amp;lt;td align="center" valign="bottom" height="98" style="height: 250px; width: 94.6844%;"&amp;gt;&amp;#13;
+&amp;lt;table height="30" style="margin: 0px auto; width: 98.4344%; height: 285px;"&amp;gt;&amp;#13;
+&amp;lt;tbody&amp;gt;&amp;#13;
+&amp;lt;tr style="height: 200px;"&amp;gt;&amp;#13;
+&amp;lt;td align="center" height="16" style="width: 100%; height: 200px;"&amp;gt;&amp;lt;img src="zynder_logo.gif" height="100" width="394" style="height: 183px;"&amp;gt;&amp;lt;/td&amp;gt;&amp;#13;
+&amp;lt;/tr&amp;gt;&amp;#13;
+&amp;lt;/tbody&amp;gt;&amp;#13;
+&amp;lt;/table&amp;gt;&amp;#13;
+&amp;lt;/td&amp;gt;&amp;#13;
+&amp;lt;/tr&amp;gt;&amp;#13;
+&amp;lt;/tbody&amp;gt;&amp;#13;
+&amp;lt;/table&amp;gt;&amp;#13;
+&amp;lt;/td&amp;gt;&amp;#13;
+&amp;lt;/tr&amp;gt;&amp;#13;
+&amp;lt;tr&amp;gt;&amp;#13;
+&amp;lt;td&amp;gt;&amp;#13;
+&amp;lt;table border="0" width="600" cellspacing="0" cellpadding="0"&amp;gt;&amp;#13;
+&amp;lt;tbody&amp;gt;&amp;#13;
+&amp;lt;tr&amp;gt;&amp;lt;!-- Left--&amp;gt;&amp;#13;
+&amp;lt;td valign="top" width="18"&amp;gt;&amp;#13;
+&amp;lt;table width="18" cellspacing="0"&amp;gt;&amp;#13;
+&amp;lt;tbody&amp;gt;&amp;#13;
+&amp;lt;tr style="background: #fef6e6;" height="48"&amp;gt;&amp;#13;
+&amp;lt;td&amp;gt;&amp;lt;/td&amp;gt;&amp;#13;
+&amp;lt;/tr&amp;gt;&amp;#13;
+&amp;lt;/tbody&amp;gt;&amp;#13;
+&amp;lt;/table&amp;gt;&amp;#13;
+&amp;lt;/td&amp;gt;&amp;#13;
+&amp;lt;!-- CONTAINER --&amp;gt;&amp;#13;
+&amp;lt;td width="564"&amp;gt;&amp;#13;
+&amp;lt;table class="w100" style="background-image: linear-gradient(rgb(39, 40, 74), rgba(247, 247, 249, 0)); margin: 0px; padding: 0px; box-shadow: rgba(23, 40, 52, 0.08) 0px 2px 10px; height: 20px;" border="0" width="100%" cellspacing="0" cellpadding="0" align="center"&amp;gt;&amp;#13;
+&amp;lt;tbody&amp;gt;&amp;lt;!-- Main Container --&amp;gt;&amp;#13;
+&amp;lt;tr style="height: 20.4px;"&amp;gt;&amp;#13;
+&amp;lt;td class="pad-sides-20" style="border-radius: 6px; text-align: left; background: #ffffff; padding: 24px; height: 20.4px;" align="center"&amp;gt;&amp;lt;p&amp;gt;&amp;lt;span style="font-size: 12pt;"&amp;gt;Hi Treesa  Thomas,&amp;lt;/span&amp;gt;&amp;lt;/p&amp;gt;&amp;#13;
+&amp;lt;p&amp;gt;&amp;lt;span style="font-size: 12pt;"&amp;gt;Your Leave Request has been Approved.&amp;lt;/span&amp;gt;&amp;lt;/p&amp;gt;&amp;#13;
+&amp;lt;p&amp;gt;&amp;lt;span style="font-size: 12pt;"&amp;gt;For any concerns, feel free to reach out.&amp;amp;nbsp;&amp;lt;/span&amp;gt;&amp;lt;/p&amp;gt;&amp;#13;
+&amp;lt;p&amp;gt;&amp;lt;span style="font-size: 12pt;"&amp;gt;&amp;lt;a href="/sp?id=form&amp;amp;amp;is_new_order=true&amp;amp;amp;table=u_employee_leave_tracker&amp;amp;amp;sys_id=2cf0ef7fc378a21052237405e40131d5"&amp;gt;Click here to view your record&amp;lt;/a&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;/p&amp;gt;&amp;#13;
+&amp;lt;p&amp;gt;&amp;lt;span style="font-size: 12pt;"&amp;gt;Regards,&amp;lt;/span&amp;gt;&amp;lt;/p&amp;gt;&amp;#13;
+&amp;lt;p&amp;gt;&amp;lt;span style="font-size: 12pt;"&amp;gt;Zynder Tech&amp;lt;/span&amp;gt;&amp;lt;/p&amp;gt;&amp;#13;
+&amp;lt;p&amp;gt;&amp;amp;nbsp;&amp;lt;/p&amp;gt;&amp;lt;/td&amp;gt;&amp;#13;
+&amp;lt;/tr&amp;gt;&amp;#13;
+&amp;lt;/tbody&amp;gt;&amp;#13;
+&amp;lt;/table&amp;gt;&amp;#13;
+&amp;lt;/td&amp;gt;&amp;#13;
+&amp;lt;!-- END CONTAINER --&amp;gt; &amp;lt;!-- Right--&amp;gt;&amp;#13;
+&amp;lt;td valign="top" width="18"&amp;gt;&amp;#13;
+&amp;lt;table width="18" cellspacing="0"&amp;gt;&amp;#13;
+&amp;lt;tbody&amp;gt;&amp;#13;
+&amp;lt;tr style="background: #fef6e6;" height="48"&amp;gt;&amp;#13;
+&amp;lt;td&amp;gt;&amp;lt;/td&amp;gt;&amp;#13;
+&amp;lt;/tr&amp;gt;&amp;#13;
+&amp;lt;/tbody&amp;gt;&amp;#13;
+&amp;lt;/table&amp;gt;&amp;#13;
+&amp;lt;/td&amp;gt;&amp;#13;
+&amp;lt;/tr&amp;gt;&amp;#13;
+&amp;lt;/tbody&amp;gt;&amp;#13;
+&amp;lt;/table&amp;gt;&amp;#13;
+&amp;lt;/td&amp;gt;&amp;#13;
+&amp;lt;/tr&amp;gt;&amp;#13;
+&amp;lt;!-- Footer started --&amp;gt;&amp;#13;
+&amp;lt;tr style="background-color: #fef6e6;"&amp;gt;&amp;#13;
+&amp;lt;td&amp;gt;&amp;#13;
+&amp;lt;table style="background-color: #fef6e6; width: 100.2%; height: 218.6px;" border="0" cellspacing="0" cellpadding="0"&amp;gt;&amp;#13;
+&amp;lt;tbody&amp;gt;&amp;#13;
+&amp;lt;tr style="height: 36px;"&amp;gt;&amp;#13;
+&amp;lt;td style="background-color: #fef6e6; width: 99.6678%; height: 36px;" height="36"&amp;gt;&amp;lt;/td&amp;gt;&amp;#13;
+&amp;lt;/tr&amp;gt;&amp;#13;
+&amp;lt;tr style="height: 38.4px;"&amp;gt;&amp;#13;
+&amp;lt;td style="background-color: #fef6e6; ; width: 99.6678%; height: 38.4px;"&amp;gt;&amp;#13;
+&amp;lt;table style="color: #fff;" border="0" width="600" cellspacing="0" cellpadding="0"&amp;gt;&amp;#13;
+&amp;lt;tbody&amp;gt;&amp;#13;
+&amp;lt;tr align="center"&amp;gt;&amp;#13;
+&amp;lt;td&amp;gt;&amp;lt;span id="templateCopyright" class="footer" style="color: #000000; font-size: 14px; line-height: 18px; text-align: center; margin: 0 !important;"&amp;gt; © Zynder-Tech Pvt Ltd. All rights reserved. &amp;lt;/span&amp;gt;&amp;lt;/td&amp;gt;&amp;#13;
+&amp;lt;/tr&amp;gt;&amp;#13;
+&amp;lt;/tbody&amp;gt;&amp;#13;
+&amp;lt;/table&amp;gt;&amp;#13;
+&amp;lt;/td&amp;gt;&amp;#13;
+&amp;lt;/tr&amp;gt;&amp;#13;
+&amp;lt;tr cellspacing="0" style="height: 106.2px;"&amp;gt;&amp;#13;
+&amp;lt;td align="center" bgcolor="#FEF6E6" height="102" style="width: 99.6678%; height: 106.2px;"&amp;gt;&amp;lt;img src="email_template_footer.png" width="600" height="102"&amp;gt;&amp;lt;/td&amp;gt;&amp;#13;
+&amp;lt;/tr&amp;gt;&amp;#13;
+&amp;lt;/tbody&amp;gt;&amp;#13;
+&amp;lt;/table&amp;gt;&amp;#13;
+&amp;lt;/td&amp;gt;&amp;#13;
+&amp;lt;/tr&amp;gt;&amp;#13;
+&amp;lt;!-- Footer end--&amp;gt;&amp;lt;/tbody&amp;gt;&amp;#13;
+&amp;lt;/table&amp;gt;&amp;#13;
+&amp;lt;/div&amp;gt;&amp;lt;div&amp;gt;&amp;amp;nbsp;&amp;lt;/div&amp;gt;&amp;lt;div style="display:inline"&amp;gt;Ref:MSG0004172_pRLm9MFCkTOpytkXkSHZ&amp;lt;/div&amp;gt;&amp;lt;/body&amp;gt;&amp;lt;/html&amp;gt;&lt;/body&gt;
+        &lt;body_text/&gt;
+        &lt;checkpoint&gt;1&lt;/checkpoint&gt;
+        &lt;content_type&gt;text/html&lt;/content_type&gt;
+        &lt;copied/&gt;
+        &lt;deleted&gt;false&lt;/deleted&gt;
+        &lt;direct&gt;treesathomas.zyndertech@gmail.com&lt;/direct&gt;
+        &lt;error_string/&gt;
+        &lt;headers&gt;Date: Wed, 16 Apr 2025 04:39:40 -0700 (PDT)&amp;#13;
+From: Zynder Tech Test &amp;lt;zyndertechtest@gmail.com&amp;gt;&amp;#13;
+Reply-To: Zynder Tech Test &amp;lt;zyndertechtest@gmail.com&amp;gt;&amp;#13;
+To: treesathomas.zyndertech@gmail.com&amp;#13;
+Message-ID: &amp;lt;67716020.140.1744803580917@app130180.ord191.service-now.com&amp;gt;&amp;#13;
+Subject: Your Leave Request has been Approved&amp;#13;
+MIME-Version: 1.0&amp;#13;
+Content-Type: multipart/related; &amp;#13;
+	boundary="----=_Part_139_1121207548.1744803580869"&amp;#13;
+X-ServiceNow-Source: Notification-595b8fb9c37bd21052237405e4013158&amp;#13;
+List-Unsubscribe: &amp;lt;mailto:zyndertechtest@gmail.com?subject=Unsubscribe+from+%22Leave+Tracker+Employee+Notification%22&amp;amp;body=Sending+this+email+with+the+predefined+content+in+the+subject+and+body+will+unsubscribe+you+from+the+notification+%22Leave+Tracker+Employee+Notification%22.+%0D%0A%0D%0AUnsubscribe%3A%7B%22id%22%3A%22595b8fb9c37bd21052237405e4013158%22%2C%22token%22%3A%22c797e62132%22%7D&amp;gt;&amp;#13;
+X-ServiceNow-SysEmail-Version: 2&amp;#13;
+Precedence: bulk&amp;#13;
+Auto-Submitted: auto-generated&amp;#13;
+X-ServiceNow-Generated: true&lt;/headers&gt;
+        &lt;importance/&gt;
+        &lt;instance&gt;2cf0ef7fc378a21052237405e40131d5&lt;/instance&gt;
+        &lt;mailbox display_value="Sent"&gt;sent&lt;/mailbox&gt;
+        &lt;message_id&gt;&amp;lt;67716020.140.1744803580917@app130180.ord191.service-now.com&amp;gt;&lt;/message_id&gt;
+        &lt;notification_type&gt;SMTP&lt;/notification_type&gt;
+        &lt;receive_type&gt;new&lt;/receive_type&gt;
+        &lt;recipients&gt;treesathomas.zyndertech@gmail.com&lt;/recipients&gt;
+        &lt;reply_to/&gt;
+        &lt;state&gt;processed&lt;/state&gt;
+        &lt;status/&gt;
+        &lt;subject&gt;Your Leave Request has been Approved&lt;/subject&gt;
+        &lt;sys_created_by&gt;system&lt;/sys_created_by&gt;
+        &lt;sys_created_on&gt;2025-04-16 11:38:47&lt;/sys_created_on&gt;
+        &lt;sys_id&gt;9151ebbfc378a21052237405e40131ad&lt;/sys_id&gt;
+        &lt;sys_mod_count&gt;2&lt;/sys_mod_count&gt;
+        &lt;sys_updated_by&gt;system&lt;/sys_updated_by&gt;
+        &lt;sys_updated_on&gt;2025-04-16 11:39:42&lt;/sys_updated_on&gt;
+        &lt;target_table&gt;u_employee_leave_tracker&lt;/target_table&gt;
+        &lt;type&gt;sent&lt;/type&gt;
+        &lt;uid&gt;N/A&lt;/uid&gt;
+        &lt;user/&gt;
+        &lt;user_id/&gt;
+        &lt;weight&gt;0&lt;/weight&gt;
+    &lt;/sys_email&gt;
+&lt;/record_update&gt;
+]]&gt;&lt;/payload&gt;&lt;sys_class_name&gt;sys_metadata_link&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-05-13 07:39:54&lt;/sys_created_on&gt;&lt;sys_id&gt;199d25648365e6d0a946f896feaad346&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;Your Leave Request has been Approved&lt;/sys_name&gt;&lt;sys_package display_value="Zynder Tech" source="8d447286c3a3121052237405e4013105"&gt;8d447286c3a3121052237405e4013105&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Zynder Tech"&gt;8d447286c3a3121052237405e4013105&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_metadata_link_199d25648365e6d0a946f896feaad346&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-05-13 07:39:54&lt;/sys_updated_on&gt;&lt;tablename&gt;sys_email&lt;/tablename&gt;&lt;/sys_metadata_link&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>1118810174</payload_hash>
+        <record_name>Your Leave Request has been Approved</record_name>
+        <reverted_from/>
+        <source>75a98e6483496e10a946f896feaad335</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-05-13 07:39:54</sys_created_on>
+        <sys_id>d59d25648365e6d0a946f896feaad348</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>196c895f9ad0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-05-13 07:39:54</sys_updated_on>
+        <type>Metadata Snapshot</type>
+        <update_guid>999d25646a65e6d0829f0c0974b08247</update_guid>
+        <update_guid_history>999d25646a65e6d0829f0c0974b08247:1118810174</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-05-17 10:25:17</sys_created_on>
+        <sys_db_object display_value="" name="sys_metadata_link">sys_metadata_link</sys_db_object>
+        <sys_id>33f1c6aad9d0419c973fcfde656668e4</sys_id>
+        <sys_metadata>199d25648365e6d0a946f896feaad346</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Your Leave Request has been Approved</sys_name>
+        <sys_package display_value="Zynder Tech" source="8d447286c3a3121052237405e4013105">8d447286c3a3121052237405e4013105</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Zynder Tech">8d447286c3a3121052237405e4013105</sys_scope>
+        <sys_scope_delete display_value="">59ae7a785b154974a5e9b8402f90b790</sys_scope_delete>
+        <sys_update_name>sys_metadata_link_199d25648365e6d0a946f896feaad346</sys_update_name>
+        <sys_update_version display_value="sys_metadata_link_199d25648365e6d0a946f896feaad346">d59d25648365e6d0a946f896feaad348</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-05-17 10:25:17</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

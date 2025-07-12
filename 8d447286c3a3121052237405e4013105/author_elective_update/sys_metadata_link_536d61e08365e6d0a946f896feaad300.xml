@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="DELETE">
+        <directory>update</directory>
+        <documentkey>6e0c5555c3fb121052237405e4013127</documentkey>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_attachment">
+    <sys_attachment action="INSERT_OR_UPDATE">
+        <average_image_color>#0</average_image_color>
+        <chunk_size_bytes>700000</chunk_size_bytes>
+        <compressed>true</compressed>
+        <content_type>image/gif</content_type>
+        <file_name>image</file_name>
+        <hash>f025d83bf2100ee97aed10a4b18b50d73304ad2b3fcf18f578fef698729c83b5</hash>
+        <image_height>463</image_height>
+        <image_width>897</image_width>
+        <size_bytes>1726570</size_bytes>
+        <size_compressed>1628888</size_compressed>
+        <state>available</state>
+        <sys_created_by>athul</sys_created_by>
+        <sys_created_on>2025-02-17 14:28:50</sys_created_on>
+        <sys_id>6e0c5555c3fb121052237405e4013127</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_updated_by>athul</sys_updated_by>
+        <sys_updated_on>2025-02-17 14:28:53</sys_updated_on>
+        <table_name>ZZ_YYdb_image</table_name>
+        <table_sys_id>7eebd551c3fb121052237405e40131f8</table_sys_id>
+    </sys_attachment>
+</record_update>
+]]></payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-05-13 07:39:13</sys_created_on>
+        <sys_id>536d61e08365e6d0a946f896feaad300</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>image</sys_name>
+        <sys_package display_value="Zynder Tech" source="8d447286c3a3121052237405e4013105">8d447286c3a3121052237405e4013105</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Zynder Tech">8d447286c3a3121052237405e4013105</sys_scope>
+        <sys_update_name>sys_metadata_link_536d61e08365e6d0a946f896feaad300</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-05-13 07:39:13</sys_updated_on>
+        <tablename>sys_attachment</tablename>
+    </sys_metadata_link>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Zynder Tech">8d447286c3a3121052237405e4013105</application>
+        <file_path/>
+        <instance_id>7ac2e572db4e8610ebdd2a5913961964</instance_id>
+        <instance_name>dev268649</instance_name>
+        <name>sys_metadata_link_536d61e08365e6d0a946f896feaad300</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_metadata_link"&gt;&lt;sys_metadata_link action="INSERT_OR_UPDATE"&gt;&lt;directory&gt;update&lt;/directory&gt;&lt;documentkey&gt;6e0c5555c3fb121052237405e4013127&lt;/documentkey&gt;&lt;payload&gt;&lt;![CDATA[&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_attachment"&gt;
+    &lt;sys_attachment action="INSERT_OR_UPDATE"&gt;
+        &lt;average_image_color&gt;#0&lt;/average_image_color&gt;
+        &lt;chunk_size_bytes&gt;700000&lt;/chunk_size_bytes&gt;
+        &lt;compressed&gt;true&lt;/compressed&gt;
+        &lt;content_type&gt;image/gif&lt;/content_type&gt;
+        &lt;file_name&gt;image&lt;/file_name&gt;
+        &lt;hash&gt;f025d83bf2100ee97aed10a4b18b50d73304ad2b3fcf18f578fef698729c83b5&lt;/hash&gt;
+        &lt;image_height&gt;463&lt;/image_height&gt;
+        &lt;image_width&gt;897&lt;/image_width&gt;
+        &lt;size_bytes&gt;1726570&lt;/size_bytes&gt;
+        &lt;size_compressed&gt;1628888&lt;/size_compressed&gt;
+        &lt;state&gt;available&lt;/state&gt;
+        &lt;sys_created_by&gt;athul&lt;/sys_created_by&gt;
+        &lt;sys_created_on&gt;2025-02-17 14:28:50&lt;/sys_created_on&gt;
+        &lt;sys_id&gt;6e0c5555c3fb121052237405e4013127&lt;/sys_id&gt;
+        &lt;sys_mod_count&gt;5&lt;/sys_mod_count&gt;
+        &lt;sys_updated_by&gt;athul&lt;/sys_updated_by&gt;
+        &lt;sys_updated_on&gt;2025-02-17 14:28:53&lt;/sys_updated_on&gt;
+        &lt;table_name&gt;ZZ_YYdb_image&lt;/table_name&gt;
+        &lt;table_sys_id&gt;7eebd551c3fb121052237405e40131f8&lt;/table_sys_id&gt;
+    &lt;/sys_attachment&gt;
+&lt;/record_update&gt;
+]]&gt;&lt;/payload&gt;&lt;sys_class_name&gt;sys_metadata_link&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-05-13 07:39:13&lt;/sys_created_on&gt;&lt;sys_id&gt;536d61e08365e6d0a946f896feaad300&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;image&lt;/sys_name&gt;&lt;sys_package display_value="Zynder Tech" source="8d447286c3a3121052237405e4013105"&gt;8d447286c3a3121052237405e4013105&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Zynder Tech"&gt;8d447286c3a3121052237405e4013105&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_metadata_link_536d61e08365e6d0a946f896feaad300&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-05-13 07:39:13&lt;/sys_updated_on&gt;&lt;tablename&gt;sys_attachment&lt;/tablename&gt;&lt;/sys_metadata_link&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>-847158987</payload_hash>
+        <record_name>image</record_name>
+        <reverted_from/>
+        <source>75a98e6483496e10a946f896feaad335</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-05-13 07:39:13</sys_created_on>
+        <sys_id>df6d61e08365e6d0a946f896feaad301</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>196c89559900000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-05-13 07:39:13</sys_updated_on>
+        <type>Metadata Snapshot</type>
+        <update_guid>936d61e0cf65e6d061b64e4a5a3c4e01</update_guid>
+        <update_guid_history>936d61e0cf65e6d061b64e4a5a3c4e01:-847158987</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-05-17 10:26:14</sys_created_on>
+        <sys_db_object display_value="" name="sys_metadata_link">sys_metadata_link</sys_db_object>
+        <sys_id>4de70b4d21f44b84a935431108c79890</sys_id>
+        <sys_metadata>536d61e08365e6d0a946f896feaad300</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>image</sys_name>
+        <sys_package display_value="Zynder Tech" source="8d447286c3a3121052237405e4013105">8d447286c3a3121052237405e4013105</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Zynder Tech">8d447286c3a3121052237405e4013105</sys_scope>
+        <sys_scope_delete display_value="">59ae7a785b154974a5e9b8402f90b790</sys_scope_delete>
+        <sys_update_name>sys_metadata_link_536d61e08365e6d0a946f896feaad300</sys_update_name>
+        <sys_update_version display_value="sys_metadata_link_536d61e08365e6d0a946f896feaad300">df6d61e08365e6d0a946f896feaad301</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-05-17 10:26:14</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

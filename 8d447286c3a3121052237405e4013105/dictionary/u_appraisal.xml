@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element audit="true" db_object_id="3787c964c333121052237405e4013192" label="Appraisal" max_length="40" name="u_appraisal" type="collection">
+        <element label="Skills" max_length="200" name="u_skills" type="string"/>
+        <element label="End Date" max_length="40" name="u_end_date" type="glide_date"/>
+        <element label="Appraisal Comments" max_length="5000" name="u_appraisal_comments" type="string"/>
+        <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="u_number" type="string"/>
+        <element display="true" label="Start Date" max_length="40" name="u_start_date" type="glide_date"/>
+        <element label="Module" max_length="200" name="u_module" type="string"/>
+        <element label="Manager Comments" max_length="2000" name="u_manager_comments" type="string"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="State" max_length="40" name="u_state" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Completed" sequence="1" value="Completed"/>
+                <element inactive_on_update="false" label="Submitted" sequence="0" value="Submitted"/>
+            </choice>
+        </element>
+        <element label="Employee" max_length="32" name="u_employee" reference="u_employee" type="reference"/>
+        <index name="index">
+            <element name="u_employee"/>
+        </index>
+    </element>
+</database>

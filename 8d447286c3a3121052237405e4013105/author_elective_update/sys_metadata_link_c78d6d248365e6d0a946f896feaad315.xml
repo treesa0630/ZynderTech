@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="DELETE">
+        <directory>update</directory>
+        <documentkey>4e90a96fc330221052237405e40131f0</documentkey>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_email">
+    <sys_email action="INSERT_OR_UPDATE">
+        <blind_copied/>
+        <body>&lt;div dir="ltr"&gt;Approved&lt;br&gt;&lt;br&gt;Ref:MSG0004103_RS4IOTN64WvuMy1EjsmC&lt;/div&gt;</body>
+        <body_text>Approved
+
+Ref:MSG0004103_RS4IOTN64WvuMy1EjsmC</body_text>
+        <checkpoint>1</checkpoint>
+        <content_type>multipart/alternative; boundary="00000000000085d0aa0632cc3a42"</content_type>
+        <copied/>
+        <deleted>true</deleted>
+        <direct>zyndertechtest@gmail.com</direct>
+        <error_string/>
+        <headers>Delivered-To:zyndertechtest@gmail.com&#13;
+Received:by 2002:ad4:5fcc:0:b0:6e4:278d:2874 with SMTP id jq12csp2793932qvb;&#13;
+        Tue, 15 Apr 2025 00:36:37 -0700 (PDT)&#13;
+X-Received:by 2002:a05:6902:1a46:b0:e65:c4be:6fa8 with SMTP id 3f1490d57ef6-e704de743admr22738889276.9.1744702597335;&#13;
+        Tue, 15 Apr 2025 00:36:37 -0700 (PDT)&#13;
+ARC-Seal:i=1; a=rsa-sha256; t=1744702597; cv=none;&#13;
+        d=google.com; s=arc-20240605;&#13;
+        b=fhYPtptHyCTHqlzM+oUlUeGq612K75cAnskdND24K2gQmnciDifGqG6p2uYzIp/4Ru&#13;
+         jzcECE9KpsIfwJeVmsvCkn0f9RyhkbrVQgsyioThiYVDdwQXnvjtjN+gKNNu/9Rkt2Xc&#13;
+         Ij6IsKS4o5rYRABBK7cmZhinlLsHsYFZPkWHWjgB0Dq5MqyV33tJ3xlfEbj51+/HKrar&#13;
+         8tlJ5RWmk05qW791V+GJ8PbGRQ3I1Oobvh+dqHNXg37fMU74p8/mCRP/xIxZYKqN8c6H&#13;
+         jq81MhJcT5xRCTEbXntLlhDBSOavLmNrKy6YgWEAKgucgt2+LpFRnc1k2a9/teI0AnIS&#13;
+         xrhg==&#13;
+ARC-Message-Signature:i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20240605;&#13;
+        h=to:subject:message-id:date:from:mime-version:dkim-signature;&#13;
+        bh=j4dn3hwMuKRNWNz7VOvnc2EA53hJHkuM0aHubswmTbs=;&#13;
+        fh=Kq5TYlDwSOK+v+7srTzX+LsjmSuKOeoju6DwjGMSl2I=;&#13;
+        b=BofMiykyep4LxXL1Evm7cjF7hgEa+6/Qyu3fs+YGIN3ZZ3zBsGHT+9jGP47Gtg9D6E&#13;
+         RDz33RLRGW3ByMqnESZAf2tlMIC2h3N4DNVoBJdfluOMtyBiESLp8+Fqjrf43nU3U4Wc&#13;
+         grvpuL0qeEzVNreFQv/n60JWneNfwTV5POsz0CF+QauvNwFXHblKJkYwkn5YPXxmj2wE&#13;
+         J39IuRypWkTEQpXcmBEjvCg/as0+ouO8y7QfuPrFVr8cHU+XrUaRVMJ3YdSGefXnSzUv&#13;
+         RmAI8vJeGJDiXQsoLRYfOwQV8czbm3EWCq+rFcgA1DcFUHO4R0GwVIpGtO5ff6OIfrRE&#13;
+         OJJg==;&#13;
+        dara=google.com&#13;
+ARC-Authentication-Results:i=1; mx.google.com;&#13;
+       dkim=pass header.i=@gmail.com header.s=20230601 header.b=D9xXaNlR;&#13;
+       spf=pass (google.com: domain of ashikvinodv@gmail.com designates 209.85.220.41 as permitted sender) smtp.mailfrom=ashikvinodv@gmail.com;&#13;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com;&#13;
+       dara=pass header.i=@gmail.com&#13;
+Return-Path:&lt;ashikvinodv@gmail.com&gt;&#13;
+Received:from mail-sor-f41.google.com (mail-sor-f41.google.com. [209.85.220.41])&#13;
+        by mx.google.com with SMTPS id 3f1490d57ef6-e70327463e7sor7001579276.11.2025.04.15.00.36.37&#13;
+        for &lt;zyndertechtest@gmail.com&gt;&#13;
+        (Google Transport Security);&#13;
+        Tue, 15 Apr 2025 00:36:37 -0700 (PDT)&#13;
+Received-SPF:pass (google.com: domain of ashikvinodv@gmail.com designates 209.85.220.41 as permitted sender) client-ip=209.85.220.41;&#13;
+Authentication-Results:mx.google.com;&#13;
+       dkim=pass header.i=@gmail.com header.s=20230601 header.b=D9xXaNlR;&#13;
+       spf=pass (google.com: domain of ashikvinodv@gmail.com designates 209.85.220.41 as permitted sender) smtp.mailfrom=ashikvinodv@gmail.com;&#13;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com;&#13;
+       dara=pass header.i=@gmail.com&#13;
+DKIM-Signature:v=1; a=rsa-sha256; c=relaxed/relaxed;&#13;
+        d=gmail.com; s=20230601; t=1744702597; x=1745307397; dara=google.com;&#13;
+        h=to:subject:message-id:date:from:mime-version:from:to:cc:subject&#13;
+         :date:message-id:reply-to;&#13;
+        bh=j4dn3hwMuKRNWNz7VOvnc2EA53hJHkuM0aHubswmTbs=;&#13;
+        b=D9xXaNlRoC/0sNjO2+nfXgJrktXLsWfZtbCv8/kBccJQ91h7+9r2JGjIv8OobqmhiZ&#13;
+         X94hvbumF2TMC1raGn1iWwVa4g5LAIKRdOQL5KBlzHOjcrh+qBWfXzKUlE6l4ZDEE29m&#13;
+         S1rHZmuqV4ZPliwgEvcmdwuuBY7KclOd7myHxQHtcOhMumNIJbXQJg9Z/AdZGxW2OgRe&#13;
+         kTjKmq51Kep5a8yC2xuakEAKNMXe4Ba26/3VfsLSg2hhtp2OvkLlfmbyazYrDkFpqtpC&#13;
+         VjHTho51F4oZPX/gzdURw+yAd4JWyn5KQhwbVMkyiWNnFyHVELR69x0Zz4kfh/NBwlyg&#13;
+         sUbw==&#13;
+X-Google-DKIM-Signature:v=1; a=rsa-sha256; c=relaxed/relaxed;&#13;
+        d=1e100.net; s=20230601; t=1744702597; x=1745307397;&#13;
+        h=to:subject:message-id:date:from:mime-version:x-gm-message-state&#13;
+         :from:to:cc:subject:date:message-id:reply-to;&#13;
+        bh=j4dn3hwMuKRNWNz7VOvnc2EA53hJHkuM0aHubswmTbs=;&#13;
+        b=NOJxjrZui7WY2Hnq9HlH0BOX39ecQDNUdZ+8lIk6FrdzFY01n2/4MdqPoBviDpBpiO&#13;
+         jyxLRPYUoyzN1AN7lcsDdV2Y+E3MiXUfx6KSY9aJT3KTB6rLpb/afhAdODGzVf7omuKt&#13;
+         ptOBdW0UE4+FFo/TfGnpEjDhg6pbIE0YOf6qTx483d89ScQJhM2UKLPqaF9UIdZK8MgB&#13;
+         ohp9DKaIaG0Lppy4snyZ1Nfg+KM17RA/it+4RfvWAbNhwAq9l3IDefSvdIy/cCXj79cR&#13;
+         5JrANUNpqMaEGAz7oYh65i8oC/wNoYWnPDu0K7N9DfV4yt2/0S2haCQQ3W7QdkOnbX+1&#13;
+         bNPw==&#13;
+X-Gm-Message-State:AOJu0YyeaSN07CGk1nozm18XSvwqxSPEI5fAIdf2bdL8Y5x63mL9pgOl&#13;
+	aKDwj9Yp3sYdZfqGTk4L4HGRG1Gj+JLkE3TbgABIB7/r6cMZ1orLbajOyUiG/n49FgxQgvp5RhY&#13;
+	32k7a0aByKjjHaziR3VijvYN2XtpmxA==&#13;
+X-Gm-Gg:ASbGnctp0b/MTVhpja5BUBdaa7QXA0NJMxOzhJaNMH7aiEwYSgntxNcQY1GfYR+Oxn/&#13;
+	1Tz72HkUveMQzhD9DBj8S8M5GXmeNR0gMjQ1Opu2vJ/zxlCETlP83mMs3UtR3HCBBBfgQq85CeP&#13;
+	gtk8A/xIt7mKswEoQg4as9f+YgNIsahLHMOnFN1QZymX5MMQozUPA3Tg0=&#13;
+X-Google-Smtp-Source:AGHT+IHo/ivx40prNhdp+Df7TluROet8lDsiwQ0HZXjEUkPZLVQhi4SAwQmOT+jjZyO44vFVySNaHlVniSRXnkLE0KE=&#13;
+X-Received:by 2002:a05:6902:2405:b0:e5d:c7ab:5e0e with SMTP id&#13;
+ 3f1490d57ef6-e704de72618mr25704102276.3.1744702596826; Tue, 15 Apr 2025&#13;
+ 00:36:36 -0700 (PDT)&#13;
+MIME-Version:1.0&#13;
+From:ashik vinod &lt;ashikvinodv@gmail.com&gt;&#13;
+Date:Tue, 15 Apr 2025 13:06:26 +0530&#13;
+X-Gm-Features:ATxdqUFIihXha5vkWGHYpRWby3zy7l37N0EHZIMbmnkmjaS6i9Y34VF4E7N4yWE&#13;
+Message-ID:&lt;CAMfZygeb7TOWtMXnOQ6rBec6n9adA-tVkLyuscvFbG03VRk0_A@mail.gmail.com&gt;&#13;
+Subject:Re: - approve&#13;
+To:zyndertechtest@gmail.com&#13;
+Content-Type:multipart/alternative; boundary="00000000000085d0aa0632cc3a42"&#13;
+X-ServiceNow-Source:EmailInbound&#13;
+X-ServiceNow-SysEmail-Version:2&#13;
+MultipartContentTypes:text/plain; charset="UTF-8";text/html; charset="UTF-8";&#13;
+</headers>
+        <importance/>
+        <instance>9aff5d2fc330221052237405e40131a1</instance>
+        <mailbox display_value="Received">received</mailbox>
+        <message_id>&lt;CAMfZygeb7TOWtMXnOQ6rBec6n9adA-tVkLyuscvFbG03VRk0_A@mail.gmail.com&gt;</message_id>
+        <notification_type>SMTP</notification_type>
+        <receive_type>reply</receive_type>
+        <recipients>zyndertechtest@gmail.com</recipients>
+        <reply_to/>
+        <state>processed</state>
+        <status/>
+        <subject>Re: - approve</subject>
+        <sys_created_by>system</sys_created_by>
+        <sys_created_on>2025-04-15 07:37:51</sys_created_on>
+        <sys_id>4e90a96fc330221052237405e40131f0</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_updated_by>AV</sys_updated_by>
+        <sys_updated_on>2025-04-15 07:37:58</sys_updated_on>
+        <target_table>sysapproval_approver</target_table>
+        <type>received</type>
+        <uid>GmailId1963860e8f0efde1</uid>
+        <user>3157a6c6c363121052237405e40131f3</user>
+        <user_id display_value="">3157a6c6c363121052237405e40131f3</user_id>
+        <weight>0</weight>
+    </sys_email>
+</record_update>
+]]></payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-05-13 07:39:45</sys_created_on>
+        <sys_id>c78d6d248365e6d0a946f896feaad315</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Re: - approve</sys_name>
+        <sys_package display_value="Zynder Tech" source="8d447286c3a3121052237405e4013105">8d447286c3a3121052237405e4013105</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Zynder Tech">8d447286c3a3121052237405e4013105</sys_scope>
+        <sys_update_name>sys_metadata_link_c78d6d248365e6d0a946f896feaad315</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-05-13 07:39:45</sys_updated_on>
+        <tablename>sys_email</tablename>
+    </sys_metadata_link>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Zynder Tech">8d447286c3a3121052237405e4013105</application>
+        <file_path/>
+        <instance_id>7ac2e572db4e8610ebdd2a5913961964</instance_id>
+        <instance_name>dev268649</instance_name>
+        <name>sys_metadata_link_c78d6d248365e6d0a946f896feaad315</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_metadata_link"&gt;&lt;sys_metadata_link action="INSERT_OR_UPDATE"&gt;&lt;directory&gt;update&lt;/directory&gt;&lt;documentkey&gt;4e90a96fc330221052237405e40131f0&lt;/documentkey&gt;&lt;payload&gt;&lt;![CDATA[&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_email"&gt;
+    &lt;sys_email action="INSERT_OR_UPDATE"&gt;
+        &lt;blind_copied/&gt;
+        &lt;body&gt;&amp;lt;div dir="ltr"&amp;gt;Approved&amp;lt;br&amp;gt;&amp;lt;br&amp;gt;Ref:MSG0004103_RS4IOTN64WvuMy1EjsmC&amp;lt;/div&amp;gt;&lt;/body&gt;
+        &lt;body_text&gt;Approved
+
+Ref:MSG0004103_RS4IOTN64WvuMy1EjsmC&lt;/body_text&gt;
+        &lt;checkpoint&gt;1&lt;/checkpoint&gt;
+        &lt;content_type&gt;multipart/alternative; boundary="00000000000085d0aa0632cc3a42"&lt;/content_type&gt;
+        &lt;copied/&gt;
+        &lt;deleted&gt;true&lt;/deleted&gt;
+        &lt;direct&gt;zyndertechtest@gmail.com&lt;/direct&gt;
+        &lt;error_string/&gt;
+        &lt;headers&gt;Delivered-To:zyndertechtest@gmail.com&amp;#13;
+Received:by 2002:ad4:5fcc:0:b0:6e4:278d:2874 with SMTP id jq12csp2793932qvb;&amp;#13;
+        Tue, 15 Apr 2025 00:36:37 -0700 (PDT)&amp;#13;
+X-Received:by 2002:a05:6902:1a46:b0:e65:c4be:6fa8 with SMTP id 3f1490d57ef6-e704de743admr22738889276.9.1744702597335;&amp;#13;
+        Tue, 15 Apr 2025 00:36:37 -0700 (PDT)&amp;#13;
+ARC-Seal:i=1; a=rsa-sha256; t=1744702597; cv=none;&amp;#13;
+        d=google.com; s=arc-20240605;&amp;#13;
+        b=fhYPtptHyCTHqlzM+oUlUeGq612K75cAnskdND24K2gQmnciDifGqG6p2uYzIp/4Ru&amp;#13;
+         jzcECE9KpsIfwJeVmsvCkn0f9RyhkbrVQgsyioThiYVDdwQXnvjtjN+gKNNu/9Rkt2Xc&amp;#13;
+         Ij6IsKS4o5rYRABBK7cmZhinlLsHsYFZPkWHWjgB0Dq5MqyV33tJ3xlfEbj51+/HKrar&amp;#13;
+         8tlJ5RWmk05qW791V+GJ8PbGRQ3I1Oobvh+dqHNXg37fMU74p8/mCRP/xIxZYKqN8c6H&amp;#13;
+         jq81MhJcT5xRCTEbXntLlhDBSOavLmNrKy6YgWEAKgucgt2+LpFRnc1k2a9/teI0AnIS&amp;#13;
+         xrhg==&amp;#13;
+ARC-Message-Signature:i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20240605;&amp;#13;
+        h=to:subject:message-id:date:from:mime-version:dkim-signature;&amp;#13;
+        bh=j4dn3hwMuKRNWNz7VOvnc2EA53hJHkuM0aHubswmTbs=;&amp;#13;
+        fh=Kq5TYlDwSOK+v+7srTzX+LsjmSuKOeoju6DwjGMSl2I=;&amp;#13;
+        b=BofMiykyep4LxXL1Evm7cjF7hgEa+6/Qyu3fs+YGIN3ZZ3zBsGHT+9jGP47Gtg9D6E&amp;#13;
+         RDz33RLRGW3ByMqnESZAf2tlMIC2h3N4DNVoBJdfluOMtyBiESLp8+Fqjrf43nU3U4Wc&amp;#13;
+         grvpuL0qeEzVNreFQv/n60JWneNfwTV5POsz0CF+QauvNwFXHblKJkYwkn5YPXxmj2wE&amp;#13;
+         J39IuRypWkTEQpXcmBEjvCg/as0+ouO8y7QfuPrFVr8cHU+XrUaRVMJ3YdSGefXnSzUv&amp;#13;
+         RmAI8vJeGJDiXQsoLRYfOwQV8czbm3EWCq+rFcgA1DcFUHO4R0GwVIpGtO5ff6OIfrRE&amp;#13;
+         OJJg==;&amp;#13;
+        dara=google.com&amp;#13;
+ARC-Authentication-Results:i=1; mx.google.com;&amp;#13;
+       dkim=pass header.i=@gmail.com header.s=20230601 header.b=D9xXaNlR;&amp;#13;
+       spf=pass (google.com: domain of ashikvinodv@gmail.com designates 209.85.220.41 as permitted sender) smtp.mailfrom=ashikvinodv@gmail.com;&amp;#13;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com;&amp;#13;
+       dara=pass header.i=@gmail.com&amp;#13;
+Return-Path:&amp;lt;ashikvinodv@gmail.com&amp;gt;&amp;#13;
+Received:from mail-sor-f41.google.com (mail-sor-f41.google.com. [209.85.220.41])&amp;#13;
+        by mx.google.com with SMTPS id 3f1490d57ef6-e70327463e7sor7001579276.11.2025.04.15.00.36.37&amp;#13;
+        for &amp;lt;zyndertechtest@gmail.com&amp;gt;&amp;#13;
+        (Google Transport Security);&amp;#13;
+        Tue, 15 Apr 2025 00:36:37 -0700 (PDT)&amp;#13;
+Received-SPF:pass (google.com: domain of ashikvinodv@gmail.com designates 209.85.220.41 as permitted sender) client-ip=209.85.220.41;&amp;#13;
+Authentication-Results:mx.google.com;&amp;#13;
+       dkim=pass header.i=@gmail.com header.s=20230601 header.b=D9xXaNlR;&amp;#13;
+       spf=pass (google.com: domain of ashikvinodv@gmail.com designates 209.85.220.41 as permitted sender) smtp.mailfrom=ashikvinodv@gmail.com;&amp;#13;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com;&amp;#13;
+       dara=pass header.i=@gmail.com&amp;#13;
+DKIM-Signature:v=1; a=rsa-sha256; c=relaxed/relaxed;&amp;#13;
+        d=gmail.com; s=20230601; t=1744702597; x=1745307397; dara=google.com;&amp;#13;
+        h=to:subject:message-id:date:from:mime-version:from:to:cc:subject&amp;#13;
+         :date:message-id:reply-to;&amp;#13;
+        bh=j4dn3hwMuKRNWNz7VOvnc2EA53hJHkuM0aHubswmTbs=;&amp;#13;
+        b=D9xXaNlRoC/0sNjO2+nfXgJrktXLsWfZtbCv8/kBccJQ91h7+9r2JGjIv8OobqmhiZ&amp;#13;
+         X94hvbumF2TMC1raGn1iWwVa4g5LAIKRdOQL5KBlzHOjcrh+qBWfXzKUlE6l4ZDEE29m&amp;#13;
+         S1rHZmuqV4ZPliwgEvcmdwuuBY7KclOd7myHxQHtcOhMumNIJbXQJg9Z/AdZGxW2OgRe&amp;#13;
+         kTjKmq51Kep5a8yC2xuakEAKNMXe4Ba26/3VfsLSg2hhtp2OvkLlfmbyazYrDkFpqtpC&amp;#13;
+         VjHTho51F4oZPX/gzdURw+yAd4JWyn5KQhwbVMkyiWNnFyHVELR69x0Zz4kfh/NBwlyg&amp;#13;
+         sUbw==&amp;#13;
+X-Google-DKIM-Signature:v=1; a=rsa-sha256; c=relaxed/relaxed;&amp;#13;
+        d=1e100.net; s=20230601; t=1744702597; x=1745307397;&amp;#13;
+        h=to:subject:message-id:date:from:mime-version:x-gm-message-state&amp;#13;
+         :from:to:cc:subject:date:message-id:reply-to;&amp;#13;
+        bh=j4dn3hwMuKRNWNz7VOvnc2EA53hJHkuM0aHubswmTbs=;&amp;#13;
+        b=NOJxjrZui7WY2Hnq9HlH0BOX39ecQDNUdZ+8lIk6FrdzFY01n2/4MdqPoBviDpBpiO&amp;#13;
+         jyxLRPYUoyzN1AN7lcsDdV2Y+E3MiXUfx6KSY9aJT3KTB6rLpb/afhAdODGzVf7omuKt&amp;#13;
+         ptOBdW0UE4+FFo/TfGnpEjDhg6pbIE0YOf6qTx483d89ScQJhM2UKLPqaF9UIdZK8MgB&amp;#13;
+         ohp9DKaIaG0Lppy4snyZ1Nfg+KM17RA/it+4RfvWAbNhwAq9l3IDefSvdIy/cCXj79cR&amp;#13;
+         5JrANUNpqMaEGAz7oYh65i8oC/wNoYWnPDu0K7N9DfV4yt2/0S2haCQQ3W7QdkOnbX+1&amp;#13;
+         bNPw==&amp;#13;
+X-Gm-Message-State:AOJu0YyeaSN07CGk1nozm18XSvwqxSPEI5fAIdf2bdL8Y5x63mL9pgOl&amp;#13;
+	aKDwj9Yp3sYdZfqGTk4L4HGRG1Gj+JLkE3TbgABIB7/r6cMZ1orLbajOyUiG/n49FgxQgvp5RhY&amp;#13;
+	32k7a0aByKjjHaziR3VijvYN2XtpmxA==&amp;#13;
+X-Gm-Gg:ASbGnctp0b/MTVhpja5BUBdaa7QXA0NJMxOzhJaNMH7aiEwYSgntxNcQY1GfYR+Oxn/&amp;#13;
+	1Tz72HkUveMQzhD9DBj8S8M5GXmeNR0gMjQ1Opu2vJ/zxlCETlP83mMs3UtR3HCBBBfgQq85CeP&amp;#13;
+	gtk8A/xIt7mKswEoQg4as9f+YgNIsahLHMOnFN1QZymX5MMQozUPA3Tg0=&amp;#13;
+X-Google-Smtp-Source:AGHT+IHo/ivx40prNhdp+Df7TluROet8lDsiwQ0HZXjEUkPZLVQhi4SAwQmOT+jjZyO44vFVySNaHlVniSRXnkLE0KE=&amp;#13;
+X-Received:by 2002:a05:6902:2405:b0:e5d:c7ab:5e0e with SMTP id&amp;#13;
+ 3f1490d57ef6-e704de72618mr25704102276.3.1744702596826; Tue, 15 Apr 2025&amp;#13;
+ 00:36:36 -0700 (PDT)&amp;#13;
+MIME-Version:1.0&amp;#13;
+From:ashik vinod &amp;lt;ashikvinodv@gmail.com&amp;gt;&amp;#13;
+Date:Tue, 15 Apr 2025 13:06:26 +0530&amp;#13;
+X-Gm-Features:ATxdqUFIihXha5vkWGHYpRWby3zy7l37N0EHZIMbmnkmjaS6i9Y34VF4E7N4yWE&amp;#13;
+Message-ID:&amp;lt;CAMfZygeb7TOWtMXnOQ6rBec6n9adA-tVkLyuscvFbG03VRk0_A@mail.gmail.com&amp;gt;&amp;#13;
+Subject:Re: - approve&amp;#13;
+To:zyndertechtest@gmail.com&amp;#13;
+Content-Type:multipart/alternative; boundary="00000000000085d0aa0632cc3a42"&amp;#13;
+X-ServiceNow-Source:EmailInbound&amp;#13;
+X-ServiceNow-SysEmail-Version:2&amp;#13;
+MultipartContentTypes:text/plain; charset="UTF-8";text/html; charset="UTF-8";&amp;#13;
+&lt;/headers&gt;
+        &lt;importance/&gt;
+        &lt;instance&gt;9aff5d2fc330221052237405e40131a1&lt;/instance&gt;
+        &lt;mailbox display_value="Received"&gt;received&lt;/mailbox&gt;
+        &lt;message_id&gt;&amp;lt;CAMfZygeb7TOWtMXnOQ6rBec6n9adA-tVkLyuscvFbG03VRk0_A@mail.gmail.com&amp;gt;&lt;/message_id&gt;
+        &lt;notification_type&gt;SMTP&lt;/notification_type&gt;
+        &lt;receive_type&gt;reply&lt;/receive_type&gt;
+        &lt;recipients&gt;zyndertechtest@gmail.com&lt;/recipients&gt;
+        &lt;reply_to/&gt;
+        &lt;state&gt;processed&lt;/state&gt;
+        &lt;status/&gt;
+        &lt;subject&gt;Re: - approve&lt;/subject&gt;
+        &lt;sys_created_by&gt;system&lt;/sys_created_by&gt;
+        &lt;sys_created_on&gt;2025-04-15 07:37:51&lt;/sys_created_on&gt;
+        &lt;sys_id&gt;4e90a96fc330221052237405e40131f0&lt;/sys_id&gt;
+        &lt;sys_mod_count&gt;4&lt;/sys_mod_count&gt;
+        &lt;sys_updated_by&gt;AV&lt;/sys_updated_by&gt;
+        &lt;sys_updated_on&gt;2025-04-15 07:37:58&lt;/sys_updated_on&gt;
+        &lt;target_table&gt;sysapproval_approver&lt;/target_table&gt;
+        &lt;type&gt;received&lt;/type&gt;
+        &lt;uid&gt;GmailId1963860e8f0efde1&lt;/uid&gt;
+        &lt;user&gt;3157a6c6c363121052237405e40131f3&lt;/user&gt;
+        &lt;user_id display_value=""&gt;3157a6c6c363121052237405e40131f3&lt;/user_id&gt;
+        &lt;weight&gt;0&lt;/weight&gt;
+    &lt;/sys_email&gt;
+&lt;/record_update&gt;
+]]&gt;&lt;/payload&gt;&lt;sys_class_name&gt;sys_metadata_link&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-05-13 07:39:45&lt;/sys_created_on&gt;&lt;sys_id&gt;c78d6d248365e6d0a946f896feaad315&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;Re: - approve&lt;/sys_name&gt;&lt;sys_package display_value="Zynder Tech" source="8d447286c3a3121052237405e4013105"&gt;8d447286c3a3121052237405e4013105&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Zynder Tech"&gt;8d447286c3a3121052237405e4013105&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_metadata_link_c78d6d248365e6d0a946f896feaad315&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-05-13 07:39:45&lt;/sys_updated_on&gt;&lt;tablename&gt;sys_email&lt;/tablename&gt;&lt;/sys_metadata_link&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>-1169220351</payload_hash>
+        <record_name>Re: - approve</record_name>
+        <reverted_from/>
+        <source>75a98e6483496e10a946f896feaad335</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-05-13 07:39:45</sys_created_on>
+        <sys_id>878d6d248365e6d0a946f896feaad317</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>196c895d7470000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-05-13 07:39:45</sys_updated_on>
+        <type>Metadata Snapshot</type>
+        <update_guid>4b8d6d243665e6d0f664e0c81de48716</update_guid>
+        <update_guid_history>4b8d6d243665e6d0f664e0c81de48716:-1169220351</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-05-17 10:27:49</sys_created_on>
+        <sys_db_object display_value="" name="sys_metadata_link">sys_metadata_link</sys_db_object>
+        <sys_id>19cabff2e3c94100ab5f79a91acc2a79</sys_id>
+        <sys_metadata>c78d6d248365e6d0a946f896feaad315</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Re: - approve</sys_name>
+        <sys_package display_value="Zynder Tech" source="8d447286c3a3121052237405e4013105">8d447286c3a3121052237405e4013105</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Zynder Tech">8d447286c3a3121052237405e4013105</sys_scope>
+        <sys_scope_delete display_value="">59ae7a785b154974a5e9b8402f90b790</sys_scope_delete>
+        <sys_update_name>sys_metadata_link_c78d6d248365e6d0a946f896feaad315</sys_update_name>
+        <sys_update_version display_value="sys_metadata_link_c78d6d248365e6d0a946f896feaad315">878d6d248365e6d0a946f896feaad317</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-05-17 10:27:49</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

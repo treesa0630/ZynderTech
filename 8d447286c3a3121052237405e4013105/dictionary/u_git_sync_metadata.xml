@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element attributes="update_synch=true" audit="true" db_object_id="f3d24996c36f121052237405e40131e8" extends="sys_metadata" label="Git Sync Metadata" max_length="40" name="u_git_sync_metadata" type="collection">
+        <element label="Active" max_length="40" name="u_active" type="boolean"/>
+        <element label="Table Name" max_length="80" name="u_table_name" type="table_name"/>
+        <element dependent="u_table_name" dependent_on_field="u_table_name" label="Query" max_length="4000" name="u_query" type="conditions" use_dependent_field="true"/>
+        <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" display="true" label="Number" max_length="40" name="u_number" read_only="true" type="string"/>
+        <index name="index">
+            <element name="u_table_name"/>
+        </index>
+    </element>
+</database>

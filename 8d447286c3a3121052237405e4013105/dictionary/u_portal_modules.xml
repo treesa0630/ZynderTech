@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element audit="true" db_object_id="a1589adcc3f8ea1052237405e40131e6" label="Portal Modules " max_length="40" name="u_portal_modules" type="collection">
+        <element label="Table" max_length="32" name="u_table" reference="sys_db_object" reference_qual="sys_scope=8d447286c3a3121052237405e4013105^EQ" reference_qual_condition="sys_scope=8d447286c3a3121052237405e4013105^EQ" type="reference"/>
+        <element label="Filter" max_length="2000" name="u_filter" type="string"/>
+        <element label="Role" max_length="1024" name="u_role" reference="sys_user_role" type="glide_list"/>
+        <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="u_number" type="string"/>
+        <element label="Active" max_length="40" name="u_active" type="boolean"/>
+        <element label="Module Name" max_length="40" name="u_module_name" type="string"/>
+        <index name="index">
+            <element name="u_table"/>
+        </index>
+    </element>
+</database>

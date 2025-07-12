@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element audit="true" db_object_id="3826810bc3c0221052237405e401314c" label="Choice Config" max_length="40" name="u_choice" type="collection">
+        <element dependent="u_table" dependent_on_field="u_table" label="Field" max_length="80" name="u_field" type="field_name" use_dependent_field="true"/>
+        <element label="Active" max_length="40" name="u_active" type="boolean"/>
+        <element display="true" label="Value" max_length="100" name="u_value" type="string"/>
+        <element label="Table" max_length="80" name="u_table" type="table_name"/>
+    </element>
+</database>

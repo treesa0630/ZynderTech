@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="DELETE">
+        <directory>update</directory>
+        <documentkey>02094f38c320221052237405e4013145</documentkey>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_history_set"&gt;
+    &lt;sys_history_set action="INSERT_OR_UPDATE"&gt;
+        &lt;date_format&gt;yyyy-MM-dd HH:mm:ss&lt;/date_format&gt;
+        &lt;domain/&gt;
+        &lt;id&gt;d3a40374c320221052237405e40131f6&lt;/id&gt;
+        &lt;initial_values&gt;&lt;![CDATA[&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;u_project_effort&gt;&lt;sys_created_by&gt;athul&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-03-25 15:55:09&lt;/sys_created_on&gt;&lt;sys_id&gt;d3a40374c320221052237405e40131f6&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;athul&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-03-25 15:55:09&lt;/sys_updated_on&gt;&lt;u_additional_comment/&gt;&lt;u_approval&gt;requested&lt;/u_approval&gt;&lt;u_date&gt;2025-03-25&lt;/u_date&gt;&lt;u_end_time&gt;2025-03-25 15:30:08&lt;/u_end_time&gt;&lt;u_number&gt;PE0001112&lt;/u_number&gt;&lt;u_other/&gt;&lt;u_project_name display_value="AYO GRC Project"&gt;61ea7392c308221052237405e40131d5&lt;/u_project_name&gt;&lt;u_project_work&gt;Project Work &amp;#13;
+*  Create   dashboard   to display  ci = GRC&amp;#13;
+* Faced  a issue that already a dashboard existing with same name and same condition&amp;#13;
+* Started the next story allocate template to particular notification&amp;#13;
+* Found the notification that met the conditions  &amp;#13;
+* Changed the email template &amp;#13;
+* issue in the demo&amp;#13;
+* submitting the ritm it skips the approvel in the  existing workflow and it doesnt create any sc task&amp;#13;
+* need to work in the flow , it does'nt take the value in supervisor variable&amp;#13;
+&amp;#13;
+Course&amp;#13;
+* Completed  Ui builder 60 %&amp;#13;
+* Completed Module 2 &amp;#13;
+* lab 4 completed &amp;#13;
+* Module 3 started &amp;#13;
+* reached lab 5&lt;/u_project_work&gt;&lt;u_remarks/&gt;&lt;u_resourse display_value="Athul  V  Nair"&gt;6abcaecac363121052237405e401318c&lt;/u_resourse&gt;&lt;u_start_time&gt;2025-03-25 06:30:08&lt;/u_start_time&gt;&lt;u_work_notes/&gt;&lt;/u_project_effort&gt;]]&gt;&lt;/initial_values&gt;
+        &lt;internal_checkpoint/&gt;
+        &lt;language&gt;en&lt;/language&gt;
+        &lt;last_update_recorded&gt;2025-03-25 15:55:09&lt;/last_update_recorded&gt;
+        &lt;line_table&gt;sys_history_line0001&lt;/line_table&gt;
+        &lt;load_time&gt;1970-01-01 00:00:00&lt;/load_time&gt;
+        &lt;refresh&gt;true&lt;/refresh&gt;
+        &lt;sys_created_by&gt;athul&lt;/sys_created_by&gt;
+        &lt;sys_created_on&gt;2025-03-25 15:55:09&lt;/sys_created_on&gt;
+        &lt;sys_id&gt;02094f38c320221052237405e4013145&lt;/sys_id&gt;
+        &lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;
+        &lt;sys_updated_by&gt;Sreerag.Anchery&lt;/sys_updated_by&gt;
+        &lt;sys_updated_on&gt;2025-04-22 11:50:36&lt;/sys_updated_on&gt;
+        &lt;table&gt;u_project_effort&lt;/table&gt;
+        &lt;timezone&gt;IST&lt;/timezone&gt;
+        &lt;updates&gt;0&lt;/updates&gt;
+    &lt;/sys_history_set&gt;
+&lt;/record_update&gt;
+</payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-05-13 07:40:12</sys_created_on>
+        <sys_id>25ade1a48365e6d0a946f896feaad319</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Project Effort: PE0001112</sys_name>
+        <sys_package display_value="Zynder Tech" source="8d447286c3a3121052237405e4013105">8d447286c3a3121052237405e4013105</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Zynder Tech">8d447286c3a3121052237405e4013105</sys_scope>
+        <sys_update_name>sys_metadata_link_25ade1a48365e6d0a946f896feaad319</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-05-13 07:40:12</sys_updated_on>
+        <tablename>sys_history_set</tablename>
+    </sys_metadata_link>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Zynder Tech">8d447286c3a3121052237405e4013105</application>
+        <file_path/>
+        <instance_id>7ac2e572db4e8610ebdd2a5913961964</instance_id>
+        <instance_name>dev268649</instance_name>
+        <name>sys_metadata_link_25ade1a48365e6d0a946f896feaad319</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link"><sys_metadata_link action="INSERT_OR_UPDATE"><directory>update</directory><documentkey>02094f38c320221052237405e4013145</documentkey><payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_history_set"&gt;
+    &lt;sys_history_set action="INSERT_OR_UPDATE"&gt;
+        &lt;date_format&gt;yyyy-MM-dd HH:mm:ss&lt;/date_format&gt;
+        &lt;domain/&gt;
+        &lt;id&gt;d3a40374c320221052237405e40131f6&lt;/id&gt;
+        &lt;initial_values&gt;&lt;![CDATA[&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;u_project_effort&gt;&lt;sys_created_by&gt;athul&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-03-25 15:55:09&lt;/sys_created_on&gt;&lt;sys_id&gt;d3a40374c320221052237405e40131f6&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;athul&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-03-25 15:55:09&lt;/sys_updated_on&gt;&lt;u_additional_comment/&gt;&lt;u_approval&gt;requested&lt;/u_approval&gt;&lt;u_date&gt;2025-03-25&lt;/u_date&gt;&lt;u_end_time&gt;2025-03-25 15:30:08&lt;/u_end_time&gt;&lt;u_number&gt;PE0001112&lt;/u_number&gt;&lt;u_other/&gt;&lt;u_project_name display_value="AYO GRC Project"&gt;61ea7392c308221052237405e40131d5&lt;/u_project_name&gt;&lt;u_project_work&gt;Project Work &amp;#13;
+*  Create   dashboard   to display  ci = GRC&amp;#13;
+* Faced  a issue that already a dashboard existing with same name and same condition&amp;#13;
+* Started the next story allocate template to particular notification&amp;#13;
+* Found the notification that met the conditions  &amp;#13;
+* Changed the email template &amp;#13;
+* issue in the demo&amp;#13;
+* submitting the ritm it skips the approvel in the  existing workflow and it doesnt create any sc task&amp;#13;
+* need to work in the flow , it does'nt take the value in supervisor variable&amp;#13;
+&amp;#13;
+Course&amp;#13;
+* Completed  Ui builder 60 %&amp;#13;
+* Completed Module 2 &amp;#13;
+* lab 4 completed &amp;#13;
+* Module 3 started &amp;#13;
+* reached lab 5&lt;/u_project_work&gt;&lt;u_remarks/&gt;&lt;u_resourse display_value="Athul  V  Nair"&gt;6abcaecac363121052237405e401318c&lt;/u_resourse&gt;&lt;u_start_time&gt;2025-03-25 06:30:08&lt;/u_start_time&gt;&lt;u_work_notes/&gt;&lt;/u_project_effort&gt;]]&gt;&lt;/initial_values&gt;
+        &lt;internal_checkpoint/&gt;
+        &lt;language&gt;en&lt;/language&gt;
+        &lt;last_update_recorded&gt;2025-03-25 15:55:09&lt;/last_update_recorded&gt;
+        &lt;line_table&gt;sys_history_line0001&lt;/line_table&gt;
+        &lt;load_time&gt;1970-01-01 00:00:00&lt;/load_time&gt;
+        &lt;refresh&gt;true&lt;/refresh&gt;
+        &lt;sys_created_by&gt;athul&lt;/sys_created_by&gt;
+        &lt;sys_created_on&gt;2025-03-25 15:55:09&lt;/sys_created_on&gt;
+        &lt;sys_id&gt;02094f38c320221052237405e4013145&lt;/sys_id&gt;
+        &lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;
+        &lt;sys_updated_by&gt;Sreerag.Anchery&lt;/sys_updated_by&gt;
+        &lt;sys_updated_on&gt;2025-04-22 11:50:36&lt;/sys_updated_on&gt;
+        &lt;table&gt;u_project_effort&lt;/table&gt;
+        &lt;timezone&gt;IST&lt;/timezone&gt;
+        &lt;updates&gt;0&lt;/updates&gt;
+    &lt;/sys_history_set&gt;
+&lt;/record_update&gt;
+</payload><sys_class_name>sys_metadata_link</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2025-05-13 07:40:12</sys_created_on><sys_id>25ade1a48365e6d0a946f896feaad319</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Project Effort: PE0001112</sys_name><sys_package display_value="Zynder Tech" source="8d447286c3a3121052237405e4013105">8d447286c3a3121052237405e4013105</sys_package><sys_policy/><sys_scope display_value="Zynder Tech">8d447286c3a3121052237405e4013105</sys_scope><sys_update_name>sys_metadata_link_25ade1a48365e6d0a946f896feaad319</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2025-05-13 07:40:12</sys_updated_on><tablename>sys_history_set</tablename></sys_metadata_link></record_update>]]></payload>
+        <payload_hash>-673027344</payload_hash>
+        <record_name>Project Effort: PE0001112</record_name>
+        <reverted_from/>
+        <source>75a98e6483496e10a946f896feaad335</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-05-13 07:40:12</sys_created_on>
+        <sys_id>79ade1a48365e6d0a946f896feaad327</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>196c896415f0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-05-13 07:40:12</sys_updated_on>
+        <type>Metadata Snapshot</type>
+        <update_guid>75ade1a44665e6d0cf115b39b6d7561a</update_guid>
+        <update_guid_history>75ade1a44665e6d0cf115b39b6d7561a:-673027344</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-05-17 10:25:32</sys_created_on>
+        <sys_db_object display_value="" name="sys_metadata_link">sys_metadata_link</sys_db_object>
+        <sys_id>60102e523a104de0b03d215aff2af840</sys_id>
+        <sys_metadata>25ade1a48365e6d0a946f896feaad319</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Project Effort: PE0001112</sys_name>
+        <sys_package display_value="Zynder Tech" source="8d447286c3a3121052237405e4013105">8d447286c3a3121052237405e4013105</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Zynder Tech">8d447286c3a3121052237405e4013105</sys_scope>
+        <sys_scope_delete display_value="">59ae7a785b154974a5e9b8402f90b790</sys_scope_delete>
+        <sys_update_name>sys_metadata_link_25ade1a48365e6d0a946f896feaad319</sys_update_name>
+        <sys_update_version display_value="sys_metadata_link_25ade1a48365e6d0a946f896feaad319">79ade1a48365e6d0a946f896feaad327</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-05-17 10:25:32</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

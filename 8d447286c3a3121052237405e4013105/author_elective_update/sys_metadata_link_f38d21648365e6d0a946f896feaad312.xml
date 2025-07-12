@@ -1,0 +1,503 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="DELETE">
+        <directory>update</directory>
+        <documentkey>64da470b834dee50a946f896feaad32b</documentkey>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_email">
+    <sys_email action="INSERT_OR_UPDATE">
+        <blind_copied/>
+        <body>&lt;html&gt;&lt;head&gt;&lt;/head&gt;&lt;body&gt;&lt;p&gt;&lt;/p&gt;
+&lt;style type="text/css"&gt;
+	* {
+		-webkit-text-size-adjust: none;
+	}
+
+	body {
+		margin: 0 auto !important;
+		padding: 0 !important;
+		font-family: Lato, Arial, sans-serif;
+	}
+
+	.btn a {
+		text-decoration: none;
+	}
+
+	.btn.inverse a {
+		color: #fff;
+	}
+
+	#requestapprove a {
+		color: #fff !important;
+	}
+
+	span.footer,
+	#templateAddress,
+	#templateCopyright,
+	#templateCopyright *,
+	#templateAddress * {
+		margin: 0;
+		font-size: 14px;
+		line-height: 18px;
+		color: #ffffff;
+	}
+
+	#snc_notification_unsubscribe,
+	#snc_notification_preference {
+		color: #3C59E7;
+		font-size: 10px;
+		line-height: 15px;
+	}
+
+	#snc_notification_unsubscribe {
+		padding-right: 5px;
+	}
+
+	#snc_notification_preference {
+		padding-left: 5px;
+	}
+
+	body,
+	table,
+	td,
+	p,
+	a {
+		-ms-text-size-adjust: 100% !important;
+		-webkit-text-size-adjust: 100% !important;
+	}
+
+	table,
+	tr,
+	td {
+		border-spacing: 0 !important;
+		mso-table-lspace: 0 !important;
+		mso-table-rspace: 0 !important;
+		border-collapse: collapse !important;
+		mso-line-height-rule: exactly !important;
+	}
+
+	.ExternalClass * {
+		line-height: 100%;
+	}
+
+	.mobile-link a,
+	.mobile-link span {
+		text-decoration: none !important;
+		color: inherit !important;
+		border: none !important;
+	}
+&lt;/style&gt;
+&lt;div style="margin: 0 auto !important;" align="center"&gt;
+&lt;table class="w100" style="width: 600px; background-color: #fef6e6; margin: 0 auto !important; padding: 0px;" border="0" width="600" cellspacing="0" cellpadding="0" align="center" bgcolor="#FEF6E6"&gt;
+&lt;tbody&gt;
+&lt;tr style="height: 150px;"&gt;
+&lt;td style="background: #FEF6E6; text-align: center; font-family: Arial, Tahoma, sans-serif; color: #425968; font-size: 13px; line-height: 14px;" align="center"&gt;
+&lt;table border="0" width="600" cellspacing="0" cellpadding="0" style="border-spacing: 0px; width: 100.2%; height: 250px;"&gt;
+&lt;tbody&gt;
+&lt;tr style="background-color: rgb(254, 246, 230); height: 250px;"&gt;
+&lt;td align="center" valign="bottom" height="98" style="height: 250px; width: 94.6844%;"&gt;
+&lt;table height="30" style="margin: 0px auto; width: 98.4344%; height: 285px;"&gt;
+&lt;tbody&gt;
+&lt;tr style="height: 200px;"&gt;
+&lt;td align="center" height="16" style="width: 100%; height: 200px;"&gt;&lt;img src="zynder_logo.gif" height="100" width="394" style="height: 183px;"&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;
+&lt;table border="0" width="600" cellspacing="0" cellpadding="0"&gt;
+&lt;tbody&gt;
+&lt;tr&gt;&lt;!-- Left--&gt;
+&lt;td valign="top" width="18"&gt;
+&lt;table width="18" cellspacing="0"&gt;
+&lt;tbody&gt;
+&lt;tr style="background: #fef6e6;" height="48"&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/td&gt;
+&lt;!-- CONTAINER --&gt;
+&lt;td width="564"&gt;
+&lt;table class="w100" style="background-image: linear-gradient(rgb(39, 40, 74), rgba(247, 247, 249, 0)); margin: 0px; padding: 0px; box-shadow: rgba(23, 40, 52, 0.08) 0px 2px 10px; height: 20px;" border="0" width="100%" cellspacing="0" cellpadding="0" align="center"&gt;
+&lt;tbody&gt;&lt;!-- Main Container --&gt;
+&lt;tr style="height: 20.4px;"&gt;
+&lt;td class="pad-sides-20" style="border-radius: 6px; text-align: left; background: #ffffff; padding: 24px; height: 20.4px;" align="center"&gt;&lt;p&gt;&lt;span style="font-size: 12pt;"&gt;Hi &amp;nbsp;Ashik Vinod,&lt;/span&gt;&lt;/p&gt;&#13;
+&lt;p&gt;&lt;span style="font-size: 12pt;"&gt;&amp;nbsp;A Choice has been requested to create and requires your review and approval. Below are the details.&lt;br&gt;&lt;br&gt; Action : create&lt;br&gt;Table : u_csr&lt;br&gt;Field : u_description&lt;br&gt;New Value : efsd&amp;nbsp;&lt;/span&gt;&lt;/p&gt;&#13;
+&lt;p&gt;&lt;span style="font-size: 12pt;"&gt;Please review and approve the changes at your earliest convenience.&lt;/span&gt;&lt;/p&gt;&#13;
+&lt;p&gt;&lt;span style="font-size: 12pt;"&gt;&lt;font face="helvetica"&gt;&lt;/font&gt;&lt;/span&gt;&lt;/p&gt;&lt;table&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td style="background-color: #d4fad9;border: 1px solid #d4fad9;-webkit-border-radius: 5px;-moz-border-radius: 5px;display: inline-block;padding: 10px;"&gt;&lt;a href="mailto:zyndertechtest@gmail.com?subject=Re%3A%20-%20approve&amp;amp;body=%0A%0ARef:MSG0001092_vH6WkeDVS4a1OYQNDPoE" style="color: #000000;font-size: 19px;font-family: Helvetica, Arial, sans-serif;text-decoration: none; border-radius: 3px;"&gt;Approve&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt; &lt;p&gt;&lt;/p&gt;&#13;
+&lt;p&gt;&lt;span style="font-size: 12pt;"&gt;&lt;font face="helvetica"&gt;&lt;/font&gt;&lt;/span&gt;&lt;/p&gt;&lt;table&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td style="background-color: #fad4d4;border: 1px solid #fad4d4;-webkit-border-radius: 5px;-moz-border-radius: 5px;display: inline-block;padding: 10px;"&gt;&lt;a href="mailto:zyndertechtest@gmail.com?subject=Re%3A%20-%20reject&amp;amp;body=%0A%0ARef:MSG0001092_vH6WkeDVS4a1OYQNDPoE" style="color: #000000;font-size: 19px;font-family: Helvetica, Arial, sans-serif;text-decoration: none; border-radius: 3px;"&gt;Reject&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;p&gt;&lt;/p&gt;&#13;
+&lt;p&gt;&lt;span style="font-size: 12pt;"&gt;&lt;a href="/sysapproval_approver.do?sys_id=f3ca070b834dee50a946f896feaad3aa&amp;amp;sysparm_record_target=sysapproval_approver"&gt;click here to view approval record.&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;&#13;
+&lt;p&gt;&lt;span style="font-size: 12pt;"&gt;Regards,&lt;/span&gt;&lt;/p&gt;&#13;
+&lt;p&gt;&lt;span style="font-size: 12pt;"&gt;Zynder Tech.&lt;/span&gt;&lt;/p&gt;&#13;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;&#13;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/td&gt;
+&lt;!-- END CONTAINER --&gt; &lt;!-- Right--&gt;
+&lt;td valign="top" width="18"&gt;
+&lt;table width="18" cellspacing="0"&gt;
+&lt;tbody&gt;
+&lt;tr style="background: #fef6e6;" height="48"&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;!-- Footer started --&gt;
+&lt;tr style="background-color: #fef6e6;"&gt;
+&lt;td&gt;
+&lt;table style="background-color: #fef6e6; width: 100.2%; height: 218.6px;" border="0" cellspacing="0" cellpadding="0"&gt;
+&lt;tbody&gt;
+&lt;tr style="height: 36px;"&gt;
+&lt;td style="background-color: #fef6e6; width: 99.6678%; height: 36px;" height="36"&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr style="height: 38.4px;"&gt;
+&lt;td style="background-color: #fef6e6; ; width: 99.6678%; height: 38.4px;"&gt;
+&lt;table style="color: #fff;" border="0" width="600" cellspacing="0" cellpadding="0"&gt;
+&lt;tbody&gt;
+&lt;tr align="center"&gt;
+&lt;td&gt;&lt;span id="templateCopyright" class="footer" style="color: #000000; font-size: 14px; line-height: 18px; text-align: center; margin: 0 !important;"&gt; © Zynder-Tech Pvt Ltd. All rights reserved. &lt;/span&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr cellspacing="0" style="height: 106.2px;"&gt;
+&lt;td align="center" bgcolor="#FEF6E6" height="102" style="width: 99.6678%; height: 106.2px;"&gt;&lt;img src="email_template_footer.png" width="600" height="102"&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;!-- Footer end--&gt;&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/div&gt;&lt;div&gt;&amp;nbsp;&lt;/div&gt;&lt;div style="display:inline"&gt;Ref:MSG0001092_vH6WkeDVS4a1OYQNDPoE&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</body>
+        <body_text/>
+        <checkpoint>0</checkpoint>
+        <content_type>text/html</content_type>
+        <copied/>
+        <deleted>false</deleted>
+        <direct>zyndersreerag@gmail.com</direct>
+        <error_string/>
+        <headers>X-ServiceNow-Source:Notification-8049e2dbc3cc621052237405e4013135&#13;
+List-Unsubscribe:&lt;mailto:zyndertechtest@gmail.com?body=Sending+this+email+with+the+predefined+content+in+the+subject+and+body+will+unsubscribe+you+from+the+notification.%0D%0A%0D%0AUnsubscribe%3A%7B%22id%22%3A%228049e2dbc3cc621052237405e4013135%22%2C%22token%22%3A%22c797e62132%22%7D&#13;
+ &amp;subject=Unsubscribe+from+%22Choice+Configuration+Approval%22&gt;&#13;
+X-ServiceNow-SysEmail-Version:2&#13;
+</headers>
+        <importance/>
+        <instance>f3ca070b834dee50a946f896feaad3aa</instance>
+        <mailbox display_value="Outbox">outbox</mailbox>
+        <message_id/>
+        <notification_type>SMTP</notification_type>
+        <receive_type>new</receive_type>
+        <recipients>zyndersreerag@gmail.com</recipients>
+        <reply_to/>
+        <state>ready</state>
+        <status/>
+        <subject>Choice Configuration has been Requested to create by Treesa Thomas</subject>
+        <sys_created_by>system</sys_created_by>
+        <sys_created_on>2025-04-26 12:20:41</sys_created_on>
+        <sys_id>64da470b834dee50a946f896feaad32b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2025-04-26 12:20:41</sys_updated_on>
+        <target_table>sysapproval_approver</target_table>
+        <type>send-ready</type>
+        <uid>N/A</uid>
+        <user/>
+        <user_id/>
+        <weight>0</weight>
+    </sys_email>
+</record_update>
+]]></payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-05-13 07:39:48</sys_created_on>
+        <sys_id>f38d21648365e6d0a946f896feaad312</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Choice Configuration has been Requested to create by Treesa Thomas</sys_name>
+        <sys_package display_value="Zynder Tech" source="8d447286c3a3121052237405e4013105">8d447286c3a3121052237405e4013105</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Zynder Tech">8d447286c3a3121052237405e4013105</sys_scope>
+        <sys_update_name>sys_metadata_link_f38d21648365e6d0a946f896feaad312</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-05-13 07:39:48</sys_updated_on>
+        <tablename>sys_email</tablename>
+    </sys_metadata_link>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Zynder Tech">8d447286c3a3121052237405e4013105</application>
+        <file_path/>
+        <instance_id>7ac2e572db4e8610ebdd2a5913961964</instance_id>
+        <instance_name>dev268649</instance_name>
+        <name>sys_metadata_link_f38d21648365e6d0a946f896feaad312</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_metadata_link"&gt;&lt;sys_metadata_link action="INSERT_OR_UPDATE"&gt;&lt;directory&gt;update&lt;/directory&gt;&lt;documentkey&gt;64da470b834dee50a946f896feaad32b&lt;/documentkey&gt;&lt;payload&gt;&lt;![CDATA[&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_email"&gt;
+    &lt;sys_email action="INSERT_OR_UPDATE"&gt;
+        &lt;blind_copied/&gt;
+        &lt;body&gt;&amp;lt;html&amp;gt;&amp;lt;head&amp;gt;&amp;lt;/head&amp;gt;&amp;lt;body&amp;gt;&amp;lt;p&amp;gt;&amp;lt;/p&amp;gt;
+&amp;lt;style type="text/css"&amp;gt;
+	* {
+		-webkit-text-size-adjust: none;
+	}
+
+	body {
+		margin: 0 auto !important;
+		padding: 0 !important;
+		font-family: Lato, Arial, sans-serif;
+	}
+
+	.btn a {
+		text-decoration: none;
+	}
+
+	.btn.inverse a {
+		color: #fff;
+	}
+
+	#requestapprove a {
+		color: #fff !important;
+	}
+
+	span.footer,
+	#templateAddress,
+	#templateCopyright,
+	#templateCopyright *,
+	#templateAddress * {
+		margin: 0;
+		font-size: 14px;
+		line-height: 18px;
+		color: #ffffff;
+	}
+
+	#snc_notification_unsubscribe,
+	#snc_notification_preference {
+		color: #3C59E7;
+		font-size: 10px;
+		line-height: 15px;
+	}
+
+	#snc_notification_unsubscribe {
+		padding-right: 5px;
+	}
+
+	#snc_notification_preference {
+		padding-left: 5px;
+	}
+
+	body,
+	table,
+	td,
+	p,
+	a {
+		-ms-text-size-adjust: 100% !important;
+		-webkit-text-size-adjust: 100% !important;
+	}
+
+	table,
+	tr,
+	td {
+		border-spacing: 0 !important;
+		mso-table-lspace: 0 !important;
+		mso-table-rspace: 0 !important;
+		border-collapse: collapse !important;
+		mso-line-height-rule: exactly !important;
+	}
+
+	.ExternalClass * {
+		line-height: 100%;
+	}
+
+	.mobile-link a,
+	.mobile-link span {
+		text-decoration: none !important;
+		color: inherit !important;
+		border: none !important;
+	}
+&amp;lt;/style&amp;gt;
+&amp;lt;div style="margin: 0 auto !important;" align="center"&amp;gt;
+&amp;lt;table class="w100" style="width: 600px; background-color: #fef6e6; margin: 0 auto !important; padding: 0px;" border="0" width="600" cellspacing="0" cellpadding="0" align="center" bgcolor="#FEF6E6"&amp;gt;
+&amp;lt;tbody&amp;gt;
+&amp;lt;tr style="height: 150px;"&amp;gt;
+&amp;lt;td style="background: #FEF6E6; text-align: center; font-family: Arial, Tahoma, sans-serif; color: #425968; font-size: 13px; line-height: 14px;" align="center"&amp;gt;
+&amp;lt;table border="0" width="600" cellspacing="0" cellpadding="0" style="border-spacing: 0px; width: 100.2%; height: 250px;"&amp;gt;
+&amp;lt;tbody&amp;gt;
+&amp;lt;tr style="background-color: rgb(254, 246, 230); height: 250px;"&amp;gt;
+&amp;lt;td align="center" valign="bottom" height="98" style="height: 250px; width: 94.6844%;"&amp;gt;
+&amp;lt;table height="30" style="margin: 0px auto; width: 98.4344%; height: 285px;"&amp;gt;
+&amp;lt;tbody&amp;gt;
+&amp;lt;tr style="height: 200px;"&amp;gt;
+&amp;lt;td align="center" height="16" style="width: 100%; height: 200px;"&amp;gt;&amp;lt;img src="zynder_logo.gif" height="100" width="394" style="height: 183px;"&amp;gt;&amp;lt;/td&amp;gt;
+&amp;lt;/tr&amp;gt;
+&amp;lt;/tbody&amp;gt;
+&amp;lt;/table&amp;gt;
+&amp;lt;/td&amp;gt;
+&amp;lt;/tr&amp;gt;
+&amp;lt;/tbody&amp;gt;
+&amp;lt;/table&amp;gt;
+&amp;lt;/td&amp;gt;
+&amp;lt;/tr&amp;gt;
+&amp;lt;tr&amp;gt;
+&amp;lt;td&amp;gt;
+&amp;lt;table border="0" width="600" cellspacing="0" cellpadding="0"&amp;gt;
+&amp;lt;tbody&amp;gt;
+&amp;lt;tr&amp;gt;&amp;lt;!-- Left--&amp;gt;
+&amp;lt;td valign="top" width="18"&amp;gt;
+&amp;lt;table width="18" cellspacing="0"&amp;gt;
+&amp;lt;tbody&amp;gt;
+&amp;lt;tr style="background: #fef6e6;" height="48"&amp;gt;
+&amp;lt;td&amp;gt;&amp;lt;/td&amp;gt;
+&amp;lt;/tr&amp;gt;
+&amp;lt;/tbody&amp;gt;
+&amp;lt;/table&amp;gt;
+&amp;lt;/td&amp;gt;
+&amp;lt;!-- CONTAINER --&amp;gt;
+&amp;lt;td width="564"&amp;gt;
+&amp;lt;table class="w100" style="background-image: linear-gradient(rgb(39, 40, 74), rgba(247, 247, 249, 0)); margin: 0px; padding: 0px; box-shadow: rgba(23, 40, 52, 0.08) 0px 2px 10px; height: 20px;" border="0" width="100%" cellspacing="0" cellpadding="0" align="center"&amp;gt;
+&amp;lt;tbody&amp;gt;&amp;lt;!-- Main Container --&amp;gt;
+&amp;lt;tr style="height: 20.4px;"&amp;gt;
+&amp;lt;td class="pad-sides-20" style="border-radius: 6px; text-align: left; background: #ffffff; padding: 24px; height: 20.4px;" align="center"&amp;gt;&amp;lt;p&amp;gt;&amp;lt;span style="font-size: 12pt;"&amp;gt;Hi &amp;amp;nbsp;Ashik Vinod,&amp;lt;/span&amp;gt;&amp;lt;/p&amp;gt;&amp;#13;
+&amp;lt;p&amp;gt;&amp;lt;span style="font-size: 12pt;"&amp;gt;&amp;amp;nbsp;A Choice has been requested to create and requires your review and approval. Below are the details.&amp;lt;br&amp;gt;&amp;lt;br&amp;gt; Action : create&amp;lt;br&amp;gt;Table : u_csr&amp;lt;br&amp;gt;Field : u_description&amp;lt;br&amp;gt;New Value : efsd&amp;amp;nbsp;&amp;lt;/span&amp;gt;&amp;lt;/p&amp;gt;&amp;#13;
+&amp;lt;p&amp;gt;&amp;lt;span style="font-size: 12pt;"&amp;gt;Please review and approve the changes at your earliest convenience.&amp;lt;/span&amp;gt;&amp;lt;/p&amp;gt;&amp;#13;
+&amp;lt;p&amp;gt;&amp;lt;span style="font-size: 12pt;"&amp;gt;&amp;lt;font face="helvetica"&amp;gt;&amp;lt;/font&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;/p&amp;gt;&amp;lt;table&amp;gt;&amp;lt;tbody&amp;gt;&amp;lt;tr&amp;gt;&amp;lt;td style="background-color: #d4fad9;border: 1px solid #d4fad9;-webkit-border-radius: 5px;-moz-border-radius: 5px;display: inline-block;padding: 10px;"&amp;gt;&amp;lt;a href="mailto:zyndertechtest@gmail.com?subject=Re%3A%20-%20approve&amp;amp;amp;body=%0A%0ARef:MSG0001092_vH6WkeDVS4a1OYQNDPoE" style="color: #000000;font-size: 19px;font-family: Helvetica, Arial, sans-serif;text-decoration: none; border-radius: 3px;"&amp;gt;Approve&amp;lt;/a&amp;gt;&amp;lt;/td&amp;gt;&amp;lt;/tr&amp;gt;&amp;lt;/tbody&amp;gt;&amp;lt;/table&amp;gt; &amp;lt;p&amp;gt;&amp;lt;/p&amp;gt;&amp;#13;
+&amp;lt;p&amp;gt;&amp;lt;span style="font-size: 12pt;"&amp;gt;&amp;lt;font face="helvetica"&amp;gt;&amp;lt;/font&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;/p&amp;gt;&amp;lt;table&amp;gt;&amp;lt;tbody&amp;gt;&amp;lt;tr&amp;gt;&amp;lt;td style="background-color: #fad4d4;border: 1px solid #fad4d4;-webkit-border-radius: 5px;-moz-border-radius: 5px;display: inline-block;padding: 10px;"&amp;gt;&amp;lt;a href="mailto:zyndertechtest@gmail.com?subject=Re%3A%20-%20reject&amp;amp;amp;body=%0A%0ARef:MSG0001092_vH6WkeDVS4a1OYQNDPoE" style="color: #000000;font-size: 19px;font-family: Helvetica, Arial, sans-serif;text-decoration: none; border-radius: 3px;"&amp;gt;Reject&amp;lt;/a&amp;gt;&amp;lt;/td&amp;gt;&amp;lt;/tr&amp;gt;&amp;lt;/tbody&amp;gt;&amp;lt;/table&amp;gt;&amp;lt;p&amp;gt;&amp;lt;/p&amp;gt;&amp;#13;
+&amp;lt;p&amp;gt;&amp;lt;span style="font-size: 12pt;"&amp;gt;&amp;lt;a href="/sysapproval_approver.do?sys_id=f3ca070b834dee50a946f896feaad3aa&amp;amp;amp;sysparm_record_target=sysapproval_approver"&amp;gt;click here to view approval record.&amp;lt;/a&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;/p&amp;gt;&amp;#13;
+&amp;lt;p&amp;gt;&amp;lt;span style="font-size: 12pt;"&amp;gt;Regards,&amp;lt;/span&amp;gt;&amp;lt;/p&amp;gt;&amp;#13;
+&amp;lt;p&amp;gt;&amp;lt;span style="font-size: 12pt;"&amp;gt;Zynder Tech.&amp;lt;/span&amp;gt;&amp;lt;/p&amp;gt;&amp;#13;
+&amp;lt;p&amp;gt;&amp;amp;nbsp;&amp;lt;/p&amp;gt;&amp;#13;
+&amp;lt;p&amp;gt;&amp;amp;nbsp;&amp;lt;/p&amp;gt;&amp;lt;/td&amp;gt;
+&amp;lt;/tr&amp;gt;
+&amp;lt;/tbody&amp;gt;
+&amp;lt;/table&amp;gt;
+&amp;lt;/td&amp;gt;
+&amp;lt;!-- END CONTAINER --&amp;gt; &amp;lt;!-- Right--&amp;gt;
+&amp;lt;td valign="top" width="18"&amp;gt;
+&amp;lt;table width="18" cellspacing="0"&amp;gt;
+&amp;lt;tbody&amp;gt;
+&amp;lt;tr style="background: #fef6e6;" height="48"&amp;gt;
+&amp;lt;td&amp;gt;&amp;lt;/td&amp;gt;
+&amp;lt;/tr&amp;gt;
+&amp;lt;/tbody&amp;gt;
+&amp;lt;/table&amp;gt;
+&amp;lt;/td&amp;gt;
+&amp;lt;/tr&amp;gt;
+&amp;lt;/tbody&amp;gt;
+&amp;lt;/table&amp;gt;
+&amp;lt;/td&amp;gt;
+&amp;lt;/tr&amp;gt;
+&amp;lt;!-- Footer started --&amp;gt;
+&amp;lt;tr style="background-color: #fef6e6;"&amp;gt;
+&amp;lt;td&amp;gt;
+&amp;lt;table style="background-color: #fef6e6; width: 100.2%; height: 218.6px;" border="0" cellspacing="0" cellpadding="0"&amp;gt;
+&amp;lt;tbody&amp;gt;
+&amp;lt;tr style="height: 36px;"&amp;gt;
+&amp;lt;td style="background-color: #fef6e6; width: 99.6678%; height: 36px;" height="36"&amp;gt;&amp;lt;/td&amp;gt;
+&amp;lt;/tr&amp;gt;
+&amp;lt;tr style="height: 38.4px;"&amp;gt;
+&amp;lt;td style="background-color: #fef6e6; ; width: 99.6678%; height: 38.4px;"&amp;gt;
+&amp;lt;table style="color: #fff;" border="0" width="600" cellspacing="0" cellpadding="0"&amp;gt;
+&amp;lt;tbody&amp;gt;
+&amp;lt;tr align="center"&amp;gt;
+&amp;lt;td&amp;gt;&amp;lt;span id="templateCopyright" class="footer" style="color: #000000; font-size: 14px; line-height: 18px; text-align: center; margin: 0 !important;"&amp;gt; © Zynder-Tech Pvt Ltd. All rights reserved. &amp;lt;/span&amp;gt;&amp;lt;/td&amp;gt;
+&amp;lt;/tr&amp;gt;
+&amp;lt;/tbody&amp;gt;
+&amp;lt;/table&amp;gt;
+&amp;lt;/td&amp;gt;
+&amp;lt;/tr&amp;gt;
+&amp;lt;tr cellspacing="0" style="height: 106.2px;"&amp;gt;
+&amp;lt;td align="center" bgcolor="#FEF6E6" height="102" style="width: 99.6678%; height: 106.2px;"&amp;gt;&amp;lt;img src="email_template_footer.png" width="600" height="102"&amp;gt;&amp;lt;/td&amp;gt;
+&amp;lt;/tr&amp;gt;
+&amp;lt;/tbody&amp;gt;
+&amp;lt;/table&amp;gt;
+&amp;lt;/td&amp;gt;
+&amp;lt;/tr&amp;gt;
+&amp;lt;!-- Footer end--&amp;gt;&amp;lt;/tbody&amp;gt;
+&amp;lt;/table&amp;gt;
+&amp;lt;/div&amp;gt;&amp;lt;div&amp;gt;&amp;amp;nbsp;&amp;lt;/div&amp;gt;&amp;lt;div style="display:inline"&amp;gt;Ref:MSG0001092_vH6WkeDVS4a1OYQNDPoE&amp;lt;/div&amp;gt;&amp;lt;/body&amp;gt;&amp;lt;/html&amp;gt;&lt;/body&gt;
+        &lt;body_text/&gt;
+        &lt;checkpoint&gt;0&lt;/checkpoint&gt;
+        &lt;content_type&gt;text/html&lt;/content_type&gt;
+        &lt;copied/&gt;
+        &lt;deleted&gt;false&lt;/deleted&gt;
+        &lt;direct&gt;zyndersreerag@gmail.com&lt;/direct&gt;
+        &lt;error_string/&gt;
+        &lt;headers&gt;X-ServiceNow-Source:Notification-8049e2dbc3cc621052237405e4013135&amp;#13;
+List-Unsubscribe:&amp;lt;mailto:zyndertechtest@gmail.com?body=Sending+this+email+with+the+predefined+content+in+the+subject+and+body+will+unsubscribe+you+from+the+notification.%0D%0A%0D%0AUnsubscribe%3A%7B%22id%22%3A%228049e2dbc3cc621052237405e4013135%22%2C%22token%22%3A%22c797e62132%22%7D&amp;#13;
+ &amp;amp;subject=Unsubscribe+from+%22Choice+Configuration+Approval%22&amp;gt;&amp;#13;
+X-ServiceNow-SysEmail-Version:2&amp;#13;
+&lt;/headers&gt;
+        &lt;importance/&gt;
+        &lt;instance&gt;f3ca070b834dee50a946f896feaad3aa&lt;/instance&gt;
+        &lt;mailbox display_value="Outbox"&gt;outbox&lt;/mailbox&gt;
+        &lt;message_id/&gt;
+        &lt;notification_type&gt;SMTP&lt;/notification_type&gt;
+        &lt;receive_type&gt;new&lt;/receive_type&gt;
+        &lt;recipients&gt;zyndersreerag@gmail.com&lt;/recipients&gt;
+        &lt;reply_to/&gt;
+        &lt;state&gt;ready&lt;/state&gt;
+        &lt;status/&gt;
+        &lt;subject&gt;Choice Configuration has been Requested to create by Treesa Thomas&lt;/subject&gt;
+        &lt;sys_created_by&gt;system&lt;/sys_created_by&gt;
+        &lt;sys_created_on&gt;2025-04-26 12:20:41&lt;/sys_created_on&gt;
+        &lt;sys_id&gt;64da470b834dee50a946f896feaad32b&lt;/sys_id&gt;
+        &lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;
+        &lt;sys_updated_by&gt;system&lt;/sys_updated_by&gt;
+        &lt;sys_updated_on&gt;2025-04-26 12:20:41&lt;/sys_updated_on&gt;
+        &lt;target_table&gt;sysapproval_approver&lt;/target_table&gt;
+        &lt;type&gt;send-ready&lt;/type&gt;
+        &lt;uid&gt;N/A&lt;/uid&gt;
+        &lt;user/&gt;
+        &lt;user_id/&gt;
+        &lt;weight&gt;0&lt;/weight&gt;
+    &lt;/sys_email&gt;
+&lt;/record_update&gt;
+]]&gt;&lt;/payload&gt;&lt;sys_class_name&gt;sys_metadata_link&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-05-13 07:39:48&lt;/sys_created_on&gt;&lt;sys_id&gt;f38d21648365e6d0a946f896feaad312&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;Choice Configuration has been Requested to create by Treesa Thomas&lt;/sys_name&gt;&lt;sys_package display_value="Zynder Tech" source="8d447286c3a3121052237405e4013105"&gt;8d447286c3a3121052237405e4013105&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Zynder Tech"&gt;8d447286c3a3121052237405e4013105&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_metadata_link_f38d21648365e6d0a946f896feaad312&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-05-13 07:39:48&lt;/sys_updated_on&gt;&lt;tablename&gt;sys_email&lt;/tablename&gt;&lt;/sys_metadata_link&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>726550101</payload_hash>
+        <record_name>Choice Configuration has been Requested to create by Treesa Thomas</record_name>
+        <reverted_from/>
+        <source>75a98e6483496e10a946f896feaad335</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-05-13 07:39:48</sys_created_on>
+        <sys_id>b38d21648365e6d0a946f896feaad314</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>196c895e4f50000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-05-13 07:39:48</sys_updated_on>
+        <type>Metadata Snapshot</type>
+        <update_guid>778d2164be65e6d059c67b020cebfd13</update_guid>
+        <update_guid_history>778d2164be65e6d059c67b020cebfd13:726550101</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-05-17 10:28:27</sys_created_on>
+        <sys_db_object display_value="" name="sys_metadata_link">sys_metadata_link</sys_db_object>
+        <sys_id>9b3a2fde2df14721be2635ddb05491f1</sys_id>
+        <sys_metadata>f38d21648365e6d0a946f896feaad312</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Choice Configuration has been Requested to create by Treesa Thomas</sys_name>
+        <sys_package display_value="Zynder Tech" source="8d447286c3a3121052237405e4013105">8d447286c3a3121052237405e4013105</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Zynder Tech">8d447286c3a3121052237405e4013105</sys_scope>
+        <sys_scope_delete display_value="">59ae7a785b154974a5e9b8402f90b790</sys_scope_delete>
+        <sys_update_name>sys_metadata_link_f38d21648365e6d0a946f896feaad312</sys_update_name>
+        <sys_update_version display_value="sys_metadata_link_f38d21648365e6d0a946f896feaad312">b38d21648365e6d0a946f896feaad314</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-05-17 10:28:27</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

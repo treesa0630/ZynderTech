@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element audit="true" db_object_id="99d0665ec3a7521052237405e40131c2" label="Expense Tracker " max_length="40" name="u_expense_tracker" type="collection">
+        <element label="Amount" max_length="40" name="u_amount" type="integer"/>
+        <element label="Paid by" max_length="32" name="u_paid_by" reference="u_employee" type="reference"/>
+        <element choice="1" label="Type of Expense" max_length="40" name="u_type_of_expense" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Electricity" value="electricity"/>
+                <element inactive_on_update="false" label="Rent" value="rent"/>
+                <element inactive_on_update="false" label="Cleaning" value="cleaning"/>
+                <element inactive_on_update="false" label="Water" value="water"/>
+                <element inactive_on_update="false" label="Miscellaneous" value="miscellaneous"/>
+            </choice>
+        </element>
+        <element choice="1" label="Mode of payment" max_length="40" name="u_mode_of_payment" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Offline" value="offline"/>
+                <element inactive_on_update="false" label="Online" value="online"/>
+            </choice>
+        </element>
+        <element label="Date of Expense" max_length="40" name="u_date_of_expense" type="glide_date"/>
+        <index name="index">
+            <element name="u_paid_by"/>
+        </index>
+    </element>
+</database>

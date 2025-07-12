@@ -94,14 +94,14 @@
         <sys_created_by>AP</sys_created_by>
         <sys_created_on>2025-04-04 13:21:55</sys_created_on>
         <sys_id>c7c5c240c3bc2a1052237405e401314b</sys_id>
-        <sys_mod_count>103</sys_mod_count>
+        <sys_mod_count>104</sys_mod_count>
         <sys_name>Footer</sys_name>
         <sys_package display_value="Zynder Tech" source="8d447286c3a3121052237405e4013105">8d447286c3a3121052237405e4013105</sys_package>
         <sys_policy/>
         <sys_scope display_value="Zynder Tech">8d447286c3a3121052237405e4013105</sys_scope>
         <sys_update_name>sp_widget_c7c5c240c3bc2a1052237405e401314b</sys_update_name>
-        <sys_updated_by>Sreerag.Anchery</sys_updated_by>
-        <sys_updated_on>2025-05-06 07:10:33</sys_updated_on>
+        <sys_updated_by>Treesa.Thomas</sys_updated_by>
+        <sys_updated_on>2025-07-11 12:58:12</sys_updated_on>
         <template><![CDATA[<div class="main-foo">
     <!-- your widget template -->
     <div class="footers">
@@ -139,7 +139,7 @@
 
     <div class="rnd-box">
         <div class="rnd">
-            <div class="rounds mx-4"><a href="https://mail.google.com/mail/?view=cm&fs=1&to=zyndertechtest@gmail.com">
+            <div class="rounds mx-4"><a href="https://mail.google.com/mail/?view=cm&fs=1&to=zyndertech@gmail.com">
                     <div class="img-box">
                         <img class="img" src="zynderEmail Icon.png" alt="description" />
                     </div>

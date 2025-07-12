@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element audit="true" db_object_id="29870d64c333121052237405e401319e" label="CSR" max_length="40" name="u_csr" type="collection">
+        <element attributes="ignore_filter_on_new=true" audit="true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="u_number" type="string"/>
+        <element audit="true" label="Employee" max_length="32" name="u_employee" reference="u_employee" type="reference"/>
+        <element audit="true" choice="3" label="Type" max_length="40" name="u_type" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Suggestions" value="suggestion"/>
+                <element inactive_on_update="false" label="Concern" value="concern"/>
+            </choice>
+        </element>
+        <element audit="true" label="Action Taken" max_length="5000" name="u_action_taken" type="string"/>
+        <element audit="true" label="Description" max_length="5000" name="u_description" type="string"/>
+        <element attributes="array=denormalized,no_sort=true,slushbucket_ref_no_expand=true" audit="true" label="Red Team" max_length="4000" name="u_test_field" reference="u_employee" type="glide_list"/>
+        <element audit="true" label="Short Description" max_length="100" name="u_short_description" type="string"/>
+        <element audit="true" label="Comments" max_length="5000" name="u_comments" type="string"/>
+        <element audit="true" choice="1" label="Action Status" max_length="40" name="u_action_status" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Investigation In Progress" sequence="3" value="investigation"/>
+                <element inactive_on_update="false" label="Under Valuation" sequence="2" value="under_valuation"/>
+                <element inactive_on_update="false" label="Action Taken" value="action_taken"/>
+                <element inactive_on_update="false" label="Closed" sequence="3" value="closed"/>
+                <element inactive_on_update="false" label="Submitted" sequence="1" value="submitted"/>
+            </choice>
+        </element>
+        <index name="index">
+            <element name="u_employee"/>
+        </index>
+    </element>
+</database>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element audit="true" db_object_id="91b595d6c3ef121052237405e4013190" label="Project Effort" max_length="40" name="u_project_effort" type="collection">
+        <element label="Total Working Hours" max_length="3" name="u_work_hour" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Non project work" max_length="40" name="u_other" type="string"/>
+        <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="u_number" type="string"/>
+        <element label="Project work" max_length="512" name="u_project_work" type="string"/>
+        <element label="Project Name" max_length="32" name="u_project_name" reference="u_project" type="reference"/>
+        <element label="Start time" max_length="40" name="u_start_time" type="glide_time"/>
+        <element label="Additional comment" max_length="255" name="u_additional_comment" type="journal_input"/>
+        <element label="Resource" max_length="32" name="u_resourse" reference="sys_user" type="reference"/>
+        <element label="End time" max_length="40" name="u_end_time" type="glide_time"/>
+        <element label="Remarks" max_length="512" name="u_remarks" type="string"/>
+        <element label="Work notes" max_length="255" name="u_work_notes" type="journal_input"/>
+        <element choice="1" label="Approval" max_length="40" name="u_approval" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Cancelled" sequence="3" value="cancelled"/>
+                <element inactive_on_update="false" label="Requested" sequence="0" value="requested"/>
+                <element inactive_on_update="false" label="Rejected" sequence="2" value="rejected"/>
+                <element inactive_on_update="false" label="Approved" sequence="1" value="Approved"/>
+            </choice>
+        </element>
+        <element default="javascript:gs.now()" dynamic_default_value="fb7553e85f220100a9ad2572f2b477b4" label="Date" max_length="40" name="u_date" reference_qual="null" reference_qual_condition="null" type="glide_date" use_dynamic_default="true"/>
+        <index name="index">
+            <element name="u_project_name"/>
+        </index>
+        <index name="index2">
+            <element name="u_resourse"/>
+        </index>
+    </element>
+</database>

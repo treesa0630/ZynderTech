@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="DELETE">
+        <directory>update</directory>
+        <documentkey>82a768bfc360a61052237405e40131f0</documentkey>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_history_set"&gt;
+    &lt;sys_history_set action="INSERT_OR_UPDATE"&gt;
+        &lt;date_format&gt;yyyy-MM-dd HH:mm:ss&lt;/date_format&gt;
+        &lt;domain/&gt;
+        &lt;id&gt;613f009dc368221052237405e401310a&lt;/id&gt;
+        &lt;initial_values&gt;&lt;![CDATA[&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;u_project_effort&gt;&lt;sys_created_by&gt;AP&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-03-26 15:41:29&lt;/sys_created_on&gt;&lt;sys_id&gt;613f009dc368221052237405e401310a&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;AP&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-03-26 15:41:29&lt;/sys_updated_on&gt;&lt;u_additional_comment/&gt;&lt;u_approval&gt;requested&lt;/u_approval&gt;&lt;u_date&gt;2025-03-26&lt;/u_date&gt;&lt;u_end_time&gt;2025-03-26 15:40:40&lt;/u_end_time&gt;&lt;u_number&gt;PE0001124&lt;/u_number&gt;&lt;u_other/&gt;&lt;u_project_name display_value="ITC Edwards ITSM Project"&gt;d61bfb12c308221052237405e401316b&lt;/u_project_name&gt;&lt;u_project_work&gt;ITC Edwards&amp;#13;
+1. NOW-1597(TMTT reports)--&amp;gt; Created SLAs, Created reports, Created a hidden flow variable for approval date and added it in the flow, Added the variable to the list view of the report.&amp;#13;
+Now Learning ServiceNow&amp;#13;
+1. HRSD - 28%&amp;#13;
+2. Predictive Intelligence - 20%&lt;/u_project_work&gt;&lt;u_remarks/&gt;&lt;u_resourse display_value="Alan Paul"&gt;40bbe6cac363121052237405e4013157&lt;/u_resourse&gt;&lt;u_start_time&gt;2025-03-26 05:30:17&lt;/u_start_time&gt;&lt;u_work_notes/&gt;&lt;/u_project_effort&gt;]]&gt;&lt;/initial_values&gt;
+        &lt;internal_checkpoint&gt;195fc429eaa0000001&lt;/internal_checkpoint&gt;
+        &lt;language&gt;en&lt;/language&gt;
+        &lt;last_update_recorded&gt;2025-04-03 15:26:19&lt;/last_update_recorded&gt;
+        &lt;line_table&gt;sys_history_line0003&lt;/line_table&gt;
+        &lt;load_time&gt;1970-01-01 00:00:00&lt;/load_time&gt;
+        &lt;refresh&gt;true&lt;/refresh&gt;
+        &lt;sys_created_by&gt;AP&lt;/sys_created_by&gt;
+        &lt;sys_created_on&gt;2025-04-03 11:51:51&lt;/sys_created_on&gt;
+        &lt;sys_id&gt;82a768bfc360a61052237405e40131f0&lt;/sys_id&gt;
+        &lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;
+        &lt;sys_updated_by&gt;Sreerag.Anchery&lt;/sys_updated_by&gt;
+        &lt;sys_updated_on&gt;2025-04-22 11:50:36&lt;/sys_updated_on&gt;
+        &lt;table&gt;u_project_effort&lt;/table&gt;
+        &lt;timezone&gt;IST&lt;/timezone&gt;
+        &lt;updates&gt;1&lt;/updates&gt;
+    &lt;/sys_history_set&gt;
+&lt;/record_update&gt;
+</payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-05-13 07:40:17</sys_created_on>
+        <sys_id>36ada5a48365e6d0a946f896feaad3ec</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Project Effort: PE0001124</sys_name>
+        <sys_package display_value="Zynder Tech" source="8d447286c3a3121052237405e4013105">8d447286c3a3121052237405e4013105</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Zynder Tech">8d447286c3a3121052237405e4013105</sys_scope>
+        <sys_update_name>sys_metadata_link_36ada5a48365e6d0a946f896feaad3ec</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-05-13 07:40:17</sys_updated_on>
+        <tablename>sys_history_set</tablename>
+    </sys_metadata_link>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Zynder Tech">8d447286c3a3121052237405e4013105</application>
+        <file_path/>
+        <instance_id>7ac2e572db4e8610ebdd2a5913961964</instance_id>
+        <instance_name>dev268649</instance_name>
+        <name>sys_metadata_link_36ada5a48365e6d0a946f896feaad3ec</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link"><sys_metadata_link action="INSERT_OR_UPDATE"><directory>update</directory><documentkey>82a768bfc360a61052237405e40131f0</documentkey><payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_history_set"&gt;
+    &lt;sys_history_set action="INSERT_OR_UPDATE"&gt;
+        &lt;date_format&gt;yyyy-MM-dd HH:mm:ss&lt;/date_format&gt;
+        &lt;domain/&gt;
+        &lt;id&gt;613f009dc368221052237405e401310a&lt;/id&gt;
+        &lt;initial_values&gt;&lt;![CDATA[&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;u_project_effort&gt;&lt;sys_created_by&gt;AP&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-03-26 15:41:29&lt;/sys_created_on&gt;&lt;sys_id&gt;613f009dc368221052237405e401310a&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;AP&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-03-26 15:41:29&lt;/sys_updated_on&gt;&lt;u_additional_comment/&gt;&lt;u_approval&gt;requested&lt;/u_approval&gt;&lt;u_date&gt;2025-03-26&lt;/u_date&gt;&lt;u_end_time&gt;2025-03-26 15:40:40&lt;/u_end_time&gt;&lt;u_number&gt;PE0001124&lt;/u_number&gt;&lt;u_other/&gt;&lt;u_project_name display_value="ITC Edwards ITSM Project"&gt;d61bfb12c308221052237405e401316b&lt;/u_project_name&gt;&lt;u_project_work&gt;ITC Edwards&amp;#13;
+1. NOW-1597(TMTT reports)--&amp;gt; Created SLAs, Created reports, Created a hidden flow variable for approval date and added it in the flow, Added the variable to the list view of the report.&amp;#13;
+Now Learning ServiceNow&amp;#13;
+1. HRSD - 28%&amp;#13;
+2. Predictive Intelligence - 20%&lt;/u_project_work&gt;&lt;u_remarks/&gt;&lt;u_resourse display_value="Alan Paul"&gt;40bbe6cac363121052237405e4013157&lt;/u_resourse&gt;&lt;u_start_time&gt;2025-03-26 05:30:17&lt;/u_start_time&gt;&lt;u_work_notes/&gt;&lt;/u_project_effort&gt;]]&gt;&lt;/initial_values&gt;
+        &lt;internal_checkpoint&gt;195fc429eaa0000001&lt;/internal_checkpoint&gt;
+        &lt;language&gt;en&lt;/language&gt;
+        &lt;last_update_recorded&gt;2025-04-03 15:26:19&lt;/last_update_recorded&gt;
+        &lt;line_table&gt;sys_history_line0003&lt;/line_table&gt;
+        &lt;load_time&gt;1970-01-01 00:00:00&lt;/load_time&gt;
+        &lt;refresh&gt;true&lt;/refresh&gt;
+        &lt;sys_created_by&gt;AP&lt;/sys_created_by&gt;
+        &lt;sys_created_on&gt;2025-04-03 11:51:51&lt;/sys_created_on&gt;
+        &lt;sys_id&gt;82a768bfc360a61052237405e40131f0&lt;/sys_id&gt;
+        &lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;
+        &lt;sys_updated_by&gt;Sreerag.Anchery&lt;/sys_updated_by&gt;
+        &lt;sys_updated_on&gt;2025-04-22 11:50:36&lt;/sys_updated_on&gt;
+        &lt;table&gt;u_project_effort&lt;/table&gt;
+        &lt;timezone&gt;IST&lt;/timezone&gt;
+        &lt;updates&gt;1&lt;/updates&gt;
+    &lt;/sys_history_set&gt;
+&lt;/record_update&gt;
+</payload><sys_class_name>sys_metadata_link</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2025-05-13 07:40:17</sys_created_on><sys_id>36ada5a48365e6d0a946f896feaad3ec</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Project Effort: PE0001124</sys_name><sys_package display_value="Zynder Tech" source="8d447286c3a3121052237405e4013105">8d447286c3a3121052237405e4013105</sys_package><sys_policy/><sys_scope display_value="Zynder Tech">8d447286c3a3121052237405e4013105</sys_scope><sys_update_name>sys_metadata_link_36ada5a48365e6d0a946f896feaad3ec</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2025-05-13 07:40:17</sys_updated_on><tablename>sys_history_set</tablename></sys_metadata_link></record_update>]]></payload>
+        <payload_hash>409217654</payload_hash>
+        <record_name>Project Effort: PE0001124</record_name>
+        <reverted_from/>
+        <source>75a98e6483496e10a946f896feaad335</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-05-13 07:40:17</sys_created_on>
+        <sys_id>b2ada5a48365e6d0a946f896feaad3ee</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>196c89653aa0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-05-13 07:40:17</sys_updated_on>
+        <type>Metadata Snapshot</type>
+        <update_guid>76ada5a48765e6d02e3f568499338bed</update_guid>
+        <update_guid_history>76ada5a48765e6d02e3f568499338bed:409217654</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-05-17 10:25:49</sys_created_on>
+        <sys_db_object display_value="" name="sys_metadata_link">sys_metadata_link</sys_db_object>
+        <sys_id>0b4e44d4f26c447caa2b191d78a8c2c4</sys_id>
+        <sys_metadata>36ada5a48365e6d0a946f896feaad3ec</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Project Effort: PE0001124</sys_name>
+        <sys_package display_value="Zynder Tech" source="8d447286c3a3121052237405e4013105">8d447286c3a3121052237405e4013105</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Zynder Tech">8d447286c3a3121052237405e4013105</sys_scope>
+        <sys_scope_delete display_value="">59ae7a785b154974a5e9b8402f90b790</sys_scope_delete>
+        <sys_update_name>sys_metadata_link_36ada5a48365e6d0a946f896feaad3ec</sys_update_name>
+        <sys_update_version display_value="sys_metadata_link_36ada5a48365e6d0a946f896feaad3ec">b2ada5a48365e6d0a946f896feaad3ee</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-05-17 10:25:49</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
